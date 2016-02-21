@@ -60,7 +60,6 @@
 		E4624FD11C3231C8003023A1 /* MapPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPageViewController.swift; sourceTree = "<group>"; };
 		E4624FD31C323354003023A1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E471CEAD1C74243400214EFF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		E47DCBEC1C7922A80098069E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Cottontown/README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +78,6 @@
 		E419ED2E1C1C6AAA00164E25 = {
 			isa = PBXGroup;
 			children = (
-				E47DCBEC1C7922A80098069E /* README.md */,
 				E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */,
 				E411EC181C49B09F0081AB9B /* Reveal.framework */,
 				E4624FC71C2F8A4E003023A1 /* MapKit.framework */,
