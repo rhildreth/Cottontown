@@ -43,6 +43,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let oneSignal = OneSignal(launchOptions: launchOptions, appId: "82468ab3-db6e-4b57-8b6e-b3f0a153079a", handleNotification: nil)
         
         OneSignal.defaultClient().enableInAppAlertNotification(true)
+        oneSignal.IdsAvailable({ (userId, pushToken) in
+            NSLog("UserId:%@", userId);
+            if (pushToken != nil) {
+                NSLog("Sending Test Noification to this device now");
+                oneSignal.postNotification(["contents": ["en": "Cottontown Test Message"], "include_player_ids": [userId]]);
+            }
+        })
     
         
         tabBarController = self.window!.rootViewController as! CottontownTabBarController
@@ -124,7 +131,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
    
     
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
-        
+        completionHandler(.NoData)
     }
     
     /*
