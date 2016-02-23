@@ -40,6 +40,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        let oneSignal = OneSignal(launchOptions: launchOptions, appId: "82468ab3-db6e-4b57-8b6e-b3f0a153079a", handleNotification: nil)
+        
+        OneSignal.defaultClient().enableInAppAlertNotification(true)
+    
+        
         tabBarController = self.window!.rootViewController as! CottontownTabBarController
         let stopsSplitVC = tabBarController.viewControllers?.first as! StopsSplitViewController
         let stopsNavVC = stopsSplitVC.viewControllers.first as! UINavigationController
