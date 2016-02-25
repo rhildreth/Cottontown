@@ -59,7 +59,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     func determineStatus() -> Bool {
         guard CLLocationManager.locationServicesEnabled() else {
-            self.locationManager.startUpdatingLocation() // might get "enable" dialog
             return false
         }
         let status = CLLocationManager.authorizationStatus()
@@ -72,19 +71,19 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         case .Restricted:
             return false
         case .Denied:
-            let message = "Wouldn't you like to authorize" +
-            "this app to use Location Services?"
-            let alert = UIAlertController(title: "Need Authorization",
-                message: message, preferredStyle: .Alert)
-            alert.addAction(UIAlertAction(title: "No",
-                style: .Cancel, handler: nil))
-            alert.addAction(UIAlertAction(title: "OK",
-                style: .Default, handler: {
-                    _ in
-                    let url = NSURL(string:UIApplicationOpenSettingsURLString)!
-                    UIApplication.sharedApplication().openURL(url)
-            }))
-            self.presentViewController(alert, animated:true, completion:nil)
+//            let message = "Wouldn't you like to authorize" +
+//            "this app to use Location Services?"
+//            let alert = UIAlertController(title: "Need Authorization",
+//                message: message, preferredStyle: .Alert)
+//            alert.addAction(UIAlertAction(title: "No",
+//                style: .Cancel, handler: nil))
+//            alert.addAction(UIAlertAction(title: "OK",
+//                style: .Default, handler: {
+//                    _ in
+//                    let url = NSURL(string:UIApplicationOpenSettingsURLString)!
+//                    UIApplication.sharedApplication().openURL(url)
+//            }))
+//            self.presentViewController(alert, animated:true, completion:nil)
             return false
         }
     }
