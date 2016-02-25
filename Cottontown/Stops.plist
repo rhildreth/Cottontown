@@ -872,5 +872,40 @@ Often, family pictures reveal details about the relationship of buildings to one
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>stopNumber</key>
+		<string>29</string>
+		<key>stopTitle</key>
+		<string>Vino Garage</string>
+		<key>address</key>
+		<string>2327 Main St.</string>
+		<key>latitude</key>
+		<string>34.016836</string>
+		<key>longitude</key>
+		<string>-81.040624</string>
+		<key>YouTube</key>
+		<string></string>
+		<key>YouTubeText</key>
+		<string></string>
+		<key>iBeaconMajor</key>
+		<string>572</string>
+		<key>iBeaconMinor</key>
+		<string>1</string>
+		<key>pictures</key>
+		<array>
+			<dict>
+				<key>picImage</key>
+				<string>site29a</string>
+				<key>picText</key>
+				<string>Vino Garage - creative reuse of existing buildings. Before renovations</string>
+			</dict>
+			<dict>
+				<key>picImage</key>
+				<string>site29b</string>
+				<key>picText</key>
+				<string>Vino Garage - creative reuse of existing buildings. Before renovations</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>

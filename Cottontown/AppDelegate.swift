@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     var tabBarController: CottontownTabBarController!
     var stopsTVC: StopsTableViewController!
     
+    var oneSignal: OneSignal!
+    
     let locationManager = CLLocationManager()
     let cottontownRegion = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!, identifier: "cottontownBeaconRegion")
     
@@ -40,69 +42,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        tabBarController = self.window!.rootViewController as! CottontownTabBarController
-        let stopsSplitVC = tabBarController.viewControllers?.first as! StopsSplitViewController
-        let stopsNavVC = stopsSplitVC.viewControllers.first as! UINavigationController
-        stopsTVC = stopsNavVC.topViewController as! StopsTableViewController
+        oneSignalPushSetup(launchOptions)
+    
+        UISetup()
         
-        UINavigationBar.appearance().barTintColor = UIColor(red: 244.0/255.0, green:
-            190.0/255.0, blue: 64.0/255.0, alpha: 1.0)
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        
-        if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
-            UINavigationBar.appearance().titleTextAttributes =
-            [NSForegroundColorAttributeName:UIColor.whiteColor(),
-            NSFontAttributeName:barFont]
-        }
-        
-        let pageControl = UIPageControl.appearance()
-        pageControl.pageIndicatorTintColor = UIColor.lightGrayColor()
-        pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
-        pageControl.backgroundColor = UIColor.whiteColor()
-        
-        
-        /*
-        notifyEntryStateOnDisplay - App will be launched and the delegate will be notified via
-                  locationManager:didDetermineState:forRegion:
-        each time the device's screen is turned on (by either the home or shoulder button)and the user is in the region.
-        */
-        cottontownRegion.notifyEntryStateOnDisplay = true
-        
-        locationManager.delegate = self
-        
-        /*
-        This requests user's permission to send notifications when app
-        is in background or closed.  Triggers method -
-               locationManager:didChangeAuthorizationStatus
-        */
-        locationManager.requestAlwaysAuthorization()
-        
-        //Setup custom actions for notifications which show when you swipe left
-        //   on a notificaion
-        
-        //Go to Stop indicated by the nearest iBeacon
-        let actionGoToLocation = UIMutableUserNotificationAction()
-        actionGoToLocation.identifier = actionIdentier.goToLocation
-        actionGoToLocation.title = "Go To iBeacon Location"
-        actionGoToLocation.activationMode = UIUserNotificationActivationMode.Foreground
-        actionGoToLocation.destructive = false
-        actionGoToLocation.authenticationRequired = false
-        
-        //Ignore the iBeacon notification
-        let actionIgnoreBeacon = UIMutableUserNotificationAction()
-        actionIgnoreBeacon.identifier = actionIdentier.ignoreiBeacons
-        actionIgnoreBeacon.title = "Ignore iBeacons"
-        actionIgnoreBeacon.activationMode = UIUserNotificationActivationMode.Background
-        actionIgnoreBeacon.destructive = false
-        actionIgnoreBeacon.authenticationRequired = false
-        
-        let iBeaconCategory = UIMutableUserNotificationCategory()
-        iBeaconCategory.identifier = "iBeaconCategory"
-        iBeaconCategory.setActions([actionGoToLocation, actionIgnoreBeacon], forContext: UIUserNotificationActionContext.Default)
-        iBeaconCategory.setActions([actionGoToLocation, actionIgnoreBeacon], forContext: UIUserNotificationActionContext.Minimal)
-        
-
-        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: [iBeaconCategory]))
+        localNotificationSetup(application)
         
         /*
         The Settings app is used to persist goToStopForiBeaconRegion and enableiBeacons.  It is 
@@ -119,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
    
     
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
-        
+        completionHandler(.NoData)
     }
     
     /*
@@ -233,17 +177,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             let nearestBeacon = closeBeacons.first  // gets the closest iBeacon
          
             switch (nearestBeacon!.major, nearestBeacon!.minor) {
-            case (572,1):     // Stop 5
+            case (572,1):     // Stop 29
 
-                if filteriBeaconForStop(5){
+                if filteriBeaconForStop(29){
                     if goToStopForiBeaconRegion {
                     tabBarController.selectedIndex = 0  // Make sure Stops tab is selected
-                    stopsTVC.showDetailViewForStopNumber(5)
+                    stopsTVC.showDetailViewForStopNumber(29)
                     print("Vino Beacon active")
 
                     }
                                         
-                    iBeaconAlertForStop(5)
+                    iBeaconAlertForStop(29)
                 }
                 
             case (572,2):     // Stop 7
@@ -336,6 +280,115 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             
             self.window?.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
         })
+    }
+    
+    //MARK: - app setup methods
+    
+    
+    func iBeaconSetup () {
+        
+        /*  
+         *  requestWhenInUseAuthorization
+         *
+         *  This requests user's permission to enable detection of iBeacons when app
+         *  is in the foreground.  Triggers method -
+         *      locationManager:didChangeAuthorizationStatus
+         */
+        locationManager.requestWhenInUseAuthorization()
+        
+        locationManager.delegate = self
+        /*
+         *  notifyEntryStateOnDisplay
+         *
+         *  App will be launched and the delegate will be notified via
+         *  locationManager:didDetermineState:forRegion:
+         *  each time the device's screen is turned on (by either the home or shoulder button)
+         *  and the user is in the region.
+        
+         *  This was used in testing iBeacons and is no longer needed since location manager 
+         *  needs to be requestAlwaysAuthorization to use this.
+         */
+//        cottontownRegion.notifyEntryStateOnDisplay = true
+
+    }
+    
+    func UISetup () {
+        tabBarController = self.window!.rootViewController as! CottontownTabBarController
+        let stopsSplitVC = tabBarController.viewControllers?.first as! StopsSplitViewController
+        let stopsNavVC = stopsSplitVC.viewControllers.first as! UINavigationController
+        stopsTVC = stopsNavVC.topViewController as! StopsTableViewController
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 244.0/255.0, green:
+            190.0/255.0, blue: 64.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        
+        if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
+            UINavigationBar.appearance().titleTextAttributes =
+                [NSForegroundColorAttributeName:UIColor.whiteColor(),
+                    NSFontAttributeName:barFont]
+        }
+        
+        let pageControl = UIPageControl.appearance()
+        pageControl.pageIndicatorTintColor = UIColor.lightGrayColor()
+        pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
+        pageControl.backgroundColor = UIColor.whiteColor()
+        pageControl.hidesForSinglePage = true
+    }
+    
+    func oneSignalPushSetup (launchOptions: [NSObject: AnyObject]?) {
+        oneSignal = OneSignal(launchOptions: launchOptions, appId: "82468ab3-db6e-4b57-8b6e-b3f0a153079a")  { (message, additionalData, isActive) in
+            NSLog("OneSignal Notification opened:\nMessage: %@", message)
+            
+            if additionalData != nil {
+                NSLog("additionalData: %@", additionalData)
+                // Check for and read any custom values you added to the notification
+                // This done with the "Additonal Data" section the dashbaord.
+                // OR setting the 'data' field on our REST API.
+                if let customKey = additionalData["launchURL"] as! String? {
+                    NSLog("customKey: %@", customKey)
+                }
+            }
+        }
+        
+        
+        OneSignal.defaultClient().enableInAppAlertNotification(true)
+        oneSignal.IdsAvailable({ (userId, pushToken) in
+            NSLog("UserId:%@", userId);
+            if (pushToken != nil) {
+                NSLog("Sending Test Noification to this device now");
+                self.oneSignal.postNotification(["include_player_ids": [userId], "template_id": "e688afc9-f518-4230-8f27-b80883c3efab"]);
+            }
+        })
+    }
+    
+    func localNotificationSetup(application: UIApplication) {
+        //Setup custom actions for notifications which show when you swipe left
+        //   on a notificaion
+        
+        //Go to Stop indicated by the nearest iBeacon
+        let actionGoToLocation = UIMutableUserNotificationAction()
+        actionGoToLocation.identifier = actionIdentier.goToLocation
+        actionGoToLocation.title = "Go To iBeacon Location"
+        actionGoToLocation.activationMode = UIUserNotificationActivationMode.Foreground
+        actionGoToLocation.destructive = false
+        actionGoToLocation.authenticationRequired = false
+        
+        //Ignore the iBeacon notification
+        let actionIgnoreBeacon = UIMutableUserNotificationAction()
+        actionIgnoreBeacon.identifier = actionIdentier.ignoreiBeacons
+        actionIgnoreBeacon.title = "Ignore iBeacons"
+        actionIgnoreBeacon.activationMode = UIUserNotificationActivationMode.Background
+        actionIgnoreBeacon.destructive = false
+        actionIgnoreBeacon.authenticationRequired = false
+        
+        let iBeaconCategory = UIMutableUserNotificationCategory()
+        iBeaconCategory.identifier = "iBeaconCategory"
+        iBeaconCategory.setActions([actionGoToLocation, actionIgnoreBeacon], forContext: UIUserNotificationActionContext.Default)
+        iBeaconCategory.setActions([actionGoToLocation, actionIgnoreBeacon], forContext: UIUserNotificationActionContext.Minimal)
+        
+        
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: [iBeaconCategory]))
+        
     }
     
 }

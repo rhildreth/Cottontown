@@ -28,6 +28,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         map.delegate = self
@@ -35,6 +36,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         if determineStatus() {
             map.showsUserLocation = true
         } else {
+            map.showsUserLocation = false
             print("Location Services not available")
         }
         
@@ -58,8 +60,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     }
     
     func determineStatus() -> Bool {
+      
         guard CLLocationManager.locationServicesEnabled() else {
-            self.locationManager.startUpdatingLocation() // might get "enable" dialog
             return false
         }
         let status = CLLocationManager.authorizationStatus()
@@ -72,19 +74,19 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         case .Restricted:
             return false
         case .Denied:
-            let message = "Wouldn't you like to authorize" +
-            "this app to use Location Services?"
-            let alert = UIAlertController(title: "Need Authorization",
-                message: message, preferredStyle: .Alert)
-            alert.addAction(UIAlertAction(title: "No",
-                style: .Cancel, handler: nil))
-            alert.addAction(UIAlertAction(title: "OK",
-                style: .Default, handler: {
-                    _ in
-                    let url = NSURL(string:UIApplicationOpenSettingsURLString)!
-                    UIApplication.sharedApplication().openURL(url)
-            }))
-            self.presentViewController(alert, animated:true, completion:nil)
+//            let message = "Wouldn't you like to authorize" +
+//            "this app to use Location Services?"
+//            let alert = UIAlertController(title: "Need Authorization",
+//                message: message, preferredStyle: .Alert)
+//            alert.addAction(UIAlertAction(title: "No",
+//                style: .Cancel, handler: nil))
+//            alert.addAction(UIAlertAction(title: "OK",
+//                style: .Default, handler: {
+//                    _ in
+//                    let url = NSURL(string:UIApplicationOpenSettingsURLString)!
+//                    UIApplication.sharedApplication().openURL(url)
+//            }))
+//            self.presentViewController(alert, animated:true, completion:nil)
             return false
         }
     }
@@ -99,17 +101,21 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     // MARK: - CLLocationManagerDelegate methods
     
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        print("did change authorization status: \(status)")
+        print("did change authorization status")
         switch status {
         case .AuthorizedAlways, .AuthorizedWhenInUse:
+           
+            map.showsUserLocation = true
             self.doThisWhenAuthorized?()
-        default: break
+        default:
+            break
         }
     }
 
     //MARK: - MKMapViewDelegate
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+   
         guard let stopAnnotation = annotation as? StopAnnotation else {return nil}  // Make sure that when annotation for current user position is passed in there is no crash
         let pinView = MKPinAnnotationView()
         
