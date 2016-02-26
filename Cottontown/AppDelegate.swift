@@ -42,11 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        oneSignalPushSetup(launchOptions)
-    
         UISetup()
         
         localNotificationSetup(application)
+        
+        oneSignalPushSetup(launchOptions)
+        
+//        iBeaconSetup()    // iBeacons not used in app now
         
         /*
         The Settings app is used to persist goToStopForiBeaconRegion and enableiBeacons.  It is 
@@ -71,7 +73,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
        Notifications are not displayed when the app is in the foreground
        Generate an alert to simulate the notification
     */
-//FIXME: This method should not be called - but it is??
+
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         print("didReceiveLocalNotification:  app is open and notification occurred")
         print("** notification: ", notification.alertBody)
@@ -284,7 +286,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     
     //MARK: - app setup methods
     
-    
+    // iBeaconSetup not called since iBeacons are no longer used in app
     func iBeaconSetup () {
         
         /*  
@@ -336,7 +338,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     }
     
     func oneSignalPushSetup (launchOptions: [NSObject: AnyObject]?) {
-        oneSignal = OneSignal(launchOptions: launchOptions, appId: "82468ab3-db6e-4b57-8b6e-b3f0a153079a")  { (message, additionalData, isActive) in
+        oneSignal = OneSignal(launchOptions: launchOptions, appId: "82468ab3-db6e-4b57-8b6e-b3f0a153079a", handleNotification:  { (message, additionalData, isActive) in
             NSLog("OneSignal Notification opened:\nMessage: %@", message)
             
             if additionalData != nil {
@@ -348,10 +350,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
                     NSLog("customKey: %@", customKey)
                 }
             }
-        }
-        
+        }, autoRegister: false)
         
         OneSignal.defaultClient().enableInAppAlertNotification(true)
+//        testPush()
+    }
+    
+    func testPush() {
+                // the following sends a test push notification to this device
         oneSignal.IdsAvailable({ (userId, pushToken) in
             NSLog("UserId:%@", userId);
             if (pushToken != nil) {

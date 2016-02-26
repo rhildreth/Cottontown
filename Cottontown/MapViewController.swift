@@ -46,6 +46,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         map.showAnnotations(allStopAnnotations, animated: true)
         map.showsCompass = true
         map.showsScale = true
+        
     }
     
     func createStopAnnotations () -> [StopAnnotation] {
