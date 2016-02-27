@@ -887,10 +887,8 @@ Often, family pictures reveal details about the relationship of buildings to one
 		<string></string>
 		<key>YouTubeText</key>
 		<string></string>
-		<key>iBeaconMajor</key>
-		<string>572</string>
-		<key>iBeaconMinor</key>
-		<string>1</string>
+		<key>pushTag</key>
+		<string>Vino</string>
 		<key>pictures</key>
 		<array>
 			<dict>

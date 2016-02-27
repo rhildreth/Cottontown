@@ -118,6 +118,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         }
     }
     
+    func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+        defaults.setBool(true, forKey: "hasPromptedForUserNotifications")
+        print("did register for user notifications")
+        NSNotificationCenter.defaultCenter().postNotificationName("userNotificationSettingsRegistered", object: self)
+    }
+    
+    
      //MARK: - CLLocationManagerDelegate protocols
 
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
@@ -392,8 +399,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         iBeaconCategory.setActions([actionGoToLocation, actionIgnoreBeacon], forContext: UIUserNotificationActionContext.Default)
         iBeaconCategory.setActions([actionGoToLocation, actionIgnoreBeacon], forContext: UIUserNotificationActionContext.Minimal)
         
-        
-        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: [iBeaconCategory]))
+// Registration for notifications is now done in the StopPageViewController
+//        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: [iBeaconCategory]))
         
     }
     

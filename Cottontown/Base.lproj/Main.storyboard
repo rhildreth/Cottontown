@@ -154,7 +154,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4z-fy-1b9">
                                 <rect key="frame" x="20" y="253" width="560" height="243"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -193,14 +193,14 @@
                             <mask key="constraints">
                                 <exclude reference="3gS-S9-NyL"/>
                                 <exclude reference="v4L-q8-jlT"/>
-                                <exclude reference="EQs-LT-Oan"/>
-                                <exclude reference="R7p-Q8-Toj"/>
-                                <exclude reference="nZm-tv-AnJ"/>
                                 <exclude reference="Ano-48-ciT"/>
                                 <exclude reference="ErA-ma-gwm"/>
                                 <exclude reference="GGV-8l-JaF"/>
                                 <exclude reference="p11-z0-4WX"/>
                                 <exclude reference="VzY-iz-GBd"/>
+                                <exclude reference="EQs-LT-Oan"/>
+                                <exclude reference="R7p-Q8-Toj"/>
+                                <exclude reference="nZm-tv-AnJ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -211,11 +211,6 @@
                                 <exclude reference="Bf1-r8-nHy"/>
                                 <exclude reference="prX-N3-bxI"/>
                                 <include reference="v4L-q8-jlT"/>
-                                <exclude reference="1r7-4I-vOP"/>
-                                <include reference="EQs-LT-Oan"/>
-                                <include reference="R7p-Q8-Toj"/>
-                                <include reference="nZm-tv-AnJ"/>
-                                <exclude reference="qxf-lG-PQ9"/>
                                 <include reference="Ano-48-ciT"/>
                                 <include reference="ErA-ma-gwm"/>
                                 <include reference="GGV-8l-JaF"/>
@@ -225,6 +220,11 @@
                                 <exclude reference="xVc-Pz-OPq"/>
                                 <include reference="VzY-iz-GBd"/>
                                 <exclude reference="ZAh-iJ-8Z8"/>
+                                <exclude reference="1r7-4I-vOP"/>
+                                <include reference="EQs-LT-Oan"/>
+                                <include reference="R7p-Q8-Toj"/>
+                                <include reference="nZm-tv-AnJ"/>
+                                <exclude reference="qxf-lG-PQ9"/>
                             </mask>
                         </variation>
                     </view>

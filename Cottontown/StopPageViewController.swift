@@ -20,6 +20,10 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         self.dataSource = self
         let firstVC = viewControllerAtIndex(0)
         setViewControllers([firstVC!], direction: .Forward, animated: true, completion: nil)
+        requestNotificationAuthorization()
+        
+       // Notification set in AppDelegate method application(_:didRegisterUserNotificationSettings)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "requestStopPushAuthorization", name: "userNotificationSettingsRegistered", object: nil)
         
     }
     
@@ -27,6 +31,10 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
     func viewControllerAtIndex(index: Int) -> StopContentViewController? {
@@ -45,6 +53,24 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         stopContentVC.pageIndex = self.pageIndex
         return stopContentVC
         
+    }
+    
+    func requestNotificationAuthorization() {
+        guard !(NSUserDefaults.standardUserDefaults().boolForKey("hasPromptedForUserNotifications") && UIApplication.sharedApplication().currentUserNotificationSettings()?.types == .None) else {
+            print("User prompted for notifications, but declined")
+            return}
+            
+        if let pushTag = stop?.pushTag {
+            print("Push tag:",pushTag)
+            UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil ))
+            
+        }
+        
+        
+    }
+    
+    func requestStopPushAuthorization (){
+        print("push stop authorization")
     }
 
     

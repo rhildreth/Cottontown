@@ -18,6 +18,7 @@ class Stop {
     let youTubeURL: String
     let youTubeText: String
     let stopPictures: [[String: String]]
+    let pushTag: String?
     
     init (stop:[String: AnyObject]) {
         stopNumber = stop["stopNumber"] as! String
@@ -28,7 +29,7 @@ class Stop {
         youTubeURL = stop["YouTube"] as! String
         youTubeText = stop["YouTubeText"] as! String
         stopPictures = stop["pictures"] as! [[String: String]]
-        
+        pushTag = stop["pushTag"] as? String
     }
     
     
