@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StopPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+class StopPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate, didRegisterUserNotificationSettingsDelegate {
     
     var stop: Stop?
     
@@ -22,8 +22,11 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         setViewControllers([firstVC!], direction: .Forward, animated: true, completion: nil)
         requestNotificationAuthorization()
         
+        // ** test notifications
        // Notification set in AppDelegate method application(_:didRegisterUserNotificationSettings)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "requestStopPushAuthorization", name: "userNotificationSettingsRegistered", object: nil)
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "requestStopPushAuthorization", name: "userNotificationSettingsRegistered", object: nil)
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.registeredDelegate = self
         
     }
     
@@ -33,9 +36,10 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         // Dispose of any resources that can be recreated.
     }
     
-    deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
-    }
+//** test notifications
+//    deinit {
+//        NSNotificationCenter.defaultCenter().removeObserver(self)
+//    }
     
     func viewControllerAtIndex(index: Int) -> StopContentViewController? {
         let stopContentVC = storyboard?.instantiateViewControllerWithIdentifier("stopContentVC") as! StopContentViewController
@@ -68,11 +72,13 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         
         
     }
-    
-    func requestStopPushAuthorization (){
-        print("push stop authorization")
+//     ** test notifications from AppDelegate
+//    func requestStopPushAuthorization (){
+//        print("push stop authorization")
+//    }
+    func handleDidRegisterUserNotificationSettings() {
+        print("handle push stop authorization")
     }
-
     
     
     // MARK: - UIPageControllerDataSource Methods

@@ -39,6 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     let defaults = NSUserDefaults.standardUserDefaults()
     let initialDefaults = ["goToStopForiBeaconRegion":false, "enableiBeacons":true]
     
+    var registeredDelegate: didRegisterUserNotificationSettingsDelegate?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
@@ -57,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         */
         defaults.registerDefaults(initialDefaults)
         let testSettings = defaults.boolForKey("enableiBeacons")
-        print(testSettings)
+        print("testSettings:",testSettings)
         
         return true
     }
@@ -121,7 +122,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
         defaults.setBool(true, forKey: "hasPromptedForUserNotifications")
         print("did register for user notifications")
-        NSNotificationCenter.defaultCenter().postNotificationName("userNotificationSettingsRegistered", object: self)
+        
+//        NSNotificationCenter.defaultCenter().postNotificationName("userNotificationSettingsRegistered", object: self)  // ** test notifications.  See also StopPageViewController
+        
+        registeredDelegate?.handleDidRegisterUserNotificationSettings()
     }
     
     
