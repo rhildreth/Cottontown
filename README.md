@@ -38,4 +38,5 @@ I'm using the latest public releases of Xcode (7.2.1) and OSX (10.11.3)
 
 ####Acknowledgements
 
-I would like to thank Robin Waites and the [Historic Columbia Foundation](http://www.historiccolumbia.org) for their continued support for this project.  
+I would like to thank Robin Waites and the [Historic Columbia Foundation](http://www.historiccolumbia.org) for their continued support for this project. 
+ 
