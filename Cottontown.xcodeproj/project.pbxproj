@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CottontownTabBarController.swift; sourceTree = "<group>"; };
-		E411EC181C49B09F0081AB9B /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
+		E411EC181C49B09F0081AB9B /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<absolute>"; };
 		E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsSplitViewController.swift; sourceTree = "<group>"; };
 		E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E411EC201C4B29200081AB9B /* Notificatons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificatons.swift; sourceTree = "<group>"; };
@@ -87,11 +87,6 @@
 		E419ED2E1C1C6AAA00164E25 = {
 			isa = PBXGroup;
 			children = (
-				E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */,
-				E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */,
-				E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */,
-				E411EC181C49B09F0081AB9B /* Reveal.framework */,
-				E4624FC71C2F8A4E003023A1 /* MapKit.framework */,
 				E419ED391C1C6AAA00164E25 /* Cottontown */,
 				E419ED381C1C6AAA00164E25 /* Products */,
 			);
@@ -132,8 +127,22 @@
 				E419ED481C1C6AAA00164E25 /* Info.plist */,
 				E419ED4E1C1CC5BD00164E25 /* Stops.plist */,
 				E44258531C2A2E520041A5B4 /* Cottontown.playground */,
+				E4D8E82D1C8377FD00A17BB2 /* Frameworks */,
 			);
 			path = Cottontown;
+			sourceTree = "<group>";
+		};
+		E4D8E82D1C8377FD00A17BB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4624FC71C2F8A4E003023A1 /* MapKit.framework */,
+				E411EC181C49B09F0081AB9B /* Reveal.framework */,
+				E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */,
+				E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */,
+				E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

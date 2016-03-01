@@ -56,9 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         important to note that the defaults specified in Root.plist are only for the toggle buttons
         displayed to the user by the Settings app.
         */
-        defaults.registerDefaults(initialDefaults)
-        let testSettings = defaults.boolForKey("enableiBeacons")
-        print("testSettings:",testSettings)
+//        defaults.registerDefaults(initialDefaults)    // iBeacons no longer used
         
         return true
     }
@@ -129,7 +127,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     }
     
     
-     //MARK: - CLLocationManagerDelegate protocols
+     //MARK: - CLLocationManagerDelegate protocols  ** only used with iBeacons
 
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         switch status {
@@ -366,6 +364,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         OneSignal.defaultClient().enableInAppAlertNotification(true)
 //        testPush()
     }
+    
+    func setTag(tag: String, value: String) {
+        oneSignal.sendTag(tag, value: value, onSuccess: {(result: [NSObject: AnyObject]!) in
+            print("setTag success:", result)
+            }, onFailure: {(error: NSError?) in
+                print("setTag failure:", error)
+        })
+    }
+    
+
     
     func testPush() {
                 // the following sends a test push notification to this device

@@ -10,25 +10,25 @@
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>Title</key>
-			<string>iBeacons</string>
+			<string>Enable Push Notifications</string>
 		</dict>
 		<dict>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 			<key>Title</key>
-			<string>Enable iBeacon detection</string>
+			<string>Vino Garage</string>
 			<key>Key</key>
-			<string>enableiBeacons</string>
+			<string>vino</string>
 			<key>DefaultValue</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 			<key>Title</key>
-			<string>Automatically go to iBeacon Stop in Tableview</string>
+			<string>Warmouth</string>
 			<key>Key</key>
-			<string>goToStopForiBeaconRegion</string>
+			<string>warmouth</string>
 			<key>DefaultValue</key>
 			<false/>
 		</dict>

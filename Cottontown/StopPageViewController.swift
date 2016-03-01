@@ -11,7 +11,7 @@ import UIKit
 class StopPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate, didRegisterUserNotificationSettingsDelegate {
     
     var stop: Stop?
-    
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     var pageIndex = 0
     
     override func viewDidLoad() {
@@ -25,7 +25,8 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         // ** test notifications
        // Notification set in AppDelegate method application(_:didRegisterUserNotificationSettings)
 //        NSNotificationCenter.defaultCenter().addObserver(self, selector: "requestStopPushAuthorization", name: "userNotificationSettingsRegistered", object: nil)
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        
         appDelegate.registeredDelegate = self
         
     }
@@ -66,6 +67,8 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
             
         if let pushTag = stop?.pushTag {
             print("Push tag:",pushTag)
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasPromptedForUserNotifications")
+            NSUserDefaults.standardUserDefaults().synchronize()
             UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil ))
             
         }
@@ -78,6 +81,41 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
 //    }
     func handleDidRegisterUserNotificationSettings() {
         print("handle push stop authorization")
+        
+        // Make sure user didn't decline notifications
+        guard !(NSUserDefaults.standardUserDefaults().boolForKey("hasPromptedForUserNotifications") && UIApplication.sharedApplication().currentUserNotificationSettings()!.types == .None) else {
+            print("User prompted for notifications, but declined")
+            return}
+        
+        // Make sure the stop supports push notifications
+        guard let pushTag = stop?.pushTag else {
+            print("stop doesn't support push notifications")
+            return
+        }
+        
+        // Make sure the user is asked only once if push notifications for this location are desired
+        guard !NSUserDefaults.standardUserDefaults().boolForKey(pushTag) else {
+            print("already asked for push permission for this stop")
+            return
+        }
+        
+        // Flag that the user has been asked to allow push messages
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: pushTag)
+        print("user default true set for key",pushTag)
+        
+        let message = "Would you like to get Push messages from the " + stop!.stopTitle
+        let alert = UIAlertController(title: "Push Notifications", message: message, preferredStyle: .Alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .Default , handler: { _ in
+            self.appDelegate.setTag(pushTag, value: "true")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "No", style: .Cancel, handler: { _ in
+            self.appDelegate.setTag(pushTag, value: "false")
+        }))
+        
+        presentViewController(alert, animated: true, completion: nil)
+        
     }
     
     
