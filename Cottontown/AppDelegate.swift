@@ -5,7 +5,7 @@
 //  Created by Ron Hildreth on 12/12/15.
 //  Copyright © 2015 Tappdev.com. All rights reserved.
 //
-// test commit from Gitup - test2
+// test commit from Gitup - test3
 
 import UIKit
 import CoreLocation
