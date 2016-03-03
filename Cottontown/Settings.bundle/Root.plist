@@ -18,7 +18,7 @@
 			<key>Title</key>
 			<string>Vino Garage</string>
 			<key>Key</key>
-			<string>vino</string>
+			<string>vinoPushEnabled</string>
 			<key>DefaultValue</key>
 			<false/>
 		</dict>
@@ -28,7 +28,7 @@
 			<key>Title</key>
 			<string>Warmouth</string>
 			<key>Key</key>
-			<string>warmouth</string>
+			<string>warmouthPushEnabled</string>
 			<key>DefaultValue</key>
 			<false/>
 		</dict>

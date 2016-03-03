@@ -21,7 +21,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="898" y="-710"/>
+            <point key="canvasLocation" x="-94" y="-1206"/>
         </scene>
         <!--Stops-->
         <scene sceneID="Nki-YV-4Qg">
@@ -36,7 +36,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-44" y="-330"/>
+            <point key="canvasLocation" x="-1036" y="-826"/>
         </scene>
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
@@ -115,7 +115,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1645" y="-710"/>
+            <point key="canvasLocation" x="653" y="-1206"/>
         </scene>
         <!--Stop Page View Controller-->
         <scene sceneID="by1-b1-Fhr">
@@ -126,7 +126,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FGF-Ey-ZkL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2550" y="137"/>
+            <point key="canvasLocation" x="1558" y="-359"/>
         </scene>
         <!--Stop Content View Controller-->
         <scene sceneID="OQO-ne-3t1">
@@ -244,6 +244,54 @@
             </objects>
             <point key="canvasLocation" x="2542" y="996"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="vAz-A7-oaT">
+            <objects>
+                <viewController storyboardIdentifier="webVC" id="orY-QJ-1kP" userLabel="Web View Controller" customClass="WebViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M2x-zZ-zWj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Iwt-1I-Xyc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IOL-oI-yj4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hj-GV-YOl">
+                                <rect key="frame" x="0.0" y="88" width="600" height="512"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Enz-9n-e4t">
+                                <rect key="frame" x="0.0" y="44" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="UgJ-NN-3g1">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="E7c-Zo-2Gk">
+                                            <connections>
+                                                <action selector="done:" destination="orY-QJ-1kP" id="bhJ-ht-u4u"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6hj-GV-YOl" secondAttribute="trailing" id="AZq-Sc-8YL"/>
+                            <constraint firstItem="6hj-GV-YOl" firstAttribute="top" secondItem="Enz-9n-e4t" secondAttribute="bottom" id="F9x-5N-Zee"/>
+                            <constraint firstItem="Enz-9n-e4t" firstAttribute="top" secondItem="IOL-oI-yj4" secondAttribute="top" constant="44" id="T2g-8s-zYu"/>
+                            <constraint firstItem="Enz-9n-e4t" firstAttribute="leading" secondItem="IOL-oI-yj4" secondAttribute="leading" id="awb-cP-EJh"/>
+                            <constraint firstItem="6hj-GV-YOl" firstAttribute="leading" secondItem="IOL-oI-yj4" secondAttribute="leading" id="ccq-JD-MOx"/>
+                            <constraint firstAttribute="trailing" secondItem="Enz-9n-e4t" secondAttribute="trailing" id="jJr-WX-Xj1"/>
+                            <constraint firstItem="Iwt-1I-Xyc" firstAttribute="top" secondItem="6hj-GV-YOl" secondAttribute="bottom" id="zuz-BV-PFo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="6hj-GV-YOl" id="XDU-jb-XeA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBK-fx-F8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2026" y="1814"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
             <objects>
@@ -258,7 +306,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1579" y="129"/>
+            <point key="canvasLocation" x="587" y="-367"/>
         </scene>
         <!--Cottontown Tab Bar Controller-->
         <scene sceneID="QRQ-Vv-RBE">
@@ -292,7 +340,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeO-MY-FPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-197" y="761"/>
+            <point key="canvasLocation" x="-109" y="1249"/>
         </scene>
         <!--Cottontown Map-->
         <scene sceneID="06J-es-u1a">
@@ -325,7 +373,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEq-SG-cW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="687"/>
+            <point key="canvasLocation" x="737" y="1175"/>
         </scene>
         <!--Map-->
         <scene sceneID="0Ag-ok-min">
@@ -339,7 +387,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="un7-fT-MoF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1113" y="1253"/>
+            <point key="canvasLocation" x="-1025" y="1741"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MoD-ko-YOd">
@@ -357,7 +405,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uC1-Zg-oOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-213" y="1637"/>
+            <point key="canvasLocation" x="-125" y="2125"/>
         </scene>
         <!--Map Page View Controller-->
         <scene sceneID="YQr-wl-US0">
@@ -367,7 +415,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vS-rW-Em3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="540" y="1637"/>
+            <point key="canvasLocation" x="628" y="2125"/>
         </scene>
         <!--Content Image-->
         <scene sceneID="n1O-FX-8io">

@@ -61,24 +61,22 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
     }
     
     func requestNotificationAuthorization() {
+        
+        guard let pushTag = stop?.pushTag else {return}  // return if no push tag for this stop
         guard !(NSUserDefaults.standardUserDefaults().boolForKey("hasPromptedForUserNotifications") && UIApplication.sharedApplication().currentUserNotificationSettings()?.types == .None) else {
             print("User prompted for notifications, but declined")
             return}
             
-        if let pushTag = stop?.pushTag {
-            print("Push tag:",pushTag)
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "hasPromptedForUserNotifications")
-            NSUserDefaults.standardUserDefaults().synchronize()
+        if !NSUserDefaults.standardUserDefaults().boolForKey("hasPromptedForUserNotifications") {
+            print("Request Notification Auth for Push ")
             UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil ))
             
-        }
-        
-        
+        } else if !NSUserDefaults.standardUserDefaults().boolForKey(pushTag + "PushRequested") {
+            handleDidRegisterUserNotificationSettings()
+        } 
+      
     }
-//     ** test notifications from AppDelegate
-//    func requestStopPushAuthorization (){
-//        print("push stop authorization")
-//    }
+
     func handleDidRegisterUserNotificationSettings() {
         print("handle push stop authorization")
         
@@ -94,24 +92,26 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         }
         
         // Make sure the user is asked only once if push notifications for this location are desired
-        guard !NSUserDefaults.standardUserDefaults().boolForKey(pushTag) else {
+        guard !NSUserDefaults.standardUserDefaults().boolForKey(pushTag + "PushRequested") else {
             print("already asked for push permission for this stop")
             return
         }
         
-        // Flag that the user has been asked to allow push messages
-        NSUserDefaults.standardUserDefaults().setBool(true, forKey: pushTag)
-        print("user default true set for key",pushTag)
+        // Set flag that the user has been asked to allow push messages
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: pushTag + "PushRequested")
+        print("user default true set for key",pushTag + "PushRequested")
         
         let message = "Would you like to get Push messages from the " + stop!.stopTitle
         let alert = UIAlertController(title: "Push Notifications", message: message, preferredStyle: .Alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: .Default , handler: { _ in
-            self.appDelegate.setTag(pushTag, value: "true")
+            self.appDelegate.setTag(pushTag + "PushEnabled", value: "true")
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: pushTag + "PushEnabled")
         }))
         
         alert.addAction(UIAlertAction(title: "No", style: .Cancel, handler: { _ in
-            self.appDelegate.setTag(pushTag, value: "false")
+            self.appDelegate.setTag(pushTag + "PushEnabled", value: "false")
+            NSUserDefaults.standardUserDefaults().setBool(false, forKey: pushTag + "PushEnabled")
         }))
         
         presentViewController(alert, animated: true, completion: nil)

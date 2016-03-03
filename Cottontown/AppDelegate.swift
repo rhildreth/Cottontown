@@ -37,7 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     }
     
     let defaults = NSUserDefaults.standardUserDefaults()
-    let initialDefaults = ["goToStopForiBeaconRegion":false, "enableiBeacons":true]
     
     var registeredDelegate: didRegisterUserNotificationSettingsDelegate?
 
@@ -48,6 +47,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         localNotificationSetup(application)
         
         oneSignalPushSetup(launchOptions)
+        
+        restorePushSettings()
         
 //        iBeaconSetup()    // iBeacons not used in app now
         
@@ -120,10 +121,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
         defaults.setBool(true, forKey: "hasPromptedForUserNotifications")
         print("did register for user notifications")
-        
-//        NSNotificationCenter.defaultCenter().postNotificationName("userNotificationSettingsRegistered", object: self)  // ** test notifications.  See also StopPageViewController
-        
         registeredDelegate?.handleDidRegisterUserNotificationSettings()
+
+        //        NSNotificationCenter.defaultCenter().postNotificationName("userNotificationSettingsRegistered", object: self)  // ** test notifications.  See also StopPageViewController
     }
     
     
@@ -344,6 +344,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
         pageControl.backgroundColor = UIColor.whiteColor()
         pageControl.hidesForSinglePage = true
+        
+//        defaults.synchronize()
+        print("vino push enabled:",defaults.boolForKey("vinoPushEnabled"))
     }
     
     func oneSignalPushSetup (launchOptions: [NSObject: AnyObject]?) {
@@ -355,14 +358,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
                 // Check for and read any custom values you added to the notification
                 // This done with the "Additonal Data" section the dashbaord.
                 // OR setting the 'data' field on our REST API.
-                if let customKey = additionalData["launchURL"] as! String? {
-                    NSLog("customKey: %@", customKey)
+                if let urlString = additionalData["urlString"] as! String? {
+                    NSLog("Push URL: %@", urlString)
+                    
+                    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                    let modalVC = storyBoard.instantiateViewControllerWithIdentifier("webVC") as! WebViewController
+                    modalVC.urlString = urlString
+                    modalVC.modalPresentationStyle = UIModalPresentationStyle.FullScreen
+                    self.window?.rootViewController?.presentViewController(modalVC, animated: true, completion: nil)
+                    
                 }
             }
         }, autoRegister: false)
         
         OneSignal.defaultClient().enableInAppAlertNotification(true)
 //        testPush()
+    }
+    
+    func restorePushSettings(){
+        if defaults.boolForKey("vinoPushEnabled"){
+            setTag("vinoPushEnabled", value: "true")
+        } else {
+            setTag("vinoPushEnabled", value: "false")
+        }
+        
+        if defaults.boolForKey("warmouthPushEnabled"){
+            setTag("warmouthPushEnabled", value: "true")
+        } else {
+            setTag("warmouthPushEnabled", value: "false")
+        }
     }
     
     func setTag(tag: String, value: String) {
