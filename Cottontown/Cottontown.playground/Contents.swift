@@ -62,5 +62,11 @@ var evens = Array(1...10).filter { number in
     return number % 2 == 0
 }
 print(evens)
+var b = [Int]?()
+let d = [1,2,3]
+b = nil
+print(b)
+let e = d + (b ?? [])
+
 
 

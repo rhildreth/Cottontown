@@ -8,18 +8,25 @@
 
 import UIKit
 
-class StopPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate, didRegisterUserNotificationSettingsDelegate {
+class StopPageViewController: UIPageViewController, UIPageViewControllerDataSource, didRegisterUserNotificationSettingsDelegate {
     
     var stop: Stop?
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     var pageIndex = 0
+    var allStopContent = [[String: String]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.dataSource = self
+        
+        if let stop = stop {
+            allStopContent = stop.stopPictures + (stop.youTubes ?? [])  // ?? is nil coalescing operator
+        }
         let firstVC = viewControllerAtIndex(0)
-        setViewControllers([firstVC!], direction: .Forward, animated: true, completion: nil)
+        setViewControllers([firstVC!], direction: .Forward, animated: false, completion: nil)
+        
+        
         requestNotificationAuthorization()
         
         // ** test notifications
@@ -42,14 +49,16 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
 //        NSNotificationCenter.defaultCenter().removeObserver(self)
 //    }
     
-    func viewControllerAtIndex(index: Int) -> StopContentViewController? {
+    func viewControllerAtIndex(index: Int) -> UIViewController? {
+        
+        if let _ = (allStopContent[index])["picImage"] {
         let stopContentVC = storyboard?.instantiateViewControllerWithIdentifier("stopContentVC") as! StopContentViewController
-        if let stop = stop {
+        if let _ = stop {
             
             
-            stopContentVC.picImageFileName = (stop.stopPictures[index])["picImage"]!
-            stopContentVC.picText = (stop.stopPictures[index])["picText"]!
-            stopContentVC.maxPages = stop.stopPictures.count
+            stopContentVC.picImageFileName = (allStopContent[index])["picImage"]!
+            stopContentVC.picText = (allStopContent[index])["picText"]!
+            stopContentVC.maxPages = allStopContent.count
             
             
         } else {
@@ -57,6 +66,15 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         }
         stopContentVC.pageIndex = self.pageIndex
         return stopContentVC
+        }else {
+            let youTubeContentVC = storyboard?.instantiateViewControllerWithIdentifier("YouTubeVC") as! YouTubeViewController
+            
+            youTubeContentVC.maxPages = allStopContent.count
+            youTubeContentVC.pageIndex = self.pageIndex
+            
+            youTubeContentVC.youTubeID = (allStopContent[index])["YouTubeID"]!
+            return youTubeContentVC
+        }
         
     }
     
@@ -123,9 +141,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         
-        
-        let stopContentVC = viewController as! StopContentViewController
-        pageIndex = stopContentVC.pageIndex - 1
+        pageIndex -= 1
         
         if pageIndex < 0 {
             pageIndex = 0
@@ -141,19 +157,18 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         
-        guard let stop = stop else {return nil}
+        guard let _ = stop else {return nil}
         
-        let stopContentVC = viewController as! StopContentViewController
-        pageIndex = stopContentVC.pageIndex + 1
+            pageIndex += 1
         
-        if pageIndex > (stop.stopPictures.count) - 1 {
-            pageIndex = (stop.stopPictures.count) - 1
-            return nil
-        } else {
-            return viewControllerAtIndex(pageIndex)
-
-        }        
-    }
+            if pageIndex > (allStopContent.count) - 1  {
+                pageIndex = (allStopContent.count) - 1
+                return nil
+            } else {
+                return viewControllerAtIndex(pageIndex)
+            }
+            
+            }
     
     
 }

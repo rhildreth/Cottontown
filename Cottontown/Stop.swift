@@ -15,8 +15,8 @@ class Stop {
     let stopAddress: String
     let latitude: String
     let longitude: String
-    let youTubeURL: String
-    let youTubeText: String
+    let youTubes: [[String: String]]?
+    
     let stopPictures: [[String: String]]
     let pushTag: String?
     
@@ -26,8 +26,7 @@ class Stop {
         stopAddress = stop["address"] as! String
         latitude = stop["latitude"] as! String
         longitude = stop["longitude"] as! String
-        youTubeURL = stop["YouTube"] as! String
-        youTubeText = stop["YouTubeText"] as! String
+        youTubes = stop["YouTubes"] as? [[String:String]]
         stopPictures = stop["pictures"] as! [[String: String]]
         pushTag = stop["pushTag"] as? String
     }

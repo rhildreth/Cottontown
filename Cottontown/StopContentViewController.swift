@@ -16,6 +16,7 @@ class StopContentViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     
     
+    
     var picImageFileName = ""
     var picText = ""
     var pageIndex = 0

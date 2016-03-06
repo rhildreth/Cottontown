@@ -10,6 +10,6 @@
 #define Cottontown_Bridging_Header_h
 
 #import <OneSignal/OneSignal.h>
-
+#import "YTPlayerView.h"
 
 #endif /* Cottontown_Bridging_Header_h */

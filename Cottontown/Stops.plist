@@ -13,10 +13,6 @@
 		<string>34.015687</string>
 		<key>longitude</key>
 		<string>-81.034971</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -65,10 +61,6 @@ Detail from Map of Columbia, SC and Suburbs 1895, by Neirnsee &amp; LaMotte.
 		<string>34.014960</string>
 		<key>longitude</key>
 		<string>-81.034504</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -94,10 +86,15 @@ This 1950s-era image depicts the congregation shortly after it had moved into it
 		<string>34.014186</string>
 		<key>longitude</key>
 		<string>-81.039019</string>
-		<key>YouTube</key>
-		<string>http://www.youtube.com/watch?v=5xa9MvVe-O0</string>
-		<key>YouTubeText</key>
-		<string>Rick Corbett sets the record straight on the name &quot;Cottontown&quot; .</string>
+		<key>YouTubes</key>
+		<array>
+			<dict>
+				<key>YouTubeText</key>
+				<string>Rick Corbett sets the record straight on the name &quot;Cottontown&quot; .</string>
+				<key>YouTubeID</key>
+				<string>5xa9MvVe-O0</string>
+			</dict>
+		</array>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -181,10 +178,6 @@ Advertised in the 1945 Columbia City Directory, Krispy-Kreme Donuts relocated fr
 		<string>34.020843</string>
 		<key>longitude</key>
 		<string>-81.042078</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -209,10 +202,6 @@ Designed by noted South Carolina architect Heyward S. Singley, this community la
 		<string>34.023305</string>
 		<key>longitude</key>
 		<string>-81.042363</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -234,10 +223,6 @@ Designed by noted South Carolina architect Heyward S. Singley, this community la
 		<string>34.023372</string>
 		<key>longitude</key>
 		<string>-81.040000</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -259,10 +244,15 @@ Designed by noted South Carolina architect Heyward S. Singley, this community la
 		<string>34.022582</string>
 		<key>longitude</key>
 		<string>-81.041309</string>
-		<key>YouTube</key>
-		<string>http://www.youtube.com/watch?v=xHRaSRrvZ6E&amp;feature=player_embedded</string>
-		<key>YouTubeText</key>
-		<string>Gina Barchiesi reflects on Cottontown’s ethnic diversity</string>
+		<key>YouTubes</key>
+		<array>
+			<dict>
+				<key>YouTubeText</key>
+				<string>Gina Barchiesi reflects on Cottontown’s ethnic diversity</string>
+				<key>YouTubeID</key>
+				<string>xHRaSRrvZ6E</string>
+			</dict>
+		</array>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -289,10 +279,6 @@ Playing and enjoying Arabic music was a favorite pastime for (left to right) Nor
 		<string>34.022770</string>
 		<key>longitude</key>
 		<string>-81.039387</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -318,10 +304,6 @@ Detail from Map of Columbia, SC and Vicinity, 1928, by Tomlinson Engineering Com
 		<string>34.021736</string>
 		<key>longitude</key>
 		<string>-81.038524</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -353,10 +335,6 @@ While some employees of the S.C. State Hospital lived on campus, such as patholo
 		<string>34.021281</string>
 		<key>longitude</key>
 		<string>-81.038823</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -378,10 +356,6 @@ While some employees of the S.C. State Hospital lived on campus, such as patholo
 		<string>34.020355</string>
 		<key>longitude</key>
 		<string>-81.039490</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -415,10 +389,6 @@ While some employees of the S.C. State Hospital lived on campus, such as patholo
 		<string>34.019483</string>
 		<key>longitude</key>
 		<string>-81.039461</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -449,10 +419,15 @@ Past presidents of Beth Shalom in the early 1960s: (left to right) M.B. Kahn, Is
 		<string>34.020948</string>
 		<key>longitude</key>
 		<string>-81.037503</string>
-		<key>YouTube</key>
-		<string>http://www.youtube.com/watch?v=SKb52VIru_A&amp;feature=player_embedded</string>
-		<key>YouTubeText</key>
-		<string>John Abdalla recalls the ladies who occupied the Confederate Soldiers Home.</string>
+		<key>YouTubes</key>
+		<array>
+			<dict>
+				<key>YouTubeText</key>
+				<string>John Abdalla recalls the ladies who occupied the Confederate Soldiers Home.</string>
+				<key>YouTubeID</key>
+				<string>SKb52VIru_A</string>
+			</dict>
+		</array>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -474,10 +449,15 @@ Past presidents of Beth Shalom in the early 1960s: (left to right) M.B. Kahn, Is
 		<string>34.017982</string>
 		<key>longitude</key>
 		<string>-81.039315</string>
-		<key>YouTube</key>
-		<string>http://www.youtube.com/watch?v=nA8tzyR0vbM&amp;feature=player_embedded</string>
-		<key>YouTubeText</key>
-		<string>Gina Barchiesi shares how students and other renters added to Cottontown’s community flavor.</string>
+		<key>YouTubes</key>
+		<array>
+			<dict>
+				<key>YouTubeText</key>
+				<string>Gina Barchiesi shares how students and other renters added to Cottontown’s community flavor.</string>
+				<key>YouTubeID</key>
+				<string>nA8tzyR0vbM</string>
+			</dict>
+		</array>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -499,10 +479,6 @@ Past presidents of Beth Shalom in the early 1960s: (left to right) M.B. Kahn, Is
 		<string>34.015200</string>
 		<key>longitude</key>
 		<string>-81.038469</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -524,10 +500,15 @@ Past presidents of Beth Shalom in the early 1960s: (left to right) M.B. Kahn, Is
 		<string>34.017522</string>
 		<key>longitude</key>
 		<string>-81.037878</string>
-		<key>YouTube</key>
-		<string>http://www.youtube.com/watch?v=hz5j4PaRvYw&amp;feature=player_embedded</string>
-		<key>YouTubeText</key>
-		<string>Patti Marinelli details the challenges she and other Cottontown residents overcame to maintain the integrity of their neighborhood.</string>
+		<key>YouTubes</key>
+		<array>
+			<dict>
+				<key>YouTubeText</key>
+				<string>Patti Marinelli details the challenges she and other Cottontown residents overcame to maintain the integrity of their neighborhood.</string>
+				<key>YouTubeID</key>
+				<string>hz5j4PaRvYw</string>
+			</dict>
+		</array>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -549,10 +530,6 @@ Past presidents of Beth Shalom in the early 1960s: (left to right) M.B. Kahn, Is
 		<string>34.018816</string>
 		<key>longitude</key>
 		<string>-81.038411</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -574,10 +551,6 @@ Past presidents of Beth Shalom in the early 1960s: (left to right) M.B. Kahn, Is
 		<string>34.018883</string>
 		<key>longitude</key>
 		<string>-81.037233</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -613,10 +586,6 @@ Nell Orr plays with her baby doll in the front yard of 1413 Victoria Street duri
 		<string>34.017574</string>
 		<key>longitude</key>
 		<string>-81.036798</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -638,10 +607,6 @@ Nell Orr plays with her baby doll in the front yard of 1413 Victoria Street duri
 		<string>34.018111</string>
 		<key>longitude</key>
 		<string>-81.036791</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -663,10 +628,6 @@ Nell Orr plays with her baby doll in the front yard of 1413 Victoria Street duri
 		<string>34.011761</string>
 		<key>longitude</key>
 		<string>-81.029981</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -688,10 +649,6 @@ Nell Orr plays with her baby doll in the front yard of 1413 Victoria Street duri
 		<string>34.013791</string>
 		<key>longitude</key>
 		<string>-81.038170</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -715,10 +672,6 @@ Seen here in the 1940s, Haltiwanger’s was a landmark store along Main Street d
 		<string>34.012739</string>
 		<key>longitude</key>
 		<string>-81.042073</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -740,10 +693,6 @@ Seen here in the 1940s, Haltiwanger’s was a landmark store along Main Street d
 		<string>34.018388</string>
 		<key>longitude</key>
 		<string>-81.041192</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -781,10 +730,6 @@ One of the Columbia’s streetcars makes its way to Eau Claire, north of today�
 		<string>34.020475</string>
 		<key>longitude</key>
 		<string>-81.041964</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -806,10 +751,6 @@ One of the Columbia’s streetcars makes its way to Eau Claire, north of today�
 		<string>34.021413</string>
 		<key>longitude</key>
 		<string>-81.040965</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -858,10 +799,6 @@ Often, family pictures reveal details about the relationship of buildings to one
 		<string>34.02157</string>
 		<key>longitude</key>
 		<string>-81.04058999999999</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -883,10 +820,6 @@ Often, family pictures reveal details about the relationship of buildings to one
 		<string>34.016836</string>
 		<key>longitude</key>
 		<string>-81.040624</string>
-		<key>YouTube</key>
-		<string></string>
-		<key>YouTubeText</key>
-		<string></string>
 		<key>pushTag</key>
 		<string>vino</string>
 		<key>pictures</key>

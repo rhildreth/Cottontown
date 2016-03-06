@@ -28,6 +28,9 @@
 		E4624FCE1C3213C6003023A1 /* StopsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FCD1C3213C6003023A1 /* StopsModel.swift */; };
 		E4624FD21C3231C8003023A1 /* MapPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FD11C3231C8003023A1 /* MapPageViewController.swift */; };
 		E4624FD41C323354003023A1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FD31C323354003023A1 /* MapViewController.swift */; };
+		E463ACD51C89F12D00B68973 /* YouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463ACD41C89F12D00B68973 /* YouTubeViewController.swift */; };
+		E463AD1D1C8A62F900B68973 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E463AD191C8A62F900B68973 /* Assets.bundle */; };
+		E463AD1E1C8A62F900B68973 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E463AD1C1C8A62F900B68973 /* YTPlayerView.m */; };
 		E471CEAE1C74243400214EFF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E471CEAD1C74243400214EFF /* Settings.bundle */; };
 		E472B5F61C87C463003FFBCA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472B5F51C87C463003FFBCA /* WebViewController.swift */; };
 		E4D8E8271C7BFB7D00A17BB2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */; };
@@ -63,6 +66,11 @@
 		E4624FCD1C3213C6003023A1 /* StopsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsModel.swift; sourceTree = "<group>"; };
 		E4624FD11C3231C8003023A1 /* MapPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPageViewController.swift; sourceTree = "<group>"; };
 		E4624FD31C323354003023A1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E463ACD41C89F12D00B68973 /* YouTubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeViewController.swift; sourceTree = "<group>"; };
+		E463AD191C8A62F900B68973 /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
+		E463AD1A1C8A62F900B68973 /* YouTubeiOSPlayerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeiOSPlayerHelper.h; sourceTree = "<group>"; };
+		E463AD1B1C8A62F900B68973 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		E463AD1C1C8A62F900B68973 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 		E471CEAD1C74243400214EFF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E472B5F51C87C463003FFBCA /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -123,6 +131,11 @@
 				E45BA75F1C38C20900454CF7 /* StopAnnotation.swift */,
 				E4624FD11C3231C8003023A1 /* MapPageViewController.swift */,
 				E472B5F51C87C463003FFBCA /* WebViewController.swift */,
+				E463ACD41C89F12D00B68973 /* YouTubeViewController.swift */,
+				E463AD191C8A62F900B68973 /* Assets.bundle */,
+				E463AD1A1C8A62F900B68973 /* YouTubeiOSPlayerHelper.h */,
+				E463AD1B1C8A62F900B68973 /* YTPlayerView.h */,
+				E463AD1C1C8A62F900B68973 /* YTPlayerView.m */,
 				E419ED401C1C6AAA00164E25 /* Main.storyboard */,
 				E419ED451C1C6AAA00164E25 /* LaunchScreen.storyboard */,
 				E471CEAD1C74243400214EFF /* Settings.bundle */,
@@ -220,6 +233,7 @@
 			files = (
 				E419ED471C1C6AAA00164E25 /* LaunchScreen.storyboard in Resources */,
 				E419ED441C1C6AAA00164E25 /* Assets.xcassets in Resources */,
+				E463AD1D1C8A62F900B68973 /* Assets.bundle in Resources */,
 				E471CEAE1C74243400214EFF /* Settings.bundle in Resources */,
 				E419ED4F1C1CC5BD00164E25 /* Stops.plist in Resources */,
 				E419ED421C1C6AAA00164E25 /* Main.storyboard in Resources */,
@@ -243,8 +257,10 @@
 				E419ED3B1C1C6AAA00164E25 /* AppDelegate.swift in Sources */,
 				E419ED511C1CD14100164E25 /* StopCell.swift in Sources */,
 				E4624FCE1C3213C6003023A1 /* StopsModel.swift in Sources */,
+				E463AD1E1C8A62F900B68973 /* YTPlayerView.m in Sources */,
 				E44258501C2798640041A5B4 /* StopPageViewController.swift in Sources */,
 				E411EC1B1C49CBE20081AB9B /* StopsSplitViewController.swift in Sources */,
+				E463ACD51C89F12D00B68973 /* YouTubeViewController.swift in Sources */,
 				E472B5F61C87C463003FFBCA /* WebViewController.swift in Sources */,
 				E45BA7601C38C20900454CF7 /* StopAnnotation.swift in Sources */,
 				E411EC211C4B29200081AB9B /* Notificatons.swift in Sources */,
@@ -364,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Ronald Hildreth (WF7T2EECX3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -387,6 +404,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "53e435ab-bf89-48fa-a9c1-4fe8db71b4f3";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Cottontown-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -395,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -375,6 +375,39 @@
             </objects>
             <point key="canvasLocation" x="737" y="1175"/>
         </scene>
+        <!--YouTube VC-->
+        <scene sceneID="gX8-Lq-CKX">
+            <objects>
+                <viewController storyboardIdentifier="YouTubeVC" title="YouTube VC" id="eCD-9W-r2k" customClass="YouTubeViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dsN-ZR-Ozr"/>
+                        <viewControllerLayoutGuide type="bottom" id="8GY-Qc-HuL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L6P-Zi-kK8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hIN-FQ-hhp" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-TW-yE7">
+                                <rect key="frame" x="281" y="506" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="YouTube" id="npR-5A-K2D"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <connections>
+                        <outlet property="pageControl" destination="Oea-TW-yE7" id="E2q-ZK-R6n"/>
+                        <outlet property="player" destination="hIN-FQ-hhp" id="MiL-jv-5WC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYx-yW-OIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="2508"/>
+        </scene>
         <!--Map-->
         <scene sceneID="0Ag-ok-min">
             <objects>
@@ -468,6 +501,6 @@
         <image name="stops" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
+        <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
 </document>
