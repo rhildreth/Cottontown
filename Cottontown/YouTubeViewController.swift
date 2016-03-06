@@ -18,10 +18,13 @@ class YouTubeViewController: UIViewController {
 
     @IBOutlet weak var player: YTPlayerView!
 
+    @IBOutlet weak var youTubeTextField: UITextView!
     
     @IBOutlet weak var pageControl: UIPageControl!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        youTubeTextField.text = youTubeText
         
         pageControl.currentPage = pageIndex
         pageControl.numberOfPages = maxPages

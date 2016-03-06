@@ -12,7 +12,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
     
     var stop: Stop?
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-    var pageIndex = 0
+ 
     var allStopContent = [[String: String]]()
     
     override func viewDidLoad() {
@@ -64,15 +64,16 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         } else {
             stopContentVC.picText = "No Stop Selected"
         }
-        stopContentVC.pageIndex = self.pageIndex
+        stopContentVC.pageIndex = index
         return stopContentVC
         }else {
             let youTubeContentVC = storyboard?.instantiateViewControllerWithIdentifier("YouTubeVC") as! YouTubeViewController
             
             youTubeContentVC.maxPages = allStopContent.count
-            youTubeContentVC.pageIndex = self.pageIndex
+            youTubeContentVC.pageIndex = index
             
             youTubeContentVC.youTubeID = (allStopContent[index])["YouTubeID"]!
+            youTubeContentVC.youTubeText = (allStopContent[index])["YouTubeText"]!
             return youTubeContentVC
         }
         
@@ -141,6 +142,8 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         
+        var pageIndex = getPageIndexForVC(viewController)
+        
         pageIndex -= 1
         
         if pageIndex < 0 {
@@ -159,6 +162,8 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         
         guard let _ = stop else {return nil}
         
+        var pageIndex = getPageIndexForVC(viewController)
+        
             pageIndex += 1
         
             if pageIndex > (allStopContent.count) - 1  {
@@ -170,5 +175,13 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
             
             }
     
+    func getPageIndexForVC(viewController: UIViewController) -> Int {
+        if let vc = viewController as? StopContentViewController {
+            return vc.pageIndex
+        } else {
+            let vc = viewController as! YouTubeViewController
+            return vc.pageIndex
+        }
+    }
     
 }
