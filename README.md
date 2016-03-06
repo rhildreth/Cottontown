@@ -16,6 +16,7 @@ This is not meant to be a complete list of features, but more to track what thin
 * Support for iPad multitasking
 * Defaults in Settings app
 * Remote push notifications
+* YouTube support using Google youtube-ios-player-helper api
 
 //TODO:
 
@@ -27,14 +28,18 @@ This is not meant to be a complete list of features, but more to track what thin
 * Proper sizing for assets
 * Launch screen
 * Add additional tour stops and content to existing stops
-* Add YouTube support using Google youtube-ios-player-helper api
 * Remove Reveal Framework when debugging is complete
 * Run Instruments to check CPU and memory usage
 * Dynamic text in page views
 * Test functions in Airplane mode
 
 #### Software
+
 I'm using the latest public releases of Xcode (7.2.1) and OSX (10.11.3)
+
+####Pictures
+
+No pictures may be used without written permission from The Historic Columbia Foundation.
 
 ####Acknowledgements
 

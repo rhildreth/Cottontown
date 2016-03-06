@@ -9,6 +9,8 @@ Permission is hereby granted, free of charge, to any person obtaining a copy
  copies of the Software, and to permit persons to whom the Software is
  furnished to do so, subject to the following conditions:
 
+No pictures may be used without written permission from The Historic Columbia Foundation.
+
 The above copyright notice and this permission notice shall be included in all
  copies or substantial portions of the Software.
 
