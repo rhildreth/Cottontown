@@ -21,6 +21,7 @@ class YouTubeViewController: UIViewController {
     @IBOutlet weak var youTubeTextField: UITextView!
     
     @IBOutlet weak var pageControl: UIPageControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +34,10 @@ class YouTubeViewController: UIViewController {
         let playVars = ["rel": 0, "showinfo": 0, "modestbranding": 1]
         
         player.loadWithVideoId(youTubeID, playerVars: playVars)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        youTubeTextField.setContentOffset(CGPointZero, animated: false)
     }
 
 
