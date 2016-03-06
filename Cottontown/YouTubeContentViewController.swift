@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YouTubeViewController: UIViewController {
+class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
     
     var pageIndex = 0
     var maxPages = 0
@@ -36,9 +36,13 @@ class YouTubeViewController: UIViewController {
         player.loadWithVideoId(youTubeID, playerVars: playVars)
     }
     
+    
     override func viewDidLayoutSubviews() {
         youTubeTextField.setContentOffset(CGPointZero, animated: false)
     }
+    
+    
+    
 
 
 }

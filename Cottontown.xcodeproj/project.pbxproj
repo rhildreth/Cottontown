@@ -18,7 +18,7 @@
 		E419ED471C1C6AAA00164E25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E419ED451C1C6AAA00164E25 /* LaunchScreen.storyboard */; };
 		E419ED4F1C1CC5BD00164E25 /* Stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = E419ED4E1C1CC5BD00164E25 /* Stops.plist */; };
 		E419ED511C1CD14100164E25 /* StopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E419ED501C1CD14100164E25 /* StopCell.swift */; };
-		E442584E1C27979B0041A5B4 /* StopContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E442584D1C27979B0041A5B4 /* StopContentViewController.swift */; };
+		E442584E1C27979B0041A5B4 /* PictureContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E442584D1C27979B0041A5B4 /* PictureContentViewController.swift */; };
 		E44258501C2798640041A5B4 /* StopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E442584F1C2798640041A5B4 /* StopPageViewController.swift */; };
 		E44258521C2A2BEF0041A5B4 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44258511C2A2BEF0041A5B4 /* Stop.swift */; };
 		E45BA7601C38C20900454CF7 /* StopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45BA75F1C38C20900454CF7 /* StopAnnotation.swift */; };
@@ -28,7 +28,7 @@
 		E4624FCE1C3213C6003023A1 /* StopsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FCD1C3213C6003023A1 /* StopsModel.swift */; };
 		E4624FD21C3231C8003023A1 /* MapPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FD11C3231C8003023A1 /* MapPageViewController.swift */; };
 		E4624FD41C323354003023A1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FD31C323354003023A1 /* MapViewController.swift */; };
-		E463ACD51C89F12D00B68973 /* YouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463ACD41C89F12D00B68973 /* YouTubeViewController.swift */; };
+		E463ACD51C89F12D00B68973 /* YouTubeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463ACD41C89F12D00B68973 /* YouTubeContentViewController.swift */; };
 		E463AD1D1C8A62F900B68973 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E463AD191C8A62F900B68973 /* Assets.bundle */; };
 		E463AD1E1C8A62F900B68973 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E463AD1C1C8A62F900B68973 /* YTPlayerView.m */; };
 		E471CEAE1C74243400214EFF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E471CEAD1C74243400214EFF /* Settings.bundle */; };
@@ -53,7 +53,7 @@
 		E419ED481C1C6AAA00164E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E419ED4E1C1CC5BD00164E25 /* Stops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stops.plist; sourceTree = "<group>"; };
 		E419ED501C1CD14100164E25 /* StopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopCell.swift; sourceTree = "<group>"; };
-		E442584D1C27979B0041A5B4 /* StopContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopContentViewController.swift; sourceTree = "<group>"; };
+		E442584D1C27979B0041A5B4 /* PictureContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureContentViewController.swift; sourceTree = "<group>"; };
 		E442584F1C2798640041A5B4 /* StopPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopPageViewController.swift; sourceTree = "<group>"; };
 		E44258511C2A2BEF0041A5B4 /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		E44258531C2A2E520041A5B4 /* Cottontown.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Cottontown.playground; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		E4624FCD1C3213C6003023A1 /* StopsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsModel.swift; sourceTree = "<group>"; };
 		E4624FD11C3231C8003023A1 /* MapPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPageViewController.swift; sourceTree = "<group>"; };
 		E4624FD31C323354003023A1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		E463ACD41C89F12D00B68973 /* YouTubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeViewController.swift; sourceTree = "<group>"; };
+		E463ACD41C89F12D00B68973 /* YouTubeContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeContentViewController.swift; sourceTree = "<group>"; };
 		E463AD191C8A62F900B68973 /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
 		E463AD1A1C8A62F900B68973 /* YouTubeiOSPlayerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeiOSPlayerHelper.h; sourceTree = "<group>"; };
 		E463AD1B1C8A62F900B68973 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
@@ -123,7 +123,8 @@
 				E419ED3C1C1C6AAA00164E25 /* StopsTableViewController.swift */,
 				E419ED501C1CD14100164E25 /* StopCell.swift */,
 				E442584F1C2798640041A5B4 /* StopPageViewController.swift */,
-				E442584D1C27979B0041A5B4 /* StopContentViewController.swift */,
+				E442584D1C27979B0041A5B4 /* PictureContentViewController.swift */,
+				E463ACD41C89F12D00B68973 /* YouTubeContentViewController.swift */,
 				E45F21721C46F10D00A9E743 /* ContentImage.swift */,
 				E44258511C2A2BEF0041A5B4 /* Stop.swift */,
 				E4624FCB1C30C76A003023A1 /* MapSplitViewController.swift */,
@@ -131,7 +132,6 @@
 				E45BA75F1C38C20900454CF7 /* StopAnnotation.swift */,
 				E4624FD11C3231C8003023A1 /* MapPageViewController.swift */,
 				E472B5F51C87C463003FFBCA /* WebViewController.swift */,
-				E463ACD41C89F12D00B68973 /* YouTubeViewController.swift */,
 				E463AD191C8A62F900B68973 /* Assets.bundle */,
 				E463AD1A1C8A62F900B68973 /* YouTubeiOSPlayerHelper.h */,
 				E463AD1B1C8A62F900B68973 /* YTPlayerView.h */,
@@ -247,7 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E442584E1C27979B0041A5B4 /* StopContentViewController.swift in Sources */,
+				E442584E1C27979B0041A5B4 /* PictureContentViewController.swift in Sources */,
 				E4624FCC1C30C76A003023A1 /* MapSplitViewController.swift in Sources */,
 				E411EC171C49879A0081AB9B /* CottontownTabBarController.swift in Sources */,
 				E4624FD21C3231C8003023A1 /* MapPageViewController.swift in Sources */,
@@ -260,7 +260,7 @@
 				E463AD1E1C8A62F900B68973 /* YTPlayerView.m in Sources */,
 				E44258501C2798640041A5B4 /* StopPageViewController.swift in Sources */,
 				E411EC1B1C49CBE20081AB9B /* StopsSplitViewController.swift in Sources */,
-				E463ACD51C89F12D00B68973 /* YouTubeViewController.swift in Sources */,
+				E463ACD51C89F12D00B68973 /* YouTubeContentViewController.swift in Sources */,
 				E472B5F61C87C463003FFBCA /* WebViewController.swift in Sources */,
 				E45BA7601C38C20900454CF7 /* StopAnnotation.swift in Sources */,
 				E411EC211C4B29200081AB9B /* Notificatons.swift in Sources */,

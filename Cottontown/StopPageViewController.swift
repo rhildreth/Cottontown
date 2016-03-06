@@ -20,6 +20,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         
         self.dataSource = self
         
+        
         if let stop = stop {
             allStopContent = stop.stopPictures + (stop.youTubes ?? [])  // ?? is nil coalescing operator
         }
@@ -51,8 +52,14 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
     
     func viewControllerAtIndex(index: Int) -> UIViewController? {
         
-        if let _ = (allStopContent[index])["picImage"] {
-        let stopContentVC = storyboard?.instantiateViewControllerWithIdentifier("stopContentVC") as! StopContentViewController
+        guard allStopContent.count > 0 else {
+            let stopContentVC = storyboard?.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
+                stopContentVC.picText = "No Stop Selected"
+            return stopContentVC
+        }
+        
+        if let _ = (allStopContent[index])["picImage"]  {
+        let stopContentVC = storyboard?.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
         if let _ = stop {
             
             
@@ -67,7 +74,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         stopContentVC.pageIndex = index
         return stopContentVC
         }else {
-            let youTubeContentVC = storyboard?.instantiateViewControllerWithIdentifier("YouTubeVC") as! YouTubeViewController
+            let youTubeContentVC = storyboard?.instantiateViewControllerWithIdentifier("YouTubeVC") as! YouTubeContentViewController
             
             youTubeContentVC.maxPages = allStopContent.count
             youTubeContentVC.pageIndex = index
@@ -176,12 +183,13 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
             }
     
     func getPageIndexForVC(viewController: UIViewController) -> Int {
-        if let vc = viewController as? StopContentViewController {
+        if let vc = viewController as? PictureContentViewController {
             return vc.pageIndex
         } else {
-            let vc = viewController as! YouTubeViewController
+            let vc = viewController as! YouTubeContentViewController
             return vc.pageIndex
         }
     }
+    
     
 }

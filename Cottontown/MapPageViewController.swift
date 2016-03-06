@@ -37,10 +37,10 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
         // Dispose of any resources that can be recreated.
     }
     
-    func viewControllerAtIndex(index: Int) -> StopContentViewController? {
+    func viewControllerAtIndex(index: Int) -> PictureContentViewController? {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let stopContentVC = storyboard.instantiateViewControllerWithIdentifier("stopContentVC") as! StopContentViewController
+        let stopContentVC = storyboard.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
         
         if let stop = stop {
             
@@ -62,7 +62,7 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         
-        let stopContentVC = viewController as! StopContentViewController
+        let stopContentVC = viewController as! PictureContentViewController
         pageIndex = stopContentVC.pageIndex - 1
         
         if pageIndex < 0 {
@@ -77,7 +77,7 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
         
         guard let stop = stop else {return nil}
         
-        let stopContentVC = viewController as! StopContentViewController
+        let stopContentVC = viewController as! PictureContentViewController
         pageIndex = stopContentVC.pageIndex + 1
        
         if pageIndex > (stop.stopPictures.count) - 1 {

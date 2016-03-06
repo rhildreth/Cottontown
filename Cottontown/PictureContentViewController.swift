@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StopContentViewController: UIViewController {
+class PictureContentViewController: UIViewController {
     
     @IBOutlet weak var contentImage: UIImageView!
     @IBOutlet weak var contentText: UITextView!

@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="1558" y="-359"/>
         </scene>
-        <!--Stop Content View Controller-->
+        <!--Picture Content View Controller-->
         <scene sceneID="OQO-ne-3t1">
             <objects>
-                <viewController storyboardIdentifier="stopContentVC" id="Fxg-Rp-VQb" customClass="StopContentViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="stopContentVC" id="Fxg-Rp-VQb" customClass="PictureContentViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wod-7d-cdU"/>
                         <viewControllerLayoutGuide type="bottom" id="Rr0-g1-cqz"/>
@@ -378,7 +378,7 @@
         <!--YouTube VC-->
         <scene sceneID="gX8-Lq-CKX">
             <objects>
-                <viewController storyboardIdentifier="YouTubeVC" title="YouTube VC" id="eCD-9W-r2k" customClass="YouTubeViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YouTubeVC" title="YouTube VC" id="eCD-9W-r2k" customClass="YouTubeContentViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dsN-ZR-Ozr"/>
                         <viewControllerLayoutGuide type="bottom" id="8GY-Qc-HuL"/>
@@ -391,8 +391,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="304"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-TW-yE7">
-                                <rect key="frame" x="273" y="514" width="55" height="37"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="10" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-TW-yE7">
+                                <rect key="frame" x="225" y="514" width="151" height="37"/>
                             </pageControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMP-5F-87U">
                                 <rect key="frame" x="0.0" y="309" width="600" height="200"/>
@@ -409,20 +409,65 @@
                                         <exclude reference="8NQ-I6-JLe"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="SuE-Wu-hTV"/>
+                                    </mask>
+                                </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bMP-5F-87U" secondAttribute="trailing" id="46w-Eo-ium"/>
+                            <constraint firstItem="bMP-5F-87U" firstAttribute="width" secondItem="hIN-FQ-hhp" secondAttribute="width" id="5u9-w3-el3"/>
+                            <constraint firstItem="hIN-FQ-hhp" firstAttribute="top" secondItem="L6P-Zi-kK8" secondAttribute="top" id="Bum-kI-ZCi"/>
+                            <constraint firstItem="bMP-5F-87U" firstAttribute="leading" secondItem="hIN-FQ-hhp" secondAttribute="trailing" constant="5" id="EVN-bi-dmM"/>
                             <constraint firstItem="hIN-FQ-hhp" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leading" id="EhC-0h-2Y0"/>
                             <constraint firstItem="8GY-Qc-HuL" firstAttribute="top" secondItem="Oea-TW-yE7" secondAttribute="bottom" id="F0i-g2-9Js"/>
                             <constraint firstItem="bMP-5F-87U" firstAttribute="top" secondItem="hIN-FQ-hhp" secondAttribute="bottom" constant="5" id="JDv-rX-c4y"/>
                             <constraint firstAttribute="trailing" secondItem="hIN-FQ-hhp" secondAttribute="trailing" id="VXK-1J-KJ9"/>
+                            <constraint firstItem="Oea-TW-yE7" firstAttribute="top" secondItem="bMP-5F-87U" secondAttribute="bottom" constant="5" id="XJc-qE-bw8"/>
                             <constraint firstAttribute="trailing" secondItem="bMP-5F-87U" secondAttribute="trailing" id="dlm-Qu-UhN"/>
                             <constraint firstItem="hIN-FQ-hhp" firstAttribute="top" secondItem="L6P-Zi-kK8" secondAttribute="top" id="gGD-Ms-E61"/>
                             <constraint firstItem="Oea-TW-yE7" firstAttribute="centerX" secondItem="L6P-Zi-kK8" secondAttribute="centerX" id="gfb-BE-RVs"/>
-                            <constraint firstItem="Oea-TW-yE7" firstAttribute="top" secondItem="bMP-5F-87U" secondAttribute="bottom" constant="5" id="nOy-Ra-Bdy"/>
+                            <constraint firstItem="bMP-5F-87U" firstAttribute="top" secondItem="dsN-ZR-Ozr" secondAttribute="bottom" id="mNx-c0-qAH"/>
+                            <constraint firstItem="Oea-TW-yE7" firstAttribute="top" secondItem="hIN-FQ-hhp" secondAttribute="bottom" constant="8" id="mgz-uF-rdR">
+                                <variation key="heightClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="hIN-FQ-hhp" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leading" id="pQu-3S-wYW"/>
                             <constraint firstItem="bMP-5F-87U" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leading" id="t4e-JO-btg"/>
+                            <constraint firstItem="Oea-TW-yE7" firstAttribute="top" secondItem="bMP-5F-87U" secondAttribute="bottom" constant="5" id="xvj-aI-jQU"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Bum-kI-ZCi"/>
+                                <exclude reference="pQu-3S-wYW"/>
+                                <exclude reference="46w-Eo-ium"/>
+                                <exclude reference="5u9-w3-el3"/>
+                                <exclude reference="EVN-bi-dmM"/>
+                                <exclude reference="mNx-c0-qAH"/>
+                                <exclude reference="mgz-uF-rdR"/>
+                                <exclude reference="xvj-aI-jQU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Bum-kI-ZCi"/>
+                                <exclude reference="EhC-0h-2Y0"/>
+                                <exclude reference="VXK-1J-KJ9"/>
+                                <exclude reference="gGD-Ms-E61"/>
+                                <include reference="pQu-3S-wYW"/>
+                                <include reference="46w-Eo-ium"/>
+                                <include reference="5u9-w3-el3"/>
+                                <include reference="EVN-bi-dmM"/>
+                                <exclude reference="JDv-rX-c4y"/>
+                                <exclude reference="dlm-Qu-UhN"/>
+                                <include reference="mNx-c0-qAH"/>
+                                <exclude reference="t4e-JO-btg"/>
+                                <include reference="mgz-uF-rdR"/>
+                                <include reference="xvj-aI-jQU"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="YouTube" id="npR-5A-K2D"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
