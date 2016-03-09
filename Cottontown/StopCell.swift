@@ -25,7 +25,7 @@ class StopCell: UITableViewCell {
         
         let firstStopPictureTitle = (stop.stopPictures[0])["picImage"]!
 //        let stopImageFileName = firstStopPictureTitle + "_tn"
-        let stopImageFileName = firstStopPictureTitle
+        let stopImageFileName = firstStopPictureTitle + ".jpg"
         stopCellImage.image = UIImage(named: stopImageFileName)
         
         stopTitle.text = stop.stopTitle

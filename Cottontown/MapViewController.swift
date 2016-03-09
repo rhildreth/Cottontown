@@ -128,7 +128,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         pinView.canShowCallout = true
         
         let firstStopPictureTitle = (allStops[stopNumber - 1].stopPictures[0])["picImage"]!
-        let stopImageFileName = firstStopPictureTitle + "_tn"
+        let stopImageFileName = firstStopPictureTitle + ".jpg"
         let leftImageView = UIImageView(frame: CGRectMake(0, 0, 53, 53))
         leftImageView.image = UIImage(named: stopImageFileName)
         pinView.leftCalloutAccessoryView = leftImageView

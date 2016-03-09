@@ -20,7 +20,7 @@ class ContentImage: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let contentImage = UIImage(named: contentImageName!)
+        let contentImage = UIImage(named: contentImageName! + ".jpg")
         imageView.image = contentImage
         
         scrollView.delegate = self
