@@ -36,6 +36,7 @@
 		E4D8E8271C7BFB7D00A17BB2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */; };
 		E4D8E8291C7BFBE200A17BB2 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */; };
 		E4D8E82C1C83146700A17BB2 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D8E82B1C83146700A17BB2 /* Protocols.swift */; };
+		E4E3F2251C8F2497006456AB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E3F2241C8F2497006456AB /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneSignal.framework; sourceTree = "<group>"; };
 		E4D8E82A1C7BFD6B00A17BB2 /* Cottontown-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cottontown-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		E4D8E82B1C83146700A17BB2 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		E4E3F2241C8F2497006456AB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4E3F2251C8F2497006456AB /* ImageIO.framework in Frameworks */,
 				E4D8E8271C7BFB7D00A17BB2 /* SystemConfiguration.framework in Frameworks */,
 				E411EC1D1C4B0D370081AB9B /* CoreLocation.framework in Frameworks */,
 				E4624FC81C2F8A4E003023A1 /* MapKit.framework in Frameworks */,
@@ -97,6 +100,7 @@
 		E419ED2E1C1C6AAA00164E25 = {
 			isa = PBXGroup;
 			children = (
+				E4E3F2241C8F2497006456AB /* ImageIO.framework */,
 				E419ED391C1C6AAA00164E25 /* Cottontown */,
 				E419ED381C1C6AAA00164E25 /* Products */,
 			);

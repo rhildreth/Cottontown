@@ -24,12 +24,12 @@ class StopCell: UITableViewCell {
     func configureCellForStop(stop:Stop) {
         
         let firstStopPictureTitle = (stop.stopPictures[0])["picImage"]!
-        let stopImageFileName = firstStopPictureTitle + "_tn"
+//        let stopImageFileName = firstStopPictureTitle + "_tn"
+        let stopImageFileName = firstStopPictureTitle
         stopCellImage.image = UIImage(named: stopImageFileName)
         
         stopTitle.text = stop.stopTitle
         stopAddress.text = stop.stopAddress
-        
         stopTitle.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
         stopTitle.numberOfLines = 0
         stopAddress.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)

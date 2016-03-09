@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Cottontown/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.2.1" build-num="7C1002"/>
+    </header>
+    <body/>
+  </file>
+  <file original="Cottontown/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.2.1" build-num="7C1002"/>
+    </header>
+    <body>
+      <trans-unit id="2hm-If-TGa.title">
+        <source>Map</source>
+        <note>Class = "UITabBarItem"; title = "Map"; ObjectID = "2hm-If-TGa";</note>
+      </trans-unit>
+      <trans-unit id="7bK-jq-Zjz.title">
+        <source>Master</source>
+        <note>Class = "UITableViewController"; title = "Master"; ObjectID = "7bK-jq-Zjz";</note>
+      </trans-unit>
+      <trans-unit id="KEc-2K-4F6.title">
+        <source>Cottontown Map</source>
+        <note>Class = "UINavigationItem"; title = "Cottontown Map"; ObjectID = "KEc-2K-4F6";</note>
+      </trans-unit>
+      <trans-unit id="Olm-0z-4wE.text">
+        <source>StopTitle</source>
+        <note>Class = "UILabel"; text = "StopTitle"; ObjectID = "Olm-0z-4wE";</note>
+      </trans-unit>
+      <trans-unit id="RMx-3f-FxP.title">
+        <source>Master</source>
+        <note>Class = "UINavigationController"; title = "Master"; ObjectID = "RMx-3f-FxP";</note>
+      </trans-unit>
+      <trans-unit id="UgJ-NN-3g1.title">
+        <source>Title</source>
+        <note>Class = "UINavigationItem"; title = "Title"; ObjectID = "UgJ-NN-3g1";</note>
+      </trans-unit>
+      <trans-unit id="WLL-kY-Tvk.text">
+        <source>StopAddress</source>
+        <note>Class = "UILabel"; text = "StopAddress"; ObjectID = "WLL-kY-Tvk";</note>
+      </trans-unit>
+      <trans-unit id="WhH-Op-Eq2.title">
+        <source>Stops</source>
+        <note>Class = "UITabBarItem"; title = "Stops"; ObjectID = "WhH-Op-Eq2";</note>
+      </trans-unit>
+      <trans-unit id="Zdf-7t-Un8.title">
+        <source>Cottontown Tour Stops</source>
+        <note>Class = "UINavigationItem"; title = "Cottontown Tour Stops"; ObjectID = "Zdf-7t-Un8";</note>
+      </trans-unit>
+      <trans-unit id="b4z-fy-1b9.text">
+        <source>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</source>
+        <note>Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "b4z-fy-1b9";</note>
+      </trans-unit>
+      <trans-unit id="bMP-5F-87U.text">
+        <source>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</source>
+        <note>Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "bMP-5F-87U";</note>
+      </trans-unit>
+      <trans-unit id="eCD-9W-r2k.title">
+        <source>YouTube VC</source>
+        <note>Class = "UIViewController"; title = "YouTube VC"; ObjectID = "eCD-9W-r2k";</note>
+      </trans-unit>
+      <trans-unit id="i50-Yg-Juy.title">
+        <source>Stops</source>
+        <note>Class = "UITabBarItem"; title = "Stops"; ObjectID = "i50-Yg-Juy";</note>
+      </trans-unit>
+      <trans-unit id="npR-5A-K2D.title">
+        <source>YouTube</source>
+        <note>Class = "UITabBarItem"; title = "YouTube"; ObjectID = "npR-5A-K2D";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Cottontown/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.2.1" build-num="7C1002"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>2.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

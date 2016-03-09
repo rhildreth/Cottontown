@@ -141,10 +141,15 @@ This 1950s-era image depicts the congregation shortly after it had moved into it
 		<string>34.019877</string>
 		<key>longitude</key>
 		<string>-81.041589</string>
-		<key>YouTube</key>
-		<string>http://www.youtube.com/watch?v=KFZ4yTcDUQM&amp;feature=player_embedded</string>
-		<key>YouTubeText</key>
-		<string>John Abdalla describes Main Street’s bustling post-war businesses.</string>
+		<key>YouTubes</key>
+		<array>
+			<dict>
+				<key>YouTubeText</key>
+				<string>John Abdalla describes Main Street’s bustling post-war businesses.</string>
+				<key>YouTubeID</key>
+				<string>KFZ4yTcDUQM</string>
+			</dict>
+		</array>
 		<key>pictures</key>
 		<array>
 			<dict>

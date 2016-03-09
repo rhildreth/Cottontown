@@ -15,7 +15,7 @@ class StopsTableViewController: UITableViewController {
     
     let allStops = StopsModel.sharedInstance.allStops
     
-    
+    var count: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -75,12 +75,18 @@ class StopsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("StopCell", forIndexPath: indexPath) as! StopCell
 
-        cell.configureCellForStop(allStops[indexPath.row])
+//        cell.configureCellForStop(allStops[indexPath.row])
+        
+//        cell.layer.shouldRasterize = true
+//        cell.layer.rasterizationScale = UIScreen.mainScreen().scale
         
         return cell
     }
     
-
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        (cell as! StopCell).configureCellForStop(allStops[indexPath.row])
+    }
     override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
         
     }
