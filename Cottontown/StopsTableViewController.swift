@@ -85,7 +85,7 @@ class StopsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         
-        (cell as! StopCell).configureCellForStop(allStops[indexPath.row])
+        (cell as! StopCell).configureCell(cell as! StopCell, forStop: allStops[indexPath.row])
     }
     override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
         
