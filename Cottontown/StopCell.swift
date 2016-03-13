@@ -25,15 +25,20 @@ class StopCell: UITableViewCell {
         
         let firstStopPictureTitle = (stop.stopPictures[0])["picImage"]!
 //        let stopImageFileName = firstStopPictureTitle + "_tn"
-        let stopImageFileName = firstStopPictureTitle
-        stopCellImage.image = UIImage(named: stopImageFileName)
+//        let stopImageFileName = firstStopPictureTitle
+//        stopCellImage.image = UIImage(named: stopImageFileName)
+//        print("stop cell bounds:",stopCellImage.bounds)
         
-        stopTitle.text = stop.stopTitle
-        stopAddress.text = stop.stopAddress
-        stopTitle.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
-        stopTitle.numberOfLines = 0
-        stopAddress.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
-        stopAddress.numberOfLines = 0
+//        stopTitle.text = stop.stopTitle
+//        stopAddress.text = stop.stopAddress
+//        stopTitle.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
+//        stopTitle.numberOfLines = 0
+//        stopAddress.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+//        stopAddress.numberOfLines = 0
+        
+        let stopImageFileName = firstStopPictureTitle + "_tn@2x"
+        let bundlePath = NSBundle.mainBundle().pathForResource(stopImageFileName, ofType: "png")
+        stopCellImage.image = UIImage(contentsOfFile: bundlePath!)
     }
 
 }
