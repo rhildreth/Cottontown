@@ -24,4 +24,8 @@ class StopsModel {
             allStops.append(Stop(stop: plistStop))
         }
     }
+    
+    class func resizeImage(fileName file: String, maxSize: Float, completionHandler handler: (image: UIImage) -> Void) {
+        handler()
+    }
 }

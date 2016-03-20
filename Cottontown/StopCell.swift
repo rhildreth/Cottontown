@@ -9,6 +9,7 @@
 import UIKit
 import ImageIO
 
+
 class StopCell: UITableViewCell {
 
     @IBOutlet weak var stopCellImage: UIImageView!
@@ -36,33 +37,48 @@ class StopCell: UITableViewCell {
         stopTitle.numberOfLines = 0
         stopAddress.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
         stopAddress.numberOfLines = 0
+        
+
+        print("cell content view bounds", cell.contentView.bounds)
+        print("cell image width:", cell.stopCellImage.bounds.width)
+        print("cell image height:", cell.stopCellImage.bounds.height)
+        
     }
     
     func thumbnailForFile(fileName: String, inCell cell: StopCell) -> UIImage? {
+        print(fileName)
         let url = NSBundle.mainBundle().URLForResource(fileName, withExtension: "jpg")!
         let src = CGImageSourceCreateWithURL(url, nil)!
         let scale = UIScreen.mainScreen().scale
-        print("scale:",scale)
-        let scaledWidth = cell.stopCellImage.bounds.width * scale
-        print("cell width:", cell.stopCellImage.bounds.width)
-        print("cell height:", cell.stopCellImage.bounds.height)
-        print("scaledWidth:",scaledWidth)
         
-        let dict : [NSObject:AnyObject] = [
+        
+        let maxPixelSize = self.stopCellImage.bounds.width * scale
+        
+
+        
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0)) {
+            
+            let dict : [NSObject:AnyObject] = [
             kCGImageSourceShouldAllowFloat : true,
             kCGImageSourceCreateThumbnailWithTransform : true,
             kCGImageSourceCreateThumbnailFromImageAlways : true,
-            kCGImageSourceThumbnailMaxPixelSize : scaledWidth
+            kCGImageSourceThumbnailMaxPixelSize : maxPixelSize
         ]
         
         let imref = CGImageSourceCreateThumbnailAtIndex(src, 0, dict)!
         let im = UIImage(CGImage: imref, scale: scale, orientation: .Up)
-        stopCellImage.image = im
-        print("image:",im)
-        print("image size",im.size)
-        print("**********")
         
-        return im
+            dispatch_async(dispatch_get_main_queue()) {
+                self.stopCellImage.image = im
+                print("image:",im)
+                
+            }
+        }
+        
+        
+        print("**********")
+        return nil
+        
     }
 
 }
