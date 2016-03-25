@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="C4j-Ad-sZy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="C4j-Ad-sZy">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -42,16 +41,17 @@
         <scene sceneID="smW-Zh-WAh">
             <objects>
                 <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="StopsTableViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="r7i-6Z-zg0">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" id="r7i-6Z-zg0">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StopCell" rowHeight="100" id="WCw-Qf-5nD" userLabel="StopCell" customClass="StopCell" customModule="Cottontown" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="22" width="600" height="100"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StopCell" rowHeight="94" id="WCw-Qf-5nD" userLabel="StopCell" customClass="StopCell" customModule="Cottontown" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="22" width="600" height="94"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="93"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7xE-Cc-a2D" userLabel="Image Stack View">
@@ -66,7 +66,7 @@
                                             <rect key="frame" x="203" y="0.0" width="397" height="99"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StopTitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Olm-0z-4wE">
-                                                    <rect key="frame" x="0.0" y="0.0" width="397" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="458" height="48"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -74,7 +74,7 @@
                                                     <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StopAddress" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WLL-kY-Tvk">
-                                                    <rect key="frame" x="0.0" y="50" width="397" height="49"/>
+                                                    <rect key="frame" x="0.0" y="48" width="458" height="45"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -82,21 +82,23 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Olm-0z-4wE" secondAttribute="trailing" id="HnF-TA-6AM"/>
-                                                <constraint firstAttribute="trailing" secondItem="WLL-kY-Tvk" secondAttribute="trailing" id="Mvk-PZ-5j8"/>
+                                                <constraint firstAttribute="bottom" secondItem="WLL-kY-Tvk" secondAttribute="bottom" id="Umq-LK-jmZ"/>
+                                                <constraint firstItem="Olm-0z-4wE" firstAttribute="leading" secondItem="Gcx-LG-oP0" secondAttribute="leading" id="Y1h-Oi-vI2"/>
+                                                <constraint firstItem="WLL-kY-Tvk" firstAttribute="leading" secondItem="Gcx-LG-oP0" secondAttribute="leading" id="ZrU-F1-blK"/>
+                                                <constraint firstAttribute="trailing" secondItem="WLL-kY-Tvk" secondAttribute="trailing" id="f73-Mm-jrJ"/>
+                                                <constraint firstItem="Olm-0z-4wE" firstAttribute="top" secondItem="Gcx-LG-oP0" secondAttribute="top" id="fQI-d0-pNE"/>
+                                                <constraint firstAttribute="trailing" secondItem="Olm-0z-4wE" secondAttribute="trailing" id="qc0-Zs-peE"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="7xE-Cc-a2D" secondAttribute="bottom" id="EmA-U1-gZP"/>
-                                        <constraint firstItem="Gcx-LG-oP0" firstAttribute="width" secondItem="7xE-Cc-a2D" secondAttribute="width" multiplier="2" id="FQ4-Pg-Pip"/>
-                                        <constraint firstItem="Gcx-LG-oP0" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="top" id="Fwf-72-QQm"/>
-                                        <constraint firstItem="7xE-Cc-a2D" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="top" id="RtB-RW-YJb"/>
-                                        <constraint firstAttribute="trailing" secondItem="Gcx-LG-oP0" secondAttribute="trailing" id="YRP-BA-Pxi"/>
-                                        <constraint firstItem="Gcx-LG-oP0" firstAttribute="leading" secondItem="7xE-Cc-a2D" secondAttribute="trailing" constant="5" id="bUt-7D-9JH"/>
-                                        <constraint firstItem="7xE-Cc-a2D" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leading" id="jQQ-4f-LAW"/>
-                                        <constraint firstAttribute="bottom" secondItem="Gcx-LG-oP0" secondAttribute="bottom" id="rqQ-CM-TL3"/>
+                                        <constraint firstItem="Gcx-LG-oP0" firstAttribute="leading" secondItem="pam-le-MnY" secondAttribute="trailing" constant="10" id="C9P-CK-IMf"/>
+                                        <constraint firstAttribute="bottom" secondItem="Gcx-LG-oP0" secondAttribute="bottom" id="F4H-Gs-q1u"/>
+                                        <constraint firstItem="Gcx-LG-oP0" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="top" id="UQ5-A6-HBK"/>
+                                        <constraint firstAttribute="trailing" secondItem="Gcx-LG-oP0" secondAttribute="trailing" id="cl0-WB-lEC"/>
+                                        <constraint firstItem="pam-le-MnY" firstAttribute="centerY" secondItem="37f-cq-3Eg" secondAttribute="centerY" id="qx1-yg-Q9f"/>
+                                        <constraint firstItem="pam-le-MnY" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leading" id="ydQ-6Z-gKe"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -11,11 +11,12 @@
 
 import UIKit
 
+
 class StopsTableViewController: UITableViewController {
     
     let allStops = StopsModel.sharedInstance.allStops
-    
-    var count: Int = 0
+    let scale = UIScreen.mainScreen().scale
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -74,19 +75,52 @@ class StopsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("StopCell", forIndexPath: indexPath) as! StopCell
-
-//        cell.configureCellForStop(allStops[indexPath.row])
         
-//        cell.layer.shouldRasterize = true
-//        cell.layer.rasterizationScale = UIScreen.mainScreen().scale
+        cell.layoutIfNeeded()
+        cell.stopCellImage.image = nil
+        
+//        let maxPixelWidth = cell.stopCellImage.bounds.width * scale
+        
+        let stop: Stop = allStops[indexPath.row]
+        let stopFileName = (stop.stopPictures[0])["picImage"]!
+        StopsModel.resizeImage(fileName: stopFileName + "_tn@2x", maxSize: 264.0) { (image) -> Void in
+            guard let _ = tableView.cellForRowAtIndexPath(indexPath) else {
+                print("found nil myCell:")
+                return
+            }
+            cell.stopCellImage.image = image
+            
+        }
+        
+//        let startTime = CACurrentMediaTime()
+//        let url = NSBundle.mainBundle().URLForResource(stopFileName + "_tn", withExtension: "png")!
+//        cell.stopCellImage.hnk_setImageFromURL(url)
+        
+        
+//        let startTime = CACurrentMediaTime()
+//        
+//        let bundlePath = NSBundle.mainBundle().pathForResource(stopFileName + "_tn", ofType: "png")
+//        
+//        cell.stopCellImage.image = UIImage(contentsOfFile: bundlePath!)
+        
+//        let elapsedTime = (CACurrentMediaTime() - startTime) * 1000
+//        print("image time for row",indexPath.row,"=", elapsedTime ,"ms")
+        
+        cell.stopTitle.text = stop.stopTitle
+        cell.stopAddress.text = stop.stopAddress
+        cell.stopTitle.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
+        cell.stopTitle.numberOfLines = 0
+        cell.stopAddress.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        cell.stopAddress.numberOfLines = 0
         
         return cell
     }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         
-        (cell as! StopCell).configureCellForStop(allStops[indexPath.row])
     }
+    
+    
     override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
         
     }

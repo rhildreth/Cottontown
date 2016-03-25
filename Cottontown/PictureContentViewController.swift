@@ -25,7 +25,7 @@ class PictureContentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        contentImage.image = UIImage(named: picImageFileName)
+        contentImage.image = UIImage(named: picImageFileName + ".jpg")
         contentText.text = picText
         
         contentText.selectable = false  // fixes apparent bug in IB preventing changing fonts unless selectable box is checked.  
