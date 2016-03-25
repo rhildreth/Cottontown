@@ -54,16 +54,16 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="93"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7xE-Cc-a2D" userLabel="Image Stack View">
-                                            <rect key="frame" x="0.0" y="0.0" width="198" height="99"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pam-le-MnY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="198" height="99"/>
-                                                </imageView>
-                                            </subviews>
-                                        </stackView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Gcx-LG-oP0" userLabel="Label Stack View">
-                                            <rect key="frame" x="203" y="0.0" width="397" height="99"/>
+                                        <imageView autoresizesSubviews="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pam-le-MnY">
+                                            <rect key="frame" x="0.0" y="0.0" width="132" height="94"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="94" id="THC-hx-CLd"/>
+                                                <constraint firstAttribute="width" constant="132" id="kG5-zd-LfG"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Gcx-LG-oP0" userLabel="Label Stack View">
+                                            <rect key="frame" x="142" y="0.0" width="458" height="93"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StopTitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Olm-0z-4wE">
                                                     <rect key="frame" x="0.0" y="0.0" width="458" height="48"/>

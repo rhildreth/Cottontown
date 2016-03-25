@@ -67,8 +67,8 @@
 		E40C91A41CA1665500F40EF5 /* site9a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91681CA1665500F40EF5 /* site9a_tn.png */; };
 		E40C91A51CA1665500F40EF5 /* site9a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91691CA1665500F40EF5 /* site9a_tn@2x.png */; };
 		E40C91A91CA1A13000F40EF5 /* site29a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91A71CA1A13000F40EF5 /* site29a_tn@2x.png */; };
-		E40C91AB1CA1A1DE00F40EF5 /* site29a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91AA1CA1A1DE00F40EF5 /* site29a_tn.png */; };
 		E40C91AD1CA4DCED00F40EF5 /* site6a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91AC1CA4DCED00F40EF5 /* site6a_tn@2x.png */; };
+		E40C91AF1CA54E8B00F40EF5 /* site29a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91AE1CA54E8B00F40EF5 /* site29a_tn.png */; };
 		E411EC171C49879A0081AB9B /* CottontownTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */; };
 		E411EC1B1C49CBE20081AB9B /* StopsSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */; };
 		E411EC1D1C4B0D370081AB9B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */; };
@@ -213,8 +213,8 @@
 		E40C91681CA1665500F40EF5 /* site9a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site9a_tn.png; sourceTree = "<group>"; };
 		E40C91691CA1665500F40EF5 /* site9a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site9a_tn@2x.png"; sourceTree = "<group>"; };
 		E40C91A71CA1A13000F40EF5 /* site29a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site29a_tn@2x.png"; sourceTree = "<group>"; };
-		E40C91AA1CA1A1DE00F40EF5 /* site29a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site29a_tn.png; sourceTree = "<group>"; };
 		E40C91AC1CA4DCED00F40EF5 /* site6a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site6a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91AE1CA54E8B00F40EF5 /* site29a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site29a_tn.png; sourceTree = "<group>"; };
 		E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CottontownTabBarController.swift; sourceTree = "<group>"; };
 		E411EC181C49B09F0081AB9B /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<absolute>"; };
 		E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsSplitViewController.swift; sourceTree = "<group>"; };
@@ -371,7 +371,7 @@
 				E40C91571CA1665500F40EF5 /* site27e_tn@2x.png */,
 				E40C91581CA1665500F40EF5 /* site28a_tn.png */,
 				E40C91591CA1665500F40EF5 /* site28a_tn@2x.png */,
-				E40C91AA1CA1A1DE00F40EF5 /* site29a_tn.png */,
+				E40C91AE1CA54E8B00F40EF5 /* site29a_tn.png */,
 				E40C91A71CA1A13000F40EF5 /* site29a_tn@2x.png */,
 				E40C915A1CA1665500F40EF5 /* site2a_tn.png */,
 				E40C915B1CA1665500F40EF5 /* site2a_tn@2x.png */,
@@ -664,7 +664,7 @@
 				E43CA0F71C8FC5180051139B /* site14a.jpg in Resources */,
 				E419ED441C1C6AAA00164E25 /* Assets.xcassets in Resources */,
 				E43CA11F1C9136590051139B /* site29a.jpg in Resources */,
-				E40C91AB1CA1A1DE00F40EF5 /* site29a_tn.png in Resources */,
+				E40C91AF1CA54E8B00F40EF5 /* site29a_tn.png in Resources */,
 				E40C919E1CA1665500F40EF5 /* site6a_tn.png in Resources */,
 				E43CA1201C9136590051139B /* site29b.jpg in Resources */,
 				E43CA0E91C8FC5180051139B /* site4a.jpg in Resources */,
