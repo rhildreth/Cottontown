@@ -10,7 +10,7 @@
 // This is the initial Stops Table view shown to the user when the app loads.
 
 import UIKit
-import Haneke
+
 
 class StopsTableViewController: UITableViewController {
     
@@ -79,20 +79,32 @@ class StopsTableViewController: UITableViewController {
         cell.layoutIfNeeded()
         cell.stopCellImage.image = nil
         
-        let maxPixelWidth = cell.stopCellImage.bounds.width * scale
+//        let maxPixelWidth = cell.stopCellImage.bounds.width * scale
         
         let stop: Stop = allStops[indexPath.row]
         let stopFileName = (stop.stopPictures[0])["picImage"]!
-//        StopsModel.resizeImage(fileName: stopFileName, maxSize: maxPixelWidth) { (image) -> Void in
-//            guard let _ = tableView.cellForRowAtIndexPath(indexPath) else {
-//                print("found nil myCell:")
-//                return
-//            }
-//            cell.stopCellImage.image = image
-//            
-//        }
-        let url = NSBundle.mainBundle().URLForResource(stopFileName, withExtension: "jpg")!
-        cell.stopCellImage.hnk_setImageFromURL(url)
+        StopsModel.resizeImage(fileName: stopFileName + "_tn@2x", maxSize: 264.0) { (image) -> Void in
+            guard let _ = tableView.cellForRowAtIndexPath(indexPath) else {
+                print("found nil myCell:")
+                return
+            }
+            cell.stopCellImage.image = image
+            
+        }
+        
+//        let startTime = CACurrentMediaTime()
+//        let url = NSBundle.mainBundle().URLForResource(stopFileName + "_tn", withExtension: "png")!
+//        cell.stopCellImage.hnk_setImageFromURL(url)
+        
+        
+//        let startTime = CACurrentMediaTime()
+//        
+//        let bundlePath = NSBundle.mainBundle().pathForResource(stopFileName + "_tn", ofType: "png")
+//        
+//        cell.stopCellImage.image = UIImage(contentsOfFile: bundlePath!)
+        
+//        let elapsedTime = (CACurrentMediaTime() - startTime) * 1000
+//        print("image time for row",indexPath.row,"=", elapsedTime ,"ms")
         
         cell.stopTitle.text = stop.stopTitle
         cell.stopAddress.text = stop.stopAddress
