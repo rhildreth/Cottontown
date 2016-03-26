@@ -26,9 +26,9 @@ class StopsModel {
         }
     }
     
-    class func resizeImage(fileName file: String, maxPixelSize: CGFloat, completionHandler handler: (image: UIImage) -> Void) {
+    class func resizeImage(fileName file: String, type: String, maxPixelSize: CGFloat, completionHandler handler: (image: UIImage) -> Void) {
         
-        let url = NSBundle.mainBundle().URLForResource(file, withExtension: "png")!
+        let url = NSBundle.mainBundle().URLForResource(file, withExtension: type)!
         print(url)
         let src = CGImageSourceCreateWithURL(url, nil)!
         

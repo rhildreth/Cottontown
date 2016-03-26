@@ -87,7 +87,7 @@ class StopsTableViewController: UITableViewController {
         
         // Called to decompress image in the background prior 
         // to assigning to cell to improve scroll performance
-        StopsModel.resizeImage(fileName: stopFileName + suffix, maxPixelSize: imagePixelWidth) { (image) -> Void in
+        StopsModel.resizeImage(fileName: stopFileName + suffix, type: "png", maxPixelSize: imagePixelWidth) { (image) -> Void in
             guard let _ = tableView.cellForRowAtIndexPath(indexPath) else {
                 print("found nil myCell:")
                 return
