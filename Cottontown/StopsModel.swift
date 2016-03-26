@@ -26,7 +26,7 @@ class StopsModel {
         }
     }
     
-    class func resizeImage(fileName file: String, maxSize: CGFloat, completionHandler handler: (image: UIImage) -> Void) {
+    class func resizeImage(fileName file: String, maxPixelSize: CGFloat, completionHandler handler: (image: UIImage) -> Void) {
         
         let url = NSBundle.mainBundle().URLForResource(file, withExtension: "png")!
         print(url)
@@ -40,7 +40,7 @@ class StopsModel {
                 kCGImageSourceShouldAllowFloat : true,
                 kCGImageSourceCreateThumbnailWithTransform : true,
                 kCGImageSourceCreateThumbnailFromImageAlways : true,
-                kCGImageSourceThumbnailMaxPixelSize : maxSize
+                kCGImageSourceThumbnailMaxPixelSize : maxPixelSize
             ]
             
             let imref = CGImageSourceCreateThumbnailAtIndex(src, 0, dict)!

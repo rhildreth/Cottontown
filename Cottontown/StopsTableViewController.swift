@@ -16,18 +16,19 @@ class StopsTableViewController: UITableViewController {
     
     let allStops = StopsModel.sharedInstance.allStops
     let scale = UIScreen.mainScreen().scale
+    var suffix = ""
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-//        self.navigationItem.leftBarButtonItem = self.editButtonItem()
-
-//        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-//        self.navigationItem.rightBarButtonItem = addButton
-//        if let split = self.splitViewController {
-//            let controllers = split.viewControllers
-//            self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
-//        }
+        
+        switch scale {
+        case 1.0:
+            suffix = "_tn"  // Only used on iPad 2
+        case 2.0:
+            suffix = "_tn@2x"
+        default:
+            suffix = "_tn@3x"
+        }
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -79,11 +80,14 @@ class StopsTableViewController: UITableViewController {
         cell.layoutIfNeeded()
         cell.stopCellImage.image = nil
         
-//        let maxPixelWidth = cell.stopCellImage.bounds.width * scale
-        
         let stop: Stop = allStops[indexPath.row]
         let stopFileName = (stop.stopPictures[0])["picImage"]!
-        StopsModel.resizeImage(fileName: stopFileName + "_tn@2x", maxSize: 264.0) { (image) -> Void in
+        
+        let imagePixelWidth = cell.stopCellImage.bounds.width * scale
+        
+        // Called to decompress image in the background prior 
+        // to assigning to cell to improve scroll performance
+        StopsModel.resizeImage(fileName: stopFileName + suffix, maxPixelSize: imagePixelWidth) { (image) -> Void in
             guard let _ = tableView.cellForRowAtIndexPath(indexPath) else {
                 print("found nil myCell:")
                 return
@@ -91,20 +95,6 @@ class StopsTableViewController: UITableViewController {
             cell.stopCellImage.image = image
             
         }
-        
-//        let startTime = CACurrentMediaTime()
-//        let url = NSBundle.mainBundle().URLForResource(stopFileName + "_tn", withExtension: "png")!
-//        cell.stopCellImage.hnk_setImageFromURL(url)
-        
-        
-//        let startTime = CACurrentMediaTime()
-//        
-//        let bundlePath = NSBundle.mainBundle().pathForResource(stopFileName + "_tn", ofType: "png")
-//        
-//        cell.stopCellImage.image = UIImage(contentsOfFile: bundlePath!)
-        
-//        let elapsedTime = (CACurrentMediaTime() - startTime) * 1000
-//        print("image time for row",indexPath.row,"=", elapsedTime ,"ms")
         
         cell.stopTitle.text = stop.stopTitle
         cell.stopAddress.text = stop.stopAddress
@@ -116,11 +106,7 @@ class StopsTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        
-    }
-    
-    
+
     override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
         
     }
