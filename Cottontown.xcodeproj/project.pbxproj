@@ -69,6 +69,9 @@
 		E40C91A91CA1A13000F40EF5 /* site29a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91A71CA1A13000F40EF5 /* site29a_tn@2x.png */; };
 		E40C91AD1CA4DCED00F40EF5 /* site6a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91AC1CA4DCED00F40EF5 /* site6a_tn@2x.png */; };
 		E40C91AF1CA54E8B00F40EF5 /* site29a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91AE1CA54E8B00F40EF5 /* site29a_tn.png */; };
+		E40C91B11CA8A9A800F40EF5 /* site4b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91B01CA8A9A800F40EF5 /* site4b.jpg */; };
+		E40C91B41CA8C01500F40EF5 /* site27d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91B21CA8C01500F40EF5 /* site27d.jpg */; };
+		E40C91B51CA8C01500F40EF5 /* site27e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91B31CA8C01500F40EF5 /* site27e.jpg */; };
 		E411EC171C49879A0081AB9B /* CottontownTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */; };
 		E411EC1B1C49CBE20081AB9B /* StopsSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */; };
 		E411EC1D1C4B0D370081AB9B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */; };
@@ -215,6 +218,9 @@
 		E40C91A71CA1A13000F40EF5 /* site29a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site29a_tn@2x.png"; sourceTree = "<group>"; };
 		E40C91AC1CA4DCED00F40EF5 /* site6a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site6a_tn@2x.png"; sourceTree = "<group>"; };
 		E40C91AE1CA54E8B00F40EF5 /* site29a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site29a_tn.png; sourceTree = "<group>"; };
+		E40C91B01CA8A9A800F40EF5 /* site4b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site4b.jpg; sourceTree = "<group>"; };
+		E40C91B21CA8C01500F40EF5 /* site27d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site27d.jpg; sourceTree = "<group>"; };
+		E40C91B31CA8C01500F40EF5 /* site27e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site27e.jpg; sourceTree = "<group>"; };
 		E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CottontownTabBarController.swift; sourceTree = "<group>"; };
 		E411EC181C49B09F0081AB9B /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<absolute>"; };
 		E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsSplitViewController.swift; sourceTree = "<group>"; };
@@ -463,6 +469,7 @@
 				E43CA0B81C8FC5180051139B /* site3d.jpg */,
 				E43CA0B91C8FC5180051139B /* site3e.jpg */,
 				E43CA0BA1C8FC5180051139B /* site4a.jpg */,
+				E40C91B01CA8A9A800F40EF5 /* site4b.jpg */,
 				E43CA0BB1C8FC5180051139B /* site5a.jpg */,
 				E43CA0BC1C8FC5180051139B /* site6a.jpg */,
 				E43CA0BD1C8FC5180051139B /* site7a.jpg */,
@@ -498,6 +505,8 @@
 				E43CA0DB1C8FC5180051139B /* site27a.jpg */,
 				E43CA0DC1C8FC5180051139B /* site27b.jpg */,
 				E43CA0DD1C8FC5180051139B /* site27c.jpg */,
+				E40C91B21CA8C01500F40EF5 /* site27d.jpg */,
+				E40C91B31CA8C01500F40EF5 /* site27e.jpg */,
 				E43CA0DE1C8FC5180051139B /* site28a.jpg */,
 				E43CA11C1C9136590051139B /* site29a.jpg */,
 				E43CA11D1C9136590051139B /* site29b.jpg */,
@@ -595,7 +604,9 @@
 				E40C917A1CA1665500F40EF5 /* site18a_tn.png in Resources */,
 				E40C917C1CA1665500F40EF5 /* site19a_tn.png in Resources */,
 				E43CA1051C8FC5180051139B /* site24c.jpg in Resources */,
+				E40C91B41CA8C01500F40EF5 /* site27d.jpg in Resources */,
 				E43CA0E31C8FC5180051139B /* site2a.jpg in Resources */,
+				E40C91B11CA8A9A800F40EF5 /* site4b.jpg in Resources */,
 				E43CA10C1C8FC5180051139B /* site27c.jpg in Resources */,
 				E43CA0DF1C8FC5180051139B /* site1a.jpg in Resources */,
 				E43CA10B1C8FC5180051139B /* site27b.jpg in Resources */,
@@ -697,6 +708,7 @@
 				E40C91A01CA1665500F40EF5 /* site7a_tn.png in Resources */,
 				E419ED4F1C1CC5BD00164E25 /* Stops.plist in Resources */,
 				E40C91A21CA1665500F40EF5 /* site8a_tn.png in Resources */,
+				E40C91B51CA8C01500F40EF5 /* site27e.jpg in Resources */,
 				E419ED421C1C6AAA00164E25 /* Main.storyboard in Resources */,
 				E43CA1021C8FC5180051139B /* site23a.jpg in Resources */,
 				E40C91A41CA1665500F40EF5 /* site9a_tn.png in Resources */,

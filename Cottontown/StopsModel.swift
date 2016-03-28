@@ -16,6 +16,7 @@ class StopsModel {
     var plistStops:[[String:AnyObject]]
     var allStops = [Stop]()
     var path:String
+    let scale = UIScreen.mainScreen().scale
     
     private init () {
         path = NSBundle.mainBundle().pathForResource("Stops", ofType: "plist")!
@@ -26,7 +27,7 @@ class StopsModel {
         }
     }
     
-    class func resizeImage(fileName file: String, type: String, maxPixelSize: CGFloat, completionHandler handler: (image: UIImage) -> Void) {
+    class func resizeImage(fileName file: String, type: String, maxPointSize: CGFloat, completionHandler handler: (image: UIImage) -> Void) {
         
         let url = NSBundle.mainBundle().URLForResource(file, withExtension: type)!
         print(url)
@@ -40,7 +41,7 @@ class StopsModel {
                 kCGImageSourceShouldAllowFloat : true,
                 kCGImageSourceCreateThumbnailWithTransform : true,
                 kCGImageSourceCreateThumbnailFromImageAlways : true,
-                kCGImageSourceThumbnailMaxPixelSize : maxPixelSize
+                kCGImageSourceThumbnailMaxPixelSize : maxPointSize * scale
             ]
             
             let imref = CGImageSourceCreateThumbnailAtIndex(src, 0, dict)!

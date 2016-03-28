@@ -557,7 +557,7 @@
                                 </variation>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="h6X-jb-btH" secondAttribute="trailing" id="1DY-ao-Nm9"/>
                             <constraint firstItem="h6X-jb-btH" firstAttribute="top" secondItem="LJF-0R-617" secondAttribute="bottom" id="6nI-gi-2zq"/>

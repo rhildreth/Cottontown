@@ -20,7 +20,9 @@ class ContentImage: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let contentImage = UIImage(named: contentImageName! + ".jpg")
+        let path = NSBundle.mainBundle().pathForResource(contentImageName!, ofType: "jpg")
+        let contentImage = UIImage(contentsOfFile: path!)
+        
         imageView.image = contentImage
         
         scrollView.delegate = self
@@ -37,6 +39,7 @@ class ContentImage: UIViewController, UIScrollViewDelegate {
     
     func setZoomScale () {
         let imageSize = imageView.image!.size
+        
         let scrollSize = scrollView.bounds.size
         
         

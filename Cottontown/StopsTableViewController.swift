@@ -15,8 +15,9 @@ import UIKit
 class StopsTableViewController: UITableViewController {
     
     let allStops = StopsModel.sharedInstance.allStops
-    let scale = UIScreen.mainScreen().scale
+ 
     var suffix = ""
+    let scale = UIScreen.mainScreen().scale
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,11 +84,11 @@ class StopsTableViewController: UITableViewController {
         let stop: Stop = allStops[indexPath.row]
         let stopFileName = (stop.stopPictures[0])["picImage"]!
         
-        let imagePixelWidth = cell.stopCellImage.bounds.width * scale
+        let imageWidth = cell.stopCellImage.bounds.width
         
         // Called to decompress image in the background prior 
         // to assigning to cell to improve scroll performance
-        StopsModel.resizeImage(fileName: stopFileName + suffix, type: "png", maxPixelSize: imagePixelWidth) { (image) -> Void in
+        StopsModel.resizeImage(fileName: stopFileName + suffix, type: "png", maxPointSize: imageWidth) { (image) -> Void in
             guard let _ = tableView.cellForRowAtIndexPath(indexPath) else {
                 print("found nil myCell:")
                 return

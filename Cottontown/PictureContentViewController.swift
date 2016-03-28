@@ -25,7 +25,7 @@ class PictureContentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        contentImage.image = UIImage(named: picImageFileName + ".jpg")
+//        contentImage.image = UIImage(named: picImageFileName + ".jpg")
         contentText.text = picText
         
         contentText.selectable = false  // fixes apparent bug in IB preventing changing fonts unless selectable box is checked.  
@@ -35,8 +35,18 @@ class PictureContentViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+
+    }
+    
     override func viewDidLayoutSubviews() {
+        // scroll text to top
         contentText.setContentOffset(CGPointZero, animated: false)
+        let maxWidth = contentImage.frame.width
+        
+        StopsModel.resizeImage(fileName: picImageFileName, type: "jpg", maxPointSize: maxWidth) { (image) in
+            self.contentImage.image = image
+        }
     }
     
     override func didReceiveMemoryWarning() {
