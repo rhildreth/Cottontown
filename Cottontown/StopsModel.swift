@@ -30,7 +30,7 @@ class StopsModel {
     class func resizeImage(fileName file: String, type: String, maxPointSize: CGFloat, completionHandler handler: (image: UIImage) -> Void) {
         
         let url = NSBundle.mainBundle().URLForResource(file, withExtension: type)!
-        print(url)
+//        print(url)
         let src = CGImageSourceCreateWithURL(url, nil)!
         
         let scale = UIScreen.mainScreen().scale
@@ -48,10 +48,10 @@ class StopsModel {
             let im = UIImage(CGImage: imref, scale: scale, orientation: .Up)
             
             dispatch_async(dispatch_get_main_queue()) {
-                let startTime = CACurrentMediaTime()
+//                let startTime = CACurrentMediaTime()
                 handler(image: im)
-                let elapsedTime = (CACurrentMediaTime() - startTime) * 1000
-                print("image time for row",file,"=", elapsedTime ,"ms")
+//                let elapsedTime = (CACurrentMediaTime() - startTime) * 1000
+//                print("image time for row",file,"=", elapsedTime ,"ms")
                 
             }
         }

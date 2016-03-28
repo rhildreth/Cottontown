@@ -52,7 +52,9 @@ class PictureContentViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    deinit {
+        print("deinit for file name:", picImageFileName)
+    }
     
   
     // MARK: - Navigation
