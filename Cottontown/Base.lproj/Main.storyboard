@@ -180,6 +180,7 @@
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="leading" secondItem="Xk9-Vy-TVt" secondAttribute="leading" constant="20" id="Fg0-xX-x0e">
                                 <variation key="heightClass=compact" constant="0.0"/>
                             </constraint>
+                            <constraint firstItem="N8A-ym-ShO" firstAttribute="height" secondItem="Xk9-Vy-TVt" secondAttribute="height" multiplier="1:3" id="OH6-9g-N72"/>
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="b4z-fy-1b9" secondAttribute="bottom" constant="20" id="R7p-Q8-Toj">
                                 <variation key="heightClass=compact" constant="10"/>
                             </constraint>
@@ -225,6 +226,7 @@
                                 <exclude reference="Bf1-r8-nHy"/>
                                 <exclude reference="ClQ-eq-HM3"/>
                                 <include reference="Fg0-xX-x0e"/>
+                                <exclude reference="OH6-9g-N72"/>
                                 <exclude reference="Ttj-G1-UPP"/>
                                 <include reference="Wlq-at-ogY"/>
                                 <include reference="bfA-if-ipt"/>
