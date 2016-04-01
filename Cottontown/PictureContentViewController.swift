@@ -32,10 +32,19 @@ class PictureContentViewController: UIViewController {
         pageControl.currentPage = pageIndex
         pageControl.numberOfPages = maxPages
         
+        
+        
+        
     }
     
     override func viewWillAppear(animated: Bool) {
-
+        
+// Make sure the font size matches the one currently selected by the user when the view
+// initially diaplays.
+        updateFont()
+        
+// Register for notification of font size changes
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PictureContentViewController.updateFont), name: UIContentSizeCategoryDidChangeNotification, object: nil)
     }
     
     override func viewDidLayoutSubviews() {
@@ -48,12 +57,23 @@ class PictureContentViewController: UIViewController {
         }
     }
     
+    func updateFont () {
+        
+        let style = contentText.font?.fontDescriptor().objectForKey(UIFontDescriptorTextStyleAttribute) as! String
+        contentText.font = UIFont.preferredFontForTextStyle(style)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
     deinit {
-        print("deinit for file name:", picImageFileName)
+        
     }
     
   

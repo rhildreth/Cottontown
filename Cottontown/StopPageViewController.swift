@@ -22,7 +22,9 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         
         
         if let stop = stop {
-            allStopContent = stop.stopPictures + (stop.youTubes ?? [])  // ?? is nil coalescing operator
+            allStopContent = stop.stopPictures + (stop.youTubes ?? [])  // ?? is nil coalescing
+            // operator - If stop.youTubes is not nil it is unwrapped, otherwise the empty array is
+            // returned
         }
         let firstVC = viewControllerAtIndex(0)
         setViewControllers([firstVC!], direction: .Forward, animated: false, completion: nil)
