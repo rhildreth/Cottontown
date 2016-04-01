@@ -56,58 +56,56 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="93"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView autoresizesSubviews="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pam-le-MnY">
-                                            <rect key="frame" x="0.0" y="0.0" width="132" height="94"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="94" id="THC-hx-CLd"/>
-                                                <constraint firstAttribute="width" constant="132" id="kG5-zd-LfG"/>
-                                            </constraints>
-                                        </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Gcx-LG-oP0" userLabel="Label Stack View">
-                                            <rect key="frame" x="142" y="0.0" width="458" height="93"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="de1-CU-XaA" userLabel="Label Stack View">
+                                            <rect key="frame" x="137" y="0.0" width="463" height="93"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StopTitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Olm-0z-4wE">
-                                                    <rect key="frame" x="0.0" y="0.0" width="458" height="48"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="StopTitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olm-0z-4wE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="463" height="47"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                    </accessibility>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StopAddress" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WLL-kY-Tvk">
-                                                    <rect key="frame" x="0.0" y="48" width="458" height="45"/>
+                                                <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StopAddress" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLL-kY-Tvk">
+                                                    <rect key="frame" x="0.0" y="47" width="463" height="46"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                    </accessibility>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Olm-0z-4wE" firstAttribute="top" secondItem="Gcx-LG-oP0" secondAttribute="top" id="L2H-vg-zHB"/>
-                                                <constraint firstItem="Olm-0z-4wE" firstAttribute="leading" secondItem="Gcx-LG-oP0" secondAttribute="leading" id="Y1h-Oi-vI2"/>
-                                                <constraint firstItem="WLL-kY-Tvk" firstAttribute="leading" secondItem="Gcx-LG-oP0" secondAttribute="leading" id="ZrU-F1-blK"/>
-                                                <constraint firstAttribute="bottom" secondItem="WLL-kY-Tvk" secondAttribute="bottom" id="d8X-9o-7Ys"/>
-                                                <constraint firstAttribute="trailing" secondItem="WLL-kY-Tvk" secondAttribute="trailing" id="f73-Mm-jrJ"/>
-                                                <constraint firstAttribute="trailing" secondItem="Olm-0z-4wE" secondAttribute="trailing" id="qc0-Zs-peE"/>
-                                                <constraint firstItem="WLL-kY-Tvk" firstAttribute="top" secondItem="Olm-0z-4wE" secondAttribute="bottom" id="rAE-Yc-qoZ"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="93" id="kz4-v4-vfK"/>
                                             </constraints>
                                         </stackView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="site1b_tn.png" translatesAutoresizingMaskIntoConstraints="NO" id="PEa-Fi-Ak4">
+                                            <rect key="frame" x="0.0" y="0.0" width="132" height="94"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="94" id="Ezf-pI-ENG"/>
+                                                <constraint firstAttribute="width" constant="132" id="rzf-wb-Bja"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstItem="Gcx-LG-oP0" firstAttribute="leading" secondItem="pam-le-MnY" secondAttribute="trailing" constant="10" id="C9P-CK-IMf"/>
-                                        <constraint firstAttribute="bottom" secondItem="Gcx-LG-oP0" secondAttribute="bottom" id="F4H-Gs-q1u"/>
-                                        <constraint firstItem="Gcx-LG-oP0" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="top" id="UQ5-A6-HBK"/>
-                                        <constraint firstAttribute="trailing" secondItem="Gcx-LG-oP0" secondAttribute="trailing" id="cl0-WB-lEC"/>
-                                        <constraint firstItem="pam-le-MnY" firstAttribute="centerY" secondItem="37f-cq-3Eg" secondAttribute="centerY" id="qx1-yg-Q9f"/>
-                                        <constraint firstItem="pam-le-MnY" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leading" id="ydQ-6Z-gKe"/>
+                                        <constraint firstItem="de1-CU-XaA" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="top" id="GIP-m5-HaN"/>
+                                        <constraint firstAttribute="trailing" secondItem="de1-CU-XaA" secondAttribute="trailing" id="YSG-0J-wRd"/>
+                                        <constraint firstItem="PEa-Fi-Ak4" firstAttribute="centerY" secondItem="37f-cq-3Eg" secondAttribute="centerY" id="brO-sA-NVP"/>
+                                        <constraint firstAttribute="bottom" secondItem="de1-CU-XaA" secondAttribute="bottom" id="qrq-Fr-e0c"/>
+                                        <constraint firstItem="de1-CU-XaA" firstAttribute="leading" secondItem="PEa-Fi-Ak4" secondAttribute="trailing" constant="5" id="t2O-Ma-tzu"/>
+                                        <constraint firstItem="PEa-Fi-Ak4" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leading" id="uWI-yl-wMj"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="stopAddress" destination="WLL-kY-Tvk" id="tzs-wY-ZRv"/>
-                                    <outlet property="stopCellImage" destination="pam-le-MnY" id="Qxe-fc-eFF"/>
+                                    <outlet property="stopCellImage" destination="PEa-Fi-Ak4" id="w9a-LI-kG2"/>
                                     <outlet property="stopTitle" destination="Olm-0z-4wE" id="Hge-Av-mZe"/>
                                     <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="6S0-TO-JiA"/>
                                 </connections>
@@ -580,6 +578,7 @@
     </scenes>
     <resources>
         <image name="map" width="30" height="30"/>
+        <image name="site1b_tn.png" width="132" height="94"/>
         <image name="stops" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
