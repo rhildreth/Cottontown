@@ -22,6 +22,9 @@ class StopsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        tableView.estimatedRowHeight = 95
+//        tableView.rowHeight = UITableViewAutomaticDimension
+        
         switch scale {
         case 1.0:
             suffix = "_tn"  // Only used on iPad 2
@@ -36,6 +39,10 @@ class StopsTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
         
     }
 
