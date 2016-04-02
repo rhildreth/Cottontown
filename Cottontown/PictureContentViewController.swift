@@ -17,7 +17,7 @@ class PictureContentViewController: UIViewController {
     
     
     
-    var picImageFileName = ""
+    var picImageFileName: String?
     var picText = ""
     var pageIndex = 0
     var maxPages = 0
@@ -51,7 +51,7 @@ class PictureContentViewController: UIViewController {
         contentText.setContentOffset(CGPointZero, animated: false)
         let maxWidth = contentImage.frame.width
         
-        guard  picImageFileName != "" else {return}
+        guard   let picImageFileName = picImageFileName  else {return}
         StopsModel.resizeImage(fileName: picImageFileName, type: "jpg", maxPointSize: maxWidth) { (image) in
             self.contentImage.image = image
         }
