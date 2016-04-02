@@ -553,7 +553,7 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="historya.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-Ol-oCR">
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-Ol-oCR">
                                 <rect key="frame" x="20" y="8" width="560" height="163"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -584,12 +584,12 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                             <mask key="constraints">
                                 <exclude reference="s38-bM-2so"/>
                                 <exclude reference="ysR-zh-SuE"/>
-                                <exclude reference="7zd-B1-cUF"/>
-                                <exclude reference="lfQ-w9-pMK"/>
                                 <exclude reference="HcC-B4-Zeh"/>
                                 <exclude reference="bGE-tc-doe"/>
                                 <exclude reference="ePP-fa-UfS"/>
                                 <exclude reference="njQ-M7-vlZ"/>
+                                <exclude reference="7zd-B1-cUF"/>
+                                <exclude reference="lfQ-w9-pMK"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -600,9 +600,6 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                                 <include reference="s38-bM-2so"/>
                                 <exclude reference="yco-La-LJH"/>
                                 <include reference="ysR-zh-SuE"/>
-                                <include reference="7zd-B1-cUF"/>
-                                <include reference="lfQ-w9-pMK"/>
-                                <exclude reference="xfR-wD-J6U"/>
                                 <exclude reference="1Qr-W7-LLZ"/>
                                 <exclude reference="ELe-Zb-Kku"/>
                                 <exclude reference="Fzm-CQ-xj3"/>
@@ -610,6 +607,9 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                                 <include reference="bGE-tc-doe"/>
                                 <include reference="ePP-fa-UfS"/>
                                 <include reference="njQ-M7-vlZ"/>
+                                <include reference="7zd-B1-cUF"/>
+                                <include reference="lfQ-w9-pMK"/>
+                                <exclude reference="xfR-wD-J6U"/>
                             </mask>
                         </variation>
                     </view>
@@ -727,7 +727,6 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
     </scenes>
     <resources>
         <image name="history" width="32" height="20"/>
-        <image name="historya.jpg" width="2048" height="1187"/>
         <image name="map" width="30" height="30"/>
         <image name="site1b_tn.png" width="132" height="94"/>
         <image name="stops" width="30" height="30"/>

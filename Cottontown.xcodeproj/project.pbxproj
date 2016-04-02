@@ -237,8 +237,6 @@
 		E40C91CD1CA9CDD400F40EF5 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
 		E40C91CE1CA9CDD400F40EF5 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 		E40C91D01CA9CEBE00F40EF5 /* YouTubeiOSPlayerHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouTubeiOSPlayerHelper.h; sourceTree = "<group>"; };
-		E40C91D11CAAA34200F40EF5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
-		E40C91D21CAAA34200F40EF5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E40C91D31CAFE20C00F40EF5 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CottontownTabBarController.swift; sourceTree = "<group>"; };
 		E411EC181C49B09F0081AB9B /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<absolute>"; };
@@ -300,8 +298,6 @@
 		E44258511C2A2BEF0041A5B4 /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		E44258531C2A2E520041A5B4 /* Cottontown.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Cottontown.playground; sourceTree = "<group>"; };
 		E45BA75F1C38C20900454CF7 /* StopAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopAnnotation.swift; sourceTree = "<group>"; };
-		E45BA7711C3957C900454CF7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
-		E45BA7721C3957C900454CF7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E45F21721C46F10D00A9E743 /* ContentImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentImage.swift; sourceTree = "<group>"; };
 		E4624FC71C2F8A4E003023A1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E4624FCB1C30C76A003023A1 /* MapSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSplitViewController.swift; sourceTree = "<group>"; };
@@ -770,8 +766,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				E419ED411C1C6AAA00164E25 /* Base */,
-				E45BA7711C3957C900454CF7 /* es */,
-				E40C91D11CAAA34200F40EF5 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -780,8 +774,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				E419ED461C1C6AAA00164E25 /* Base */,
-				E45BA7721C3957C900454CF7 /* es */,
-				E40C91D21CAAA34200F40EF5 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

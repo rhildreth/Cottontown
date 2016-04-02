@@ -32,6 +32,7 @@ class PictureContentViewController: UIViewController {
         pageControl.currentPage = pageIndex
         pageControl.numberOfPages = maxPages
         pageControl.currentPageIndicatorTintColor = UIColor.init(colorLiteralRed: 248.0/255, green: 210.0/255.0, blue: 103.0/255.0, alpha: 1.0)
+        pageControl.defersCurrentPageDisplay = true
         
     }
     
@@ -50,6 +51,7 @@ class PictureContentViewController: UIViewController {
         contentText.setContentOffset(CGPointZero, animated: false)
         let maxWidth = contentImage.frame.width
         
+        guard  picImageFileName != "" else {return}
         StopsModel.resizeImage(fileName: picImageFileName, type: "jpg", maxPointSize: maxWidth) { (image) in
             self.contentImage.image = image
         }

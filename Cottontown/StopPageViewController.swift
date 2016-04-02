@@ -57,6 +57,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         guard allStopContent.count > 0 else {
             let stopContentVC = storyboard?.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
                 stopContentVC.picText = "No Stop Selected"
+                
             return stopContentVC
         }
         
