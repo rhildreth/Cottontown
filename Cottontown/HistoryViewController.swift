@@ -45,7 +45,6 @@ class HistoryViewController: UIViewController {
     }
 
     @IBAction func imageTapped(sender: UITapGestureRecognizer) {
-        print("image tapped")
         
         let historyImageVC = storyboard?.instantiateViewControllerWithIdentifier("contentImageID") as! ContentImage
             historyImageVC.contentImageName = "historya"
