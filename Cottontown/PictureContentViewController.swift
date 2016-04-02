@@ -1,5 +1,5 @@
 //
-//  StopContentViewController.swift
+//  PictureContentViewController.swift
 //  Cottontown
 //
 //  Created by Ron Hildreth on 12/20/15.

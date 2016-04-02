@@ -5,7 +5,7 @@
 //  Created by Ron Hildreth on 1/13/16.
 //  Copyright © 2016 Tappdev.com. All rights reserved.
 //
-// The sole purpose of this view is to allow you to scroll the stop image
+// The sole purpose of this view is to allow you to scroll the image
 
 import UIKit
 

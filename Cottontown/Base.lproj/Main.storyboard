@@ -160,7 +160,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N8A-ym-ShO">
-                                <rect key="frame" x="20" y="0.0" width="560" height="184"/>
+                                <rect key="frame" x="20" y="8" width="560" height="184"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="nUP-0b-HgI" appends="YES" id="lQl-XQ-Whs"/>
@@ -171,7 +171,7 @@
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4z-fy-1b9">
-                                <rect key="frame" x="20" y="194" width="560" height="302"/>
+                                <rect key="frame" x="20" y="202" width="560" height="294"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -184,21 +184,21 @@
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="b4z-fy-1b9" secondAttribute="bottom" constant="10" id="1r7-4I-vOP"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="leading" secondItem="Xk9-Vy-TVt" secondAttribute="leadingMargin" id="4B4-Y3-Aqa"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="trailing" secondItem="Xk9-Vy-TVt" secondAttribute="trailingMargin" id="4K8-Ls-L9A"/>
-                            <constraint firstItem="N8A-ym-ShO" firstAttribute="top" secondItem="Xk9-Vy-TVt" secondAttribute="topMargin" id="Bf1-r8-nHy"/>
+                            <constraint firstItem="N8A-ym-ShO" firstAttribute="top" secondItem="Xk9-Vy-TVt" secondAttribute="topMargin" constant="8" id="Bf1-r8-nHy"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="top" secondItem="Xk9-Vy-TVt" secondAttribute="topMargin" id="ClQ-eq-HM3"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="leading" secondItem="Xk9-Vy-TVt" secondAttribute="leading" constant="20" id="Fg0-xX-x0e">
-                                <variation key="heightClass=compact" constant="0.0"/>
+                                <variation key="heightClass=compact" constant="5"/>
                             </constraint>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="height" secondItem="Xk9-Vy-TVt" secondAttribute="height" multiplier="1:3" id="OH6-9g-N72"/>
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="b4z-fy-1b9" secondAttribute="bottom" constant="20" id="R7p-Q8-Toj">
                                 <variation key="heightClass=compact" constant="10"/>
                             </constraint>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="height" secondItem="N8A-ym-ShO" secondAttribute="height" id="Ttj-G1-UPP"/>
-                            <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="N8A-ym-ShO" secondAttribute="bottom" id="U8B-bc-V1z"/>
-                            <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="b4z-fy-1b9" secondAttribute="bottom" id="UeF-0h-hHq"/>
+                            <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="N8A-ym-ShO" secondAttribute="bottom" constant="3" id="U8B-bc-V1z"/>
+                            <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="b4z-fy-1b9" secondAttribute="bottom" constant="3" id="UeF-0h-hHq"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="width" secondItem="N8A-ym-ShO" secondAttribute="width" id="Wlq-at-ogY"/>
                             <constraint firstItem="Rr0-g1-cqz" firstAttribute="top" secondItem="2hy-uv-bv7" secondAttribute="bottom" constant="8" id="ZAh-iJ-8Z8"/>
-                            <constraint firstItem="b4z-fy-1b9" firstAttribute="top" secondItem="wod-7d-cdU" secondAttribute="bottom" id="bfA-if-ipt"/>
+                            <constraint firstItem="b4z-fy-1b9" firstAttribute="top" secondItem="wod-7d-cdU" secondAttribute="bottom" constant="5" id="bfA-if-ipt"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="trailing" secondItem="Xk9-Vy-TVt" secondAttribute="trailingMargin" id="ef4-Zc-mmP"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="top" secondItem="N8A-ym-ShO" secondAttribute="top" id="fPc-vp-xmf"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="leading" secondItem="N8A-ym-ShO" secondAttribute="trailing" constant="10" id="hJI-Kj-y5f"/>
@@ -539,9 +539,10 @@
                         <subviews>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="historya.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-Ol-oCR">
                                 <rect key="frame" x="20" y="8" width="560" height="163"/>
-                                <variation key="heightClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="147" y="20" width="240" height="128"/>
-                                </variation>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="82I-0p-BAa" appends="YES" id="rOf-0q-utP"/>
+                                </connections>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSy-cx-YzH">
                                 <rect key="frame" x="20" y="176" width="560" height="306"/>
@@ -558,9 +559,6 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
 </string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="heightClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="147" y="171" width="240" height="128"/>
-                                </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -577,8 +575,17 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="History of Cottontown" id="KvB-Wf-2i0"/>
+                    <connections>
+                        <outlet property="historyImage" destination="CYJ-Ol-oCR" id="EYu-2c-kCC"/>
+                        <outlet property="historyText" destination="sSy-cx-YzH" id="FbI-vs-l5x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fif-3R-oHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="82I-0p-BAa">
+                    <connections>
+                        <action selector="imageTapped:" destination="15F-BH-iYo" id="B5j-ir-wnq"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-296" y="3042"/>
         </scene>
@@ -613,7 +620,7 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
         <!--Content Image-->
         <scene sceneID="n1O-FX-8io">
             <objects>
-                <viewController id="0Ha-TH-47R" customClass="ContentImage" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="contentImageID" id="0Ha-TH-47R" customClass="ContentImage" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LJF-0R-617"/>
                         <viewControllerLayoutGuide type="bottom" id="hel-hW-jeW"/>
