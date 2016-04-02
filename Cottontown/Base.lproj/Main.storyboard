@@ -69,6 +69,9 @@
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="0.0" width="263" height="47"/>
+                                                    </variation>
                                                 </label>
                                                 <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StopAddress" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLL-kY-Tvk">
                                                     <rect key="frame" x="0.0" y="47" width="463" height="46"/>
@@ -79,11 +82,17 @@
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="47" width="263" height="46"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="93" id="kz4-v4-vfK"/>
                                             </constraints>
+                                            <variation key="widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="137" y="0.0" width="263" height="93"/>
+                                            </variation>
                                         </stackView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="site1b_tn.png" translatesAutoresizingMaskIntoConstraints="NO" id="PEa-Fi-Ak4">
                                             <rect key="frame" x="0.0" y="0.0" width="132" height="94"/>
@@ -262,7 +271,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2542" y="996"/>
+            <point key="canvasLocation" x="3354" y="996"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="vAz-A7-oaT">
@@ -310,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBK-fx-F8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2026" y="1814"/>
+            <point key="canvasLocation" x="2838" y="1814"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
@@ -340,6 +349,7 @@
                     <connections>
                         <segue destination="H1p-Uh-vWS" kind="relationship" relationship="viewControllers" id="ChI-oW-V2b"/>
                         <segue destination="SLz-5b-lYx" kind="relationship" relationship="viewControllers" id="8Lw-eP-oOp"/>
+                        <segue destination="1b0-c9-h6e" kind="relationship" relationship="viewControllers" id="AkK-dB-JMH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvA-uD-Yqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -360,9 +370,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeO-MY-FPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-109" y="1249"/>
+            <point key="canvasLocation" x="703" y="1249"/>
         </scene>
-        <!--Cottontown Map-->
+        <!--Cottontown Historic District-->
         <scene sceneID="06J-es-u1a">
             <objects>
                 <viewController id="7qN-pH-Uhz" customClass="MapViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
@@ -386,14 +396,14 @@
                             <constraint firstItem="IPK-rs-dTQ" firstAttribute="top" secondItem="3wq-aa-io4" secondAttribute="bottom" id="vdq-fN-dUu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Cottontown Map" id="KEc-2K-4F6"/>
+                    <navigationItem key="navigationItem" title="Cottontown Historic District" id="KEc-2K-4F6"/>
                     <connections>
                         <outlet property="map" destination="IPK-rs-dTQ" id="mw3-6m-zI6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEq-SG-cW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="737" y="1175"/>
+            <point key="canvasLocation" x="1549" y="1175"/>
         </scene>
         <!--YouTube VC-->
         <scene sceneID="gX8-Lq-CKX">
@@ -513,7 +523,64 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="un7-fT-MoF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1025" y="1741"/>
+            <point key="canvasLocation" x="-213" y="1741"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="Igb-CR-BxM">
+            <objects>
+                <viewController title="History" id="15F-BH-iYo" customClass="HistoryViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C4G-8G-seV"/>
+                        <viewControllerLayoutGuide type="bottom" id="fPW-PQ-qjn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xRu-Pq-heb">
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="historya.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-Ol-oCR">
+                                <rect key="frame" x="20" y="8" width="560" height="163"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="147" y="20" width="240" height="128"/>
+                                </variation>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSy-cx-YzH">
+                                <rect key="frame" x="20" y="176" width="560" height="306"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Bellevue, today commonly known as “Cottontown” is an early twentieth-century downtown Columbia, South Carolina suburb located north of Elmwood Avenue, extending roughly north to Anthony Street west to Sumter Street and east to Bull Street The neighborhood sits on land once owned by the Wallace family, who, in c.1893, sold to the state property which is now the S.C. State Hospital campus.  In the late nineteenth/early twentieth centuries, the area near the Wallace tract was a bustling commercial district. The intersection of Main and Upper (later Elmwood) Streets was known as Cotton Town, named after the cotton storage warehouses that operated there. Grocery wholesale and retail establishments also operated in the area. In 1896, the city expanded the streetcar line, extending the Main Street line north of Upper Street out to Hyatt Park, where a new pavilion and casino were transforming the areas north of the city limits into a center for social activity and recreation. About this time, Cotton Town assumed a new name befitting the area's more elegant image ”Bellevue Springs”. 
+
+In the 1890s investors had achieved some success with a new planned residential community called “Shandon”. The idea that a large parcel of land could be subdivided into streets and lots, and those lots marketed under a unifying community theme, was creating a thriving new neighborhood south of the city. A combination of factors existed in the area north of the city that could make the same type of venture successful: a thriving business district, convenience to social and recreational outlets, and easy access to public transportation. In 1902, William Wallace registered a plat for the first suburban development on his property: sixteen lots facing Bull Street.  By 1912, lots were being marketed under the neighborhood's new name ”Bellevue”. The new community was growing quickly, with new lots being surveyed between Elmwood, Main, Franklin and Bull Streets. Between 1919 and 1927, the neighborhood expanded northward to Columbia Avenue, later changed to Anthony Avenue. In March 1913, Bellevue became one of the earliest suburban communities, after Elmwood Park, to be annexed into the city of Columbia. Communities including North Columbia, Waverly, South Waverly, and Shandon were annexed later in the same year.
+
+The neighborhood remains today as an intact example of one of the earliest planned suburban residential neighborhoods in Columbia whose appearance has been largely unaltered by the passage of time. As one of the earliest suburban areas annexed into the city of Columbia, Bellevue played an important role in the early expansion of the capital city beyond its original northern boundary.  The neighborhood consists primarily of single-family homes, with some duplexes and other multi-family residences scattered throughout the district. Most of the residences were built between 1925 and 1940. Although several early twentieth-century house types are present, including Tudor revival and colonial revival, the craftsman bungalow is the most prevalent type. In general, the homes retain their historic appearance and architectural integrity. Cottontown's streetscapes are largely unaltered. Old hardwoods line the avenues, with branches creating an arched canopy overhead. 
+
+The Bellevue neighborhood is significant for its high concentration of intact examples of early twentieth-century residential architecture placed among intact historic streetscapes, and archaeological resources worthy of historic preservation.  The older Bellevue Historic District portion of Cottontown received federal approval and was listed in the National Register of Historic Places in 1997.
+
+In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia Manini (visiting from Italy), an unidentified man, and Gloria Manini pose in front of the family’s Buick sedan on Broad River (Summerville) Avenue in 1926.  (Image courtesy of Peggy Manani Janicki)
+</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="147" y="171" width="240" height="128"/>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sSy-cx-YzH" firstAttribute="top" secondItem="CYJ-Ol-oCR" secondAttribute="bottom" constant="5" id="1Qr-W7-LLZ"/>
+                            <constraint firstItem="sSy-cx-YzH" firstAttribute="leading" secondItem="xRu-Pq-heb" secondAttribute="leadingMargin" id="ELe-Zb-Kku"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sSy-cx-YzH" secondAttribute="trailing" id="Fzm-CQ-xj3"/>
+                            <constraint firstItem="CYJ-Ol-oCR" firstAttribute="top" secondItem="C4G-8G-seV" secondAttribute="bottom" constant="8" id="IAx-tU-c1K"/>
+                            <constraint firstItem="CYJ-Ol-oCR" firstAttribute="height" secondItem="xRu-Pq-heb" secondAttribute="height" multiplier="1:3" id="aZ0-Gf-J86"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CYJ-Ol-oCR" secondAttribute="trailing" id="jfA-aX-Xnu"/>
+                            <constraint firstItem="fPW-PQ-qjn" firstAttribute="top" secondItem="sSy-cx-YzH" secondAttribute="bottom" constant="5" id="xfR-wD-J6U"/>
+                            <constraint firstItem="CYJ-Ol-oCR" firstAttribute="leading" secondItem="xRu-Pq-heb" secondAttribute="leadingMargin" id="yco-La-LJH"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="History of Cottontown" id="KvB-Wf-2i0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fif-3R-oHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-296" y="3042"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MoD-ko-YOd">
@@ -569,6 +636,9 @@
                                 <variation key="heightClass=compact" ambiguous="YES">
                                     <rect key="frame" x="0.0" y="20" width="600" height="380"/>
                                 </variation>
+                                <variation key="widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="20" width="400" height="580"/>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
@@ -586,10 +656,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gW-sr-n2X" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3232" y="996"/>
+            <point key="canvasLocation" x="4044" y="996"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="F4z-EK-cq6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1b0-c9-h6e" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="History" image="history" id="pQD-yx-1ns"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cJq-sg-O7V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="15F-BH-iYo" kind="relationship" relationship="rootViewController" id="vY1-FS-myo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyu-oL-Sfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1108" y="3042"/>
         </scene>
     </scenes>
     <resources>
+        <image name="history" width="32" height="20"/>
+        <image name="historya.jpg" width="2048" height="1187"/>
         <image name="map" width="30" height="30"/>
         <image name="site1b_tn.png" width="132" height="94"/>
         <image name="stops" width="30" height="30"/>

@@ -84,6 +84,7 @@
 		E40C91C91CA996FA00F40EF5 /* site3e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91C01CA996FA00F40EF5 /* site3e.jpg */; };
 		E40C91CB1CA9CD9100F40EF5 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E40C91CA1CA9CD9100F40EF5 /* Assets.bundle */; };
 		E40C91CF1CA9CDD400F40EF5 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E40C91CE1CA9CDD400F40EF5 /* YTPlayerView.m */; };
+		E40C91D41CAFE20C00F40EF5 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C91D31CAFE20C00F40EF5 /* HistoryViewController.swift */; };
 		E411EC171C49879A0081AB9B /* CottontownTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */; };
 		E411EC1B1C49CBE20081AB9B /* StopsSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */; };
 		E411EC1D1C4B0D370081AB9B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */; };
@@ -149,6 +150,7 @@
 		E463ACD51C89F12D00B68973 /* YouTubeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463ACD41C89F12D00B68973 /* YouTubeContentViewController.swift */; };
 		E471CEAE1C74243400214EFF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E471CEAD1C74243400214EFF /* Settings.bundle */; };
 		E472B5F61C87C463003FFBCA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472B5F51C87C463003FFBCA /* WebViewController.swift */; };
+		E4CFFC0E1CAFF641005C2268 /* historya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4CFFC0D1CAFF641005C2268 /* historya.jpg */; };
 		E4D8E8271C7BFB7D00A17BB2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */; };
 		E4D8E8291C7BFBE200A17BB2 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */; };
 		E4D8E82C1C83146700A17BB2 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D8E82B1C83146700A17BB2 /* Protocols.swift */; };
@@ -237,6 +239,7 @@
 		E40C91D01CA9CEBE00F40EF5 /* YouTubeiOSPlayerHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouTubeiOSPlayerHelper.h; sourceTree = "<group>"; };
 		E40C91D11CAAA34200F40EF5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		E40C91D21CAAA34200F40EF5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E40C91D31CAFE20C00F40EF5 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CottontownTabBarController.swift; sourceTree = "<group>"; };
 		E411EC181C49B09F0081AB9B /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<absolute>"; };
 		E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsSplitViewController.swift; sourceTree = "<group>"; };
@@ -308,6 +311,7 @@
 		E463ACD41C89F12D00B68973 /* YouTubeContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeContentViewController.swift; sourceTree = "<group>"; };
 		E471CEAD1C74243400214EFF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E472B5F51C87C463003FFBCA /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E4CFFC0D1CAFF641005C2268 /* historya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = historya.jpg; sourceTree = "<group>"; };
 		E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneSignal.framework; sourceTree = "<group>"; };
 		E4D8E82A1C7BFD6B00A17BB2 /* Cottontown-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cottontown-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
@@ -439,6 +443,7 @@
 				E45BA75F1C38C20900454CF7 /* StopAnnotation.swift */,
 				E4624FD11C3231C8003023A1 /* MapPageViewController.swift */,
 				E472B5F51C87C463003FFBCA /* WebViewController.swift */,
+				E40C91D31CAFE20C00F40EF5 /* HistoryViewController.swift */,
 				E419ED401C1C6AAA00164E25 /* Main.storyboard */,
 				E419ED451C1C6AAA00164E25 /* LaunchScreen.storyboard */,
 				E40C91D01CA9CEBE00F40EF5 /* YouTubeiOSPlayerHelper.h */,
@@ -459,6 +464,7 @@
 		E43CA0AF1C8FC0390051139B /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				E4CFFC0D1CAFF641005C2268 /* historya.jpg */,
 				E40C912D1CA1665500F40EF5 /* Stop Image Thumbnails */,
 				E40C91B61CA98EAE00F40EF5 /* site1a.jpg */,
 				E40C91B81CA996FA00F40EF5 /* site1b.jpg */,
@@ -690,6 +696,7 @@
 				E40C91B71CA98EAE00F40EF5 /* site1a.jpg in Resources */,
 				E40C91C61CA996FA00F40EF5 /* site3b.jpg in Resources */,
 				E43CA0ED1C8FC5180051139B /* site8a.jpg in Resources */,
+				E4CFFC0E1CAFF641005C2268 /* historya.jpg in Resources */,
 				E43CA0F81C8FC5180051139B /* site15a.jpg in Resources */,
 				E471CEAE1C74243400214EFF /* Settings.bundle in Resources */,
 				E43CA0EF1C8FC5180051139B /* site10a.jpg in Resources */,
@@ -736,6 +743,7 @@
 				E442584E1C27979B0041A5B4 /* PictureContentViewController.swift in Sources */,
 				E4624FCC1C30C76A003023A1 /* MapSplitViewController.swift in Sources */,
 				E411EC171C49879A0081AB9B /* CottontownTabBarController.swift in Sources */,
+				E40C91D41CAFE20C00F40EF5 /* HistoryViewController.swift in Sources */,
 				E4624FD21C3231C8003023A1 /* MapPageViewController.swift in Sources */,
 				E45F21731C46F10D00A9E743 /* ContentImage.swift in Sources */,
 				E4624FD41C323354003023A1 /* MapViewController.swift in Sources */,

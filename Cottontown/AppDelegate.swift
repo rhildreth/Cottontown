@@ -330,8 +330,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let stopsNavVC = stopsSplitVC.viewControllers.first as! UINavigationController
         stopsTVC = stopsNavVC.topViewController as! StopsTableViewController
         
-        UINavigationBar.appearance().barTintColor = UIColor(red: 244.0/255.0, green:
-            190.0/255.0, blue: 64.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 248.0/255.0, green:
+            210.0/255.0, blue: 103.0/255.0, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
         if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
