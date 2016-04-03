@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StopPageViewController: UIPageViewController, UIPageViewControllerDataSource, didRegisterUserNotificationSettingsDelegate {
+class StopPageViewController: UIPageViewController, UIPageViewControllerDataSource, didRegisterUserNotificationSettingsDelegate, PictureContentViewControllerDelegate {
     
     var stop: Stop?
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -65,7 +65,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         let stopContentVC = storyboard?.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
         if let _ = stop {
             
-            
+            stopContentVC.delegate = self
             stopContentVC.picImageFileName = (allStopContent[index])["picImage"]!
             stopContentVC.picText = (allStopContent[index])["picText"]!
             stopContentVC.maxPages = allStopContent.count
@@ -79,6 +79,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         }else {
             let youTubeContentVC = storyboard?.instantiateViewControllerWithIdentifier("YouTubeVC") as! YouTubeContentViewController
             
+            youTubeContentVC.delegate = self
             youTubeContentVC.maxPages = allStopContent.count
             youTubeContentVC.pageIndex = index
             
@@ -192,6 +193,12 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
             let vc = viewController as! YouTubeContentViewController
             return vc.pageIndex
         }
+    }
+    
+    func pageControlChanged(sender: UIViewController, newPageIndex: Int, direction: UIPageViewControllerNavigationDirection) {
+        
+        let nextVC = viewControllerAtIndex(newPageIndex)
+        setViewControllers([nextVC!], direction: direction, animated: false, completion: nil)
     }
     
     

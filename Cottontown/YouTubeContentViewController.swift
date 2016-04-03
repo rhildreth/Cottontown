@@ -15,6 +15,7 @@ class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
     var youTubeID:String = ""
     var youTubeText:String = ""
     var stopPageVC: StopPageViewController?
+    weak var delegate: PictureContentViewControllerDelegate?
 
     @IBOutlet weak var player: YTPlayerView!
 
@@ -50,8 +51,11 @@ class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
         print("denint youTubeContentViewController")
     }
     
-    
-    
-
-
+    @IBAction func pageControlTapped(sender: UIPageControl) {
+         print("pageIndex:", pageIndex)
+        print("sender current page:", sender.currentPage)
+        
+        delegate?.pageControlChanged(self, newPageIndex: sender.currentPage, direction: .Forward)
+        
+    }
 }

@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol PictureContentViewControllerDelegate: class {
+    func pageControlChanged(sender: UIViewController, newPageIndex: Int, direction: UIPageViewControllerNavigationDirection )
+}
+
 class PictureContentViewController: UIViewController {
     
     @IBOutlet weak var contentImage: UIImageView!
@@ -15,7 +19,7 @@ class PictureContentViewController: UIViewController {
     
     @IBOutlet weak var pageControl: UIPageControl!
     
-    
+    weak var delegate: PictureContentViewControllerDelegate?
     
     var picImageFileName: String?
     var picText = ""
@@ -32,7 +36,7 @@ class PictureContentViewController: UIViewController {
         pageControl.currentPage = pageIndex
         pageControl.numberOfPages = maxPages
         pageControl.currentPageIndicatorTintColor = UIColor.init(colorLiteralRed: 248.0/255, green: 210.0/255.0, blue: 103.0/255.0, alpha: 1.0)
-        pageControl.defersCurrentPageDisplay = true
+        pageControl.defersCurrentPageDisplay = false
         
     }
     
@@ -46,6 +50,7 @@ class PictureContentViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PictureContentViewController.updateFont), name: UIContentSizeCategoryDidChangeNotification, object: nil)
     }
     
+
     override func viewDidLayoutSubviews() {
         // scroll text to top
         contentText.setContentOffset(CGPointZero, animated: false)
@@ -62,6 +67,14 @@ class PictureContentViewController: UIViewController {
         let style = contentText.font?.fontDescriptor().objectForKey(UIFontDescriptorTextStyleAttribute) as! String
         contentText.font = UIFont.preferredFontForTextStyle(style)
         
+    }
+    
+        @IBAction func pageControllTapped(sender: UIPageControl) {
+        
+        print("pageIndex:", pageIndex)
+        print("sender current page:", sender.currentPage)
+            
+            delegate?.pageControlChanged(self, newPageIndex: sender.currentPage, direction: .Forward)
     }
     
     override func didReceiveMemoryWarning() {
