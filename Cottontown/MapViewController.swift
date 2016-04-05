@@ -15,6 +15,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     let allStops = StopsModel.sharedInstance.allStops
     var allStopAnnotations = [StopAnnotation]()
+    var annotationStopNumber = 0
     
     let cottontownLoc = CLLocationCoordinate2DMake(34.019176, -81.038619)
     
@@ -147,23 +148,27 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         let stopAnnotation = view.annotation as! StopAnnotation
         print("Stop Number:",stopAnnotation.stopNumber)
         
-        let mapPageVC = MapPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil )
+        annotationStopNumber = stopAnnotation.stopNumber
+        
+        performSegueWithIdentifier("mapShowDetail", sender: self)
+        
+//        let mapPageVC = MapPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil )
 //        mapPageVC.extendedLayoutIncludesOpaqueBars = false
         
 //        mapPageVC.edgesForExtendedLayout = UIRectEdge.None
 
         
-        mapPageVC.stop = allStops[stopAnnotation.stopNumber - 1]
-        let modeButton = self.splitViewController?.displayModeButtonItem()
-        mapPageVC.navigationItem.leftBarButtonItem = modeButton
-        mapPageVC.navigationItem.leftItemsSupplementBackButton = true
+//        mapPageVC.stop = allStops[stopAnnotation.stopNumber - 1]
+//        let modeButton = self.splitViewController?.displayModeButtonItem()
+//        mapPageVC.navigationItem.leftBarButtonItem = modeButton
+//        mapPageVC.navigationItem.leftItemsSupplementBackButton = true
         
         
 
         
-        let nav = UINavigationController(rootViewController: mapPageVC)
-        
-        self.showDetailViewController(nav , sender: self)
+//        let nav = UINavigationController(rootViewController: mapPageVC)
+//        
+//        self.showDetailViewController(nav , sender: self)
 
     }
     
@@ -184,6 +189,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             
             self.showDetailViewController(nav , sender: self)
 
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "mapShowDetail" {
+            
+            let pageController = (segue.destinationViewController as! UINavigationController).topViewController as! MapPageViewController
+            
+            pageController.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+            pageController.navigationItem.leftItemsSupplementBackButton = true
+            pageController.stop = allStops[annotationStopNumber - 1]
         }
     }
 

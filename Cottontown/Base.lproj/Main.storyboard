@@ -6,10 +6,10 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Master-->
+        <!--Stops-->
         <scene sceneID="pY4-Hu-kfo">
             <objects>
-                <navigationController title="Master" extendedLayoutIncludesOpaqueBars="YES" id="RMx-3f-FxP" sceneMemberID="viewController">
+                <navigationController title="Stops" extendedLayoutIncludesOpaqueBars="YES" id="RMx-3f-FxP" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Stops" id="i50-Yg-Juy"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="-1036" y="-826"/>
         </scene>
-        <!--Master-->
+        <!--Stops-->
         <scene sceneID="smW-Zh-WAh">
             <objects>
-                <tableViewController title="Master" extendedLayoutIncludesOpaqueBars="YES" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="StopsTableViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Stops" extendedLayoutIncludesOpaqueBars="YES" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="StopsTableViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" id="r7i-6Z-zg0">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -356,7 +356,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBK-fx-F8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2054" y="1830"/>
+            <point key="canvasLocation" x="2534" y="2022"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
@@ -379,7 +379,7 @@
             <objects>
                 <tabBarController extendedLayoutIncludesOpaqueBars="YES" id="C4j-Ad-sZy" customClass="CottontownTabBarController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" barStyle="black" id="Vn3-cr-I6m">
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Vn3-cr-I6m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -394,10 +394,10 @@
             </objects>
             <point key="canvasLocation" x="-1973" y="293"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Maps-->
         <scene sceneID="j5r-gz-2sx">
             <objects>
-                <navigationController extendedLayoutIncludesOpaqueBars="YES" id="2nY-Xp-YgQ" sceneMemberID="viewController">
+                <navigationController title="Maps" extendedLayoutIncludesOpaqueBars="YES" id="2nY-Xp-YgQ" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aYK-aP-QRv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -409,12 +409,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeO-MY-FPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="569"/>
+            <point key="canvasLocation" x="-145" y="553"/>
         </scene>
-        <!--Cottontown Historic District-->
+        <!--Maps-->
         <scene sceneID="06J-es-u1a">
             <objects>
-                <viewController extendedLayoutIncludesOpaqueBars="YES" id="7qN-pH-Uhz" customClass="MapViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Maps" extendedLayoutIncludesOpaqueBars="YES" id="7qN-pH-Uhz" customClass="MapViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3wq-aa-io4"/>
                         <viewControllerLayoutGuide type="bottom" id="ZyT-14-CVu"/>
@@ -441,11 +441,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="map" destination="IPK-rs-dTQ" id="mw3-6m-zI6"/>
+                        <segue destination="Rqk-DE-sEr" kind="showDetail" identifier="mapShowDetail" id="h75-4w-YRW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEq-SG-cW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="495"/>
+            <point key="canvasLocation" x="737" y="451"/>
         </scene>
         <!--YouTube VC-->
         <scene sceneID="gX8-Lq-CKX">
@@ -568,7 +569,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYx-yW-OIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2934" y="1856"/>
+            <point key="canvasLocation" x="3286" y="1960"/>
         </scene>
         <!--Map-->
         <scene sceneID="0Ag-ok-min">
@@ -583,7 +584,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="un7-fT-MoF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-664" y="569"/>
+            <point key="canvasLocation" x="-1144" y="553"/>
         </scene>
         <!--History-->
         <scene sceneID="Igb-CR-BxM">
@@ -687,7 +688,7 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="401" y="2736"/>
+            <point key="canvasLocation" x="-271" y="2120"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MoD-ko-YOd">
@@ -706,7 +707,7 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uC1-Zg-oOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="391" y="1413"/>
+            <point key="canvasLocation" x="674" y="1323"/>
         </scene>
         <!--Map Page View Controller-->
         <scene sceneID="YQr-wl-US0">
@@ -717,7 +718,7 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vS-rW-Em3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1144" y="1413"/>
+            <point key="canvasLocation" x="1454" y="1485"/>
         </scene>
         <!--Content Image-->
         <scene sceneID="n1O-FX-8io">
@@ -784,7 +785,7 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyu-oL-Sfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-604" y="2762"/>
+            <point key="canvasLocation" x="-1276" y="2146"/>
         </scene>
     </scenes>
     <resources>
@@ -794,6 +795,7 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
         <image name="stops" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="h75-4w-YRW"/>
         <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>
 </document>
