@@ -68,5 +68,13 @@ b = nil
 print(b)
 let e = d + (b ?? [])
 
+enum Test {
+    case First
+    case Second
+}
 
+let z = Test.First
+if case .First = z {
+    print("first")
+}
 

@@ -195,10 +195,13 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         }
     }
     
-    func pageControlChanged(sender: UIViewController, newPageIndex: Int, direction: UIPageViewControllerNavigationDirection) {
+    //MARK: - PictureContentViewControllerDelegate method
+    
+    func pageControlChanged(sender: UIViewController, newPageIndex: Int) {
         
+        // direction doesn't matter for scroll page views
         let nextVC = viewControllerAtIndex(newPageIndex)
-        setViewControllers([nextVC!], direction: direction, animated: false, completion: nil)
+        setViewControllers([nextVC!], direction: .Forward, animated: false, completion: nil)
     }
     
     

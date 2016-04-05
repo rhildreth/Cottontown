@@ -9,7 +9,7 @@
         <!--Master-->
         <scene sceneID="pY4-Hu-kfo">
             <objects>
-                <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
+                <navigationController title="Master" extendedLayoutIncludesOpaqueBars="YES" id="RMx-3f-FxP" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Stops" id="i50-Yg-Juy"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
@@ -26,8 +26,8 @@
         <!--Stops-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
-                <splitViewController id="H1p-Uh-vWS" customClass="StopsSplitViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout"/>
+                <splitViewController extendedLayoutIncludesOpaqueBars="YES" id="H1p-Uh-vWS" customClass="StopsSplitViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Stops" image="stops" id="WhH-Op-Eq2"/>
                     <toolbarItems/>
                     <connections>
@@ -42,7 +42,7 @@
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
             <objects>
-                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="StopsTableViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Master" extendedLayoutIncludesOpaqueBars="YES" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="StopsTableViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" id="r7i-6Z-zg0">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,7 +130,9 @@
                         </connections>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" title="Cottontown Tour Stops" id="Zdf-7t-Un8"/>
+                    <navigationItem key="navigationItem" title="Cottontown Tour Stops" id="Zdf-7t-Un8">
+                        <barButtonItem key="backBarButtonItem" title="Tour Stops" id="TIF-yn-nWm"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,7 +141,7 @@
         <!--Stop Page View Controller-->
         <scene sceneID="by1-b1-Fhr">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="2" navigationOrientation="horizontal" spineLocation="none" id="uxT-f9-t9J" customClass="StopPageViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" extendedLayoutIncludesOpaqueBars="YES" transitionStyle="scroll" pageSpacing="2" navigationOrientation="horizontal" spineLocation="none" id="uxT-f9-t9J" customClass="StopPageViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="tgk-Se-u5m"/>
                 </pageViewController>
@@ -150,43 +152,68 @@
         <!--Picture Content View Controller-->
         <scene sceneID="OQO-ne-3t1">
             <objects>
-                <viewController storyboardIdentifier="stopContentVC" id="Fxg-Rp-VQb" customClass="PictureContentViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="stopContentVC" extendedLayoutIncludesOpaqueBars="YES" id="Fxg-Rp-VQb" customClass="PictureContentViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wod-7d-cdU"/>
                         <viewControllerLayoutGuide type="bottom" id="Rr0-g1-cqz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xk9-Vy-TVt">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N8A-ym-ShO">
-                                <rect key="frame" x="20" y="8" width="560" height="184"/>
+                                <rect key="frame" x="20" y="8" width="560" height="200"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="nUP-0b-HgI" appends="YES" id="lQl-XQ-Whs"/>
                                 </connections>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="7" translatesAutoresizingMaskIntoConstraints="NO" id="2hy-uv-bv7">
-                                <rect key="frame" x="249" y="506" width="103" height="37"/>
+                                <rect key="frame" x="249" y="511" width="103" height="37"/>
                                 <color key="currentPageIndicatorTintColor" red="0.97254901960784312" green="0.82352941176470584" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="pageControllTapped:" destination="Fxg-Rp-VQb" eventType="valueChanged" id="8LQ-Ml-jO1"/>
                                 </connections>
                             </pageControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4z-fy-1b9">
-                                <rect key="frame" x="20" y="202" width="560" height="294"/>
+                                <rect key="frame" x="20" y="218" width="560" height="293"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ML-H2-3PK">
+                                <rect key="frame" x="372" y="515" width="30" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="❯">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.82352941180000006" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightArrowTapped:" destination="Fxg-Rp-VQb" eventType="touchUpInside" id="BT2-ob-OFY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-Xa-pVm">
+                                <rect key="frame" x="199" y="517" width="30" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="❮">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.82352941180000006" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftArrowTapped:" destination="Fxg-Rp-VQb" eventType="touchUpInside" id="nBS-FN-pg5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="b4z-fy-1b9" secondAttribute="bottom" constant="10" id="1r7-4I-vOP"/>
+                            <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="b4z-fy-1b9" secondAttribute="bottom" id="1r7-4I-vOP"/>
+                            <constraint firstItem="VmA-Xa-pVm" firstAttribute="width" secondItem="3ML-H2-3PK" secondAttribute="width" id="3yK-ue-fAQ"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="leading" secondItem="Xk9-Vy-TVt" secondAttribute="leadingMargin" id="4B4-Y3-Aqa"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="trailing" secondItem="Xk9-Vy-TVt" secondAttribute="trailingMargin" id="4K8-Ls-L9A"/>
+                            <constraint firstItem="3ML-H2-3PK" firstAttribute="height" secondItem="2hy-uv-bv7" secondAttribute="height" multiplier="2:3" id="7Az-P2-EOl"/>
+                            <constraint firstItem="VmA-Xa-pVm" firstAttribute="height" secondItem="3ML-H2-3PK" secondAttribute="height" id="7MX-Mi-TfE"/>
+                            <constraint firstItem="3ML-H2-3PK" firstAttribute="centerY" secondItem="2hy-uv-bv7" secondAttribute="centerY" constant="-2" id="7kI-Qr-Nqk"/>
+                            <constraint firstItem="Rr0-g1-cqz" firstAttribute="top" secondItem="3ML-H2-3PK" secondAttribute="bottom" constant="14" id="BYU-p6-Bex"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="top" secondItem="Xk9-Vy-TVt" secondAttribute="topMargin" constant="8" id="Bf1-r8-nHy"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="top" secondItem="Xk9-Vy-TVt" secondAttribute="topMargin" id="ClQ-eq-HM3"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="leading" secondItem="Xk9-Vy-TVt" secondAttribute="leading" constant="20" id="Fg0-xX-x0e">
@@ -200,7 +227,9 @@
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="N8A-ym-ShO" secondAttribute="bottom" constant="3" id="U8B-bc-V1z"/>
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="b4z-fy-1b9" secondAttribute="bottom" constant="3" id="UeF-0h-hHq"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="width" secondItem="N8A-ym-ShO" secondAttribute="width" id="Wlq-at-ogY"/>
-                            <constraint firstItem="Rr0-g1-cqz" firstAttribute="top" secondItem="2hy-uv-bv7" secondAttribute="bottom" constant="8" id="ZAh-iJ-8Z8"/>
+                            <constraint firstItem="3ML-H2-3PK" firstAttribute="leading" secondItem="2hy-uv-bv7" secondAttribute="trailing" constant="20" id="YhL-M2-T5j"/>
+                            <constraint firstItem="Rr0-g1-cqz" firstAttribute="top" secondItem="2hy-uv-bv7" secondAttribute="bottom" constant="3" id="ZAh-iJ-8Z8"/>
+                            <constraint firstItem="VmA-Xa-pVm" firstAttribute="centerY" secondItem="3ML-H2-3PK" secondAttribute="centerY" constant="2" id="a5p-my-kZ0"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="top" secondItem="wod-7d-cdU" secondAttribute="bottom" constant="5" id="bfA-if-ipt"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="trailing" secondItem="Xk9-Vy-TVt" secondAttribute="trailingMargin" id="ef4-Zc-mmP"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="top" secondItem="N8A-ym-ShO" secondAttribute="top" id="fPc-vp-xmf"/>
@@ -210,6 +239,7 @@
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="N8A-ym-ShO" secondAttribute="bottom" constant="10" id="p12-qe-TN6"/>
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="centerX" secondItem="Xk9-Vy-TVt" secondAttribute="centerX" id="qxf-lG-PQ9"/>
                             <constraint firstItem="Rr0-g1-cqz" firstAttribute="top" secondItem="2hy-uv-bv7" secondAttribute="bottom" id="sm3-xA-qIh"/>
+                            <constraint firstItem="2hy-uv-bv7" firstAttribute="leading" secondItem="VmA-Xa-pVm" secondAttribute="trailing" constant="20" id="tlk-2L-73Z"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="top" secondItem="N8A-ym-ShO" secondAttribute="bottom" constant="10" id="xVc-Pz-OPq"/>
                             <constraint firstAttribute="trailing" secondItem="b4z-fy-1b9" secondAttribute="trailing" id="z7F-2Q-GGL"/>
                         </constraints>
@@ -223,6 +253,7 @@
                                 <exclude reference="fPc-vp-xmf"/>
                                 <exclude reference="hJI-Kj-y5f"/>
                                 <exclude reference="z7F-2Q-GGL"/>
+                                <exclude reference="BYU-p6-Bex"/>
                                 <exclude reference="sm3-xA-qIh"/>
                                 <exclude reference="R7p-Q8-Toj"/>
                                 <exclude reference="U8B-bc-V1z"/>
@@ -260,11 +291,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <connections>
                         <outlet property="contentImage" destination="N8A-ym-ShO" id="tWt-cP-y0f"/>
                         <outlet property="contentText" destination="b4z-fy-1b9" id="apN-Cx-QKl"/>
+                        <outlet property="leftArrow" destination="VmA-Xa-pVm" id="20o-7u-Z4t"/>
                         <outlet property="pageControl" destination="2hy-uv-bv7" id="fEl-bR-Z1h"/>
+                        <outlet property="rightArrow" destination="3ML-H2-3PK" id="XSp-Zs-YG0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgk-gm-1v8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -279,7 +313,7 @@
         <!--Web View Controller-->
         <scene sceneID="vAz-A7-oaT">
             <objects>
-                <viewController storyboardIdentifier="webVC" id="orY-QJ-1kP" userLabel="Web View Controller" customClass="WebViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="webVC" extendedLayoutIncludesOpaqueBars="YES" id="orY-QJ-1kP" userLabel="Web View Controller" customClass="WebViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M2x-zZ-zWj"/>
                         <viewControllerLayoutGuide type="bottom" id="Iwt-1I-Xyc"/>
@@ -327,7 +361,7 @@
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
             <objects>
-                <navigationController hidesBottomBarWhenPushed="YES" id="vC3-pB-5Vb" sceneMemberID="viewController">
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" hidesBottomBarWhenPushed="YES" id="vC3-pB-5Vb" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
                         <autoresizingMask key="autoresizingMask"/>
@@ -343,8 +377,9 @@
         <!--Cottontown Tab Bar Controller-->
         <scene sceneID="QRQ-Vv-RBE">
             <objects>
-                <tabBarController id="C4j-Ad-sZy" customClass="CottontownTabBarController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="Vn3-cr-I6m">
+                <tabBarController extendedLayoutIncludesOpaqueBars="YES" id="C4j-Ad-sZy" customClass="CottontownTabBarController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" barStyle="black" id="Vn3-cr-I6m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -362,7 +397,8 @@
         <!--Navigation Controller-->
         <scene sceneID="j5r-gz-2sx">
             <objects>
-                <navigationController id="2nY-Xp-YgQ" sceneMemberID="viewController">
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" id="2nY-Xp-YgQ" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aYK-aP-QRv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -378,17 +414,17 @@
         <!--Cottontown Historic District-->
         <scene sceneID="06J-es-u1a">
             <objects>
-                <viewController id="7qN-pH-Uhz" customClass="MapViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="7qN-pH-Uhz" customClass="MapViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3wq-aa-io4"/>
                         <viewControllerLayoutGuide type="bottom" id="ZyT-14-CVu"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bg2-j9-8UV">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleAspectFill" id="bg2-j9-8UV">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IPK-rs-dTQ">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            <mapView multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IPK-rs-dTQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -399,7 +435,10 @@
                             <constraint firstItem="IPK-rs-dTQ" firstAttribute="top" secondItem="3wq-aa-io4" secondAttribute="bottom" id="vdq-fN-dUu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Cottontown Historic District" id="KEc-2K-4F6"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Cottontown Historic District" id="KEc-2K-4F6">
+                        <barButtonItem key="backBarButtonItem" title="Cottontown Map" id="4ZT-B1-ijk"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="map" destination="IPK-rs-dTQ" id="mw3-6m-zI6"/>
                     </connections>
@@ -411,13 +450,13 @@
         <!--YouTube VC-->
         <scene sceneID="gX8-Lq-CKX">
             <objects>
-                <viewController storyboardIdentifier="YouTubeVC" title="YouTube VC" id="eCD-9W-r2k" customClass="YouTubeContentViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YouTubeVC" title="YouTube VC" extendedLayoutIncludesOpaqueBars="YES" id="eCD-9W-r2k" customClass="YouTubeContentViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dsN-ZR-Ozr"/>
                         <viewControllerLayoutGuide type="bottom" id="8GY-Qc-HuL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="L6P-Zi-kK8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hIN-FQ-hhp" customClass="YTPlayerView">
@@ -445,6 +484,16 @@
                                     </mask>
                                 </variation>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFr-Ht-TuG">
+                                <rect key="frame" x="175" y="513" width="30" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="❮">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.82352941180000006" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftArrowTapped:" destination="eCD-9W-r2k" eventType="touchUpInside" id="dZV-4a-Ifl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -453,6 +502,7 @@
                             <constraint firstAttribute="trailing" secondItem="bMP-5F-87U" secondAttribute="trailing" id="46w-Eo-ium"/>
                             <constraint firstItem="bMP-5F-87U" firstAttribute="width" secondItem="hIN-FQ-hhp" secondAttribute="width" id="5u9-w3-el3"/>
                             <constraint firstItem="hIN-FQ-hhp" firstAttribute="top" secondItem="L6P-Zi-kK8" secondAttribute="top" id="Bum-kI-ZCi"/>
+                            <constraint firstItem="Oea-TW-yE7" firstAttribute="leading" secondItem="wFr-Ht-TuG" secondAttribute="trailing" constant="20" id="Cch-G3-Ari"/>
                             <constraint firstItem="bMP-5F-87U" firstAttribute="leading" secondItem="hIN-FQ-hhp" secondAttribute="trailing" constant="5" id="EVN-bi-dmM"/>
                             <constraint firstItem="hIN-FQ-hhp" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leading" id="EhC-0h-2Y0"/>
                             <constraint firstItem="8GY-Qc-HuL" firstAttribute="top" secondItem="Oea-TW-yE7" secondAttribute="bottom" id="F0i-g2-9Js"/>
@@ -462,6 +512,7 @@
                             <constraint firstAttribute="trailing" secondItem="bMP-5F-87U" secondAttribute="trailing" id="dlm-Qu-UhN"/>
                             <constraint firstItem="hIN-FQ-hhp" firstAttribute="top" secondItem="L6P-Zi-kK8" secondAttribute="top" id="gGD-Ms-E61"/>
                             <constraint firstItem="Oea-TW-yE7" firstAttribute="centerX" secondItem="L6P-Zi-kK8" secondAttribute="centerX" id="gfb-BE-RVs"/>
+                            <constraint firstItem="wFr-Ht-TuG" firstAttribute="centerY" secondItem="Oea-TW-yE7" secondAttribute="centerY" constant="-2" id="k1u-nk-IYz"/>
                             <constraint firstItem="bMP-5F-87U" firstAttribute="top" secondItem="dsN-ZR-Ozr" secondAttribute="bottom" id="mNx-c0-qAH"/>
                             <constraint firstItem="Oea-TW-yE7" firstAttribute="top" secondItem="hIN-FQ-hhp" secondAttribute="bottom" constant="8" id="mgz-uF-rdR">
                                 <variation key="heightClass=compact" constant="5"/>
@@ -504,10 +555,12 @@
                             </mask>
                         </variation>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="YouTube" id="npR-5A-K2D"/>
+                    <navigationItem key="navigationItem" title="Title" id="UgX-Ax-cp0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <connections>
+                        <outlet property="leftArrow" destination="wFr-Ht-TuG" id="mhx-1e-SZz"/>
                         <outlet property="pageControl" destination="Oea-TW-yE7" id="E2q-ZK-R6n"/>
                         <outlet property="player" destination="hIN-FQ-hhp" id="MiL-jv-5WC"/>
                         <outlet property="youTubeTextField" destination="bMP-5F-87U" id="snE-Ds-S2q"/>
@@ -520,7 +573,8 @@
         <!--Map-->
         <scene sceneID="0Ag-ok-min">
             <objects>
-                <splitViewController id="SLz-5b-lYx" customClass="MapSplitViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController extendedLayoutIncludesOpaqueBars="YES" id="SLz-5b-lYx" customClass="MapSplitViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Map" image="map" id="2hm-If-TGa"/>
                     <connections>
                         <segue destination="2nY-Xp-YgQ" kind="relationship" relationship="masterViewController" id="Qh6-pq-5gx"/>
@@ -534,16 +588,16 @@
         <!--History-->
         <scene sceneID="Igb-CR-BxM">
             <objects>
-                <viewController title="History" id="15F-BH-iYo" customClass="HistoryViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="History" extendedLayoutIncludesOpaqueBars="YES" id="15F-BH-iYo" customClass="HistoryViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C4G-8G-seV"/>
                         <viewControllerLayoutGuide type="bottom" id="fPW-PQ-qjn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xRu-Pq-heb">
-                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSy-cx-YzH">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sSy-cx-YzH">
                                 <rect key="frame" x="20" y="176" width="560" height="306"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Bellevue, today commonly known as “Cottontown” is an early twentieth-century downtown Columbia, South Carolina suburb located north of Elmwood Avenue, extending roughly north to Anthony Street west to Sumter Street and east to Bull Street The neighborhood sits on land once owned by the Wallace family, who, in c.1893, sold to the state property which is now the S.C. State Hospital campus.  In the late nineteenth/early twentieth centuries, the area near the Wallace tract was a bustling commercial district. The intersection of Main and Upper (later Elmwood) Streets was known as Cotton Town, named after the cotton storage warehouses that operated there. Grocery wholesale and retail establishments also operated in the area. In 1896, the city expanded the streetcar line, extending the Main Street line north of Upper Street out to Hyatt Park, where a new pavilion and casino were transforming the areas north of the city limits into a center for social activity and recreation. About this time, Cotton Town assumed a new name befitting the area's more elegant image ”Bellevue Springs”. 
@@ -559,7 +613,7 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-Ol-oCR">
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-Ol-oCR">
                                 <rect key="frame" x="20" y="8" width="560" height="163"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -619,7 +673,7 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                             </mask>
                         </variation>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="History of Cottontown" id="KvB-Wf-2i0"/>
                     <connections>
                         <outlet property="historyImage" destination="CYJ-Ol-oCR" id="EYu-2c-kCC"/>
@@ -638,7 +692,8 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
         <!--Navigation Controller-->
         <scene sceneID="MoD-ko-YOd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rqk-DE-sEr" sceneMemberID="viewController">
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" hidesBottomBarWhenPushed="YES" id="Rqk-DE-sEr" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mwX-ec-QeK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -651,22 +706,23 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uC1-Zg-oOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-493" y="1445"/>
+            <point key="canvasLocation" x="391" y="1413"/>
         </scene>
         <!--Map Page View Controller-->
         <scene sceneID="YQr-wl-US0">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="2" navigationOrientation="horizontal" spineLocation="none" id="LlT-gu-dwq" customClass="MapPageViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" extendedLayoutIncludesOpaqueBars="YES" transitionStyle="scroll" pageSpacing="2" navigationOrientation="horizontal" spineLocation="none" id="LlT-gu-dwq" customClass="MapPageViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="1yD-Ml-jaB"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vS-rW-Em3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260" y="1445"/>
+            <point key="canvasLocation" x="1144" y="1413"/>
         </scene>
         <!--Content Image-->
         <scene sceneID="n1O-FX-8io">
             <objects>
-                <viewController storyboardIdentifier="contentImageID" id="0Ha-TH-47R" customClass="ContentImage" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="contentImageID" extendedLayoutIncludesOpaqueBars="YES" id="0Ha-TH-47R" customClass="ContentImage" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LJF-0R-617"/>
                         <viewControllerLayoutGuide type="bottom" id="hel-hW-jeW"/>
@@ -714,7 +770,7 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
         <!--History-->
         <scene sceneID="F4z-EK-cq6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1b0-c9-h6e" sceneMemberID="viewController">
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="1b0-c9-h6e" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="History" image="history" id="pQD-yx-1ns"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cJq-sg-O7V">
@@ -738,6 +794,6 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
         <image name="stops" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
+        <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
 </document>

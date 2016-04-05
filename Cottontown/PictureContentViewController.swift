@@ -9,7 +9,7 @@
 import UIKit
 
 protocol PictureContentViewControllerDelegate: class {
-    func pageControlChanged(sender: UIViewController, newPageIndex: Int, direction: UIPageViewControllerNavigationDirection )
+    func pageControlChanged(sender: UIViewController, newPageIndex: Int)
 }
 
 class PictureContentViewController: UIViewController {
@@ -19,11 +19,14 @@ class PictureContentViewController: UIViewController {
     
     @IBOutlet weak var pageControl: UIPageControl!
     
+    @IBOutlet weak var leftArrow: UIButton!
+    @IBOutlet weak var rightArrow: UIButton!
+    
     weak var delegate: PictureContentViewControllerDelegate?
     
     var picImageFileName: String?
     var picText = ""
-    var pageIndex = 0
+    var pageIndex = 0   // the first page displayed is pageIndex = 0
     var maxPages = 0
     
     override func viewDidLoad() {
@@ -36,7 +39,8 @@ class PictureContentViewController: UIViewController {
         pageControl.currentPage = pageIndex
         pageControl.numberOfPages = maxPages
         pageControl.currentPageIndicatorTintColor = UIColor.init(colorLiteralRed: 248.0/255, green: 210.0/255.0, blue: 103.0/255.0, alpha: 1.0)
-        pageControl.defersCurrentPageDisplay = false
+        
+        showPageNavigationArrows ()
         
     }
     
@@ -69,12 +73,40 @@ class PictureContentViewController: UIViewController {
         
     }
     
-        @IBAction func pageControllTapped(sender: UIPageControl) {
+    func showPageNavigationArrows () {
         
-        print("pageIndex:", pageIndex)
-        print("sender current page:", sender.currentPage)
+        if maxPages == 1 {
+            leftArrow.hidden = true
+            rightArrow.hidden = true
+            return
+        }
+        
+        if maxPages - (pageIndex + 1) > 0 {
+            rightArrow.hidden = false
+        } else {
+            rightArrow.hidden = true
+        }
+        
+        if pageIndex + 1 > 1 {
+            leftArrow.hidden = false
+        } else {
+            leftArrow.hidden = true
+        }
+       
+                    
+    }
+    
+        @IBAction func pageControllTapped(sender: UIPageControl) {
             
-            delegate?.pageControlChanged(self, newPageIndex: sender.currentPage, direction: .Forward)
+            delegate?.pageControlChanged(self, newPageIndex: sender.currentPage)      }
+    
+    
+    @IBAction func leftArrowTapped(sender: UIButton) {
+        delegate?.pageControlChanged(self, newPageIndex: pageIndex - 1)
+    }
+    
+    @IBAction func rightArrowTapped(sender: UIButton) {
+        delegate?.pageControlChanged(self, newPageIndex: pageIndex + 1)
     }
     
     override func didReceiveMemoryWarning() {

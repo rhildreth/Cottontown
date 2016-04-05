@@ -11,8 +11,7 @@ import UIKit
 class MapPageViewController: UIPageViewController, UIPageViewControllerDataSource {
 
     var stop: Stop?
-    
-    
+        
     var pageIndex = 0
     
     override func viewWillAppear(animated: Bool) {
@@ -29,6 +28,7 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
         let firstVC = viewControllerAtIndex(0)
         setViewControllers([firstVC!], direction: .Forward, animated: true, completion: nil)
         
+
     }
     
     
@@ -54,6 +54,8 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
             stopContentVC.picText = "No Stop Selected  abc"
         }
         stopContentVC.pageIndex = self.pageIndex
+        
+                
         return stopContentVC
         
     }

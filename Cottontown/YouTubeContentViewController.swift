@@ -23,6 +23,9 @@ class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var pageControl: UIPageControl!
     
+    @IBOutlet weak var leftArrow: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,6 +42,8 @@ class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
                         ]
         
         player.loadWithVideoId(youTubeID, playerVars: playVars)
+        
+        leftArrow.hidden = false
     }
     
     
@@ -52,10 +57,15 @@ class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
     }
     
     @IBAction func pageControlTapped(sender: UIPageControl) {
-         print("pageIndex:", pageIndex)
-        print("sender current page:", sender.currentPage)
-        
-        delegate?.pageControlChanged(self, newPageIndex: sender.currentPage, direction: .Forward)
+       
+        // direction is not used in scroll based paging.
+        delegate?.pageControlChanged(self, newPageIndex: sender.currentPage)
         
     }
+    
+    @IBAction func leftArrowTapped(sender: UIButton) {
+        
+        delegate?.pageControlChanged(self, newPageIndex: pageIndex - 1)
+    }
+    
 }
