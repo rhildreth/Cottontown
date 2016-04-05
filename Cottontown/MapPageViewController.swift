@@ -8,11 +8,13 @@
 
 import UIKit
 
-class MapPageViewController: UIPageViewController, UIPageViewControllerDataSource {
+class MapPageViewController: UIPageViewController, UIPageViewControllerDataSource, PictureContentViewControllerDelegate {
 
     var stop: Stop?
         
     var pageIndex = 0
+    
+    var allStopContent = [[String: String]]()
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -24,6 +26,13 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
         super.viewDidLoad()
         
         self.dataSource = self
+        
+        if let stop = stop {
+            allStopContent = stop.stopPictures + (stop.youTubes ?? [])  // ?? is nil coalescing
+            // operator - If stop.youTubes is not nil it is unwrapped, otherwise the empty array is
+            // returned
+        }
+        
         let firstVC = viewControllerAtIndex(0)
         setViewControllers([firstVC!], direction: .Forward, animated: true, completion: nil)
         
@@ -36,26 +45,41 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
         // Dispose of any resources that can be recreated.
     }
     
-    func viewControllerAtIndex(index: Int) -> PictureContentViewController? {
+    func viewControllerAtIndex(index: Int) -> UIViewController? {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let stopContentVC = storyboard.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
-        
-        if let stop = stop {
+        guard allStopContent.count > 0 else {
+            let stopContentVC = storyboard?.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
+            stopContentVC.picText = "No Stop Selected"
             
-            
-            stopContentVC.picImageFileName = (stop.stopPictures[index])["picImage"]!
-            stopContentVC.picText = (stop.stopPictures[index])["picText"]!
-            stopContentVC.maxPages = stop.stopPictures.count
-            
-            
-        } else {
-            stopContentVC.picText = "No Stop Selected  abc"
+            return stopContentVC
         }
-        stopContentVC.pageIndex = self.pageIndex
         
+        if let _ = (allStopContent[index])["picImage"]  {
+            let stopContentVC = storyboard?.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
+            if let _ = stop {
                 
-        return stopContentVC
+                stopContentVC.delegate = self
+                stopContentVC.picImageFileName = (allStopContent[index])["picImage"]!
+                stopContentVC.picText = (allStopContent[index])["picText"]!
+                stopContentVC.maxPages = allStopContent.count
+                
+                
+            } else {
+                stopContentVC.picText = "No Stop Selected"
+            }
+            stopContentVC.pageIndex = index
+            return stopContentVC
+        }else {
+            let youTubeContentVC = storyboard?.instantiateViewControllerWithIdentifier("YouTubeVC") as! YouTubeContentViewController
+            
+            youTubeContentVC.delegate = self
+            youTubeContentVC.maxPages = allStopContent.count
+            youTubeContentVC.pageIndex = index
+            
+            youTubeContentVC.youTubeID = (allStopContent[index])["YouTubeID"]!
+            youTubeContentVC.youTubeText = (allStopContent[index])["YouTubeText"]!
+            return youTubeContentVC
+        }
         
     }
     
@@ -76,21 +100,37 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         
-        guard let stop = stop else {return nil}
+        guard let _ = stop else {return nil}
         
-        let stopContentVC = viewController as! PictureContentViewController
-        pageIndex = stopContentVC.pageIndex + 1
-       
-        if pageIndex > (stop.stopPictures.count) - 1 {
-            pageIndex = (stop.stopPictures.count) - 1
+        var pageIndex = getPageIndexForVC(viewController)
+        
+        pageIndex += 1
+        
+        if pageIndex > (allStopContent.count) - 1  {
+            pageIndex = (allStopContent.count) - 1
             return nil
         } else {
             return viewControllerAtIndex(pageIndex)
-            
         }
     }
     
-
+    func getPageIndexForVC(viewController: UIViewController) -> Int {
+        if let vc = viewController as? PictureContentViewController {
+            return vc.pageIndex
+        } else {
+            let vc = viewController as! YouTubeContentViewController
+            return vc.pageIndex
+        }
+    }
+    
+    //MARK: - PictureContentViewControllerDelegate method
+    
+    func pageControlChanged(sender: UIViewController, newPageIndex: Int) {
+        
+        // direction doesn't matter for scroll page views
+        let nextVC = viewControllerAtIndex(newPageIndex)
+        setViewControllers([nextVC!], direction: .Forward, animated: false, completion: nil)
+    }
 
     
 }
