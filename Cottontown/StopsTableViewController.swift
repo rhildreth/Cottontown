@@ -64,7 +64,8 @@ class StopsTableViewController: UITableViewController {
             
         }
     }
-    
+    // called only to show stop for in range iBeacon.  Not implemented of release version 
+    // of app.
     func showDetailViewForStopNumber(stopNumber: Int) {
         
         let indexPath = NSIndexPath(forRow: stopNumber - 1, inSection: 0)

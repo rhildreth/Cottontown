@@ -206,7 +206,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
                 
                 if filteriBeaconForStop(7) {
                     tabBarController.selectedIndex = 0  // Make sure Stops tab is selected
-                    stopsTVC.showDetailViewForStopNumber(7)
+                    stopsTVC.showDetailViewForStopNumber(7)  // test only before Warmouth stop created
                     print("Warmouth Beacon active")
                     
                     iBeaconAlertForStop(7)
