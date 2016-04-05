@@ -46,8 +46,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         map.showAnnotations(allStopAnnotations, animated: true)
         map.showsCompass = true
         map.showsScale = true
-        self.extendedLayoutIncludesOpaqueBars = true
-        self.edgesForExtendedLayout = UIRectEdge.None
 
     }
     
@@ -175,7 +173,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             print("Stop Number:",stopAnnotation.stopNumber)
             
             let mapPageVC = MapPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil )
-            mapPageVC.extendedLayoutIncludesOpaqueBars = false
+//            mapPageVC.extendedLayoutIncludesOpaqueBars = false
             
             mapPageVC.stop = allStops[stopAnnotation.stopNumber - 1]
             let b = self.splitViewController?.displayModeButtonItem()

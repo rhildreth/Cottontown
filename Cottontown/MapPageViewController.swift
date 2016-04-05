@@ -17,8 +17,7 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.extendedLayoutIncludesOpaqueBars = false
-        self.edgesForExtendedLayout = .None
+        
     }
     
     override func viewDidLoad() {
