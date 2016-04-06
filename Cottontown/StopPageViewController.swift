@@ -53,16 +53,17 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
 //    }
     
     func viewControllerAtIndex(index: Int) -> UIViewController? {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard allStopContent.count > 0 else {
-            let stopContentVC = storyboard?.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
+            
+            let stopContentVC = storyboard.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
                 stopContentVC.picText = "No Stop Selected"
                 
             return stopContentVC
         }
         
         if let _ = (allStopContent[index])["picImage"]  {
-        let stopContentVC = storyboard?.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
+        let stopContentVC = storyboard.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
         if let _ = stop {
             
             stopContentVC.delegate = self
@@ -77,7 +78,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         stopContentVC.pageIndex = index
         return stopContentVC
         }else {
-            let youTubeContentVC = storyboard?.instantiateViewControllerWithIdentifier("YouTubeVC") as! YouTubeContentViewController
+            let youTubeContentVC = storyboard.instantiateViewControllerWithIdentifier("YouTubeVC") as! YouTubeContentViewController
             
             youTubeContentVC.delegate = self
             youTubeContentVC.maxPages = allStopContent.count
