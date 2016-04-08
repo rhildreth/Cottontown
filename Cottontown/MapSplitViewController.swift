@@ -20,8 +20,9 @@ class MapSplitViewController: UISplitViewController, UISplitViewControllerDelega
         // Set the left bar button in the detail view controller
         let navigationController = self.viewControllers[self.viewControllers.count-1] as! UINavigationController
         navigationController.topViewController!.navigationItem.leftBarButtonItem = self.displayModeButtonItem()
-        
-    }
+          }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -50,11 +51,12 @@ class MapSplitViewController: UISplitViewController, UISplitViewControllerDelega
     func splitViewController(svc: UISplitViewController, shouldHideViewController vc: UIViewController, inOrientation orientation: UIInterfaceOrientation) -> Bool {
         return false
     }
-    
+*/
     func splitViewController(svc: UISplitViewController, willChangeToDisplayMode displayMode: UISplitViewControllerDisplayMode) {
+        print("svc:",svc, "will change to display mode", displayMode.rawValue)
         return
     }
-
+/*
     func splitViewController(svc: UISplitViewController, willShowViewController aViewController: UIViewController, invalidatingBarButtonItem barButtonItem: UIBarButtonItem) {
         return
     }

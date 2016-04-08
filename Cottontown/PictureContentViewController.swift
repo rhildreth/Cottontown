@@ -42,6 +42,8 @@ class PictureContentViewController: UIViewController {
         
         showPageNavigationArrows ()
         
+        
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -103,6 +105,7 @@ class PictureContentViewController: UIViewController {
     
     @IBAction func leftArrowTapped(sender: UIButton) {
         delegate?.pageControlChanged(self, newPageIndex: pageIndex - 1)
+        
     }
     
     @IBAction func rightArrowTapped(sender: UIButton) {
@@ -132,6 +135,8 @@ class PictureContentViewController: UIViewController {
         
     
     }
+    
+
    
     
 }

@@ -17,6 +17,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     var allStopAnnotations = [StopAnnotation]()
     var annotationStopNumber = 0
     
+    var showStop: Stop?
+    
     let cottontownLoc = CLLocationCoordinate2DMake(34.019176, -81.038619)
     
     lazy var locationManager: CLLocationManager = {
@@ -48,6 +50,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         map.showsCompass = true
         map.showsScale = true
 
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        guard let showStop = showStop else {return}
+        
+        print("show stop:", showStop.stopTitle)
+        let stopNumber = Int(showStop.stopNumber)
+        let stopAnnotation = allStopAnnotations[stopNumber! - 1]
+        map.selectAnnotation(stopAnnotation, animated: false)
     }
     
     func createStopAnnotations () -> [StopAnnotation] {

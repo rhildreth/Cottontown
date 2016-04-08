@@ -16,11 +16,7 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
     
     var allStopContent = [[String: String]]()
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +35,11 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
 
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        print("map page vc appeared")
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -93,6 +94,7 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
         
         if pageIndex < 0 {
             pageIndex = 0
+            
             return nil
         } else {
             return viewControllerAtIndex(pageIndex)

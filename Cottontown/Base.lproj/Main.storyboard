@@ -47,6 +47,7 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <color key="separatorColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
@@ -113,6 +114,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="8"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
@@ -127,6 +129,7 @@
                         <connections>
                             <outlet property="dataSource" destination="7bK-jq-Zjz" id="Gho-Na-rnu"/>
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
+                            <outletCollection property="gestureRecognizers" destination="6Co-jT-W1h" appends="YES" id="Dxt-5h-pE9"/>
                         </connections>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
@@ -135,6 +138,11 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="6Co-jT-W1h">
+                    <connections>
+                        <action selector="longPressDetected:" destination="7bK-jq-Zjz" id="P3O-gn-CsH"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="653" y="-1206"/>
         </scene>
@@ -599,8 +607,8 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sSy-cx-YzH">
-                                <rect key="frame" x="20" y="176" width="560" height="306"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSy-cx-YzH">
+                                <rect key="frame" x="20" y="192" width="560" height="290"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Bellevue, today commonly known as “Cottontown” is an early twentieth-century downtown Columbia, South Carolina suburb located north of Elmwood Avenue, extending roughly north to Anthony Street west to Sumter Street and east to Bull Street The neighborhood sits on land once owned by the Wallace family, who, in c.1893, sold to the state property which is now the S.C. State Hospital campus.  In the late nineteenth/early twentieth centuries, the area near the Wallace tract was a bustling commercial district. The intersection of Main and Upper (later Elmwood) Streets was known as Cotton Town, named after the cotton storage warehouses that operated there. Grocery wholesale and retail establishments also operated in the area. In 1896, the city expanded the streetcar line, extending the Main Street line north of Upper Street out to Hyatt Park, where a new pavilion and casino were transforming the areas north of the city limits into a center for social activity and recreation. About this time, Cotton Town assumed a new name befitting the area's more elegant image ”Bellevue Springs”. 
 
@@ -615,8 +623,8 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-Ol-oCR">
-                                <rect key="frame" x="20" y="8" width="560" height="163"/>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-Ol-oCR">
+                                <rect key="frame" x="20" y="8" width="560" height="179"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="82I-0p-BAa" appends="YES" id="rOf-0q-utP"/>
