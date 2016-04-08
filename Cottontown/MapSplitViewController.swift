@@ -53,7 +53,7 @@ class MapSplitViewController: UISplitViewController, UISplitViewControllerDelega
     }
 */
     func splitViewController(svc: UISplitViewController, willChangeToDisplayMode displayMode: UISplitViewControllerDisplayMode) {
-        print("svc:",svc, "will change to display mode", displayMode.rawValue)
+        
         return
     }
 /*

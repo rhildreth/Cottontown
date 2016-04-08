@@ -241,7 +241,6 @@
 		E40C91D31CAFE20C00F40EF5 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		E411D1441CB531CB008EC7E0 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CottontownTabBarController.swift; sourceTree = "<group>"; };
-		E411EC181C49B09F0081AB9B /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<absolute>"; };
 		E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsSplitViewController.swift; sourceTree = "<group>"; };
 		E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E411EC201C4B29200081AB9B /* Notificatons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificatons.swift; sourceTree = "<group>"; };
@@ -528,7 +527,6 @@
 				E43CA11A1C8FCAAC0051139B /* MobileCoreServices.framework */,
 				E4E3F2241C8F2497006456AB /* ImageIO.framework */,
 				E4624FC71C2F8A4E003023A1 /* MapKit.framework */,
-				E411EC181C49B09F0081AB9B /* Reveal.framework */,
 				E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */,
 				E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */,
 				E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */,
@@ -880,19 +878,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries\"",
-				);
 				INFOPLIST_FILE = Cottontown/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = (
-					"-ObjC",
-					"-lz",
-					"-framework",
-					Reveal,
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hildrethus.Cottontown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "53e435ab-bf89-48fa-a9c1-4fe8db71b4f3";

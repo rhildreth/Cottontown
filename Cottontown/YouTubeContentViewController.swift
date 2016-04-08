@@ -53,7 +53,7 @@ class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
     }
     
     deinit {
-        print("denint youTubeContentViewController")
+        
     }
     
     @IBAction func pageControlTapped(sender: UIPageControl) {

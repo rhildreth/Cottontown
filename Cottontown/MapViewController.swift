@@ -55,7 +55,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     override func viewWillAppear(animated: Bool) {
         guard let showStop = showStop else {return}
         
-        print("show stop:", showStop.stopTitle)
+        
         let stopNumber = Int(showStop.stopNumber)
         let stopAnnotation = allStopAnnotations[stopNumber! - 1]
         map.selectAnnotation(stopAnnotation, animated: false)
@@ -157,7 +157,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         let stopAnnotation = view.annotation as! StopAnnotation
-        print("Stop Number:",stopAnnotation.stopNumber)
+        
         
         annotationStopNumber = stopAnnotation.stopNumber
         
@@ -186,7 +186,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
         if splitViewController!.traitCollection.horizontalSizeClass == .Regular {
             let stopAnnotation = view.annotation as! StopAnnotation
-            print("Stop Number:",stopAnnotation.stopNumber)
+            
             
             let mapPageVC = MapPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil )
 //            mapPageVC.extendedLayoutIncludesOpaqueBars = false

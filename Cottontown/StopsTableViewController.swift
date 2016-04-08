@@ -125,27 +125,23 @@ class StopsTableViewController: UITableViewController {
         let indexPath = tableView.indexPathForRowAtPoint(touchPoint)
         
         let stop = allStops[indexPath!.row]
-        print("long touch:",stop.stopTitle)
         
         let mapSplitVC = self.tabBarController!.viewControllers![1] as! MapSplitViewController
         let mapVCNavigationController = mapSplitVC.viewControllers[0] as! UINavigationController
         let mapVC = mapVCNavigationController.viewControllers[0] as! MapViewController
         
         mapVC.showStop = stop
-        let VCs = mapSplitVC.viewControllers
-        for VC in VCs {
-            let navVC = VC as! UINavigationController
-            print("long press split nav",navVC,"contents:",navVC.viewControllers)
-            
-        }
+        
         // If the map detail is being displayed, remove it so the user will see the map view
         if mapVCNavigationController.viewControllers.count > 1 {
             mapVCNavigationController.popViewControllerAnimated(false)
         }
         
+        
+        
         mapSplitVC.preferredDisplayMode = UISplitViewControllerDisplayMode.AllVisible
         tabBarController?.selectedIndex = 1
-
+        
     }
 
 

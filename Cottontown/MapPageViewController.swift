@@ -37,7 +37,7 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        print("map page vc appeared")
+       
         
     }
     
