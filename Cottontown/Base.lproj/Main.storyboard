@@ -388,6 +388,7 @@
                         <segue destination="H1p-Uh-vWS" kind="relationship" relationship="viewControllers" id="ChI-oW-V2b"/>
                         <segue destination="SLz-5b-lYx" kind="relationship" relationship="viewControllers" id="8Lw-eP-oOp"/>
                         <segue destination="1b0-c9-h6e" kind="relationship" relationship="viewControllers" id="AkK-dB-JMH"/>
+                        <segue destination="jyQ-vA-D2j" kind="relationship" relationship="viewControllers" id="zwf-0A-u7w"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvA-uD-Yqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -787,8 +788,67 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
             </objects>
             <point key="canvasLocation" x="-1276" y="2146"/>
         </scene>
+        <!--About the Cottontown App-->
+        <scene sceneID="pja-H4-jM7">
+            <objects>
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="jyQ-vA-D2j" customClass="AboutViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Asj-4d-7Tl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pji-KV-1AZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3GS-vj-iZu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" image="HCF Web Logo" translatesAutoresizingMaskIntoConstraints="NO" id="32k-f1-oYU">
+                                <rect key="frame" x="152" y="30" width="296" height="66"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" image="HCF bg fill" translatesAutoresizingMaskIntoConstraints="NO" id="mBz-RP-dST">
+                                <rect key="frame" x="20" y="30" width="132" height="66"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" image="HCF bg fill" translatesAutoresizingMaskIntoConstraints="NO" id="okL-EV-1II">
+                                <rect key="frame" x="448" y="30" width="132" height="66"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDo-NO-202">
+                                <rect key="frame" x="20" y="116" width="560" height="425"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The original print and web based Cottontown Walking Tour was designed by the Historic Columbia Foundation, a non-profit organization dedicated to preserving Columbia and Richland County’s historic and cultural heritage.
+
+This app was written by Ron Hildreth (who resides in Cottontown), with graphics designed by Adam Rohaly.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="32k-f1-oYU" firstAttribute="centerX" secondItem="3GS-vj-iZu" secondAttribute="centerX" id="0QX-24-4wp"/>
+                            <constraint firstItem="32k-f1-oYU" firstAttribute="top" secondItem="Asj-4d-7Tl" secondAttribute="bottom" constant="10" id="3hc-KM-kVN"/>
+                            <constraint firstItem="okL-EV-1II" firstAttribute="top" secondItem="32k-f1-oYU" secondAttribute="top" id="5MC-if-yqP"/>
+                            <constraint firstItem="JDo-NO-202" firstAttribute="top" secondItem="okL-EV-1II" secondAttribute="bottom" constant="20" id="DAn-PN-eVR"/>
+                            <constraint firstItem="mBz-RP-dST" firstAttribute="top" secondItem="32k-f1-oYU" secondAttribute="top" id="ITZ-wa-Y3v"/>
+                            <constraint firstItem="okL-EV-1II" firstAttribute="leading" secondItem="32k-f1-oYU" secondAttribute="trailing" id="KWJ-Hk-Gv3"/>
+                            <constraint firstItem="JDo-NO-202" firstAttribute="leading" secondItem="3GS-vj-iZu" secondAttribute="leadingMargin" id="Whh-i1-o7U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JDo-NO-202" secondAttribute="trailing" id="WrW-6I-Qz1"/>
+                            <constraint firstItem="mBz-RP-dST" firstAttribute="height" secondItem="32k-f1-oYU" secondAttribute="height" id="eQX-HK-ao8"/>
+                            <constraint firstItem="32k-f1-oYU" firstAttribute="leading" secondItem="mBz-RP-dST" secondAttribute="trailing" id="gK2-5W-4LU"/>
+                            <constraint firstItem="okL-EV-1II" firstAttribute="height" secondItem="32k-f1-oYU" secondAttribute="height" id="o2d-8d-QDn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="okL-EV-1II" secondAttribute="trailing" id="qPQ-yl-Cxs"/>
+                            <constraint firstItem="Pji-KV-1AZ" firstAttribute="top" secondItem="JDo-NO-202" secondAttribute="bottom" constant="10" id="rZw-gX-g6l"/>
+                            <constraint firstItem="mBz-RP-dST" firstAttribute="leading" secondItem="3GS-vj-iZu" secondAttribute="leadingMargin" id="uxc-hE-XRB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="HCY-Rd-8dc"/>
+                    <navigationItem key="navigationItem" title="About the Cottontown App" id="iIK-VO-fYI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbJ-BN-pjS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1592" y="3053"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="HCF Web Logo" width="296" height="66"/>
+        <image name="HCF bg fill" width="30" height="66"/>
+        <image name="about" width="30" height="30"/>
         <image name="history" width="32" height="20"/>
         <image name="map" width="30" height="30"/>
         <image name="site1b_tn.png" width="132" height="94"/>
