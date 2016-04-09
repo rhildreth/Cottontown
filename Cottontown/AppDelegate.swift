@@ -42,6 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     var registeredDelegate: didRegisterUserNotificationSettingsDelegate?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        BuddyBuildSDK.setup()
+        
         
         UISetup()
         
