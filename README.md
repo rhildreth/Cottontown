@@ -17,25 +17,25 @@ This is not meant to be a complete list of features, but more to track what thin
 * Defaults in Settings app
 * Remote push notifications
 * YouTube support using Google youtube-ios-player-helper api
+* 3D touch - pressing on stop location gives a Peek and Pop for the location in the Map View (long press will do the same thing on non-3D devices)
+* Optimize size for images used
+* Proper sizing for assets
+* Dynamic text in page views
 
 //TODO:
 
 * Localize for Spanish, German, and French
-* 3D touch - pressing on stop location gives a Peek and Pop for the location in the Map View (long press will do the same thing on non-3D devices)
-* Quick Action on the app icon to go directly to the Map View
+*  Quick Action on the app icon to go directly to the Map View
 * Accessibility for vision impaired
-* Optimize size for images used
-* Proper sizing for assets
 * Launch screen
 * Add additional tour stops and content to existing stops
 * Remove Reveal Framework when debugging is complete
 * Run Instruments to check CPU and memory usage
-* Dynamic text in page views
 * Test functions in Airplane mode
 
 #### Software
 
-I'm using the latest public releases of Xcode (7.2.1) and OSX (10.11.3)
+I'm using the latest public releases of Xcode (7.3) and OSX (10.11.3)
 
 ####Pictures
 
