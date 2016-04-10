@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1B42DE09AAC0F9DB72EA815D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4BF4C4A72E1E41C6B3590 /* CoreTelephony.framework */; };
 		561036DC2EFFBA72DA4DB7DC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7818E2E4A204F71BC6481CE1 /* CoreText.framework */; };
-		688CF688E4F5AC7AAD4810FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C446CDD889E2DC68688BF316 /* SystemConfiguration.framework */; };
 		B3CA101CC11C88CD70F32F85 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD3D30DE7D52599BECEB1CD /* AssetsLibrary.framework */; };
 		E40C916A1CA1665500F40EF5 /* site10a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C912E1CA1665500F40EF5 /* site10a_tn.png */; };
 		E40C916B1CA1665500F40EF5 /* site10a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C912F1CA1665500F40EF5 /* site10a_tn@2x.png */; };
@@ -69,7 +68,7 @@
 		E40C91A91CA1A13000F40EF5 /* site29a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91A71CA1A13000F40EF5 /* site29a_tn@2x.png */; };
 		E40C91AD1CA4DCED00F40EF5 /* site6a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91AC1CA4DCED00F40EF5 /* site6a_tn@2x.png */; };
 		E40C91AF1CA54E8B00F40EF5 /* site29a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91AE1CA54E8B00F40EF5 /* site29a_tn.png */; };
-		E40C91B71CA98EAE00F40EF5 /* site1a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91B61CA98EAE00F40EF5 /* site1a.jpg */; };
+		E40C91B71CA98EAE00F40EF5 /* site1ax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91B61CA98EAE00F40EF5 /* site1ax.jpg */; };
 		E40C91C11CA996FA00F40EF5 /* site1b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91B81CA996FA00F40EF5 /* site1b.jpg */; };
 		E40C91C21CA996FA00F40EF5 /* site1c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91B91CA996FA00F40EF5 /* site1c.jpg */; };
 		E40C91C31CA996FA00F40EF5 /* site1d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91BA1CA996FA00F40EF5 /* site1d.jpg */; };
@@ -253,7 +252,7 @@
 		E40C91A71CA1A13000F40EF5 /* site29a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site29a_tn@2x.png"; sourceTree = "<group>"; };
 		E40C91AC1CA4DCED00F40EF5 /* site6a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site6a_tn@2x.png"; sourceTree = "<group>"; };
 		E40C91AE1CA54E8B00F40EF5 /* site29a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site29a_tn.png; sourceTree = "<group>"; };
-		E40C91B61CA98EAE00F40EF5 /* site1a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = site1a.jpg; path = "Stop Image Thumbnails/site1a.jpg"; sourceTree = "<group>"; };
+		E40C91B61CA98EAE00F40EF5 /* site1ax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = site1ax.jpg; path = "Stop Image Thumbnails/site1ax.jpg"; sourceTree = "<group>"; };
 		E40C91B81CA996FA00F40EF5 /* site1b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site1b.jpg; sourceTree = "<group>"; };
 		E40C91B91CA996FA00F40EF5 /* site1c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site1c.jpg; sourceTree = "<group>"; };
 		E40C91BA1CA996FA00F40EF5 /* site1d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site1d.jpg; sourceTree = "<group>"; };
@@ -393,7 +392,6 @@
 				B3CA101CC11C88CD70F32F85 /* AssetsLibrary.framework in Frameworks */,
 				561036DC2EFFBA72DA4DB7DC /* CoreText.framework in Frameworks */,
 				1B42DE09AAC0F9DB72EA815D /* CoreTelephony.framework in Frameworks */,
-				688CF688E4F5AC7AAD4810FF /* SystemConfiguration.framework in Frameworks */,
 				E4B22911A4D524A7A272A62E /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,7 +555,7 @@
 			children = (
 				E4CFFC0D1CAFF641005C2268 /* historya.jpg */,
 				E40C912D1CA1665500F40EF5 /* Stop Image Thumbnails */,
-				E40C91B61CA98EAE00F40EF5 /* site1a.jpg */,
+				E40C91B61CA98EAE00F40EF5 /* site1ax.jpg */,
 				E40C91B81CA996FA00F40EF5 /* site1b.jpg */,
 				E40C91B91CA996FA00F40EF5 /* site1c.jpg */,
 				E40C91BA1CA996FA00F40EF5 /* site1d.jpg */,
@@ -661,7 +659,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Tappdev.com;
 				TargetAttributes = {
 					E419ED361C1C6AAA00164E25 = {
@@ -809,7 +807,7 @@
 				E40C916C1CA1665500F40EF5 /* site11a_tn.png in Resources */,
 				E40C91811CA1665500F40EF5 /* site20a_tn@2x.png in Resources */,
 				E40C919D1CA1665500F40EF5 /* site5a_tn@2x.png in Resources */,
-				E40C91B71CA98EAE00F40EF5 /* site1a.jpg in Resources */,
+				E40C91B71CA98EAE00F40EF5 /* site1ax.jpg in Resources */,
 				E40C91C61CA996FA00F40EF5 /* site3b.jpg in Resources */,
 				E4CFFC0E1CAFF641005C2268 /* historya.jpg in Resources */,
 				E471CEAE1C74243400214EFF /* Settings.bundle in Resources */,
@@ -943,7 +941,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -982,7 +980,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
