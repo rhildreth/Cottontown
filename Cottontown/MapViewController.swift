@@ -184,7 +184,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     }
     
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
-        if splitViewController!.traitCollection.horizontalSizeClass == .Regular {
+        if splitViewController?.traitCollection.horizontalSizeClass == .Regular {
             let stopAnnotation = view.annotation as! StopAnnotation
             
             

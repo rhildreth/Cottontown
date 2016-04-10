@@ -1,3776 +1,970 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>1B42DE09AAC0F9DB72EA815D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E6F4BF4C4A72E1E41C6B3590</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45063F1F39CAC171C1B145FE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>BuddyBuildSDK.framework</string>
-			<key>path</key>
-			<string>BuddyBuildSDK.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>561036DC2EFFBA72DA4DB7DC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7818E2E4A204F71BC6481CE1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>688CF688E4F5AC7AAD4810FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C446CDD889E2DC68688BF316</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7818E2E4A204F71BC6481CE1</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreText.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreText.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>9BD3D30DE7D52599BECEB1CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AssetsLibrary.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/AssetsLibrary.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>B3CA101CC11C88CD70F32F85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9BD3D30DE7D52599BECEB1CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C446CDD889E2DC68688BF316</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SystemConfiguration.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/SystemConfiguration.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>CD6C5DFB1E31279995C3AF32</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>QuartzCore.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/QuartzCore.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>E40C912D1CA1665500F40EF5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E40C912E1CA1665500F40EF5</string>
-				<string>E40C912F1CA1665500F40EF5</string>
-				<string>E40C91301CA1665500F40EF5</string>
-				<string>E40C91311CA1665500F40EF5</string>
-				<string>E40C91321CA1665500F40EF5</string>
-				<string>E40C91331CA1665500F40EF5</string>
-				<string>E40C91341CA1665500F40EF5</string>
-				<string>E40C91351CA1665500F40EF5</string>
-				<string>E40C91361CA1665500F40EF5</string>
-				<string>E40C91371CA1665500F40EF5</string>
-				<string>E40C91381CA1665500F40EF5</string>
-				<string>E40C91391CA1665500F40EF5</string>
-				<string>E40C913A1CA1665500F40EF5</string>
-				<string>E40C913B1CA1665500F40EF5</string>
-				<string>E40C913C1CA1665500F40EF5</string>
-				<string>E40C913D1CA1665500F40EF5</string>
-				<string>E40C913E1CA1665500F40EF5</string>
-				<string>E40C913F1CA1665500F40EF5</string>
-				<string>E40C91401CA1665500F40EF5</string>
-				<string>E40C91411CA1665500F40EF5</string>
-				<string>E40C91421CA1665500F40EF5</string>
-				<string>E40C91431CA1665500F40EF5</string>
-				<string>E40C91441CA1665500F40EF5</string>
-				<string>E40C91451CA1665500F40EF5</string>
-				<string>E40C91461CA1665500F40EF5</string>
-				<string>E40C91471CA1665500F40EF5</string>
-				<string>E40C91481CA1665500F40EF5</string>
-				<string>E40C91491CA1665500F40EF5</string>
-				<string>E40C914A1CA1665500F40EF5</string>
-				<string>E40C914B1CA1665500F40EF5</string>
-				<string>E40C914C1CA1665500F40EF5</string>
-				<string>E40C914D1CA1665500F40EF5</string>
-				<string>E40C914E1CA1665500F40EF5</string>
-				<string>E40C914F1CA1665500F40EF5</string>
-				<string>E40C91501CA1665500F40EF5</string>
-				<string>E40C91511CA1665500F40EF5</string>
-				<string>E40C91521CA1665500F40EF5</string>
-				<string>E40C91531CA1665500F40EF5</string>
-				<string>E40C91541CA1665500F40EF5</string>
-				<string>E40C91551CA1665500F40EF5</string>
-				<string>E40C91561CA1665500F40EF5</string>
-				<string>E40C91571CA1665500F40EF5</string>
-				<string>E40C91581CA1665500F40EF5</string>
-				<string>E40C91591CA1665500F40EF5</string>
-				<string>E40C91AE1CA54E8B00F40EF5</string>
-				<string>E40C91A71CA1A13000F40EF5</string>
-				<string>E40C915A1CA1665500F40EF5</string>
-				<string>E40C915B1CA1665500F40EF5</string>
-				<string>E40C915C1CA1665500F40EF5</string>
-				<string>E40C915D1CA1665500F40EF5</string>
-				<string>E40C915E1CA1665500F40EF5</string>
-				<string>E40C915F1CA1665500F40EF5</string>
-				<string>E40C91601CA1665500F40EF5</string>
-				<string>E40C91611CA1665500F40EF5</string>
-				<string>E40C91621CA1665500F40EF5</string>
-				<string>E40C91AC1CA4DCED00F40EF5</string>
-				<string>E40C91641CA1665500F40EF5</string>
-				<string>E40C91651CA1665500F40EF5</string>
-				<string>E40C91661CA1665500F40EF5</string>
-				<string>E40C91671CA1665500F40EF5</string>
-				<string>E40C91681CA1665500F40EF5</string>
-				<string>E40C91691CA1665500F40EF5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Stop Image Thumbnails</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C912E1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site10a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C912F1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site10a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91301CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site11a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91311CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site11a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91321CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site12b_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91331CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site12b_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91341CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site13a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91351CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site13a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91361CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site14a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91371CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site14a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91381CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site15a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91391CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site15a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C913A1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site16a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C913B1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site16a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C913C1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site17a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C913D1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site17a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C913E1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site18a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C913F1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site18a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91401CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site19a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91411CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site19a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91421CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site1b_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91431CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site1b_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91441CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site20a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91451CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site20a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91461CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site21a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91471CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site21a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91481CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site22a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91491CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site22a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C914A1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site23a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C914B1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site23a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C914C1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site24b_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C914D1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site24b_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C914E1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site25a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C914F1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site25a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91501CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site26a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91511CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site26a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91521CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site27a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91531CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site27a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91541CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site27d_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91551CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site27d_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91561CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site27e_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91571CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site27e_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91581CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site28a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91591CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site28a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C915A1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site2a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C915B1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site2a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C915C1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site3d_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C915D1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site3d_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C915E1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site4a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C915F1CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site4a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91601CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site5a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91611CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site5a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91621CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site6a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91641CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site7a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91651CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site7a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91661CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site8a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91671CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site8a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91681CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site9a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91691CA1665500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site9a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C916A1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C912E1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C916B1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C912F1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C916C1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91301CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C916D1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91311CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C916E1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91321CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C916F1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91331CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91701CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91341CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91711CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91351CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91721CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91361CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91731CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91371CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91741CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91381CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91751CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91391CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91761CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C913A1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91771CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C913B1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91781CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C913C1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91791CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C913D1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C917A1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C913E1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C917B1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C913F1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C917C1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91401CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C917D1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91411CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C917E1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91421CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C917F1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91431CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91801CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91441CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91811CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91451CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91821CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91461CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91831CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91471CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91841CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91481CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91851CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91491CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91861CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C914A1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91871CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C914B1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91881CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C914C1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91891CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C914D1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C918A1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C914E1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C918B1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C914F1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C918C1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91501CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C918D1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91511CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C918E1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91521CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C918F1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91531CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91901CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91541CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91911CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91551CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91921CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91561CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91931CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91571CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91941CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91581CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91951CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91591CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91961CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C915A1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91971CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C915B1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91981CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C915C1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91991CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C915D1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C919A1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C915E1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C919B1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C915F1CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C919C1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91601CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C919D1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91611CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C919E1CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91621CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91A01CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91641CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91A11CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91651CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91A21CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91661CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91A31CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91671CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91A41CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91681CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91A51CA1665500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91691CA1665500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91A71CA1A13000F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site29a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91A91CA1A13000F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91A71CA1A13000F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91AC1CA4DCED00F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site6a_tn@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91AD1CA4DCED00F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91AC1CA4DCED00F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91AE1CA54E8B00F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>site29a_tn.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91AF1CA54E8B00F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91AE1CA54E8B00F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91B01CA8A9A800F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site4b.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91B11CA8A9A800F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91B01CA8A9A800F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91B21CA8C01500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site27d.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91B31CA8C01500F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site27e.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91B41CA8C01500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91B21CA8C01500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91B51CA8C01500F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91B31CA8C01500F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91B61CA98EAE00F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>name</key>
-			<string>site1a.jpg</string>
-			<key>path</key>
-			<string>Stop Image Thumbnails/site1a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91B71CA98EAE00F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91B61CA98EAE00F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91B81CA996FA00F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site1b.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91B91CA996FA00F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site1c.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91BA1CA996FA00F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site1d.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91BB1CA996FA00F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site2a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91BC1CA996FA00F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site3a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91BD1CA996FA00F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site3b.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91BE1CA996FA00F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site3c.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91BF1CA996FA00F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site3d.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91C01CA996FA00F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site3e.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91C11CA996FA00F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91B81CA996FA00F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91C21CA996FA00F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91B91CA996FA00F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91C31CA996FA00F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91BA1CA996FA00F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91C41CA996FA00F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91BB1CA996FA00F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91C51CA996FA00F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91BC1CA996FA00F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91C61CA996FA00F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91BD1CA996FA00F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91C71CA996FA00F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91BE1CA996FA00F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91C81CA996FA00F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91BF1CA996FA00F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91C91CA996FA00F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91C01CA996FA00F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91CA1CA9CD9100F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
-			<key>path</key>
-			<string>Assets.bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91CB1CA9CD9100F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91CA1CA9CD9100F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91CD1CA9CDD400F40EF5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YTPlayerView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91CE1CA9CDD400F40EF5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YTPlayerView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91CF1CA9CDD400F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91CE1CA9CDD400F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E40C91D01CA9CEBE00F40EF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YouTubeiOSPlayerHelper.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91D31CAFE20C00F40EF5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>HistoryViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E40C91D41CAFE20C00F40EF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E40C91D31CAFE20C00F40EF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E411D1441CB531CB008EC7E0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AboutViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E411D1451CB531CB008EC7E0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E411D1441CB531CB008EC7E0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E411EC161C49879A0081AB9B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CottontownTabBarController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E411EC171C49879A0081AB9B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E411EC161C49879A0081AB9B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E411EC1A1C49CBE20081AB9B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>StopsSplitViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E411EC1B1C49CBE20081AB9B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E411EC1A1C49CBE20081AB9B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E411EC1C1C4B0D370081AB9B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreLocation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreLocation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>E411EC1D1C4B0D370081AB9B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E411EC1C1C4B0D370081AB9B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E411EC201C4B29200081AB9B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Notificatons.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E411EC211C4B29200081AB9B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E411EC201C4B29200081AB9B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E419ED2E1C1C6AAA00164E25</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E419ED391C1C6AAA00164E25</string>
-				<string>E419ED381C1C6AAA00164E25</string>
-				<string>F5A90C470D7945F9390B2559</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E419ED2F1C1C6AAA00164E25</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0720</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Tappdev.com</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>E419ED361C1C6AAA00164E25</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.2</string>
-						<key>DevelopmentTeam</key>
-						<string>EVVLS4S94Q</string>
-						<key>SystemCapabilities</key>
-						<dict>
-							<key>com.apple.BackgroundModes</key>
-							<dict>
-								<key>enabled</key>
-								<string>1</string>
-							</dict>
-							<key>com.apple.Maps.iOS</key>
-							<dict>
-								<key>enabled</key>
-								<string>1</string>
-							</dict>
-							<key>com.apple.Push</key>
-							<dict>
-								<key>enabled</key>
-								<string>1</string>
-							</dict>
-						</dict>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>E419ED321C1C6AAA00164E25</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>E419ED2E1C1C6AAA00164E25</string>
-			<key>productRefGroup</key>
-			<string>E419ED381C1C6AAA00164E25</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E419ED361C1C6AAA00164E25</string>
-			</array>
-		</dict>
-		<key>E419ED321C1C6AAA00164E25</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E419ED491C1C6AAA00164E25</string>
-				<string>E419ED4A1C1C6AAA00164E25</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E419ED331C1C6AAA00164E25</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E442584E1C27979B0041A5B4</string>
-				<string>E4624FCC1C30C76A003023A1</string>
-				<string>E411EC171C49879A0081AB9B</string>
-				<string>E411D1451CB531CB008EC7E0</string>
-				<string>E40C91D41CAFE20C00F40EF5</string>
-				<string>E4624FD21C3231C8003023A1</string>
-				<string>E45F21731C46F10D00A9E743</string>
-				<string>E4624FD41C323354003023A1</string>
-				<string>E419ED3D1C1C6AAA00164E25</string>
-				<string>E419ED3B1C1C6AAA00164E25</string>
-				<string>E419ED511C1CD14100164E25</string>
-				<string>E4624FCE1C3213C6003023A1</string>
-				<string>E40C91CF1CA9CDD400F40EF5</string>
-				<string>E44258501C2798640041A5B4</string>
-				<string>E411EC1B1C49CBE20081AB9B</string>
-				<string>E463ACD51C89F12D00B68973</string>
-				<string>E472B5F61C87C463003FFBCA</string>
-				<string>E45BA7601C38C20900454CF7</string>
-				<string>E411EC211C4B29200081AB9B</string>
-				<string>E44258521C2A2BEF0041A5B4</string>
-				<string>E4D8E82C1C83146700A17BB2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E419ED341C1C6AAA00164E25</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E43CA11B1C8FCAAC0051139B</string>
-				<string>E4E3F2251C8F2497006456AB</string>
-				<string>E4D8E8271C7BFB7D00A17BB2</string>
-				<string>E411EC1D1C4B0D370081AB9B</string>
-				<string>E4624FC81C2F8A4E003023A1</string>
-				<string>E4D8E8291C7BFBE200A17BB2</string>
-				<string>F0DB774696A056B77FF0975B</string>
-				<string>B3CA101CC11C88CD70F32F85</string>
-				<string>561036DC2EFFBA72DA4DB7DC</string>
-				<string>1B42DE09AAC0F9DB72EA815D</string>
-				<string>688CF688E4F5AC7AAD4810FF</string>
-				<string>E4B22911A4D524A7A272A62E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E419ED351C1C6AAA00164E25</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E43CA0FD1C8FC5180051139B</string>
-				<string>E40C917A1CA1665500F40EF5</string>
-				<string>E40C917C1CA1665500F40EF5</string>
-				<string>E40C91C31CA996FA00F40EF5</string>
-				<string>E43CA1051C8FC5180051139B</string>
-				<string>E40C91B41CA8C01500F40EF5</string>
-				<string>E40C91B11CA8A9A800F40EF5</string>
-				<string>E43CA10C1C8FC5180051139B</string>
-				<string>E43CA10B1C8FC5180051139B</string>
-				<string>E40C91C21CA996FA00F40EF5</string>
-				<string>E43CA0FF1C8FC5180051139B</string>
-				<string>E43CA1071C8FC5180051139B</string>
-				<string>E43CA0F11C8FC5180051139B</string>
-				<string>E43CA1031C8FC5180051139B</string>
-				<string>E43CA1211C9136590051139B</string>
-				<string>E40C91AD1CA4DCED00F40EF5</string>
-				<string>E40C91A91CA1A13000F40EF5</string>
-				<string>E40C91951CA1665500F40EF5</string>
-				<string>E43CA0EB1C8FC5180051139B</string>
-				<string>E40C91911CA1665500F40EF5</string>
-				<string>E40C91921CA1665500F40EF5</string>
-				<string>E40C91761CA1665500F40EF5</string>
-				<string>E40C918F1CA1665500F40EF5</string>
-				<string>E40C91961CA1665500F40EF5</string>
-				<string>E40C91771CA1665500F40EF5</string>
-				<string>E43CA0FB1C8FC5180051139B</string>
-				<string>E40C91781CA1665500F40EF5</string>
-				<string>E43CA10D1C8FC5180051139B</string>
-				<string>E40C918A1CA1665500F40EF5</string>
-				<string>E43CA0F41C8FC5180051139B</string>
-				<string>E40C91981CA1665500F40EF5</string>
-				<string>E40C91701CA1665500F40EF5</string>
-				<string>E40C91A51CA1665500F40EF5</string>
-				<string>E43CA0FE1C8FC5180051139B</string>
-				<string>E40C91991CA1665500F40EF5</string>
-				<string>E40C91741CA1665500F40EF5</string>
-				<string>E40C91971CA1665500F40EF5</string>
-				<string>E40C916F1CA1665500F40EF5</string>
-				<string>E40C91821CA1665500F40EF5</string>
-				<string>E40C91841CA1665500F40EF5</string>
-				<string>E40C918B1CA1665500F40EF5</string>
-				<string>E419ED471C1C6AAA00164E25</string>
-				<string>E40C91941CA1665500F40EF5</string>
-				<string>E40C91A11CA1665500F40EF5</string>
-				<string>E40C91C71CA996FA00F40EF5</string>
-				<string>E40C918E1CA1665500F40EF5</string>
-				<string>E40C91871CA1665500F40EF5</string>
-				<string>E40C916A1CA1665500F40EF5</string>
-				<string>E40C919B1CA1665500F40EF5</string>
-				<string>E40C91C51CA996FA00F40EF5</string>
-				<string>E40C91831CA1665500F40EF5</string>
-				<string>E40C917D1CA1665500F40EF5</string>
-				<string>E40C91721CA1665500F40EF5</string>
-				<string>E43CA0F31C8FC5180051139B</string>
-				<string>E43CA0EA1C8FC5180051139B</string>
-				<string>E40C91CB1CA9CD9100F40EF5</string>
-				<string>E43CA0F91C8FC5180051139B</string>
-				<string>E40C91901CA1665500F40EF5</string>
-				<string>E43CA0F61C8FC5180051139B</string>
-				<string>E43CA1001C8FC5180051139B</string>
-				<string>E40C91C91CA996FA00F40EF5</string>
-				<string>E43CA0F01C8FC5180051139B</string>
-				<string>E40C91C11CA996FA00F40EF5</string>
-				<string>E40C91931CA1665500F40EF5</string>
-				<string>E40C918D1CA1665500F40EF5</string>
-				<string>E40C91861CA1665500F40EF5</string>
-				<string>E40C917B1CA1665500F40EF5</string>
-				<string>E40C917E1CA1665500F40EF5</string>
-				<string>E40C916E1CA1665500F40EF5</string>
-				<string>E40C916B1CA1665500F40EF5</string>
-				<string>E43CA1081C8FC5180051139B</string>
-				<string>E43CA0F71C8FC5180051139B</string>
-				<string>E419ED441C1C6AAA00164E25</string>
-				<string>E43CA11F1C9136590051139B</string>
-				<string>E40C91AF1CA54E8B00F40EF5</string>
-				<string>E40C919E1CA1665500F40EF5</string>
-				<string>E43CA1201C9136590051139B</string>
-				<string>E43CA0E91C8FC5180051139B</string>
-				<string>E40C91791CA1665500F40EF5</string>
-				<string>E43CA1061C8FC5180051139B</string>
-				<string>E40C91711CA1665500F40EF5</string>
-				<string>E40C916C1CA1665500F40EF5</string>
-				<string>E40C91811CA1665500F40EF5</string>
-				<string>E40C919D1CA1665500F40EF5</string>
-				<string>E43CA0EE1C8FC5180051139B</string>
-				<string>E40C91B71CA98EAE00F40EF5</string>
-				<string>E40C91C61CA996FA00F40EF5</string>
-				<string>E43CA0ED1C8FC5180051139B</string>
-				<string>E4CFFC0E1CAFF641005C2268</string>
-				<string>E43CA0F81C8FC5180051139B</string>
-				<string>E471CEAE1C74243400214EFF</string>
-				<string>E43CA0EF1C8FC5180051139B</string>
-				<string>E43CA10A1C8FC5180051139B</string>
-				<string>E40C91881CA1665500F40EF5</string>
-				<string>E40C91731CA1665500F40EF5</string>
-				<string>E40C91C81CA996FA00F40EF5</string>
-				<string>E40C91A31CA1665500F40EF5</string>
-				<string>E43CA1011C8FC5180051139B</string>
-				<string>E43CA0F21C8FC5180051139B</string>
-				<string>E43CA0F51C8FC5180051139B</string>
-				<string>E40C917F1CA1665500F40EF5</string>
-				<string>E43CA1091C8FC5180051139B</string>
-				<string>E40C916D1CA1665500F40EF5</string>
-				<string>E40C91891CA1665500F40EF5</string>
-				<string>E40C91851CA1665500F40EF5</string>
-				<string>E40C918C1CA1665500F40EF5</string>
-				<string>E40C91A01CA1665500F40EF5</string>
-				<string>E40C91C41CA996FA00F40EF5</string>
-				<string>E419ED4F1C1CC5BD00164E25</string>
-				<string>E40C91A21CA1665500F40EF5</string>
-				<string>E40C91B51CA8C01500F40EF5</string>
-				<string>E419ED421C1C6AAA00164E25</string>
-				<string>E43CA1021C8FC5180051139B</string>
-				<string>E40C91A41CA1665500F40EF5</string>
-				<string>E43CA1041C8FC5180051139B</string>
-				<string>E43CA0EC1C8FC5180051139B</string>
-				<string>E43CA0FA1C8FC5180051139B</string>
-				<string>E43CA0FC1C8FC5180051139B</string>
-				<string>E40C919C1CA1665500F40EF5</string>
-				<string>E40C91751CA1665500F40EF5</string>
-				<string>E40C91801CA1665500F40EF5</string>
-				<string>E40C919A1CA1665500F40EF5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E419ED361C1C6AAA00164E25</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E419ED4B1C1C6AAA00164E25</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E419ED331C1C6AAA00164E25</string>
-				<string>E419ED341C1C6AAA00164E25</string>
-				<string>E419ED351C1C6AAA00164E25</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Cottontown</string>
-			<key>productName</key>
-			<string>Cottontown</string>
-			<key>productReference</key>
-			<string>E419ED371C1C6AAA00164E25</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>E419ED371C1C6AAA00164E25</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Cottontown.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E419ED381C1C6AAA00164E25</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E419ED371C1C6AAA00164E25</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E419ED391C1C6AAA00164E25</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E4D8E82A1C7BFD6B00A17BB2</string>
-				<string>E419ED3A1C1C6AAA00164E25</string>
-				<string>E4D8E82B1C83146700A17BB2</string>
-				<string>E411EC201C4B29200081AB9B</string>
-				<string>E411EC161C49879A0081AB9B</string>
-				<string>E411EC1A1C49CBE20081AB9B</string>
-				<string>E4624FCD1C3213C6003023A1</string>
-				<string>E419ED3C1C1C6AAA00164E25</string>
-				<string>E419ED501C1CD14100164E25</string>
-				<string>E442584F1C2798640041A5B4</string>
-				<string>E442584D1C27979B0041A5B4</string>
-				<string>E463ACD41C89F12D00B68973</string>
-				<string>E45F21721C46F10D00A9E743</string>
-				<string>E44258511C2A2BEF0041A5B4</string>
-				<string>E4624FCB1C30C76A003023A1</string>
-				<string>E4624FD31C323354003023A1</string>
-				<string>E45BA75F1C38C20900454CF7</string>
-				<string>E4624FD11C3231C8003023A1</string>
-				<string>E472B5F51C87C463003FFBCA</string>
-				<string>E40C91D31CAFE20C00F40EF5</string>
-				<string>E411D1441CB531CB008EC7E0</string>
-				<string>E419ED401C1C6AAA00164E25</string>
-				<string>E419ED451C1C6AAA00164E25</string>
-				<string>E40C91D01CA9CEBE00F40EF5</string>
-				<string>E40C91CD1CA9CDD400F40EF5</string>
-				<string>E40C91CE1CA9CDD400F40EF5</string>
-				<string>E40C91CA1CA9CD9100F40EF5</string>
-				<string>E471CEAD1C74243400214EFF</string>
-				<string>E43CA0AF1C8FC0390051139B</string>
-				<string>E419ED431C1C6AAA00164E25</string>
-				<string>E419ED481C1C6AAA00164E25</string>
-				<string>E419ED4E1C1CC5BD00164E25</string>
-				<string>E44258531C2A2E520041A5B4</string>
-				<string>E4D8E82D1C8377FD00A17BB2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Cottontown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E419ED3A1C1C6AAA00164E25</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E419ED3B1C1C6AAA00164E25</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E419ED3A1C1C6AAA00164E25</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E419ED3C1C1C6AAA00164E25</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>StopsTableViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E419ED3D1C1C6AAA00164E25</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E419ED3C1C1C6AAA00164E25</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E419ED401C1C6AAA00164E25</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E419ED411C1C6AAA00164E25</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E419ED411C1C6AAA00164E25</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E419ED421C1C6AAA00164E25</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E419ED401C1C6AAA00164E25</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E419ED431C1C6AAA00164E25</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E419ED441C1C6AAA00164E25</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E419ED431C1C6AAA00164E25</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E419ED451C1C6AAA00164E25</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E419ED461C1C6AAA00164E25</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E419ED461C1C6AAA00164E25</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E419ED471C1C6AAA00164E25</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E419ED451C1C6AAA00164E25</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E419ED481C1C6AAA00164E25</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E419ED491C1C6AAA00164E25</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E419ED4A1C1C6AAA00164E25</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E419ED4B1C1C6AAA00164E25</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E419ED4C1C1C6AAA00164E25</string>
-				<string>E419ED4D1C1C6AAA00164E25</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E419ED4C1C1C6AAA00164E25</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>$(PROJECT_DIR)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>Cottontown/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.hildrethus.Cottontown</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string>53e435ab-bf89-48fa-a9c1-4fe8db71b4f3</string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER[arch=*]</key>
-				<string>Cottontown-Bridging-Header.h</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E419ED4D1C1C6AAA00164E25</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>$(PROJECT_DIR)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>Cottontown/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.hildrethus.Cottontown</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string></string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E419ED4E1C1CC5BD00164E25</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Stops.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E419ED4F1C1CC5BD00164E25</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E419ED4E1C1CC5BD00164E25</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E419ED501C1CD14100164E25</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>StopCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E419ED511C1CD14100164E25</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E419ED501C1CD14100164E25</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0AF1C8FC0390051139B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E4CFFC0D1CAFF641005C2268</string>
-				<string>E40C912D1CA1665500F40EF5</string>
-				<string>E40C91B61CA98EAE00F40EF5</string>
-				<string>E40C91B81CA996FA00F40EF5</string>
-				<string>E40C91B91CA996FA00F40EF5</string>
-				<string>E40C91BA1CA996FA00F40EF5</string>
-				<string>E40C91BB1CA996FA00F40EF5</string>
-				<string>E40C91BC1CA996FA00F40EF5</string>
-				<string>E40C91BD1CA996FA00F40EF5</string>
-				<string>E40C91BE1CA996FA00F40EF5</string>
-				<string>E40C91BF1CA996FA00F40EF5</string>
-				<string>E40C91C01CA996FA00F40EF5</string>
-				<string>E43CA0BA1C8FC5180051139B</string>
-				<string>E40C91B01CA8A9A800F40EF5</string>
-				<string>E43CA0BB1C8FC5180051139B</string>
-				<string>E43CA0BC1C8FC5180051139B</string>
-				<string>E43CA0BD1C8FC5180051139B</string>
-				<string>E43CA0BE1C8FC5180051139B</string>
-				<string>E43CA0BF1C8FC5180051139B</string>
-				<string>E43CA0C01C8FC5180051139B</string>
-				<string>E43CA0C11C8FC5180051139B</string>
-				<string>E43CA0C21C8FC5180051139B</string>
-				<string>E43CA0C31C8FC5180051139B</string>
-				<string>E43CA0C41C8FC5180051139B</string>
-				<string>E43CA0C51C8FC5180051139B</string>
-				<string>E43CA0C61C8FC5180051139B</string>
-				<string>E43CA0C71C8FC5180051139B</string>
-				<string>E43CA0C81C8FC5180051139B</string>
-				<string>E43CA0C91C8FC5180051139B</string>
-				<string>E43CA0CA1C8FC5180051139B</string>
-				<string>E43CA0CB1C8FC5180051139B</string>
-				<string>E43CA0CC1C8FC5180051139B</string>
-				<string>E43CA0CD1C8FC5180051139B</string>
-				<string>E43CA0CE1C8FC5180051139B</string>
-				<string>E43CA0CF1C8FC5180051139B</string>
-				<string>E43CA0D01C8FC5180051139B</string>
-				<string>E43CA0D11C8FC5180051139B</string>
-				<string>E43CA0D21C8FC5180051139B</string>
-				<string>E43CA0D31C8FC5180051139B</string>
-				<string>E43CA0D41C8FC5180051139B</string>
-				<string>E43CA0D51C8FC5180051139B</string>
-				<string>E43CA0D61C8FC5180051139B</string>
-				<string>E43CA0D71C8FC5180051139B</string>
-				<string>E43CA0D81C8FC5180051139B</string>
-				<string>E43CA0D91C8FC5180051139B</string>
-				<string>E43CA0DA1C8FC5180051139B</string>
-				<string>E43CA0DB1C8FC5180051139B</string>
-				<string>E43CA0DC1C8FC5180051139B</string>
-				<string>E43CA0DD1C8FC5180051139B</string>
-				<string>E40C91B21CA8C01500F40EF5</string>
-				<string>E40C91B31CA8C01500F40EF5</string>
-				<string>E43CA0DE1C8FC5180051139B</string>
-				<string>E43CA11C1C9136590051139B</string>
-				<string>E43CA11D1C9136590051139B</string>
-				<string>E43CA11E1C9136590051139B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pictures</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0BA1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site4a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0BB1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site5a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0BC1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site6a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0BD1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site7a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0BE1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site8a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0BF1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site9a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0C01C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site10a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0C11C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site10b.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0C21C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site11a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0C31C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site12a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0C41C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site12b.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0C51C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site12c.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0C61C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site13a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0C71C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site13b.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0C81C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site14a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0C91C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site15a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0CA1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site16a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0CB1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site17a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0CC1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site18a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0CD1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site19a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0CE1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site19b.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0CF1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site19c.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0D01C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site20a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0D11C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site21a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0D21C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site22a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0D31C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site23a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0D41C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site24a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0D51C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site24b.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0D61C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site24c.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0D71C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site25a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0D81C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site25b.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0D91C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site25c.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0DA1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site26a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0DB1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site27a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0DC1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site27b.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0DD1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site27c.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0DE1C8FC5180051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site28a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA0E91C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0BA1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0EA1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0BB1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0EB1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0BC1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0EC1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0BD1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0ED1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0BE1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0EE1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0BF1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0EF1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0C01C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0F01C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0C11C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0F11C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0C21C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0F21C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0C31C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0F31C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0C41C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0F41C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0C51C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0F51C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0C61C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0F61C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0C71C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0F71C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0C81C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0F81C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0C91C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0F91C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0CA1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0FA1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0CB1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0FB1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0CC1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0FC1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0CD1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0FD1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0CE1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0FE1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0CF1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA0FF1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0D01C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA1001C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0D11C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA1011C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0D21C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA1021C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0D31C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA1031C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0D41C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA1041C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0D51C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA1051C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0D61C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA1061C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0D71C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA1071C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0D81C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA1081C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0D91C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA1091C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0DA1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA10A1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0DB1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA10B1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0DC1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA10C1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0DD1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA10D1C8FC5180051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA0DE1C8FC5180051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA11A1C8FCAAC0051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>MobileCoreServices.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/MobileCoreServices.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>E43CA11B1C8FCAAC0051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA11A1C8FCAAC0051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA11C1C9136590051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site29a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA11D1C9136590051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site29b.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA11E1C9136590051139B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>site30a.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43CA11F1C9136590051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA11C1C9136590051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA1201C9136590051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA11D1C9136590051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E43CA1211C9136590051139B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E43CA11E1C9136590051139B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E442584D1C27979B0041A5B4</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>PictureContentViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E442584E1C27979B0041A5B4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E442584D1C27979B0041A5B4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E442584F1C2798640041A5B4</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>StopPageViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E44258501C2798640041A5B4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E442584F1C2798640041A5B4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E44258511C2A2BEF0041A5B4</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Stop.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E44258521C2A2BEF0041A5B4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E44258511C2A2BEF0041A5B4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E44258531C2A2E520041A5B4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.playground</string>
-			<key>path</key>
-			<string>Cottontown.playground</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E45BA75F1C38C20900454CF7</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>StopAnnotation.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E45BA7601C38C20900454CF7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E45BA75F1C38C20900454CF7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E45F21721C46F10D00A9E743</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ContentImage.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E45F21731C46F10D00A9E743</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E45F21721C46F10D00A9E743</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E4624FC71C2F8A4E003023A1</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>MapKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/MapKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>E4624FC81C2F8A4E003023A1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E4624FC71C2F8A4E003023A1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E4624FCB1C30C76A003023A1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MapSplitViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E4624FCC1C30C76A003023A1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E4624FCB1C30C76A003023A1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E4624FCD1C3213C6003023A1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>StopsModel.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E4624FCE1C3213C6003023A1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E4624FCD1C3213C6003023A1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E4624FD11C3231C8003023A1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MapPageViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E4624FD21C3231C8003023A1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E4624FD11C3231C8003023A1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E4624FD31C323354003023A1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MapViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E4624FD41C323354003023A1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E4624FD31C323354003023A1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E463ACD41C89F12D00B68973</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>YouTubeContentViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E463ACD51C89F12D00B68973</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E463ACD41C89F12D00B68973</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E471CEAD1C74243400214EFF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
-			<key>path</key>
-			<string>Settings.bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E471CEAE1C74243400214EFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E471CEAD1C74243400214EFF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E472B5F51C87C463003FFBCA</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>WebViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E472B5F61C87C463003FFBCA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E472B5F51C87C463003FFBCA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E4B22911A4D524A7A272A62E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CD6C5DFB1E31279995C3AF32</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E4CFFC0D1CAFF641005C2268</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>historya.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E4CFFC0E1CAFF641005C2268</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E4CFFC0D1CAFF641005C2268</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E4D8E8261C7BFB7D00A17BB2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SystemConfiguration.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/SystemConfiguration.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>E4D8E8271C7BFB7D00A17BB2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E4D8E8261C7BFB7D00A17BB2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E4D8E8281C7BFBE200A17BB2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>OneSignal.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E4D8E8291C7BFBE200A17BB2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E4D8E8281C7BFBE200A17BB2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E4D8E82A1C7BFD6B00A17BB2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Cottontown-Bridging-Header.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>E4D8E82B1C83146700A17BB2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Protocols.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E4D8E82C1C83146700A17BB2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E4D8E82B1C83146700A17BB2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E4D8E82D1C8377FD00A17BB2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E43CA11A1C8FCAAC0051139B</string>
-				<string>E4E3F2241C8F2497006456AB</string>
-				<string>E4624FC71C2F8A4E003023A1</string>
-				<string>E411EC1C1C4B0D370081AB9B</string>
-				<string>E4D8E8261C7BFB7D00A17BB2</string>
-				<string>E4D8E8281C7BFBE200A17BB2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>path</key>
-			<string>..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E4E3F2241C8F2497006456AB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>ImageIO.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/ImageIO.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>E4E3F2251C8F2497006456AB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E4E3F2241C8F2497006456AB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E6F4BF4C4A72E1E41C6B3590</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreTelephony.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreTelephony.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>F0DB774696A056B77FF0975B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45063F1F39CAC171C1B145FE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F5A90C470D7945F9390B2559</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>45063F1F39CAC171C1B145FE</string>
-				<string>9BD3D30DE7D52599BECEB1CD</string>
-				<string>7818E2E4A204F71BC6481CE1</string>
-				<string>E6F4BF4C4A72E1E41C6B3590</string>
-				<string>C446CDD889E2DC68688BF316</string>
-				<string>CD6C5DFB1E31279995C3AF32</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>E419ED2F1C1C6AAA00164E25</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B42DE09AAC0F9DB72EA815D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4BF4C4A72E1E41C6B3590 /* CoreTelephony.framework */; };
+		561036DC2EFFBA72DA4DB7DC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7818E2E4A204F71BC6481CE1 /* CoreText.framework */; };
+		688CF688E4F5AC7AAD4810FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C446CDD889E2DC68688BF316 /* SystemConfiguration.framework */; };
+		B3CA101CC11C88CD70F32F85 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD3D30DE7D52599BECEB1CD /* AssetsLibrary.framework */; };
+		E40C916A1CA1665500F40EF5 /* site10a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C912E1CA1665500F40EF5 /* site10a_tn.png */; };
+		E40C916B1CA1665500F40EF5 /* site10a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C912F1CA1665500F40EF5 /* site10a_tn@2x.png */; };
+		E40C916C1CA1665500F40EF5 /* site11a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91301CA1665500F40EF5 /* site11a_tn.png */; };
+		E40C916D1CA1665500F40EF5 /* site11a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91311CA1665500F40EF5 /* site11a_tn@2x.png */; };
+		E40C916E1CA1665500F40EF5 /* site12b_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91321CA1665500F40EF5 /* site12b_tn.png */; };
+		E40C916F1CA1665500F40EF5 /* site12b_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91331CA1665500F40EF5 /* site12b_tn@2x.png */; };
+		E40C91701CA1665500F40EF5 /* site13a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91341CA1665500F40EF5 /* site13a_tn.png */; };
+		E40C91711CA1665500F40EF5 /* site13a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91351CA1665500F40EF5 /* site13a_tn@2x.png */; };
+		E40C91721CA1665500F40EF5 /* site14a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91361CA1665500F40EF5 /* site14a_tn.png */; };
+		E40C91731CA1665500F40EF5 /* site14a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91371CA1665500F40EF5 /* site14a_tn@2x.png */; };
+		E40C91741CA1665500F40EF5 /* site15a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91381CA1665500F40EF5 /* site15a_tn.png */; };
+		E40C91751CA1665500F40EF5 /* site15a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91391CA1665500F40EF5 /* site15a_tn@2x.png */; };
+		E40C91761CA1665500F40EF5 /* site16a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C913A1CA1665500F40EF5 /* site16a_tn.png */; };
+		E40C91771CA1665500F40EF5 /* site16a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C913B1CA1665500F40EF5 /* site16a_tn@2x.png */; };
+		E40C91781CA1665500F40EF5 /* site17a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C913C1CA1665500F40EF5 /* site17a_tn.png */; };
+		E40C91791CA1665500F40EF5 /* site17a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C913D1CA1665500F40EF5 /* site17a_tn@2x.png */; };
+		E40C917A1CA1665500F40EF5 /* site18a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C913E1CA1665500F40EF5 /* site18a_tn.png */; };
+		E40C917B1CA1665500F40EF5 /* site18a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C913F1CA1665500F40EF5 /* site18a_tn@2x.png */; };
+		E40C917C1CA1665500F40EF5 /* site19a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91401CA1665500F40EF5 /* site19a_tn.png */; };
+		E40C917D1CA1665500F40EF5 /* site19a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91411CA1665500F40EF5 /* site19a_tn@2x.png */; };
+		E40C917E1CA1665500F40EF5 /* site1b_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91421CA1665500F40EF5 /* site1b_tn.png */; };
+		E40C917F1CA1665500F40EF5 /* site1b_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91431CA1665500F40EF5 /* site1b_tn@2x.png */; };
+		E40C91801CA1665500F40EF5 /* site20a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91441CA1665500F40EF5 /* site20a_tn.png */; };
+		E40C91811CA1665500F40EF5 /* site20a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91451CA1665500F40EF5 /* site20a_tn@2x.png */; };
+		E40C91821CA1665500F40EF5 /* site21a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91461CA1665500F40EF5 /* site21a_tn.png */; };
+		E40C91831CA1665500F40EF5 /* site21a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91471CA1665500F40EF5 /* site21a_tn@2x.png */; };
+		E40C91841CA1665500F40EF5 /* site22a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91481CA1665500F40EF5 /* site22a_tn.png */; };
+		E40C91851CA1665500F40EF5 /* site22a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91491CA1665500F40EF5 /* site22a_tn@2x.png */; };
+		E40C91861CA1665500F40EF5 /* site23a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C914A1CA1665500F40EF5 /* site23a_tn.png */; };
+		E40C91871CA1665500F40EF5 /* site23a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C914B1CA1665500F40EF5 /* site23a_tn@2x.png */; };
+		E40C91881CA1665500F40EF5 /* site24b_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C914C1CA1665500F40EF5 /* site24b_tn.png */; };
+		E40C91891CA1665500F40EF5 /* site24b_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C914D1CA1665500F40EF5 /* site24b_tn@2x.png */; };
+		E40C918A1CA1665500F40EF5 /* site25a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C914E1CA1665500F40EF5 /* site25a_tn.png */; };
+		E40C918B1CA1665500F40EF5 /* site25a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C914F1CA1665500F40EF5 /* site25a_tn@2x.png */; };
+		E40C918C1CA1665500F40EF5 /* site26a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91501CA1665500F40EF5 /* site26a_tn.png */; };
+		E40C918D1CA1665500F40EF5 /* site26a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91511CA1665500F40EF5 /* site26a_tn@2x.png */; };
+		E40C918E1CA1665500F40EF5 /* site27a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91521CA1665500F40EF5 /* site27a_tn.png */; };
+		E40C918F1CA1665500F40EF5 /* site27a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91531CA1665500F40EF5 /* site27a_tn@2x.png */; };
+		E40C91901CA1665500F40EF5 /* site27d_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91541CA1665500F40EF5 /* site27d_tn.png */; };
+		E40C91911CA1665500F40EF5 /* site27d_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91551CA1665500F40EF5 /* site27d_tn@2x.png */; };
+		E40C91921CA1665500F40EF5 /* site27e_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91561CA1665500F40EF5 /* site27e_tn.png */; };
+		E40C91931CA1665500F40EF5 /* site27e_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91571CA1665500F40EF5 /* site27e_tn@2x.png */; };
+		E40C91941CA1665500F40EF5 /* site28a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91581CA1665500F40EF5 /* site28a_tn.png */; };
+		E40C91951CA1665500F40EF5 /* site28a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91591CA1665500F40EF5 /* site28a_tn@2x.png */; };
+		E40C91961CA1665500F40EF5 /* site2a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C915A1CA1665500F40EF5 /* site2a_tn.png */; };
+		E40C91971CA1665500F40EF5 /* site2a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C915B1CA1665500F40EF5 /* site2a_tn@2x.png */; };
+		E40C91981CA1665500F40EF5 /* site3d_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C915C1CA1665500F40EF5 /* site3d_tn.png */; };
+		E40C91991CA1665500F40EF5 /* site3d_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C915D1CA1665500F40EF5 /* site3d_tn@2x.png */; };
+		E40C919A1CA1665500F40EF5 /* site4a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C915E1CA1665500F40EF5 /* site4a_tn.png */; };
+		E40C919B1CA1665500F40EF5 /* site4a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C915F1CA1665500F40EF5 /* site4a_tn@2x.png */; };
+		E40C919C1CA1665500F40EF5 /* site5a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91601CA1665500F40EF5 /* site5a_tn.png */; };
+		E40C919D1CA1665500F40EF5 /* site5a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91611CA1665500F40EF5 /* site5a_tn@2x.png */; };
+		E40C919E1CA1665500F40EF5 /* site6a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91621CA1665500F40EF5 /* site6a_tn.png */; };
+		E40C91A01CA1665500F40EF5 /* site7a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91641CA1665500F40EF5 /* site7a_tn.png */; };
+		E40C91A11CA1665500F40EF5 /* site7a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91651CA1665500F40EF5 /* site7a_tn@2x.png */; };
+		E40C91A21CA1665500F40EF5 /* site8a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91661CA1665500F40EF5 /* site8a_tn.png */; };
+		E40C91A31CA1665500F40EF5 /* site8a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91671CA1665500F40EF5 /* site8a_tn@2x.png */; };
+		E40C91A41CA1665500F40EF5 /* site9a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91681CA1665500F40EF5 /* site9a_tn.png */; };
+		E40C91A51CA1665500F40EF5 /* site9a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91691CA1665500F40EF5 /* site9a_tn@2x.png */; };
+		E40C91A91CA1A13000F40EF5 /* site29a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91A71CA1A13000F40EF5 /* site29a_tn@2x.png */; };
+		E40C91AD1CA4DCED00F40EF5 /* site6a_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91AC1CA4DCED00F40EF5 /* site6a_tn@2x.png */; };
+		E40C91AF1CA54E8B00F40EF5 /* site29a_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E40C91AE1CA54E8B00F40EF5 /* site29a_tn.png */; };
+		E40C91B11CA8A9A800F40EF5 /* site4b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91B01CA8A9A800F40EF5 /* site4b.jpg */; };
+		E40C91B41CA8C01500F40EF5 /* site27d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91B21CA8C01500F40EF5 /* site27d.jpg */; };
+		E40C91B51CA8C01500F40EF5 /* site27e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91B31CA8C01500F40EF5 /* site27e.jpg */; };
+		E40C91B71CA98EAE00F40EF5 /* site1a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91B61CA98EAE00F40EF5 /* site1a.jpg */; };
+		E40C91C11CA996FA00F40EF5 /* site1b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91B81CA996FA00F40EF5 /* site1b.jpg */; };
+		E40C91C21CA996FA00F40EF5 /* site1c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91B91CA996FA00F40EF5 /* site1c.jpg */; };
+		E40C91C31CA996FA00F40EF5 /* site1d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91BA1CA996FA00F40EF5 /* site1d.jpg */; };
+		E40C91C41CA996FA00F40EF5 /* site2a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91BB1CA996FA00F40EF5 /* site2a.jpg */; };
+		E40C91C51CA996FA00F40EF5 /* site3a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91BC1CA996FA00F40EF5 /* site3a.jpg */; };
+		E40C91C61CA996FA00F40EF5 /* site3b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91BD1CA996FA00F40EF5 /* site3b.jpg */; };
+		E40C91C71CA996FA00F40EF5 /* site3c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91BE1CA996FA00F40EF5 /* site3c.jpg */; };
+		E40C91C81CA996FA00F40EF5 /* site3d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91BF1CA996FA00F40EF5 /* site3d.jpg */; };
+		E40C91C91CA996FA00F40EF5 /* site3e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E40C91C01CA996FA00F40EF5 /* site3e.jpg */; };
+		E40C91CB1CA9CD9100F40EF5 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E40C91CA1CA9CD9100F40EF5 /* Assets.bundle */; };
+		E40C91CF1CA9CDD400F40EF5 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E40C91CE1CA9CDD400F40EF5 /* YTPlayerView.m */; };
+		E40C91D41CAFE20C00F40EF5 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C91D31CAFE20C00F40EF5 /* HistoryViewController.swift */; };
+		E411D1451CB531CB008EC7E0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411D1441CB531CB008EC7E0 /* AboutViewController.swift */; };
+		E411EC171C49879A0081AB9B /* CottontownTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */; };
+		E411EC1B1C49CBE20081AB9B /* StopsSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */; };
+		E411EC1D1C4B0D370081AB9B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */; };
+		E411EC211C4B29200081AB9B /* Notificatons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411EC201C4B29200081AB9B /* Notificatons.swift */; };
+		E419ED3B1C1C6AAA00164E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E419ED3A1C1C6AAA00164E25 /* AppDelegate.swift */; };
+		E419ED3D1C1C6AAA00164E25 /* StopsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E419ED3C1C1C6AAA00164E25 /* StopsTableViewController.swift */; };
+		E419ED421C1C6AAA00164E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E419ED401C1C6AAA00164E25 /* Main.storyboard */; };
+		E419ED441C1C6AAA00164E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E419ED431C1C6AAA00164E25 /* Assets.xcassets */; };
+		E419ED471C1C6AAA00164E25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E419ED451C1C6AAA00164E25 /* LaunchScreen.storyboard */; };
+		E419ED4F1C1CC5BD00164E25 /* Stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = E419ED4E1C1CC5BD00164E25 /* Stops.plist */; };
+		E419ED511C1CD14100164E25 /* StopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E419ED501C1CD14100164E25 /* StopCell.swift */; };
+		E43CA0E91C8FC5180051139B /* site4a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0BA1C8FC5180051139B /* site4a.jpg */; };
+		E43CA0EA1C8FC5180051139B /* site5a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0BB1C8FC5180051139B /* site5a.jpg */; };
+		E43CA0EB1C8FC5180051139B /* site6a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0BC1C8FC5180051139B /* site6a.jpg */; };
+		E43CA0EC1C8FC5180051139B /* site7a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0BD1C8FC5180051139B /* site7a.jpg */; };
+		E43CA0ED1C8FC5180051139B /* site8a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0BE1C8FC5180051139B /* site8a.jpg */; };
+		E43CA0EE1C8FC5180051139B /* site9a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0BF1C8FC5180051139B /* site9a.jpg */; };
+		E43CA0EF1C8FC5180051139B /* site10a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0C01C8FC5180051139B /* site10a.jpg */; };
+		E43CA0F01C8FC5180051139B /* site10b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0C11C8FC5180051139B /* site10b.jpg */; };
+		E43CA0F11C8FC5180051139B /* site11a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0C21C8FC5180051139B /* site11a.jpg */; };
+		E43CA0F21C8FC5180051139B /* site12a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0C31C8FC5180051139B /* site12a.jpg */; };
+		E43CA0F31C8FC5180051139B /* site12b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0C41C8FC5180051139B /* site12b.jpg */; };
+		E43CA0F41C8FC5180051139B /* site12c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0C51C8FC5180051139B /* site12c.jpg */; };
+		E43CA0F51C8FC5180051139B /* site13a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0C61C8FC5180051139B /* site13a.jpg */; };
+		E43CA0F61C8FC5180051139B /* site13b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0C71C8FC5180051139B /* site13b.jpg */; };
+		E43CA0F71C8FC5180051139B /* site14a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0C81C8FC5180051139B /* site14a.jpg */; };
+		E43CA0F81C8FC5180051139B /* site15a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0C91C8FC5180051139B /* site15a.jpg */; };
+		E43CA0F91C8FC5180051139B /* site16a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0CA1C8FC5180051139B /* site16a.jpg */; };
+		E43CA0FA1C8FC5180051139B /* site17a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0CB1C8FC5180051139B /* site17a.jpg */; };
+		E43CA0FB1C8FC5180051139B /* site18a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0CC1C8FC5180051139B /* site18a.jpg */; };
+		E43CA0FC1C8FC5180051139B /* site19a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0CD1C8FC5180051139B /* site19a.jpg */; };
+		E43CA0FD1C8FC5180051139B /* site19b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0CE1C8FC5180051139B /* site19b.jpg */; };
+		E43CA0FE1C8FC5180051139B /* site19c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0CF1C8FC5180051139B /* site19c.jpg */; };
+		E43CA0FF1C8FC5180051139B /* site20a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0D01C8FC5180051139B /* site20a.jpg */; };
+		E43CA1001C8FC5180051139B /* site21a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0D11C8FC5180051139B /* site21a.jpg */; };
+		E43CA1011C8FC5180051139B /* site22a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0D21C8FC5180051139B /* site22a.jpg */; };
+		E43CA1021C8FC5180051139B /* site23a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0D31C8FC5180051139B /* site23a.jpg */; };
+		E43CA1031C8FC5180051139B /* site24a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0D41C8FC5180051139B /* site24a.jpg */; };
+		E43CA1041C8FC5180051139B /* site24b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0D51C8FC5180051139B /* site24b.jpg */; };
+		E43CA1051C8FC5180051139B /* site24c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0D61C8FC5180051139B /* site24c.jpg */; };
+		E43CA1061C8FC5180051139B /* site25a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0D71C8FC5180051139B /* site25a.jpg */; };
+		E43CA1071C8FC5180051139B /* site25b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0D81C8FC5180051139B /* site25b.jpg */; };
+		E43CA1081C8FC5180051139B /* site25c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0D91C8FC5180051139B /* site25c.jpg */; };
+		E43CA1091C8FC5180051139B /* site26a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0DA1C8FC5180051139B /* site26a.jpg */; };
+		E43CA10A1C8FC5180051139B /* site27a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0DB1C8FC5180051139B /* site27a.jpg */; };
+		E43CA10B1C8FC5180051139B /* site27b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0DC1C8FC5180051139B /* site27b.jpg */; };
+		E43CA10C1C8FC5180051139B /* site27c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0DD1C8FC5180051139B /* site27c.jpg */; };
+		E43CA10D1C8FC5180051139B /* site28a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA0DE1C8FC5180051139B /* site28a.jpg */; };
+		E43CA11B1C8FCAAC0051139B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43CA11A1C8FCAAC0051139B /* MobileCoreServices.framework */; };
+		E43CA11F1C9136590051139B /* site29a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA11C1C9136590051139B /* site29a.jpg */; };
+		E43CA1201C9136590051139B /* site29b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA11D1C9136590051139B /* site29b.jpg */; };
+		E43CA1211C9136590051139B /* site30a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA11E1C9136590051139B /* site30a.jpg */; };
+		E442584E1C27979B0041A5B4 /* PictureContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E442584D1C27979B0041A5B4 /* PictureContentViewController.swift */; };
+		E44258501C2798640041A5B4 /* StopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E442584F1C2798640041A5B4 /* StopPageViewController.swift */; };
+		E44258521C2A2BEF0041A5B4 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44258511C2A2BEF0041A5B4 /* Stop.swift */; };
+		E45BA7601C38C20900454CF7 /* StopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45BA75F1C38C20900454CF7 /* StopAnnotation.swift */; };
+		E45F21731C46F10D00A9E743 /* ContentImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F21721C46F10D00A9E743 /* ContentImage.swift */; };
+		E4624FC81C2F8A4E003023A1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4624FC71C2F8A4E003023A1 /* MapKit.framework */; };
+		E4624FCC1C30C76A003023A1 /* MapSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FCB1C30C76A003023A1 /* MapSplitViewController.swift */; };
+		E4624FCE1C3213C6003023A1 /* StopsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FCD1C3213C6003023A1 /* StopsModel.swift */; };
+		E4624FD21C3231C8003023A1 /* MapPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FD11C3231C8003023A1 /* MapPageViewController.swift */; };
+		E4624FD41C323354003023A1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FD31C323354003023A1 /* MapViewController.swift */; };
+		E463ACD51C89F12D00B68973 /* YouTubeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463ACD41C89F12D00B68973 /* YouTubeContentViewController.swift */; };
+		E471CEAE1C74243400214EFF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E471CEAD1C74243400214EFF /* Settings.bundle */; };
+		E472B5F61C87C463003FFBCA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472B5F51C87C463003FFBCA /* WebViewController.swift */; };
+		E4B22911A4D524A7A272A62E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6C5DFB1E31279995C3AF32 /* QuartzCore.framework */; };
+		E4CFFC0E1CAFF641005C2268 /* historya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4CFFC0D1CAFF641005C2268 /* historya.jpg */; };
+		E4D8E8271C7BFB7D00A17BB2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */; };
+		E4D8E8291C7BFBE200A17BB2 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */; };
+		E4D8E82C1C83146700A17BB2 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D8E82B1C83146700A17BB2 /* Protocols.swift */; };
+		E4E3F2251C8F2497006456AB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E3F2241C8F2497006456AB /* ImageIO.framework */; };
+		F0DB774696A056B77FF0975B /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45063F1F39CAC171C1B145FE /* BuddyBuildSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		45063F1F39CAC171C1B145FE /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		7818E2E4A204F71BC6481CE1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		9BD3D30DE7D52599BECEB1CD /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		C446CDD889E2DC68688BF316 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CD6C5DFB1E31279995C3AF32 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E40C912E1CA1665500F40EF5 /* site10a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site10a_tn.png; sourceTree = "<group>"; };
+		E40C912F1CA1665500F40EF5 /* site10a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site10a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91301CA1665500F40EF5 /* site11a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site11a_tn.png; sourceTree = "<group>"; };
+		E40C91311CA1665500F40EF5 /* site11a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site11a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91321CA1665500F40EF5 /* site12b_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site12b_tn.png; sourceTree = "<group>"; };
+		E40C91331CA1665500F40EF5 /* site12b_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site12b_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91341CA1665500F40EF5 /* site13a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site13a_tn.png; sourceTree = "<group>"; };
+		E40C91351CA1665500F40EF5 /* site13a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site13a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91361CA1665500F40EF5 /* site14a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site14a_tn.png; sourceTree = "<group>"; };
+		E40C91371CA1665500F40EF5 /* site14a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site14a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91381CA1665500F40EF5 /* site15a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site15a_tn.png; sourceTree = "<group>"; };
+		E40C91391CA1665500F40EF5 /* site15a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site15a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C913A1CA1665500F40EF5 /* site16a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site16a_tn.png; sourceTree = "<group>"; };
+		E40C913B1CA1665500F40EF5 /* site16a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site16a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C913C1CA1665500F40EF5 /* site17a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site17a_tn.png; sourceTree = "<group>"; };
+		E40C913D1CA1665500F40EF5 /* site17a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site17a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C913E1CA1665500F40EF5 /* site18a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site18a_tn.png; sourceTree = "<group>"; };
+		E40C913F1CA1665500F40EF5 /* site18a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site18a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91401CA1665500F40EF5 /* site19a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site19a_tn.png; sourceTree = "<group>"; };
+		E40C91411CA1665500F40EF5 /* site19a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site19a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91421CA1665500F40EF5 /* site1b_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site1b_tn.png; sourceTree = "<group>"; };
+		E40C91431CA1665500F40EF5 /* site1b_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site1b_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91441CA1665500F40EF5 /* site20a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site20a_tn.png; sourceTree = "<group>"; };
+		E40C91451CA1665500F40EF5 /* site20a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site20a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91461CA1665500F40EF5 /* site21a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site21a_tn.png; sourceTree = "<group>"; };
+		E40C91471CA1665500F40EF5 /* site21a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site21a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91481CA1665500F40EF5 /* site22a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site22a_tn.png; sourceTree = "<group>"; };
+		E40C91491CA1665500F40EF5 /* site22a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site22a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C914A1CA1665500F40EF5 /* site23a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site23a_tn.png; sourceTree = "<group>"; };
+		E40C914B1CA1665500F40EF5 /* site23a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site23a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C914C1CA1665500F40EF5 /* site24b_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site24b_tn.png; sourceTree = "<group>"; };
+		E40C914D1CA1665500F40EF5 /* site24b_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site24b_tn@2x.png"; sourceTree = "<group>"; };
+		E40C914E1CA1665500F40EF5 /* site25a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site25a_tn.png; sourceTree = "<group>"; };
+		E40C914F1CA1665500F40EF5 /* site25a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site25a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91501CA1665500F40EF5 /* site26a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site26a_tn.png; sourceTree = "<group>"; };
+		E40C91511CA1665500F40EF5 /* site26a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site26a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91521CA1665500F40EF5 /* site27a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site27a_tn.png; sourceTree = "<group>"; };
+		E40C91531CA1665500F40EF5 /* site27a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site27a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91541CA1665500F40EF5 /* site27d_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site27d_tn.png; sourceTree = "<group>"; };
+		E40C91551CA1665500F40EF5 /* site27d_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site27d_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91561CA1665500F40EF5 /* site27e_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site27e_tn.png; sourceTree = "<group>"; };
+		E40C91571CA1665500F40EF5 /* site27e_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site27e_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91581CA1665500F40EF5 /* site28a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site28a_tn.png; sourceTree = "<group>"; };
+		E40C91591CA1665500F40EF5 /* site28a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site28a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C915A1CA1665500F40EF5 /* site2a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site2a_tn.png; sourceTree = "<group>"; };
+		E40C915B1CA1665500F40EF5 /* site2a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site2a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C915C1CA1665500F40EF5 /* site3d_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site3d_tn.png; sourceTree = "<group>"; };
+		E40C915D1CA1665500F40EF5 /* site3d_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site3d_tn@2x.png"; sourceTree = "<group>"; };
+		E40C915E1CA1665500F40EF5 /* site4a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site4a_tn.png; sourceTree = "<group>"; };
+		E40C915F1CA1665500F40EF5 /* site4a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site4a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91601CA1665500F40EF5 /* site5a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site5a_tn.png; sourceTree = "<group>"; };
+		E40C91611CA1665500F40EF5 /* site5a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site5a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91621CA1665500F40EF5 /* site6a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site6a_tn.png; sourceTree = "<group>"; };
+		E40C91641CA1665500F40EF5 /* site7a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site7a_tn.png; sourceTree = "<group>"; };
+		E40C91651CA1665500F40EF5 /* site7a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site7a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91661CA1665500F40EF5 /* site8a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site8a_tn.png; sourceTree = "<group>"; };
+		E40C91671CA1665500F40EF5 /* site8a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site8a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91681CA1665500F40EF5 /* site9a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site9a_tn.png; sourceTree = "<group>"; };
+		E40C91691CA1665500F40EF5 /* site9a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site9a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91A71CA1A13000F40EF5 /* site29a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site29a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91AC1CA4DCED00F40EF5 /* site6a_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site6a_tn@2x.png"; sourceTree = "<group>"; };
+		E40C91AE1CA54E8B00F40EF5 /* site29a_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site29a_tn.png; sourceTree = "<group>"; };
+		E40C91B01CA8A9A800F40EF5 /* site4b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site4b.jpg; sourceTree = "<group>"; };
+		E40C91B21CA8C01500F40EF5 /* site27d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site27d.jpg; sourceTree = "<group>"; };
+		E40C91B31CA8C01500F40EF5 /* site27e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site27e.jpg; sourceTree = "<group>"; };
+		E40C91B61CA98EAE00F40EF5 /* site1a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = site1a.jpg; path = "Stop Image Thumbnails/site1a.jpg"; sourceTree = "<group>"; };
+		E40C91B81CA996FA00F40EF5 /* site1b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site1b.jpg; sourceTree = "<group>"; };
+		E40C91B91CA996FA00F40EF5 /* site1c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site1c.jpg; sourceTree = "<group>"; };
+		E40C91BA1CA996FA00F40EF5 /* site1d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site1d.jpg; sourceTree = "<group>"; };
+		E40C91BB1CA996FA00F40EF5 /* site2a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site2a.jpg; sourceTree = "<group>"; };
+		E40C91BC1CA996FA00F40EF5 /* site3a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site3a.jpg; sourceTree = "<group>"; };
+		E40C91BD1CA996FA00F40EF5 /* site3b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site3b.jpg; sourceTree = "<group>"; };
+		E40C91BE1CA996FA00F40EF5 /* site3c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site3c.jpg; sourceTree = "<group>"; };
+		E40C91BF1CA996FA00F40EF5 /* site3d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site3d.jpg; sourceTree = "<group>"; };
+		E40C91C01CA996FA00F40EF5 /* site3e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site3e.jpg; sourceTree = "<group>"; };
+		E40C91CA1CA9CD9100F40EF5 /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
+		E40C91CD1CA9CDD400F40EF5 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		E40C91CE1CA9CDD400F40EF5 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		E40C91D01CA9CEBE00F40EF5 /* YouTubeiOSPlayerHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouTubeiOSPlayerHelper.h; sourceTree = "<group>"; };
+		E40C91D31CAFE20C00F40EF5 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		E411D1441CB531CB008EC7E0 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CottontownTabBarController.swift; sourceTree = "<group>"; };
+		E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsSplitViewController.swift; sourceTree = "<group>"; };
+		E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E411EC201C4B29200081AB9B /* Notificatons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificatons.swift; sourceTree = "<group>"; };
+		E419ED371C1C6AAA00164E25 /* Cottontown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cottontown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E419ED3A1C1C6AAA00164E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E419ED3C1C1C6AAA00164E25 /* StopsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsTableViewController.swift; sourceTree = "<group>"; };
+		E419ED411C1C6AAA00164E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E419ED431C1C6AAA00164E25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E419ED461C1C6AAA00164E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E419ED481C1C6AAA00164E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E419ED4E1C1CC5BD00164E25 /* Stops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stops.plist; sourceTree = "<group>"; };
+		E419ED501C1CD14100164E25 /* StopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopCell.swift; sourceTree = "<group>"; };
+		E43CA0BA1C8FC5180051139B /* site4a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site4a.jpg; sourceTree = "<group>"; };
+		E43CA0BB1C8FC5180051139B /* site5a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site5a.jpg; sourceTree = "<group>"; };
+		E43CA0BC1C8FC5180051139B /* site6a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site6a.jpg; sourceTree = "<group>"; };
+		E43CA0BD1C8FC5180051139B /* site7a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site7a.jpg; sourceTree = "<group>"; };
+		E43CA0BE1C8FC5180051139B /* site8a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site8a.jpg; sourceTree = "<group>"; };
+		E43CA0BF1C8FC5180051139B /* site9a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site9a.jpg; sourceTree = "<group>"; };
+		E43CA0C01C8FC5180051139B /* site10a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site10a.jpg; sourceTree = "<group>"; };
+		E43CA0C11C8FC5180051139B /* site10b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site10b.jpg; sourceTree = "<group>"; };
+		E43CA0C21C8FC5180051139B /* site11a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site11a.jpg; sourceTree = "<group>"; };
+		E43CA0C31C8FC5180051139B /* site12a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site12a.jpg; sourceTree = "<group>"; };
+		E43CA0C41C8FC5180051139B /* site12b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site12b.jpg; sourceTree = "<group>"; };
+		E43CA0C51C8FC5180051139B /* site12c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site12c.jpg; sourceTree = "<group>"; };
+		E43CA0C61C8FC5180051139B /* site13a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site13a.jpg; sourceTree = "<group>"; };
+		E43CA0C71C8FC5180051139B /* site13b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site13b.jpg; sourceTree = "<group>"; };
+		E43CA0C81C8FC5180051139B /* site14a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site14a.jpg; sourceTree = "<group>"; };
+		E43CA0C91C8FC5180051139B /* site15a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site15a.jpg; sourceTree = "<group>"; };
+		E43CA0CA1C8FC5180051139B /* site16a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site16a.jpg; sourceTree = "<group>"; };
+		E43CA0CB1C8FC5180051139B /* site17a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site17a.jpg; sourceTree = "<group>"; };
+		E43CA0CC1C8FC5180051139B /* site18a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site18a.jpg; sourceTree = "<group>"; };
+		E43CA0CD1C8FC5180051139B /* site19a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site19a.jpg; sourceTree = "<group>"; };
+		E43CA0CE1C8FC5180051139B /* site19b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site19b.jpg; sourceTree = "<group>"; };
+		E43CA0CF1C8FC5180051139B /* site19c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site19c.jpg; sourceTree = "<group>"; };
+		E43CA0D01C8FC5180051139B /* site20a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site20a.jpg; sourceTree = "<group>"; };
+		E43CA0D11C8FC5180051139B /* site21a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site21a.jpg; sourceTree = "<group>"; };
+		E43CA0D21C8FC5180051139B /* site22a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site22a.jpg; sourceTree = "<group>"; };
+		E43CA0D31C8FC5180051139B /* site23a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site23a.jpg; sourceTree = "<group>"; };
+		E43CA0D41C8FC5180051139B /* site24a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site24a.jpg; sourceTree = "<group>"; };
+		E43CA0D51C8FC5180051139B /* site24b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site24b.jpg; sourceTree = "<group>"; };
+		E43CA0D61C8FC5180051139B /* site24c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site24c.jpg; sourceTree = "<group>"; };
+		E43CA0D71C8FC5180051139B /* site25a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site25a.jpg; sourceTree = "<group>"; };
+		E43CA0D81C8FC5180051139B /* site25b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site25b.jpg; sourceTree = "<group>"; };
+		E43CA0D91C8FC5180051139B /* site25c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site25c.jpg; sourceTree = "<group>"; };
+		E43CA0DA1C8FC5180051139B /* site26a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site26a.jpg; sourceTree = "<group>"; };
+		E43CA0DB1C8FC5180051139B /* site27a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site27a.jpg; sourceTree = "<group>"; };
+		E43CA0DC1C8FC5180051139B /* site27b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site27b.jpg; sourceTree = "<group>"; };
+		E43CA0DD1C8FC5180051139B /* site27c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site27c.jpg; sourceTree = "<group>"; };
+		E43CA0DE1C8FC5180051139B /* site28a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site28a.jpg; sourceTree = "<group>"; };
+		E43CA11A1C8FCAAC0051139B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E43CA11C1C9136590051139B /* site29a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site29a.jpg; sourceTree = "<group>"; };
+		E43CA11D1C9136590051139B /* site29b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site29b.jpg; sourceTree = "<group>"; };
+		E43CA11E1C9136590051139B /* site30a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site30a.jpg; sourceTree = "<group>"; };
+		E442584D1C27979B0041A5B4 /* PictureContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureContentViewController.swift; sourceTree = "<group>"; };
+		E442584F1C2798640041A5B4 /* StopPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopPageViewController.swift; sourceTree = "<group>"; };
+		E44258511C2A2BEF0041A5B4 /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		E44258531C2A2E520041A5B4 /* Cottontown.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Cottontown.playground; sourceTree = "<group>"; };
+		E45BA75F1C38C20900454CF7 /* StopAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopAnnotation.swift; sourceTree = "<group>"; };
+		E45F21721C46F10D00A9E743 /* ContentImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentImage.swift; sourceTree = "<group>"; };
+		E4624FC71C2F8A4E003023A1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E4624FCB1C30C76A003023A1 /* MapSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSplitViewController.swift; sourceTree = "<group>"; };
+		E4624FCD1C3213C6003023A1 /* StopsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsModel.swift; sourceTree = "<group>"; };
+		E4624FD11C3231C8003023A1 /* MapPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPageViewController.swift; sourceTree = "<group>"; };
+		E4624FD31C323354003023A1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E463ACD41C89F12D00B68973 /* YouTubeContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeContentViewController.swift; sourceTree = "<group>"; };
+		E471CEAD1C74243400214EFF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		E472B5F51C87C463003FFBCA /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E4CFFC0D1CAFF641005C2268 /* historya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = historya.jpg; sourceTree = "<group>"; };
+		E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneSignal.framework; sourceTree = "<group>"; };
+		E4D8E82A1C7BFD6B00A17BB2 /* Cottontown-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cottontown-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		E4D8E82B1C83146700A17BB2 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		E4E3F2241C8F2497006456AB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E6F4BF4C4A72E1E41C6B3590 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E419ED341C1C6AAA00164E25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43CA11B1C8FCAAC0051139B /* MobileCoreServices.framework in Frameworks */,
+				E4E3F2251C8F2497006456AB /* ImageIO.framework in Frameworks */,
+				E4D8E8271C7BFB7D00A17BB2 /* SystemConfiguration.framework in Frameworks */,
+				E411EC1D1C4B0D370081AB9B /* CoreLocation.framework in Frameworks */,
+				E4624FC81C2F8A4E003023A1 /* MapKit.framework in Frameworks */,
+				E4D8E8291C7BFBE200A17BB2 /* OneSignal.framework in Frameworks */,
+				F0DB774696A056B77FF0975B /* BuddyBuildSDK.framework in Frameworks */,
+				B3CA101CC11C88CD70F32F85 /* AssetsLibrary.framework in Frameworks */,
+				561036DC2EFFBA72DA4DB7DC /* CoreText.framework in Frameworks */,
+				1B42DE09AAC0F9DB72EA815D /* CoreTelephony.framework in Frameworks */,
+				688CF688E4F5AC7AAD4810FF /* SystemConfiguration.framework in Frameworks */,
+				E4B22911A4D524A7A272A62E /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E40C912D1CA1665500F40EF5 /* Stop Image Thumbnails */ = {
+			isa = PBXGroup;
+			children = (
+				E40C912E1CA1665500F40EF5 /* site10a_tn.png */,
+				E40C912F1CA1665500F40EF5 /* site10a_tn@2x.png */,
+				E40C91301CA1665500F40EF5 /* site11a_tn.png */,
+				E40C91311CA1665500F40EF5 /* site11a_tn@2x.png */,
+				E40C91321CA1665500F40EF5 /* site12b_tn.png */,
+				E40C91331CA1665500F40EF5 /* site12b_tn@2x.png */,
+				E40C91341CA1665500F40EF5 /* site13a_tn.png */,
+				E40C91351CA1665500F40EF5 /* site13a_tn@2x.png */,
+				E40C91361CA1665500F40EF5 /* site14a_tn.png */,
+				E40C91371CA1665500F40EF5 /* site14a_tn@2x.png */,
+				E40C91381CA1665500F40EF5 /* site15a_tn.png */,
+				E40C91391CA1665500F40EF5 /* site15a_tn@2x.png */,
+				E40C913A1CA1665500F40EF5 /* site16a_tn.png */,
+				E40C913B1CA1665500F40EF5 /* site16a_tn@2x.png */,
+				E40C913C1CA1665500F40EF5 /* site17a_tn.png */,
+				E40C913D1CA1665500F40EF5 /* site17a_tn@2x.png */,
+				E40C913E1CA1665500F40EF5 /* site18a_tn.png */,
+				E40C913F1CA1665500F40EF5 /* site18a_tn@2x.png */,
+				E40C91401CA1665500F40EF5 /* site19a_tn.png */,
+				E40C91411CA1665500F40EF5 /* site19a_tn@2x.png */,
+				E40C91421CA1665500F40EF5 /* site1b_tn.png */,
+				E40C91431CA1665500F40EF5 /* site1b_tn@2x.png */,
+				E40C91441CA1665500F40EF5 /* site20a_tn.png */,
+				E40C91451CA1665500F40EF5 /* site20a_tn@2x.png */,
+				E40C91461CA1665500F40EF5 /* site21a_tn.png */,
+				E40C91471CA1665500F40EF5 /* site21a_tn@2x.png */,
+				E40C91481CA1665500F40EF5 /* site22a_tn.png */,
+				E40C91491CA1665500F40EF5 /* site22a_tn@2x.png */,
+				E40C914A1CA1665500F40EF5 /* site23a_tn.png */,
+				E40C914B1CA1665500F40EF5 /* site23a_tn@2x.png */,
+				E40C914C1CA1665500F40EF5 /* site24b_tn.png */,
+				E40C914D1CA1665500F40EF5 /* site24b_tn@2x.png */,
+				E40C914E1CA1665500F40EF5 /* site25a_tn.png */,
+				E40C914F1CA1665500F40EF5 /* site25a_tn@2x.png */,
+				E40C91501CA1665500F40EF5 /* site26a_tn.png */,
+				E40C91511CA1665500F40EF5 /* site26a_tn@2x.png */,
+				E40C91521CA1665500F40EF5 /* site27a_tn.png */,
+				E40C91531CA1665500F40EF5 /* site27a_tn@2x.png */,
+				E40C91541CA1665500F40EF5 /* site27d_tn.png */,
+				E40C91551CA1665500F40EF5 /* site27d_tn@2x.png */,
+				E40C91561CA1665500F40EF5 /* site27e_tn.png */,
+				E40C91571CA1665500F40EF5 /* site27e_tn@2x.png */,
+				E40C91581CA1665500F40EF5 /* site28a_tn.png */,
+				E40C91591CA1665500F40EF5 /* site28a_tn@2x.png */,
+				E40C91AE1CA54E8B00F40EF5 /* site29a_tn.png */,
+				E40C91A71CA1A13000F40EF5 /* site29a_tn@2x.png */,
+				E40C915A1CA1665500F40EF5 /* site2a_tn.png */,
+				E40C915B1CA1665500F40EF5 /* site2a_tn@2x.png */,
+				E40C915C1CA1665500F40EF5 /* site3d_tn.png */,
+				E40C915D1CA1665500F40EF5 /* site3d_tn@2x.png */,
+				E40C915E1CA1665500F40EF5 /* site4a_tn.png */,
+				E40C915F1CA1665500F40EF5 /* site4a_tn@2x.png */,
+				E40C91601CA1665500F40EF5 /* site5a_tn.png */,
+				E40C91611CA1665500F40EF5 /* site5a_tn@2x.png */,
+				E40C91621CA1665500F40EF5 /* site6a_tn.png */,
+				E40C91AC1CA4DCED00F40EF5 /* site6a_tn@2x.png */,
+				E40C91641CA1665500F40EF5 /* site7a_tn.png */,
+				E40C91651CA1665500F40EF5 /* site7a_tn@2x.png */,
+				E40C91661CA1665500F40EF5 /* site8a_tn.png */,
+				E40C91671CA1665500F40EF5 /* site8a_tn@2x.png */,
+				E40C91681CA1665500F40EF5 /* site9a_tn.png */,
+				E40C91691CA1665500F40EF5 /* site9a_tn@2x.png */,
+			);
+			path = "Stop Image Thumbnails";
+			sourceTree = "<group>";
+		};
+		E419ED2E1C1C6AAA00164E25 = {
+			isa = PBXGroup;
+			children = (
+				E419ED391C1C6AAA00164E25 /* Cottontown */,
+				E419ED381C1C6AAA00164E25 /* Products */,
+				F5A90C470D7945F9390B2559 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E419ED381C1C6AAA00164E25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E419ED371C1C6AAA00164E25 /* Cottontown.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E419ED391C1C6AAA00164E25 /* Cottontown */ = {
+			isa = PBXGroup;
+			children = (
+				E4D8E82A1C7BFD6B00A17BB2 /* Cottontown-Bridging-Header.h */,
+				E419ED3A1C1C6AAA00164E25 /* AppDelegate.swift */,
+				E4D8E82B1C83146700A17BB2 /* Protocols.swift */,
+				E411EC201C4B29200081AB9B /* Notificatons.swift */,
+				E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */,
+				E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */,
+				E4624FCD1C3213C6003023A1 /* StopsModel.swift */,
+				E419ED3C1C1C6AAA00164E25 /* StopsTableViewController.swift */,
+				E419ED501C1CD14100164E25 /* StopCell.swift */,
+				E442584F1C2798640041A5B4 /* StopPageViewController.swift */,
+				E442584D1C27979B0041A5B4 /* PictureContentViewController.swift */,
+				E463ACD41C89F12D00B68973 /* YouTubeContentViewController.swift */,
+				E45F21721C46F10D00A9E743 /* ContentImage.swift */,
+				E44258511C2A2BEF0041A5B4 /* Stop.swift */,
+				E4624FCB1C30C76A003023A1 /* MapSplitViewController.swift */,
+				E4624FD31C323354003023A1 /* MapViewController.swift */,
+				E45BA75F1C38C20900454CF7 /* StopAnnotation.swift */,
+				E4624FD11C3231C8003023A1 /* MapPageViewController.swift */,
+				E472B5F51C87C463003FFBCA /* WebViewController.swift */,
+				E40C91D31CAFE20C00F40EF5 /* HistoryViewController.swift */,
+				E411D1441CB531CB008EC7E0 /* AboutViewController.swift */,
+				E419ED401C1C6AAA00164E25 /* Main.storyboard */,
+				E419ED451C1C6AAA00164E25 /* LaunchScreen.storyboard */,
+				E40C91D01CA9CEBE00F40EF5 /* YouTubeiOSPlayerHelper.h */,
+				E40C91CD1CA9CDD400F40EF5 /* YTPlayerView.h */,
+				E40C91CE1CA9CDD400F40EF5 /* YTPlayerView.m */,
+				E40C91CA1CA9CD9100F40EF5 /* Assets.bundle */,
+				E471CEAD1C74243400214EFF /* Settings.bundle */,
+				E43CA0AF1C8FC0390051139B /* Pictures */,
+				E419ED431C1C6AAA00164E25 /* Assets.xcassets */,
+				E419ED481C1C6AAA00164E25 /* Info.plist */,
+				E419ED4E1C1CC5BD00164E25 /* Stops.plist */,
+				E44258531C2A2E520041A5B4 /* Cottontown.playground */,
+				E4D8E82D1C8377FD00A17BB2 /* Frameworks */,
+			);
+			path = Cottontown;
+			sourceTree = "<group>";
+		};
+		E43CA0AF1C8FC0390051139B /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				E4CFFC0D1CAFF641005C2268 /* historya.jpg */,
+				E40C912D1CA1665500F40EF5 /* Stop Image Thumbnails */,
+				E40C91B61CA98EAE00F40EF5 /* site1a.jpg */,
+				E40C91B81CA996FA00F40EF5 /* site1b.jpg */,
+				E40C91B91CA996FA00F40EF5 /* site1c.jpg */,
+				E40C91BA1CA996FA00F40EF5 /* site1d.jpg */,
+				E40C91BB1CA996FA00F40EF5 /* site2a.jpg */,
+				E40C91BC1CA996FA00F40EF5 /* site3a.jpg */,
+				E40C91BD1CA996FA00F40EF5 /* site3b.jpg */,
+				E40C91BE1CA996FA00F40EF5 /* site3c.jpg */,
+				E40C91BF1CA996FA00F40EF5 /* site3d.jpg */,
+				E40C91C01CA996FA00F40EF5 /* site3e.jpg */,
+				E43CA0BA1C8FC5180051139B /* site4a.jpg */,
+				E40C91B01CA8A9A800F40EF5 /* site4b.jpg */,
+				E43CA0BB1C8FC5180051139B /* site5a.jpg */,
+				E43CA0BC1C8FC5180051139B /* site6a.jpg */,
+				E43CA0BD1C8FC5180051139B /* site7a.jpg */,
+				E43CA0BE1C8FC5180051139B /* site8a.jpg */,
+				E43CA0BF1C8FC5180051139B /* site9a.jpg */,
+				E43CA0C01C8FC5180051139B /* site10a.jpg */,
+				E43CA0C11C8FC5180051139B /* site10b.jpg */,
+				E43CA0C21C8FC5180051139B /* site11a.jpg */,
+				E43CA0C31C8FC5180051139B /* site12a.jpg */,
+				E43CA0C41C8FC5180051139B /* site12b.jpg */,
+				E43CA0C51C8FC5180051139B /* site12c.jpg */,
+				E43CA0C61C8FC5180051139B /* site13a.jpg */,
+				E43CA0C71C8FC5180051139B /* site13b.jpg */,
+				E43CA0C81C8FC5180051139B /* site14a.jpg */,
+				E43CA0C91C8FC5180051139B /* site15a.jpg */,
+				E43CA0CA1C8FC5180051139B /* site16a.jpg */,
+				E43CA0CB1C8FC5180051139B /* site17a.jpg */,
+				E43CA0CC1C8FC5180051139B /* site18a.jpg */,
+				E43CA0CD1C8FC5180051139B /* site19a.jpg */,
+				E43CA0CE1C8FC5180051139B /* site19b.jpg */,
+				E43CA0CF1C8FC5180051139B /* site19c.jpg */,
+				E43CA0D01C8FC5180051139B /* site20a.jpg */,
+				E43CA0D11C8FC5180051139B /* site21a.jpg */,
+				E43CA0D21C8FC5180051139B /* site22a.jpg */,
+				E43CA0D31C8FC5180051139B /* site23a.jpg */,
+				E43CA0D41C8FC5180051139B /* site24a.jpg */,
+				E43CA0D51C8FC5180051139B /* site24b.jpg */,
+				E43CA0D61C8FC5180051139B /* site24c.jpg */,
+				E43CA0D71C8FC5180051139B /* site25a.jpg */,
+				E43CA0D81C8FC5180051139B /* site25b.jpg */,
+				E43CA0D91C8FC5180051139B /* site25c.jpg */,
+				E43CA0DA1C8FC5180051139B /* site26a.jpg */,
+				E43CA0DB1C8FC5180051139B /* site27a.jpg */,
+				E43CA0DC1C8FC5180051139B /* site27b.jpg */,
+				E43CA0DD1C8FC5180051139B /* site27c.jpg */,
+				E40C91B21CA8C01500F40EF5 /* site27d.jpg */,
+				E40C91B31CA8C01500F40EF5 /* site27e.jpg */,
+				E43CA0DE1C8FC5180051139B /* site28a.jpg */,
+				E43CA11C1C9136590051139B /* site29a.jpg */,
+				E43CA11D1C9136590051139B /* site29b.jpg */,
+				E43CA11E1C9136590051139B /* site30a.jpg */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
+		E4D8E82D1C8377FD00A17BB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E43CA11A1C8FCAAC0051139B /* MobileCoreServices.framework */,
+				E4E3F2241C8F2497006456AB /* ImageIO.framework */,
+				E4624FC71C2F8A4E003023A1 /* MapKit.framework */,
+				E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */,
+				E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */,
+				E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F5A90C470D7945F9390B2559 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45063F1F39CAC171C1B145FE /* BuddyBuildSDK.framework */,
+				9BD3D30DE7D52599BECEB1CD /* AssetsLibrary.framework */,
+				7818E2E4A204F71BC6481CE1 /* CoreText.framework */,
+				E6F4BF4C4A72E1E41C6B3590 /* CoreTelephony.framework */,
+				C446CDD889E2DC68688BF316 /* SystemConfiguration.framework */,
+				CD6C5DFB1E31279995C3AF32 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E419ED361C1C6AAA00164E25 /* Cottontown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E419ED4B1C1C6AAA00164E25 /* Build configuration list for PBXNativeTarget "Cottontown" */;
+			buildPhases = (
+				E419ED331C1C6AAA00164E25 /* Sources */,
+				E419ED341C1C6AAA00164E25 /* Frameworks */,
+				E419ED351C1C6AAA00164E25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cottontown;
+			productName = Cottontown;
+			productReference = E419ED371C1C6AAA00164E25 /* Cottontown.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E419ED2F1C1C6AAA00164E25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Tappdev.com;
+				TargetAttributes = {
+					E419ED361C1C6AAA00164E25 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = EVVLS4S94Q;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E419ED321C1C6AAA00164E25 /* Build configuration list for PBXProject "Cottontown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E419ED2E1C1C6AAA00164E25;
+			productRefGroup = E419ED381C1C6AAA00164E25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E419ED361C1C6AAA00164E25 /* Cottontown */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E419ED351C1C6AAA00164E25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43CA0FD1C8FC5180051139B /* site19b.jpg in Resources */,
+				E40C917A1CA1665500F40EF5 /* site18a_tn.png in Resources */,
+				E40C917C1CA1665500F40EF5 /* site19a_tn.png in Resources */,
+				E40C91C31CA996FA00F40EF5 /* site1d.jpg in Resources */,
+				E43CA1051C8FC5180051139B /* site24c.jpg in Resources */,
+				E40C91B41CA8C01500F40EF5 /* site27d.jpg in Resources */,
+				E40C91B11CA8A9A800F40EF5 /* site4b.jpg in Resources */,
+				E43CA10C1C8FC5180051139B /* site27c.jpg in Resources */,
+				E43CA10B1C8FC5180051139B /* site27b.jpg in Resources */,
+				E40C91C21CA996FA00F40EF5 /* site1c.jpg in Resources */,
+				E43CA0FF1C8FC5180051139B /* site20a.jpg in Resources */,
+				E43CA1071C8FC5180051139B /* site25b.jpg in Resources */,
+				E43CA0F11C8FC5180051139B /* site11a.jpg in Resources */,
+				E43CA1031C8FC5180051139B /* site24a.jpg in Resources */,
+				E43CA1211C9136590051139B /* site30a.jpg in Resources */,
+				E40C91AD1CA4DCED00F40EF5 /* site6a_tn@2x.png in Resources */,
+				E40C91A91CA1A13000F40EF5 /* site29a_tn@2x.png in Resources */,
+				E40C91951CA1665500F40EF5 /* site28a_tn@2x.png in Resources */,
+				E43CA0EB1C8FC5180051139B /* site6a.jpg in Resources */,
+				E40C91911CA1665500F40EF5 /* site27d_tn@2x.png in Resources */,
+				E40C91921CA1665500F40EF5 /* site27e_tn.png in Resources */,
+				E40C91761CA1665500F40EF5 /* site16a_tn.png in Resources */,
+				E40C918F1CA1665500F40EF5 /* site27a_tn@2x.png in Resources */,
+				E40C91961CA1665500F40EF5 /* site2a_tn.png in Resources */,
+				E40C91771CA1665500F40EF5 /* site16a_tn@2x.png in Resources */,
+				E43CA0FB1C8FC5180051139B /* site18a.jpg in Resources */,
+				E40C91781CA1665500F40EF5 /* site17a_tn.png in Resources */,
+				E43CA10D1C8FC5180051139B /* site28a.jpg in Resources */,
+				E40C918A1CA1665500F40EF5 /* site25a_tn.png in Resources */,
+				E43CA0F41C8FC5180051139B /* site12c.jpg in Resources */,
+				E40C91981CA1665500F40EF5 /* site3d_tn.png in Resources */,
+				E40C91701CA1665500F40EF5 /* site13a_tn.png in Resources */,
+				E40C91A51CA1665500F40EF5 /* site9a_tn@2x.png in Resources */,
+				E43CA0FE1C8FC5180051139B /* site19c.jpg in Resources */,
+				E40C91991CA1665500F40EF5 /* site3d_tn@2x.png in Resources */,
+				E40C91741CA1665500F40EF5 /* site15a_tn.png in Resources */,
+				E40C91971CA1665500F40EF5 /* site2a_tn@2x.png in Resources */,
+				E40C916F1CA1665500F40EF5 /* site12b_tn@2x.png in Resources */,
+				E40C91821CA1665500F40EF5 /* site21a_tn.png in Resources */,
+				E40C91841CA1665500F40EF5 /* site22a_tn.png in Resources */,
+				E40C918B1CA1665500F40EF5 /* site25a_tn@2x.png in Resources */,
+				E419ED471C1C6AAA00164E25 /* LaunchScreen.storyboard in Resources */,
+				E40C91941CA1665500F40EF5 /* site28a_tn.png in Resources */,
+				E40C91A11CA1665500F40EF5 /* site7a_tn@2x.png in Resources */,
+				E40C91C71CA996FA00F40EF5 /* site3c.jpg in Resources */,
+				E40C918E1CA1665500F40EF5 /* site27a_tn.png in Resources */,
+				E40C91871CA1665500F40EF5 /* site23a_tn@2x.png in Resources */,
+				E40C916A1CA1665500F40EF5 /* site10a_tn.png in Resources */,
+				E40C919B1CA1665500F40EF5 /* site4a_tn@2x.png in Resources */,
+				E40C91C51CA996FA00F40EF5 /* site3a.jpg in Resources */,
+				E40C91831CA1665500F40EF5 /* site21a_tn@2x.png in Resources */,
+				E40C917D1CA1665500F40EF5 /* site19a_tn@2x.png in Resources */,
+				E40C91721CA1665500F40EF5 /* site14a_tn.png in Resources */,
+				E43CA0F31C8FC5180051139B /* site12b.jpg in Resources */,
+				E43CA0EA1C8FC5180051139B /* site5a.jpg in Resources */,
+				E40C91CB1CA9CD9100F40EF5 /* Assets.bundle in Resources */,
+				E43CA0F91C8FC5180051139B /* site16a.jpg in Resources */,
+				E40C91901CA1665500F40EF5 /* site27d_tn.png in Resources */,
+				E43CA0F61C8FC5180051139B /* site13b.jpg in Resources */,
+				E43CA1001C8FC5180051139B /* site21a.jpg in Resources */,
+				E40C91C91CA996FA00F40EF5 /* site3e.jpg in Resources */,
+				E43CA0F01C8FC5180051139B /* site10b.jpg in Resources */,
+				E40C91C11CA996FA00F40EF5 /* site1b.jpg in Resources */,
+				E40C91931CA1665500F40EF5 /* site27e_tn@2x.png in Resources */,
+				E40C918D1CA1665500F40EF5 /* site26a_tn@2x.png in Resources */,
+				E40C91861CA1665500F40EF5 /* site23a_tn.png in Resources */,
+				E40C917B1CA1665500F40EF5 /* site18a_tn@2x.png in Resources */,
+				E40C917E1CA1665500F40EF5 /* site1b_tn.png in Resources */,
+				E40C916E1CA1665500F40EF5 /* site12b_tn.png in Resources */,
+				E40C916B1CA1665500F40EF5 /* site10a_tn@2x.png in Resources */,
+				E43CA1081C8FC5180051139B /* site25c.jpg in Resources */,
+				E43CA0F71C8FC5180051139B /* site14a.jpg in Resources */,
+				E419ED441C1C6AAA00164E25 /* Assets.xcassets in Resources */,
+				E43CA11F1C9136590051139B /* site29a.jpg in Resources */,
+				E40C91AF1CA54E8B00F40EF5 /* site29a_tn.png in Resources */,
+				E40C919E1CA1665500F40EF5 /* site6a_tn.png in Resources */,
+				E43CA1201C9136590051139B /* site29b.jpg in Resources */,
+				E43CA0E91C8FC5180051139B /* site4a.jpg in Resources */,
+				E40C91791CA1665500F40EF5 /* site17a_tn@2x.png in Resources */,
+				E43CA1061C8FC5180051139B /* site25a.jpg in Resources */,
+				E40C91711CA1665500F40EF5 /* site13a_tn@2x.png in Resources */,
+				E40C916C1CA1665500F40EF5 /* site11a_tn.png in Resources */,
+				E40C91811CA1665500F40EF5 /* site20a_tn@2x.png in Resources */,
+				E40C919D1CA1665500F40EF5 /* site5a_tn@2x.png in Resources */,
+				E43CA0EE1C8FC5180051139B /* site9a.jpg in Resources */,
+				E40C91B71CA98EAE00F40EF5 /* site1a.jpg in Resources */,
+				E40C91C61CA996FA00F40EF5 /* site3b.jpg in Resources */,
+				E43CA0ED1C8FC5180051139B /* site8a.jpg in Resources */,
+				E4CFFC0E1CAFF641005C2268 /* historya.jpg in Resources */,
+				E43CA0F81C8FC5180051139B /* site15a.jpg in Resources */,
+				E471CEAE1C74243400214EFF /* Settings.bundle in Resources */,
+				E43CA0EF1C8FC5180051139B /* site10a.jpg in Resources */,
+				E43CA10A1C8FC5180051139B /* site27a.jpg in Resources */,
+				E40C91881CA1665500F40EF5 /* site24b_tn.png in Resources */,
+				E40C91731CA1665500F40EF5 /* site14a_tn@2x.png in Resources */,
+				E40C91C81CA996FA00F40EF5 /* site3d.jpg in Resources */,
+				E40C91A31CA1665500F40EF5 /* site8a_tn@2x.png in Resources */,
+				E43CA1011C8FC5180051139B /* site22a.jpg in Resources */,
+				E43CA0F21C8FC5180051139B /* site12a.jpg in Resources */,
+				E43CA0F51C8FC5180051139B /* site13a.jpg in Resources */,
+				E40C917F1CA1665500F40EF5 /* site1b_tn@2x.png in Resources */,
+				E43CA1091C8FC5180051139B /* site26a.jpg in Resources */,
+				E40C916D1CA1665500F40EF5 /* site11a_tn@2x.png in Resources */,
+				E40C91891CA1665500F40EF5 /* site24b_tn@2x.png in Resources */,
+				E40C91851CA1665500F40EF5 /* site22a_tn@2x.png in Resources */,
+				E40C918C1CA1665500F40EF5 /* site26a_tn.png in Resources */,
+				E40C91A01CA1665500F40EF5 /* site7a_tn.png in Resources */,
+				E40C91C41CA996FA00F40EF5 /* site2a.jpg in Resources */,
+				E419ED4F1C1CC5BD00164E25 /* Stops.plist in Resources */,
+				E40C91A21CA1665500F40EF5 /* site8a_tn.png in Resources */,
+				E40C91B51CA8C01500F40EF5 /* site27e.jpg in Resources */,
+				E419ED421C1C6AAA00164E25 /* Main.storyboard in Resources */,
+				E43CA1021C8FC5180051139B /* site23a.jpg in Resources */,
+				E40C91A41CA1665500F40EF5 /* site9a_tn.png in Resources */,
+				E43CA1041C8FC5180051139B /* site24b.jpg in Resources */,
+				E43CA0EC1C8FC5180051139B /* site7a.jpg in Resources */,
+				E43CA0FA1C8FC5180051139B /* site17a.jpg in Resources */,
+				E43CA0FC1C8FC5180051139B /* site19a.jpg in Resources */,
+				E40C919C1CA1665500F40EF5 /* site5a_tn.png in Resources */,
+				E40C91751CA1665500F40EF5 /* site15a_tn@2x.png in Resources */,
+				E40C91801CA1665500F40EF5 /* site20a_tn.png in Resources */,
+				E40C919A1CA1665500F40EF5 /* site4a_tn.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E419ED331C1C6AAA00164E25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E442584E1C27979B0041A5B4 /* PictureContentViewController.swift in Sources */,
+				E4624FCC1C30C76A003023A1 /* MapSplitViewController.swift in Sources */,
+				E411EC171C49879A0081AB9B /* CottontownTabBarController.swift in Sources */,
+				E411D1451CB531CB008EC7E0 /* AboutViewController.swift in Sources */,
+				E40C91D41CAFE20C00F40EF5 /* HistoryViewController.swift in Sources */,
+				E4624FD21C3231C8003023A1 /* MapPageViewController.swift in Sources */,
+				E45F21731C46F10D00A9E743 /* ContentImage.swift in Sources */,
+				E4624FD41C323354003023A1 /* MapViewController.swift in Sources */,
+				E419ED3D1C1C6AAA00164E25 /* StopsTableViewController.swift in Sources */,
+				E419ED3B1C1C6AAA00164E25 /* AppDelegate.swift in Sources */,
+				E419ED511C1CD14100164E25 /* StopCell.swift in Sources */,
+				E4624FCE1C3213C6003023A1 /* StopsModel.swift in Sources */,
+				E40C91CF1CA9CDD400F40EF5 /* YTPlayerView.m in Sources */,
+				E44258501C2798640041A5B4 /* StopPageViewController.swift in Sources */,
+				E411EC1B1C49CBE20081AB9B /* StopsSplitViewController.swift in Sources */,
+				E463ACD51C89F12D00B68973 /* YouTubeContentViewController.swift in Sources */,
+				E472B5F61C87C463003FFBCA /* WebViewController.swift in Sources */,
+				E45BA7601C38C20900454CF7 /* StopAnnotation.swift in Sources */,
+				E411EC211C4B29200081AB9B /* Notificatons.swift in Sources */,
+				E44258521C2A2BEF0041A5B4 /* Stop.swift in Sources */,
+				E4D8E82C1C83146700A17BB2 /* Protocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E419ED401C1C6AAA00164E25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E419ED411C1C6AAA00164E25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E419ED451C1C6AAA00164E25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E419ED461C1C6AAA00164E25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E419ED491C1C6AAA00164E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E419ED4A1C1C6AAA00164E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E419ED4C1C1C6AAA00164E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Cottontown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hildrethus.Cottontown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "53e435ab-bf89-48fa-a9c1-4fe8db71b4f3";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Cottontown-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E419ED4D1C1C6AAA00164E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Cottontown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hildrethus.Cottontown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E419ED321C1C6AAA00164E25 /* Build configuration list for PBXProject "Cottontown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E419ED491C1C6AAA00164E25 /* Debug */,
+				E419ED4A1C1C6AAA00164E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E419ED4B1C1C6AAA00164E25 /* Build configuration list for PBXNativeTarget "Cottontown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E419ED4C1C1C6AAA00164E25 /* Debug */,
+				E419ED4D1C1C6AAA00164E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E419ED2F1C1C6AAA00164E25 /* Project object */;
+}

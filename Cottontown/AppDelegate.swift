@@ -78,8 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     */
 
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
-        print("didReceiveLocalNotification:  app is open and notification occurred")
-        print("** notification: ", notification.alertBody)
+        
         
     }
     
@@ -277,7 +276,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             self.goToStopForiBeaconRegion = true
             self.tabBarController.selectedIndex = 0  // Make sure Stops tab is selected
             self.stopsTVC.showDetailViewForStopNumber(stop)
-            print(stop, "Beacon active")
+            
             
         })
         let canceliBeacons = UIAlertAction(title: "Stop using iBeacons", style: .Default , handler: {(alert) in
@@ -394,9 +393,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     
     func setTag(tag: String, value: String) {
         oneSignal.sendTag(tag, value: value, onSuccess: {(result: [NSObject: AnyObject]!) in
-            print("setTag success:", result)
+            
             }, onFailure: {(error: NSError?) in
-                print("setTag failure:", error)
+                
         })
     }
     

@@ -12,15 +12,21 @@
 import UIKit
 
 
-class StopsTableViewController: UITableViewController {
+class StopsTableViewController: UITableViewController, UIViewControllerPreviewingDelegate {
     
     let allStops = StopsModel.sharedInstance.allStops
  
     var suffix = ""
     let scale = UIScreen.mainScreen().scale
+    var forceTouchSupported = false
  
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if traitCollection.forceTouchCapability == .Available {
+            forceTouchSupported = true
+            registerForPreviewingWithDelegate(self, sourceView: tableView)
+        }
         
         tableView.estimatedRowHeight = 95
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -126,6 +132,11 @@ class StopsTableViewController: UITableViewController {
         
         let stop = allStops[indexPath!.row]
         
+        showMapForStop(stop)
+        
+    }
+    
+    func showMapForStop(stop: Stop) {
         let mapSplitVC = self.tabBarController!.viewControllers![1] as! MapSplitViewController
         let mapVCNavigationController = mapSplitVC.viewControllers[0] as! UINavigationController
         let mapVC = mapVCNavigationController.viewControllers[0] as! MapViewController
@@ -151,5 +162,34 @@ class StopsTableViewController: UITableViewController {
     override func transitionFromViewController(fromViewController: UIViewController, toViewController: UIViewController, duration: NSTimeInterval, options: UIViewAnimationOptions, animations: (() -> Void)?, completion: ((Bool) -> Void)?) {
          
     }
+
+    //MARK: - UIViewcontrollerPreviewingDelegate methods
+    
+    func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+       
+        guard let indexPath = tableView.indexPathForRowAtPoint(location) else {return nil}
+        
+        //This will show the cell clearly and blur the rest of the screen for our peek.
+        previewingContext.sourceRect = tableView.rectForRowAtIndexPath(indexPath)
+        
+        let stop = allStops[indexPath.row]
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let mapVC = storyBoard.instantiateViewControllerWithIdentifier("MapVCID") as! MapViewController
+        
+        
+        mapVC.showStop = stop
+        
+        return mapVC 
+    }
+    
+    func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
+        
+        let stop = (viewControllerToCommit as! MapViewController).showStop!
+        
+        showMapForStop(stop)
+    }
+    
+    
 }
 
