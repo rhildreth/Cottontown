@@ -774,6 +774,12 @@ One of the Columbiaâ€™s streetcars makes its way to Eau Claire, north of todayâ€
 		<array>
 			<dict>
 				<key>picImage</key>
+				<string>site27e</string>
+				<key>picText</key>
+				<string>Cottontown children C. D. Sexton, Norma Manini, June Shealy, Peggy Manini, Fred Strickland, Gloria Manini, and Fred Eagle pause from riding bikes along the 1300 block of Broad River (Summerville) Avenue, late 1930s.  (Image courtesy Peggy Manini Janicki)</string>
+			</dict>
+			<dict>
+				<key>picImage</key>
 				<string>site27a</string>
 				<key>picText</key>
 				<string>Thanks to the advent of affordable cameras and film processing coinciding with the growth of early suburbs, greater numbers of residents were able to document not just family milestones but also the activities associated with everyday life. Still, unique events, such as this snowfall in 1959, were favorite opportunities to capture moments for posterity.  (Image courtesy Pamela Wilson Fusco)</string>
@@ -798,12 +804,6 @@ Often, family pictures reveal details about the relationship of buildings to one
 				<string>site27d</string>
 				<key>picText</key>
 				<string>Pictured in March 1945, this bungalo at 2216 Wallace Street exemplifies one of the housing forms that came to be synonymous with Cottontown&apos;s streetscapes.  (Image courtesy Pamela Wilson Fusco)</string>
-			</dict>
-			<dict>
-				<key>picImage</key>
-				<string>site27e</string>
-				<key>picText</key>
-				<string>Cottontown children C. D. Sexton, Norma Manini, June Shealy, Peggy Manini, Fred Strickland, Gloria Manini, and Fred Eagle pause from riding bikes along the 1300 block of Broad River (Summerville) Avenue, late 1930s.  (Image courtesy Peggy Manini Janicki)</string>
 			</dict>
 		</array>
 	</dict>
