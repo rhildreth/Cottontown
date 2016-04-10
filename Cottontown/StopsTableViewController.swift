@@ -144,15 +144,15 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
         mapVC.showStop = stop
         
         // If the map detail is being displayed, remove it so the user will see the map view
-        if mapVCNavigationController.viewControllers.count > 1 {
-            mapVCNavigationController.popViewControllerAnimated(false)
-        }
+        
         
         
         
         mapSplitVC.preferredDisplayMode = UISplitViewControllerDisplayMode.AllVisible
         tabBarController?.selectedIndex = 1
-        
+        if mapVCNavigationController.viewControllers.count > 1 {
+            mapVCNavigationController.popViewControllerAnimated(false)
+        }
     }
 
 

@@ -139,7 +139,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="6Co-jT-W1h">
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.80000000000000004" id="6Co-jT-W1h">
                     <connections>
                         <action selector="longPressDetected:" destination="7bK-jq-Zjz" id="P3O-gn-CsH"/>
                     </connections>
