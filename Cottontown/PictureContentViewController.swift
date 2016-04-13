@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import SafariServices
 
 protocol PictureContentViewControllerDelegate: class {
     func pageControlChanged(sender: UIViewController, newPageIndex: Int)
 }
 
-class PictureContentViewController: UIViewController {
+class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafariViewControllerDelegate {
     
     @IBOutlet weak var contentImage: UIImageView!
     @IBOutlet weak var contentText: UITextView!
@@ -41,6 +42,11 @@ class PictureContentViewController: UIViewController {
         pageControl.currentPageIndicatorTintColor = UIColor.init(colorLiteralRed: 248.0/255, green: 210.0/255.0, blue: 103.0/255.0, alpha: 1.0)
         
         showPageNavigationArrows ()
+        
+        contentText.delegate = self
+        contentText.selectable = true
+        contentText.editable = false
+        contentText.dataDetectorTypes = UIDataDetectorTypes.Link
         
         
         
@@ -135,8 +141,19 @@ class PictureContentViewController: UIViewController {
         
     
     }
+ //MARK: - Safari View Controller Delegae methods
     
-
+    func textView(textView: UITextView, shouldInteractWithURL URL: NSURL, inRange characterRange: NSRange) -> Bool {
+        
+        let safariVC = SFSafariViewController(URL: URL)
+        safariVC.delegate = self
+        presentViewController(safariVC, animated: true, completion: nil)
+        return false
+    }
+    
+    func safariViewControllerDidFinish(controller: SFSafariViewController) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
+    }
    
     
 }
