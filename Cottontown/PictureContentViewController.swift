@@ -41,6 +41,10 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         pageControl.numberOfPages = maxPages
         pageControl.currentPageIndicatorTintColor = UIColor.init(colorLiteralRed: 248.0/255, green: 210.0/255.0, blue: 103.0/255.0, alpha: 1.0)
         
+        // Disable page control for Voice Over.  Navigation is confusing using this
+        // and there is directional arrows that are easier to use in this mode.
+        pageControl.isAccessibilityElement = false
+     
         showPageNavigationArrows ()
         
         contentText.delegate = self
@@ -60,6 +64,8 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         
 // Register for notification of font size changes
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PictureContentViewController.updateFont), name: UIContentSizeCategoryDidChangeNotification, object: nil)
+        
+        pageControl.accessibilityTraits = UIAccessibilityTraitNone
     }
     
 
@@ -72,6 +78,7 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         StopsModel.resizeImage(fileName: picImageFileName, type: "jpg", maxPointSize: maxWidth) { (image) in
             self.contentImage.image = image
         }
+        
     }
     
     func updateFont () {

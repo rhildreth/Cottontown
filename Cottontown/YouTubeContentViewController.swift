@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
 
 class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
     
@@ -68,4 +70,19 @@ class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
         delegate?.pageControlChanged(self, newPageIndex: pageIndex - 1)
     }
     
+    @IBAction func PlayYouTube(sender: UIButton) {
+        
+        let path = NSBundle.mainBundle().pathForResource("Patti", ofType: "mp4")
+        let player = AVPlayer(URL: NSURL(fileURLWithPath: path!))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        presentViewController(playerController, animated: true) {
+            player.play()
+        }
+        
+        
+    }
+    
+    
+
 }

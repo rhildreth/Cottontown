@@ -347,6 +347,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         pageControl.backgroundColor = UIColor.whiteColor()
         pageControl.hidesForSinglePage = true
         
+        
+        
 //        defaults.synchronize()
         print("vino push enabled:",defaults.boolForKey("vinoPushEnabled"))
     }

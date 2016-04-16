@@ -187,6 +187,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4z-fy-1b9">
                                 <rect key="frame" x="20" y="218" width="560" height="293"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                </accessibility>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -194,6 +197,7 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ML-H2-3PK">
                                 <rect key="frame" x="372" y="515" width="30" height="25"/>
+                                <accessibility key="accessibilityConfiguration" label="Goes to the next page."/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="❯">
                                     <color key="titleColor" red="0.97254901959999995" green="0.82352941180000006" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
@@ -484,6 +488,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMP-5F-87U">
                                 <rect key="frame" x="0.0" y="383" width="600" height="126"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="8NQ-I6-JLe"/>
                                 </constraints>
@@ -506,6 +513,13 @@
                                     <action selector="leftArrowTapped:" destination="eCD-9W-r2k" eventType="touchUpInside" id="dZV-4a-Ifl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSR-N1-wER">
+                                <rect key="frame" x="8" y="516" width="91" height="30"/>
+                                <state key="normal" title="Play YouTube"/>
+                                <connections>
+                                    <action selector="PlayYouTube:" destination="eCD-9W-r2k" eventType="touchUpInside" id="hOn-FF-GE7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -519,6 +533,7 @@
                             <constraint firstItem="hIN-FQ-hhp" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leading" id="EhC-0h-2Y0"/>
                             <constraint firstItem="8GY-Qc-HuL" firstAttribute="top" secondItem="Oea-TW-yE7" secondAttribute="bottom" id="F0i-g2-9Js"/>
                             <constraint firstItem="bMP-5F-87U" firstAttribute="top" secondItem="hIN-FQ-hhp" secondAttribute="bottom" constant="5" id="JDv-rX-c4y"/>
+                            <constraint firstItem="8GY-Qc-HuL" firstAttribute="top" secondItem="VSR-N1-wER" secondAttribute="bottom" constant="5" id="VNz-3a-Chx"/>
                             <constraint firstAttribute="trailing" secondItem="hIN-FQ-hhp" secondAttribute="trailing" id="VXK-1J-KJ9"/>
                             <constraint firstItem="Oea-TW-yE7" firstAttribute="top" secondItem="bMP-5F-87U" secondAttribute="bottom" constant="5" id="XJc-qE-bw8"/>
                             <constraint firstAttribute="trailing" secondItem="bMP-5F-87U" secondAttribute="trailing" id="dlm-Qu-UhN"/>
@@ -529,6 +544,7 @@
                             <constraint firstItem="Oea-TW-yE7" firstAttribute="top" secondItem="hIN-FQ-hhp" secondAttribute="bottom" constant="8" id="mgz-uF-rdR">
                                 <variation key="heightClass=compact" constant="5"/>
                             </constraint>
+                            <constraint firstItem="VSR-N1-wER" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leading" constant="8" id="muJ-Ua-8uX"/>
                             <constraint firstItem="hIN-FQ-hhp" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leading" id="pQu-3S-wYW"/>
                             <constraint firstItem="bMP-5F-87U" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leading" id="t4e-JO-btg"/>
                             <constraint firstItem="Oea-TW-yE7" firstAttribute="top" secondItem="bMP-5F-87U" secondAttribute="bottom" constant="5" id="xvj-aI-jQU"/>
@@ -581,6 +597,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYx-yW-OIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3286" y="1960"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="bXy-4n-ZDc">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="wsv-1k-3OP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9om-dk-9OD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3271" y="2800"/>
         </scene>
         <!--Map-->
         <scene sceneID="0Ag-ok-min">
@@ -865,7 +889,7 @@ This app was written by Ron Hildreth (who resides in Cottontown), with graphics 
         <image name="stops" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="6S0-TO-JiA"/>
         <segue reference="h75-4w-YRW"/>
-        <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -40,6 +40,14 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
             suffix = "_tn@3x"
         }
     }
+    
+    override func preferredStatusBarUpdateAnimation() -> UIStatusBarAnimation {
+        return .Slide
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return false
+    }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
