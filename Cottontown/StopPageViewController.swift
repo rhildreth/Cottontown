@@ -20,7 +20,6 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         
         self.dataSource = self
         
-        
         if let stop = stop {
             allStopContent = stop.stopPictures + (stop.youTubes ?? [])  // ?? is nil coalescing
             // operator - If stop.youTubes is not nil it is unwrapped, otherwise the empty array is
@@ -40,8 +39,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         appDelegate.registeredDelegate = self
         
     }
-    
-    
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

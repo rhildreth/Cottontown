@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import SafariServices
 
 protocol PictureContentViewControllerDelegate: class {
     func pageControlChanged(sender: UIViewController, newPageIndex: Int)
 }
 
-class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafariViewControllerDelegate {
+class PictureContentViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var contentImage: UIImageView!
     @IBOutlet weak var contentText: UITextView!
@@ -52,14 +51,17 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         contentText.editable = false
         contentText.dataDetectorTypes = UIDataDetectorTypes.Link
         
+        contentImage.isAccessibilityElement = true
+        contentImage.accessibilityLabel = "Detail view one of six for tour stop."
+        contentImage.accessibilityHint = "Three finger swipe to navigate to other pages"
         
         
     }
     
     override func viewWillAppear(animated: Bool) {
         
-// Make sure the font size matches the one currently selected by the user when the view
-// initially diaplays.
+// Make sure the font size matches the one currently selected by the user
+//when the view initially displays.
         updateFont()
         
 // Register for notification of font size changes
@@ -68,8 +70,13 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         pageControl.accessibilityTraits = UIAccessibilityTraitNone
     }
     
+    override func viewDidAppear(animated: Bool) {
+        
+    }
+    
 
     override func viewDidLayoutSubviews() {
+        
         // scroll text to top
         contentText.setContentOffset(CGPointZero, animated: false)
         let maxWidth = contentImage.frame.width
@@ -148,18 +155,14 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         
     
     }
- //MARK: - Safari View Controller Delegae methods
+ //MARK: - Accessibility methods
     
-    func textView(textView: UITextView, shouldInteractWithURL URL: NSURL, inRange characterRange: NSRange) -> Bool {
-        
-        let safariVC = SFSafariViewController(URL: URL)
-        safariVC.delegate = self
-        presentViewController(safariVC, animated: true, completion: nil)
+    override func accessibilityPerformEscape() -> Bool {
         return false
     }
     
-    func safariViewControllerDidFinish(controller: SFSafariViewController) {
-        controller.dismissViewControllerAnimated(true, completion: nil)
+    override func accessibilityScroll(direction: UIAccessibilityScrollDirection) -> Bool {
+        return false
     }
    
     
