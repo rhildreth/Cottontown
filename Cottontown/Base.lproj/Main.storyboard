@@ -147,16 +147,23 @@
             </objects>
             <point key="canvasLocation" x="653" y="-1206"/>
         </scene>
-        <!--Stop Page View Controller-->
+        <!--Stop Detail-->
         <scene sceneID="by1-b1-Fhr">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" extendedLayoutIncludesOpaqueBars="YES" transitionStyle="scroll" pageSpacing="2" navigationOrientation="horizontal" spineLocation="none" id="uxT-f9-t9J" customClass="StopPageViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" id="tgk-Se-u5m"/>
+                    <navigationItem key="navigationItem" title="Stop Detail" id="tgk-Se-u5m"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FGF-Ey-ZkL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <containerView opaque="NO" contentMode="scaleToFill" id="tjd-bM-s4Y">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <segue destination="fPD-gZ-dRN" kind="embed" id="Cnz-M7-vp1"/>
+                    </connections>
+                </containerView>
             </objects>
-            <point key="canvasLocation" x="1558" y="-359"/>
+            <point key="canvasLocation" x="1414" y="-239"/>
         </scene>
         <!--Picture Content View Controller-->
         <scene sceneID="OQO-ne-3t1">
@@ -172,8 +179,8 @@
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N8A-ym-ShO">
                                 <rect key="frame" x="20" y="8" width="560" height="200"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Double tap to allow zoom and scroll">
-                                    <accessibilityTraits key="traits" none="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES"/>
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                                 <gestureRecognizers/>
@@ -182,14 +189,15 @@
                                 </connections>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="7" translatesAutoresizingMaskIntoConstraints="NO" id="2hy-uv-bv7">
-                                <rect key="frame" x="249" y="511" width="103" height="37"/>
+                                <rect key="frame" x="249" y="508" width="103" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.97254901960784312" green="0.82352941176470584" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="pageControllTapped:" destination="Fxg-Rp-VQb" eventType="valueChanged" id="8LQ-Ml-jO1"/>
                                 </connections>
                             </pageControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4z-fy-1b9">
-                                <rect key="frame" x="20" y="218" width="560" height="293"/>
+                                <rect key="frame" x="20" y="218" width="560" height="285"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES"/>
@@ -199,20 +207,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ML-H2-3PK">
-                                <rect key="frame" x="372" y="515" width="30" height="25"/>
-                                <accessibility key="accessibilityConfiguration" label="Goes to the next page."/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="❯">
-                                    <color key="titleColor" red="0.97254901959999995" green="0.82352941180000006" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="rightArrowTapped:" destination="Fxg-Rp-VQb" eventType="touchUpInside" id="BT2-ob-OFY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-Xa-pVm">
-                                <rect key="frame" x="199" y="517" width="30" height="25"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-Xa-pVm">
+                                <rect key="frame" x="129" y="505" width="100" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="7"/>
                                 <state key="normal" title="❮">
                                     <color key="titleColor" red="0.97254901959999995" green="0.82352941180000006" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -220,45 +218,60 @@
                                     <action selector="leftArrowTapped:" destination="Fxg-Rp-VQb" eventType="touchUpInside" id="nBS-FN-pg5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ML-H2-3PK">
+                                <rect key="frame" x="372" y="504" width="100" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3sH-a8-5TN"/>
+                                    <constraint firstAttribute="height" constant="44" id="Kv1-qr-Ev2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="7"/>
+                                <state key="normal" title="❯">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.82352941180000006" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightArrowTapped:" destination="Fxg-Rp-VQb" eventType="touchUpInside" id="BT2-ob-OFY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="b4z-fy-1b9" secondAttribute="bottom" id="1r7-4I-vOP"/>
-                            <constraint firstItem="VmA-Xa-pVm" firstAttribute="width" secondItem="3ML-H2-3PK" secondAttribute="width" id="3yK-ue-fAQ"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="leading" secondItem="Xk9-Vy-TVt" secondAttribute="leadingMargin" id="4B4-Y3-Aqa"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="trailing" secondItem="Xk9-Vy-TVt" secondAttribute="trailingMargin" id="4K8-Ls-L9A"/>
-                            <constraint firstItem="3ML-H2-3PK" firstAttribute="height" secondItem="2hy-uv-bv7" secondAttribute="height" multiplier="2:3" id="7Az-P2-EOl"/>
-                            <constraint firstItem="VmA-Xa-pVm" firstAttribute="height" secondItem="3ML-H2-3PK" secondAttribute="height" id="7MX-Mi-TfE"/>
-                            <constraint firstItem="3ML-H2-3PK" firstAttribute="centerY" secondItem="2hy-uv-bv7" secondAttribute="centerY" constant="-2" id="7kI-Qr-Nqk"/>
+                            <constraint firstItem="2hy-uv-bv7" firstAttribute="centerY" secondItem="3ML-H2-3PK" secondAttribute="centerY" id="5Gv-lx-cSR"/>
+                            <constraint firstItem="VmA-Xa-pVm" firstAttribute="centerY" secondItem="2hy-uv-bv7" secondAttribute="centerY" id="8lR-0e-gec"/>
                             <constraint firstItem="Rr0-g1-cqz" firstAttribute="top" secondItem="3ML-H2-3PK" secondAttribute="bottom" constant="14" id="BYU-p6-Bex"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="top" secondItem="Xk9-Vy-TVt" secondAttribute="topMargin" constant="8" id="Bf1-r8-nHy"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="top" secondItem="Xk9-Vy-TVt" secondAttribute="topMargin" id="ClQ-eq-HM3"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="leading" secondItem="Xk9-Vy-TVt" secondAttribute="leading" constant="20" id="Fg0-xX-x0e">
                                 <variation key="heightClass=compact" constant="5"/>
                             </constraint>
+                            <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="b4z-fy-1b9" secondAttribute="bottom" constant="5" id="KJC-Ep-uIV"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="height" secondItem="Xk9-Vy-TVt" secondAttribute="height" multiplier="1:3" id="OH6-9g-N72"/>
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="b4z-fy-1b9" secondAttribute="bottom" constant="20" id="R7p-Q8-Toj">
                                 <variation key="heightClass=compact" constant="10"/>
                             </constraint>
+                            <constraint firstItem="VmA-Xa-pVm" firstAttribute="width" secondItem="3ML-H2-3PK" secondAttribute="width" id="T9e-kB-OkK"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="height" secondItem="N8A-ym-ShO" secondAttribute="height" id="Ttj-G1-UPP"/>
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="N8A-ym-ShO" secondAttribute="bottom" constant="3" id="U8B-bc-V1z"/>
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="b4z-fy-1b9" secondAttribute="bottom" constant="3" id="UeF-0h-hHq"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="width" secondItem="N8A-ym-ShO" secondAttribute="width" id="Wlq-at-ogY"/>
-                            <constraint firstItem="3ML-H2-3PK" firstAttribute="leading" secondItem="2hy-uv-bv7" secondAttribute="trailing" constant="20" id="YhL-M2-T5j"/>
+                            <constraint firstItem="VmA-Xa-pVm" firstAttribute="height" secondItem="3ML-H2-3PK" secondAttribute="height" id="X7t-Sh-gyr"/>
                             <constraint firstItem="Rr0-g1-cqz" firstAttribute="top" secondItem="2hy-uv-bv7" secondAttribute="bottom" constant="3" id="ZAh-iJ-8Z8"/>
-                            <constraint firstItem="VmA-Xa-pVm" firstAttribute="centerY" secondItem="3ML-H2-3PK" secondAttribute="centerY" constant="2" id="a5p-my-kZ0"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="top" secondItem="wod-7d-cdU" secondAttribute="bottom" constant="5" id="bfA-if-ipt"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="trailing" secondItem="Xk9-Vy-TVt" secondAttribute="trailingMargin" id="ef4-Zc-mmP"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="top" secondItem="N8A-ym-ShO" secondAttribute="top" id="fPc-vp-xmf"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="leading" secondItem="N8A-ym-ShO" secondAttribute="trailing" constant="10" id="hJI-Kj-y5f"/>
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="centerX" secondItem="Xk9-Vy-TVt" secondAttribute="centerX" id="iLm-IR-qka"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="leading" secondItem="Xk9-Vy-TVt" secondAttribute="leadingMargin" id="mA9-ry-1PQ"/>
+                            <constraint firstItem="2hy-uv-bv7" firstAttribute="leading" secondItem="VmA-Xa-pVm" secondAttribute="trailing" constant="20" id="oPE-ye-vNm"/>
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="N8A-ym-ShO" secondAttribute="bottom" constant="10" id="p12-qe-TN6"/>
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="centerX" secondItem="Xk9-Vy-TVt" secondAttribute="centerX" id="qxf-lG-PQ9"/>
                             <constraint firstItem="Rr0-g1-cqz" firstAttribute="top" secondItem="2hy-uv-bv7" secondAttribute="bottom" id="sm3-xA-qIh"/>
-                            <constraint firstItem="2hy-uv-bv7" firstAttribute="leading" secondItem="VmA-Xa-pVm" secondAttribute="trailing" constant="20" id="tlk-2L-73Z"/>
+                            <constraint firstItem="Rr0-g1-cqz" firstAttribute="top" secondItem="3ML-H2-3PK" secondAttribute="bottom" constant="3" id="vnc-SG-HPx"/>
                             <constraint firstItem="b4z-fy-1b9" firstAttribute="top" secondItem="N8A-ym-ShO" secondAttribute="bottom" constant="10" id="xVc-Pz-OPq"/>
+                            <constraint firstItem="3ML-H2-3PK" firstAttribute="leading" secondItem="2hy-uv-bv7" secondAttribute="trailing" constant="20" id="yKu-MP-J9W"/>
                             <constraint firstAttribute="trailing" secondItem="b4z-fy-1b9" secondAttribute="trailing" id="z7F-2Q-GGL"/>
                         </constraints>
                         <variation key="default">
@@ -272,6 +285,7 @@
                                 <exclude reference="hJI-Kj-y5f"/>
                                 <exclude reference="z7F-2Q-GGL"/>
                                 <exclude reference="BYU-p6-Bex"/>
+                                <exclude reference="ZAh-iJ-8Z8"/>
                                 <exclude reference="sm3-xA-qIh"/>
                                 <exclude reference="R7p-Q8-Toj"/>
                                 <exclude reference="U8B-bc-V1z"/>
@@ -299,7 +313,6 @@
                                 <include reference="z7F-2Q-GGL"/>
                                 <exclude reference="ZAh-iJ-8Z8"/>
                                 <include reference="sm3-xA-qIh"/>
-                                <exclude reference="1r7-4I-vOP"/>
                                 <exclude reference="R7p-Q8-Toj"/>
                                 <include reference="U8B-bc-V1z"/>
                                 <include reference="UeF-0h-hHq"/>
@@ -456,7 +469,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Cottontown Historic District" id="KEc-2K-4F6">
-                        <barButtonItem key="backBarButtonItem" title="Cottontown Map" id="4ZT-B1-ijk"/>
+                        <barButtonItem key="backBarButtonItem" title="Map" id="4ZT-B1-ijk"/>
                     </navigationItem>
                     <connections>
                         <outlet property="map" destination="IPK-rs-dTQ" id="mw3-6m-zI6"/>
@@ -643,7 +656,7 @@
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES"/>
                                 </accessibility>
-                                <mutableString key="text">Bellevue, today commonly known as “Cottontown” is an early twentieth-century downtown Columbia, South Carolina suburb located north of Elmwood Avenue, extending roughly north to Anthony Street west to Sumter Street and east to Bull Street. The neighborhood sits on land once owned by the Wallace family, who, in c.1893, sold to the state property which is now the S.C. State Hospital campus.  In the late nineteenth/early twentieth centuries, the area near the Wallace tract was a bustling commercial district. The intersection of Main and Upper (later Elmwood) Streets was known as Cotton Town, named after the cotton storage warehouses that operated there. Grocery wholesale and retail establishments also operated in the area. In 1896, the city expanded the streetcar line, extending the Main Street line north of Upper Street out to Hyatt Park, where a new pavilion and casino were transforming the areas north of the city limits into a center for social activity and recreation. About this time, Cotton Town assumed a new name befitting the area's more elegant image ”Bellevue Springs”. 
+                                <string key="text">Bellevue, today commonly known as “Cottontown” is an early twentieth-century downtown Columbia, South Carolina suburb located north of Elmwood Avenue, extending roughly north to Anthony Street west to Sumter Street and east to Bull Street. The neighborhood sits on land once owned by the Wallace family, who, in c.1893, sold to the state property which is now the S.C. State Hospital campus.  In the late nineteenth/early twentieth centuries, the area near the Wallace tract was a bustling commercial district. The intersection of Main and Upper (later Elmwood) Streets was known as Cotton Town, named after the cotton storage warehouses that operated there. Grocery wholesale and retail establishments also operated in the area. In 1896, the city expanded the streetcar line, extending the Main Street line north of Upper Street out to Hyatt Park, where a new pavilion and casino were transforming the areas north of the city limits into a center for social activity and recreation. About this time, Cotton Town assumed a new name befitting the area's more elegant image ”Bellevue Springs”. 
 
 In the 1890s investors had achieved some success with a new planned residential community called “Shandon”. The idea that a large parcel of land could be subdivided into streets and lots, and those lots marketed under a unifying community theme, was creating a thriving new neighborhood south of the city. A combination of factors existed in the area north of the city that could make the same type of venture successful: a thriving business district, convenience to social and recreational outlets, and easy access to public transportation. In 1902, William Wallace registered a plat for the first suburban development on his property: sixteen lots facing Bull Street.  By 1912, lots were being marketed under the neighborhood's new name ”Bellevue”. The new community was growing quickly, with new lots being surveyed between Elmwood, Main, Franklin and Bull Streets. Between 1919 and 1927, the neighborhood expanded northward to Columbia Avenue, later changed to Anthony Avenue. In March 1913, Bellevue became one of the earliest suburban communities, after Elmwood Park, to be annexed into the city of Columbia. Communities including North Columbia, Waverly, South Waverly, and Shandon were annexed later in the same year.
 
@@ -652,7 +665,7 @@ The neighborhood remains today as an intact example of one of the earliest plann
 The Bellevue neighborhood is significant for its high concentration of intact examples of early twentieth-century residential architecture placed among intact historic streetscapes, and archaeological resources worthy of historic preservation.  The older Bellevue Historic District portion of Cottontown received federal approval and was listed in the National Register of Historic Places in 1997.
 
 In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia Manini (visiting from Italy), an unidentified man, and Gloria Manini pose in front of the family’s Buick sedan on Broad River (Summerville) Avenue in 1926.  (Image courtesy of Peggy Manani Janicki)
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -754,12 +767,12 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
             </objects>
             <point key="canvasLocation" x="674" y="1323"/>
         </scene>
-        <!--Map Page View Controller-->
+        <!--Stop Detail-->
         <scene sceneID="YQr-wl-US0">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" extendedLayoutIncludesOpaqueBars="YES" transitionStyle="scroll" pageSpacing="2" navigationOrientation="horizontal" spineLocation="none" id="LlT-gu-dwq" customClass="MapPageViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" id="1yD-Ml-jaB"/>
+                    <navigationItem key="navigationItem" title="Stop Detail" id="1yD-Ml-jaB"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vS-rW-Em3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -894,6 +907,24 @@ This app was written by Ron Hildreth (who resides in Cottontown), with graphics 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbJ-BN-pjS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1592" y="3053"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iWc-Sq-uNK">
+            <objects>
+                <viewController id="fPD-gZ-dRN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Sd-11-igw"/>
+                        <viewControllerLayoutGuide type="bottom" id="hhU-jW-cCG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ZU-LM-jgm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7n-Hn-oYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2825" y="-1211"/>
         </scene>
     </scenes>
     <resources>

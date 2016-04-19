@@ -52,13 +52,12 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
         contentText.dataDetectorTypes = UIDataDetectorTypes.Link
         
         contentImage.isAccessibilityElement = true
-        contentImage.accessibilityLabel = "Detail view one of six for tour stop."
-        contentImage.accessibilityHint = "Three finger swipe to navigate to other pages"
-        
-        
+        contentImage.accessibilityLabel = "Image for stop detail page \(pageIndex + 1) of \(maxPages).  Swipe right for description"
+        contentImage.accessibilityHint = "Double tap to enable zoom and scroll"
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
 // Make sure the font size matches the one currently selected by the user
 //when the view initially displays.
@@ -68,6 +67,12 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PictureContentViewController.updateFont), name: UIContentSizeCategoryDidChangeNotification, object: nil)
         
         pageControl.accessibilityTraits = UIAccessibilityTraitNone
+        
+        delay(0.5) {
+            UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, self.contentImage)
+        }
+
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -105,12 +110,14 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
         
         if maxPages - (pageIndex + 1) > 0 {
             rightArrow.hidden = false
+            rightArrow.accessibilityLabel = "Goes to page \(pageIndex + 2)"
         } else {
             rightArrow.hidden = true
         }
         
         if pageIndex + 1 > 1 {
             leftArrow.hidden = false
+            leftArrow.accessibilityLabel = "Goes to page \(pageIndex)"
         } else {
             leftArrow.hidden = true
         }
@@ -123,12 +130,12 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
             delegate?.pageControlChanged(self, newPageIndex: sender.currentPage)      }
     
     
-    @IBAction func leftArrowTapped(sender: UIButton) {
+    @IBAction func leftArrowTapped(sender: AnyObject) {
         delegate?.pageControlChanged(self, newPageIndex: pageIndex - 1)
         
     }
     
-    @IBAction func rightArrowTapped(sender: UIButton) {
+    @IBAction func rightArrowTapped(sender: AnyObject) {
         delegate?.pageControlChanged(self, newPageIndex: pageIndex + 1)
     }
     
@@ -155,15 +162,6 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
         
     
     }
- //MARK: - Accessibility methods
-    
-    override func accessibilityPerformEscape() -> Bool {
-        return false
-    }
-    
-    override func accessibilityScroll(direction: UIAccessibilityScrollDirection) -> Bool {
-        return false
-    }
-   
+
     
 }

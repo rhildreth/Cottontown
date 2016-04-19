@@ -523,8 +523,6 @@
 		E419ED2E1C1C6AAA00164E25 = {
 			isa = PBXGroup;
 			children = (
-				E4A9FF241CC1E1AE005D021C /* AVKit.framework */,
-				E4A9FF221CC1E1A0005D021C /* AVFoundation.framework */,
 				E419ED391C1C6AAA00164E25 /* Cottontown */,
 				E419ED381C1C6AAA00164E25 /* Products */,
 			);
@@ -661,6 +659,8 @@
 		E4D8E82D1C8377FD00A17BB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E4A9FF241CC1E1AE005D021C /* AVKit.framework */,
+				E4A9FF221CC1E1A0005D021C /* AVFoundation.framework */,
 				E4A9FF041CBDDBA3005D021C /* SafariServices.framework */,
 				45063F1F39CAC171C1B145FE /* BuddyBuildSDK.framework */,
 				9BD3D30DE7D52599BECEB1CD /* AssetsLibrary.framework */,

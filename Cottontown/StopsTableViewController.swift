@@ -15,7 +15,7 @@ import UIKit
 class StopsTableViewController: UITableViewController, UIViewControllerPreviewingDelegate {
     
     let allStops = StopsModel.sharedInstance.allStops
- 
+    
     var suffix = ""
     let scale = UIScreen.mainScreen().scale
     var forceTouchSupported = false
@@ -46,7 +46,6 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
         super.viewWillAppear(animated)
         
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
-        
     }
     
     override func viewDidLayoutSubviews() {
@@ -124,6 +123,8 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
         return cell
     }
     
+
+    
     @IBAction func longPressDetected(sender: UILongPressGestureRecognizer) {
         
         guard sender.state == UIGestureRecognizerState.Began else {return}
@@ -190,7 +191,7 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
         
         showMapForStop(stop)
     }
-    
+        
     
 }
 

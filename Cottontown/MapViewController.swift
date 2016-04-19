@@ -13,6 +13,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     @IBOutlet weak var map: MKMapView!
     
+        let mapTitle = UILabel.init(frame: CGRectMake(0.0, 0.0,98.0 , 24.0))
+    
     let allStops = StopsModel.sharedInstance.allStops
     var allStopAnnotations = [StopAnnotation]()
     var annotationStopNumber = 0
@@ -34,6 +36,19 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         super.viewDidLoad()
         
+        mapTitle.backgroundColor = UIColor.clearColor()
+        mapTitle.font = UIFont.systemFontOfSize(20.0)
+        
+        mapTitle.textAlignment = .Center
+        
+        mapTitle.textColor = UIColor.whiteColor()
+        mapTitle.text = "Cottontown Historic District"
+        mapTitle.accessibilityLabel = "Map of the Cottontown Historic District.  Map pins show tour stop locations.  Double tap pins for more details"
+        
+        mapTitle.sizeToFit()
+        navigationItem.titleView = mapTitle
+        mapTitle.isAccessibilityElement = true
+        
         map.delegate = self
       
         if determineStatus() {
@@ -53,12 +68,21 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     }
     
     override func viewWillAppear(animated: Bool) {
+        
+        delay(1.0) {
+            UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, self.mapTitle)
+        }
+        
         guard let showStop = showStop else {return}
         
         
         let stopNumber = Int(showStop.stopNumber)
         let stopAnnotation = allStopAnnotations[stopNumber! - 1]
         map.selectAnnotation(stopAnnotation, animated: false)
+        
+        
+
+        
     }
     
     func createStopAnnotations () -> [StopAnnotation] {
@@ -150,6 +174,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         
         let calloutButton = UIButton(type: .DetailDisclosure)
+        calloutButton.accessibilityLabel = "Shows details for this tour stop location"
         pinView.rightCalloutAccessoryView = calloutButton
         
         return pinView
