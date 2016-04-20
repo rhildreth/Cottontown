@@ -135,7 +135,7 @@
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Cottontown Tour Stops" id="Zdf-7t-Un8">
-                        <barButtonItem key="backBarButtonItem" title="Tour Stops" id="J38-lE-5iD"/>
+                        <barButtonItem key="backBarButtonItem" title="Stops" id="J38-lE-5iD"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
@@ -237,6 +237,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="2hy-uv-bv7" firstAttribute="top" secondItem="b4z-fy-1b9" secondAttribute="bottom" constant="5" id="109-AG-hac"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="leading" secondItem="Xk9-Vy-TVt" secondAttribute="leadingMargin" id="4B4-Y3-Aqa"/>
                             <constraint firstItem="N8A-ym-ShO" firstAttribute="trailing" secondItem="Xk9-Vy-TVt" secondAttribute="trailingMargin" id="4K8-Ls-L9A"/>
                             <constraint firstItem="2hy-uv-bv7" firstAttribute="centerY" secondItem="3ML-H2-3PK" secondAttribute="centerY" id="5Gv-lx-cSR"/>
@@ -287,6 +288,7 @@
                                 <exclude reference="BYU-p6-Bex"/>
                                 <exclude reference="ZAh-iJ-8Z8"/>
                                 <exclude reference="sm3-xA-qIh"/>
+                                <exclude reference="KJC-Ep-uIV"/>
                                 <exclude reference="R7p-Q8-Toj"/>
                                 <exclude reference="U8B-bc-V1z"/>
                                 <exclude reference="UeF-0h-hHq"/>
@@ -313,6 +315,7 @@
                                 <include reference="z7F-2Q-GGL"/>
                                 <exclude reference="ZAh-iJ-8Z8"/>
                                 <include reference="sm3-xA-qIh"/>
+                                <exclude reference="109-AG-hac"/>
                                 <exclude reference="R7p-Q8-Toj"/>
                                 <include reference="U8B-bc-V1z"/>
                                 <include reference="UeF-0h-hHq"/>
@@ -492,111 +495,156 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hIN-FQ-hhp" customClass="YTPlayerView">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="378"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="10" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-TW-yE7">
-                                <rect key="frame" x="225" y="514" width="151" height="37"/>
+                                <rect key="frame" x="225" y="511" width="151" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="pageControlTapped:" destination="eCD-9W-r2k" eventType="valueChanged" id="qI3-3S-gam"/>
                                 </connections>
                             </pageControl>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMP-5F-87U">
-                                <rect key="frame" x="0.0" y="383" width="600" height="126"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8LD-De-Ss9">
+                                <rect key="frame" x="20" y="28" width="560" height="234"/>
                                 <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="8NQ-I6-JLe"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="8NQ-I6-JLe"/>
-                                    </mask>
-                                </variation>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFr-Ht-TuG">
-                                <rect key="frame" x="175" y="513" width="30" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="❮">
-                                    <color key="titleColor" red="0.97254901959999995" green="0.82352941180000006" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="leftArrowTapped:" destination="eCD-9W-r2k" eventType="touchUpInside" id="dZV-4a-Ifl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSR-N1-wER">
-                                <rect key="frame" x="8" y="516" width="91" height="30"/>
-                                <state key="normal" title="Play YouTube"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSR-N1-wER">
+                                <rect key="frame" x="274" y="119" width="52" height="52"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" startsMediaSession="YES"/>
+                                </accessibility>
+                                <state key="normal" image="play"/>
                                 <connections>
                                     <action selector="PlayYouTube:" destination="eCD-9W-r2k" eventType="touchUpInside" id="hOn-FF-GE7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eog-cE-auu">
+                                <rect key="frame" x="105" y="507" width="100" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0uB-HX-JAs"/>
+                                    <constraint firstAttribute="width" constant="100" id="1nR-3h-aac"/>
+                                    <constraint firstAttribute="height" constant="44" id="Wpx-sY-ZRA"/>
+                                    <constraint firstAttribute="height" constant="44" id="rM5-80-fS6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="7"/>
+                                <state key="normal" title="❮">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.82352941180000006" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1nR-3h-aac"/>
+                                        <exclude reference="rM5-80-fS6"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="0uB-HX-JAs"/>
+                                        <include reference="1nR-3h-aac"/>
+                                        <exclude reference="Wpx-sY-ZRA"/>
+                                        <include reference="rM5-80-fS6"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="leftArrowTapped:" destination="eCD-9W-r2k" eventType="touchUpInside" id="yTs-Xw-U5x"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMP-5F-87U">
+                                <rect key="frame" x="20" y="272" width="560" height="234"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                </accessibility>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bMP-5F-87U" firstAttribute="width" secondItem="hIN-FQ-hhp" secondAttribute="width" id="28B-hd-Ye5"/>
-                            <constraint firstItem="bMP-5F-87U" firstAttribute="height" secondItem="hIN-FQ-hhp" secondAttribute="height" multiplier="1:3" id="3zq-r0-dpP"/>
-                            <constraint firstAttribute="trailing" secondItem="bMP-5F-87U" secondAttribute="trailing" id="46w-Eo-ium"/>
-                            <constraint firstItem="bMP-5F-87U" firstAttribute="width" secondItem="hIN-FQ-hhp" secondAttribute="width" id="5u9-w3-el3"/>
-                            <constraint firstItem="hIN-FQ-hhp" firstAttribute="top" secondItem="L6P-Zi-kK8" secondAttribute="top" id="Bum-kI-ZCi"/>
-                            <constraint firstItem="Oea-TW-yE7" firstAttribute="leading" secondItem="wFr-Ht-TuG" secondAttribute="trailing" constant="20" id="Cch-G3-Ari"/>
-                            <constraint firstItem="bMP-5F-87U" firstAttribute="leading" secondItem="hIN-FQ-hhp" secondAttribute="trailing" constant="5" id="EVN-bi-dmM"/>
-                            <constraint firstItem="hIN-FQ-hhp" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leading" id="EhC-0h-2Y0"/>
-                            <constraint firstItem="8GY-Qc-HuL" firstAttribute="top" secondItem="Oea-TW-yE7" secondAttribute="bottom" id="F0i-g2-9Js"/>
-                            <constraint firstItem="bMP-5F-87U" firstAttribute="top" secondItem="hIN-FQ-hhp" secondAttribute="bottom" constant="5" id="JDv-rX-c4y"/>
-                            <constraint firstItem="8GY-Qc-HuL" firstAttribute="top" secondItem="VSR-N1-wER" secondAttribute="bottom" constant="5" id="VNz-3a-Chx"/>
-                            <constraint firstAttribute="trailing" secondItem="hIN-FQ-hhp" secondAttribute="trailing" id="VXK-1J-KJ9"/>
+                            <constraint firstItem="8LD-De-Ss9" firstAttribute="top" secondItem="dsN-ZR-Ozr" secondAttribute="bottom" constant="8" id="7gw-8p-hXU"/>
+                            <constraint firstItem="8GY-Qc-HuL" firstAttribute="top" secondItem="Oea-TW-yE7" secondAttribute="bottom" constant="3" id="F0i-g2-9Js"/>
+                            <constraint firstItem="Oea-TW-yE7" firstAttribute="centerX" secondItem="L6P-Zi-kK8" secondAttribute="centerX" id="FfH-xC-eHv"/>
+                            <constraint firstItem="VSR-N1-wER" firstAttribute="centerY" secondItem="8LD-De-Ss9" secondAttribute="centerY" id="FvV-hE-19A"/>
+                            <constraint firstItem="Oea-TW-yE7" firstAttribute="leading" secondItem="Eog-cE-auu" secondAttribute="trailing" constant="20" id="HyM-LO-bkx"/>
+                            <constraint firstItem="bMP-5F-87U" firstAttribute="leading" secondItem="8LD-De-Ss9" secondAttribute="trailing" constant="5" id="IRo-um-MCk"/>
+                            <constraint firstItem="Eog-cE-auu" firstAttribute="top" secondItem="8LD-De-Ss9" secondAttribute="bottom" constant="3" id="Lgg-AC-FqY"/>
+                            <constraint firstItem="VSR-N1-wER" firstAttribute="centerY" secondItem="8LD-De-Ss9" secondAttribute="centerY" id="M2F-t3-Htb"/>
+                            <constraint firstItem="8LD-De-Ss9" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leadingMargin" id="OQ3-s0-uhv"/>
+                            <constraint firstItem="VSR-N1-wER" firstAttribute="centerX" secondItem="8LD-De-Ss9" secondAttribute="centerX" id="R3Q-N1-eDo"/>
+                            <constraint firstItem="Oea-TW-yE7" firstAttribute="leading" secondItem="Eog-cE-auu" secondAttribute="trailing" constant="20" id="Wek-UJ-R0x"/>
                             <constraint firstItem="Oea-TW-yE7" firstAttribute="top" secondItem="bMP-5F-87U" secondAttribute="bottom" constant="5" id="XJc-qE-bw8"/>
-                            <constraint firstAttribute="trailing" secondItem="bMP-5F-87U" secondAttribute="trailing" id="dlm-Qu-UhN"/>
-                            <constraint firstItem="hIN-FQ-hhp" firstAttribute="top" secondItem="L6P-Zi-kK8" secondAttribute="top" id="gGD-Ms-E61"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8LD-De-Ss9" secondAttribute="leading" id="YmJ-sd-saD"/>
+                            <constraint firstItem="bMP-5F-87U" firstAttribute="top" secondItem="dsN-ZR-Ozr" secondAttribute="bottom" id="cU4-tf-Mt7"/>
+                            <constraint firstItem="8LD-De-Ss9" firstAttribute="top" secondItem="dsN-ZR-Ozr" secondAttribute="bottom" constant="8" id="cg7-2q-zZV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8LD-De-Ss9" secondAttribute="trailing" id="dFg-ar-SgC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bMP-5F-87U" secondAttribute="trailing" id="dlm-Qu-UhN"/>
+                            <constraint firstItem="Oea-TW-yE7" firstAttribute="top" secondItem="bMP-5F-87U" secondAttribute="bottom" constant="6" identifier="PageControl top to text bottom" id="eHR-IY-28Q"/>
+                            <constraint firstItem="bMP-5F-87U" firstAttribute="height" secondItem="8LD-De-Ss9" secondAttribute="height" id="eI7-Lf-SzO"/>
+                            <constraint firstItem="VSR-N1-wER" firstAttribute="centerX" secondItem="8LD-De-Ss9" secondAttribute="centerX" id="gfH-ga-tT5"/>
                             <constraint firstItem="Oea-TW-yE7" firstAttribute="centerX" secondItem="L6P-Zi-kK8" secondAttribute="centerX" id="gfb-BE-RVs"/>
-                            <constraint firstItem="wFr-Ht-TuG" firstAttribute="centerY" secondItem="Oea-TW-yE7" secondAttribute="centerY" constant="-2" id="k1u-nk-IYz"/>
-                            <constraint firstItem="bMP-5F-87U" firstAttribute="top" secondItem="dsN-ZR-Ozr" secondAttribute="bottom" id="mNx-c0-qAH"/>
-                            <constraint firstItem="Oea-TW-yE7" firstAttribute="top" secondItem="hIN-FQ-hhp" secondAttribute="bottom" constant="8" id="mgz-uF-rdR">
-                                <variation key="heightClass=compact" constant="5"/>
-                            </constraint>
-                            <constraint firstItem="VSR-N1-wER" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leading" constant="8" id="muJ-Ua-8uX"/>
-                            <constraint firstItem="hIN-FQ-hhp" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leading" id="pQu-3S-wYW"/>
-                            <constraint firstItem="bMP-5F-87U" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leading" id="t4e-JO-btg"/>
-                            <constraint firstItem="Oea-TW-yE7" firstAttribute="top" secondItem="bMP-5F-87U" secondAttribute="bottom" constant="5" id="xvj-aI-jQU"/>
+                            <constraint firstItem="bMP-5F-87U" firstAttribute="height" secondItem="8LD-De-Ss9" secondAttribute="height" id="gn5-7e-hJF"/>
+                            <constraint firstItem="8GY-Qc-HuL" firstAttribute="top" secondItem="Oea-TW-yE7" secondAttribute="bottom" constant="3" id="hTr-NK-P8g"/>
+                            <constraint firstItem="Eog-cE-auu" firstAttribute="centerY" secondItem="Oea-TW-yE7" secondAttribute="centerY" id="lzL-Iw-D7b"/>
+                            <constraint firstItem="Eog-cE-auu" firstAttribute="centerY" secondItem="Oea-TW-yE7" secondAttribute="centerY" id="peX-dl-dhA"/>
+                            <constraint firstItem="bMP-5F-87U" firstAttribute="width" secondItem="8LD-De-Ss9" secondAttribute="width" id="qJe-wL-WU6"/>
+                            <constraint firstItem="bMP-5F-87U" firstAttribute="top" secondItem="8LD-De-Ss9" secondAttribute="bottom" constant="10" id="syS-zI-UtJ"/>
+                            <constraint firstItem="bMP-5F-87U" firstAttribute="leading" secondItem="L6P-Zi-kK8" secondAttribute="leadingMargin" id="t4e-JO-btg"/>
+                            <constraint firstItem="Oea-TW-yE7" firstAttribute="top" secondItem="8LD-De-Ss9" secondAttribute="bottom" constant="6" id="wtl-sK-Zmn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bMP-5F-87U" secondAttribute="trailing" id="xJX-Fw-2Bp"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="Bum-kI-ZCi"/>
-                                <exclude reference="pQu-3S-wYW"/>
-                                <exclude reference="28B-hd-Ye5"/>
-                                <exclude reference="46w-Eo-ium"/>
-                                <exclude reference="5u9-w3-el3"/>
-                                <exclude reference="EVN-bi-dmM"/>
-                                <exclude reference="mNx-c0-qAH"/>
-                                <exclude reference="mgz-uF-rdR"/>
-                                <exclude reference="xvj-aI-jQU"/>
+                                <exclude reference="7gw-8p-hXU"/>
+                                <exclude reference="YmJ-sd-saD"/>
+                                <exclude reference="FvV-hE-19A"/>
+                                <exclude reference="gfH-ga-tT5"/>
+                                <exclude reference="IRo-um-MCk"/>
+                                <exclude reference="cU4-tf-Mt7"/>
+                                <exclude reference="gn5-7e-hJF"/>
+                                <exclude reference="qJe-wL-WU6"/>
+                                <exclude reference="xJX-Fw-2Bp"/>
+                                <exclude reference="Lgg-AC-FqY"/>
+                                <exclude reference="lzL-Iw-D7b"/>
+                                <exclude reference="hTr-NK-P8g"/>
+                                <exclude reference="FfH-xC-eHv"/>
+                                <exclude reference="HyM-LO-bkx"/>
+                                <exclude reference="eHR-IY-28Q"/>
+                                <exclude reference="wtl-sK-Zmn"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <include reference="Bum-kI-ZCi"/>
-                                <exclude reference="EhC-0h-2Y0"/>
-                                <exclude reference="VXK-1J-KJ9"/>
-                                <exclude reference="gGD-Ms-E61"/>
-                                <include reference="pQu-3S-wYW"/>
-                                <include reference="28B-hd-Ye5"/>
-                                <exclude reference="3zq-r0-dpP"/>
-                                <include reference="46w-Eo-ium"/>
-                                <exclude reference="5u9-w3-el3"/>
-                                <include reference="EVN-bi-dmM"/>
-                                <exclude reference="JDv-rX-c4y"/>
+                                <include reference="7gw-8p-hXU"/>
+                                <exclude reference="OQ3-s0-uhv"/>
+                                <include reference="YmJ-sd-saD"/>
+                                <exclude reference="cg7-2q-zZV"/>
+                                <exclude reference="dFg-ar-SgC"/>
+                                <include reference="FvV-hE-19A"/>
+                                <exclude reference="M2F-t3-Htb"/>
+                                <exclude reference="R3Q-N1-eDo"/>
+                                <include reference="gfH-ga-tT5"/>
+                                <include reference="IRo-um-MCk"/>
+                                <include reference="cU4-tf-Mt7"/>
                                 <exclude reference="dlm-Qu-UhN"/>
-                                <include reference="mNx-c0-qAH"/>
+                                <exclude reference="eI7-Lf-SzO"/>
+                                <exclude reference="gn5-7e-hJF"/>
+                                <include reference="qJe-wL-WU6"/>
+                                <exclude reference="syS-zI-UtJ"/>
                                 <exclude reference="t4e-JO-btg"/>
-                                <include reference="mgz-uF-rdR"/>
-                                <include reference="xvj-aI-jQU"/>
+                                <include reference="xJX-Fw-2Bp"/>
+                                <include reference="Lgg-AC-FqY"/>
+                                <include reference="lzL-Iw-D7b"/>
+                                <exclude reference="peX-dl-dhA"/>
+                                <exclude reference="F0i-g2-9Js"/>
+                                <include reference="hTr-NK-P8g"/>
+                                <include reference="FfH-xC-eHv"/>
+                                <include reference="HyM-LO-bkx"/>
+                                <exclude reference="Wek-UJ-R0x"/>
+                                <exclude reference="XJc-qE-bw8"/>
+                                <include reference="eHR-IY-28Q"/>
+                                <exclude reference="gfb-BE-RVs"/>
+                                <include reference="wtl-sK-Zmn"/>
                             </mask>
                         </variation>
                     </view>
@@ -605,23 +653,16 @@
                     <navigationItem key="navigationItem" title="Title" id="UgX-Ax-cp0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <connections>
-                        <outlet property="leftArrow" destination="wFr-Ht-TuG" id="mhx-1e-SZz"/>
+                        <outlet property="leftArrow" destination="Eog-cE-auu" id="YEt-x8-nYN"/>
                         <outlet property="pageControl" destination="Oea-TW-yE7" id="E2q-ZK-R6n"/>
-                        <outlet property="player" destination="hIN-FQ-hhp" id="MiL-jv-5WC"/>
+                        <outlet property="playButton" destination="VSR-N1-wER" id="Uag-Nf-gas"/>
+                        <outlet property="videoThumbnail" destination="8LD-De-Ss9" id="Hwy-09-XLe"/>
                         <outlet property="youTubeTextField" destination="bMP-5F-87U" id="snE-Ds-S2q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYx-yW-OIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3286" y="1960"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="bXy-4n-ZDc">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="wsv-1k-3OP" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9om-dk-9OD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3271" y="2800"/>
+            <point key="canvasLocation" x="3280" y="1833"/>
         </scene>
         <!--Map-->
         <scene sceneID="0Ag-ok-min">
@@ -924,7 +965,7 @@ This app was written by Ron Hildreth (who resides in Cottontown), with graphics 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7n-Hn-oYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2825" y="-1211"/>
+            <point key="canvasLocation" x="2313" y="-307"/>
         </scene>
     </scenes>
     <resources>
@@ -933,6 +974,7 @@ This app was written by Ron Hildreth (who resides in Cottontown), with graphics 
         <image name="about" width="30" height="30"/>
         <image name="history" width="32" height="20"/>
         <image name="map" width="30" height="30"/>
+        <image name="play" width="52" height="52"/>
         <image name="site1b_tn.png" width="132" height="94"/>
         <image name="stops" width="30" height="30"/>
     </resources>

@@ -101,7 +101,7 @@
 		E44258521C2A2BEF0041A5B4 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44258511C2A2BEF0041A5B4 /* Stop.swift */; };
 		E45BA7601C38C20900454CF7 /* StopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45BA75F1C38C20900454CF7 /* StopAnnotation.swift */; };
 		E45F21731C46F10D00A9E743 /* ContentImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F21721C46F10D00A9E743 /* ContentImage.swift */; };
-		E461791A1CC1E71800D44D86 /* Patti.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E4A9FF211CC1E0F0005D021C /* Patti.mp4 */; };
+		E461791A1CC1E71800D44D86 /* site17b_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E4A9FF211CC1E0F0005D021C /* site17b_video.mp4 */; };
 		E4624FC81C2F8A4E003023A1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4624FC71C2F8A4E003023A1 /* MapKit.framework */; };
 		E4624FCC1C30C76A003023A1 /* MapSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FCB1C30C76A003023A1 /* MapSplitViewController.swift */; };
 		E4624FCE1C3213C6003023A1 /* StopsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FCD1C3213C6003023A1 /* StopsModel.swift */; };
@@ -197,6 +197,7 @@
 		E4D8E8291C7BFBE200A17BB2 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */; };
 		E4D8E82C1C83146700A17BB2 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D8E82B1C83146700A17BB2 /* Protocols.swift */; };
 		E4E3F2251C8F2497006456AB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E3F2241C8F2497006456AB /* ImageIO.framework */; };
+		E4F5DFCB1CC7E3FB0040698C /* site17b_video_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4F5DFCA1CC7E3FB0040698C /* site17b_video_tn.jpg */; };
 		F0DB774696A056B77FF0975B /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45063F1F39CAC171C1B145FE /* BuddyBuildSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -389,7 +390,7 @@
 		E4A9FF181CBF3AEB005D021C /* Default-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-5@2x.png"; sourceTree = "<group>"; };
 		E4A9FF1A1CBF3F92005D021C /* Default-6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-6@2x.png"; sourceTree = "<group>"; };
 		E4A9FF1C1CBFC2E7005D021C /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
-		E4A9FF211CC1E0F0005D021C /* Patti.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Patti.mp4; sourceTree = "<group>"; };
+		E4A9FF211CC1E0F0005D021C /* site17b_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = site17b_video.mp4; sourceTree = "<group>"; };
 		E4A9FF221CC1E1A0005D021C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E4A9FF241CC1E1AE005D021C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		E4CFFC0D1CAFF641005C2268 /* historya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = historya.jpg; sourceTree = "<group>"; };
@@ -398,6 +399,7 @@
 		E4D8E82A1C7BFD6B00A17BB2 /* Cottontown-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cottontown-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		E4D8E82B1C83146700A17BB2 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		E4E3F2241C8F2497006456AB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E4F5DFCA1CC7E3FB0040698C /* site17b_video_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site17b_video_tn.jpg; sourceTree = "<group>"; };
 		E6F4BF4C4A72E1E41C6B3590 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -569,7 +571,8 @@
 				E43CA0AF1C8FC0390051139B /* Pictures */,
 				E419ED431C1C6AAA00164E25 /* Assets.xcassets */,
 				E4A9FF201CC1E080005D021C /* Launch Images */,
-				E4A9FF211CC1E0F0005D021C /* Patti.mp4 */,
+				E4A9FF211CC1E0F0005D021C /* site17b_video.mp4 */,
+				E4F5DFCA1CC7E3FB0040698C /* site17b_video_tn.jpg */,
 				E419ED481C1C6AAA00164E25 /* Info.plist */,
 				E419ED4E1C1CC5BD00164E25 /* Stops.plist */,
 				E44258531C2A2E520041A5B4 /* Cottontown.playground */,
@@ -749,7 +752,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E461791A1CC1E71800D44D86 /* Patti.mp4 in Resources */,
+				E461791A1CC1E71800D44D86 /* site17b_video.mp4 in Resources */,
 				E4A9FEF11CBACEA3005D021C /* site15a_tn@3x.png in Resources */,
 				E4A9FF0F1CBF28A9005D021C /* Default-736@3x.png in Resources */,
 				E40C917A1CA1665500F40EF5 /* site18a_tn.png in Resources */,
@@ -876,6 +879,7 @@
 				E40C917F1CA1665500F40EF5 /* site1b_tn@2x.png in Resources */,
 				E40C916D1CA1665500F40EF5 /* site11a_tn@2x.png in Resources */,
 				E40C91891CA1665500F40EF5 /* site24b_tn@2x.png in Resources */,
+				E4F5DFCB1CC7E3FB0040698C /* site17b_video_tn.jpg in Resources */,
 				E40C91851CA1665500F40EF5 /* site22a_tn@2x.png in Resources */,
 				E40C918C1CA1665500F40EF5 /* site26a_tn.png in Resources */,
 				E4A9FF031CBDD403005D021C /* site28b.jpg in Resources */,
