@@ -59,6 +59,8 @@ class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        pageControl.isAccessibilityElement = false
+        
         delay(0.25) {
             UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, self.playButton)
         }
