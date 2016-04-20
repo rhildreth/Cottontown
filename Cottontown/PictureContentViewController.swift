@@ -38,7 +38,7 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
         
         pageControl.currentPage = pageIndex
         pageControl.numberOfPages = maxPages
-        pageControl.currentPageIndicatorTintColor = UIColor.init(colorLiteralRed: 248.0/255, green: 210.0/255.0, blue: 103.0/255.0, alpha: 1.0)
+        pageControl.currentPageIndicatorTintColor = UIColor.init(colorLiteralRed: 242.0/255, green: 169.0/255.0, blue: 40.0/255.0, alpha: 1.0)
         
         // Disable page control for Voice Over.  Navigation is confusing using this
         // and there is directional arrows that are easier to use in this mode.

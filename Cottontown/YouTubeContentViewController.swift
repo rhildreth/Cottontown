@@ -39,7 +39,7 @@ class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
         
         pageControl.currentPage = pageIndex
         pageControl.numberOfPages = maxPages
-        pageControl.currentPageIndicatorTintColor = UIColor.init(colorLiteralRed: 248.0/255, green: 210.0/255.0, blue: 103.0/255.0, alpha: 1.0)
+        pageControl.currentPageIndicatorTintColor = UIColor.init(colorLiteralRed: 242.0/255, green: 169.0/255.0, blue: 40.0/255.0, alpha: 1.0)
 
 
 //        let playVars = ["rel": 0,

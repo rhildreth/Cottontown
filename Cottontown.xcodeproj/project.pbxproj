@@ -191,6 +191,7 @@
 		E4A9FF1D1CBFC2E7005D021C /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = E4A9FF1C1CBFC2E7005D021C /* Default-Portrait.png */; };
 		E4A9FF231CC1E1A0005D021C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A9FF221CC1E1A0005D021C /* AVFoundation.framework */; };
 		E4A9FF251CC1E1AE005D021C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A9FF241CC1E1AE005D021C /* AVKit.framework */; };
+		E4B1422C1CC825C9003221B9 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B1422B1CC825C9003221B9 /* Launch.storyboard */; };
 		E4B22911A4D524A7A272A62E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6C5DFB1E31279995C3AF32 /* QuartzCore.framework */; };
 		E4CFFC0E1CAFF641005C2268 /* historya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4CFFC0D1CAFF641005C2268 /* historya.jpg */; };
 		E4D8E8271C7BFB7D00A17BB2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */; };
@@ -403,6 +404,7 @@
 		E4A9FF211CC1E0F0005D021C /* site17b_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = site17b_video.mp4; sourceTree = "<group>"; };
 		E4A9FF221CC1E1A0005D021C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E4A9FF241CC1E1AE005D021C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		E4B1422B1CC825C9003221B9 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		E4CFFC0D1CAFF641005C2268 /* historya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = historya.jpg; sourceTree = "<group>"; };
 		E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneSignal.framework; sourceTree = "<group>"; };
@@ -583,6 +585,7 @@
 				E40C91D31CAFE20C00F40EF5 /* HistoryViewController.swift */,
 				E411D1441CB531CB008EC7E0 /* AboutViewController.swift */,
 				E419ED401C1C6AAA00164E25 /* Main.storyboard */,
+				E4B1422B1CC825C9003221B9 /* Launch.storyboard */,
 				E40C91D01CA9CEBE00F40EF5 /* YouTubeiOSPlayerHelper.h */,
 				E40C91CD1CA9CDD400F40EF5 /* YTPlayerView.h */,
 				E40C91CE1CA9CDD400F40EF5 /* YTPlayerView.m */,
@@ -801,6 +804,7 @@
 				E4A9FEF91CBACEA3005D021C /* site7a_tn@3x.png in Resources */,
 				E40C91C21CA996FA00F40EF5 /* site1c.jpg in Resources */,
 				E4A9FE4B1CBA9DDC005D021C /* site27d.jpg in Resources */,
+				E4B1422C1CC825C9003221B9 /* Launch.storyboard in Resources */,
 				E43CA1211C9136590051139B /* site30a.jpg in Resources */,
 				E4A9FE4D1CBA9DDC005D021C /* site28a.jpg in Resources */,
 				E4A9FEE81CBACEA3005D021C /* site24b_tn@3x.png in Resources */,

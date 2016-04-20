@@ -212,7 +212,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="7"/>
                                 <state key="normal" title="❮">
-                                    <color key="titleColor" red="0.97254901959999995" green="0.82352941180000006" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.94901960780000005" green="0.66274509800000003" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="leftArrowTapped:" destination="Fxg-Rp-VQb" eventType="touchUpInside" id="nBS-FN-pg5"/>
@@ -227,7 +227,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="7"/>
                                 <state key="normal" title="❯">
-                                    <color key="titleColor" red="0.97254901959999995" green="0.82352941180000006" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.94901960780000005" green="0.66274509800000003" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="rightArrowTapped:" destination="Fxg-Rp-VQb" eventType="touchUpInside" id="BT2-ob-OFY"/>
@@ -497,7 +497,7 @@
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="10" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-TW-yE7">
                                 <rect key="frame" x="225" y="511" width="151" height="37"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.66274509800000003" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="pageControlTapped:" destination="eCD-9W-r2k" eventType="valueChanged" id="qI3-3S-gam"/>
                                 </connections>
@@ -509,7 +509,7 @@
                                 </accessibility>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSR-N1-wER">
-                                <rect key="frame" x="274" y="119" width="52" height="52"/>
+                                <rect key="frame" x="261" y="106" width="79" height="79"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" startsMediaSession="YES"/>
                                 </accessibility>
@@ -529,7 +529,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="7"/>
                                 <state key="normal" title="❮">
-                                    <color key="titleColor" red="0.97254901959999995" green="0.82352941180000006" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.94901960780000005" green="0.66274509800000003" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -597,13 +597,13 @@
                             <mask key="constraints">
                                 <exclude reference="7gw-8p-hXU"/>
                                 <exclude reference="YmJ-sd-saD"/>
-                                <exclude reference="FvV-hE-19A"/>
-                                <exclude reference="gfH-ga-tT5"/>
                                 <exclude reference="IRo-um-MCk"/>
                                 <exclude reference="cU4-tf-Mt7"/>
                                 <exclude reference="gn5-7e-hJF"/>
                                 <exclude reference="qJe-wL-WU6"/>
                                 <exclude reference="xJX-Fw-2Bp"/>
+                                <exclude reference="FvV-hE-19A"/>
+                                <exclude reference="gfH-ga-tT5"/>
                                 <exclude reference="Lgg-AC-FqY"/>
                                 <exclude reference="lzL-Iw-D7b"/>
                                 <exclude reference="hTr-NK-P8g"/>
@@ -620,10 +620,6 @@
                                 <include reference="YmJ-sd-saD"/>
                                 <exclude reference="cg7-2q-zZV"/>
                                 <exclude reference="dFg-ar-SgC"/>
-                                <include reference="FvV-hE-19A"/>
-                                <exclude reference="M2F-t3-Htb"/>
-                                <exclude reference="R3Q-N1-eDo"/>
-                                <include reference="gfH-ga-tT5"/>
                                 <include reference="IRo-um-MCk"/>
                                 <include reference="cU4-tf-Mt7"/>
                                 <exclude reference="dlm-Qu-UhN"/>
@@ -633,6 +629,10 @@
                                 <exclude reference="syS-zI-UtJ"/>
                                 <exclude reference="t4e-JO-btg"/>
                                 <include reference="xJX-Fw-2Bp"/>
+                                <include reference="FvV-hE-19A"/>
+                                <exclude reference="M2F-t3-Htb"/>
+                                <exclude reference="R3Q-N1-eDo"/>
+                                <include reference="gfH-ga-tT5"/>
                                 <include reference="Lgg-AC-FqY"/>
                                 <include reference="lzL-Iw-D7b"/>
                                 <exclude reference="peX-dl-dhA"/>
@@ -974,7 +974,7 @@ This app was written by Ron Hildreth (who resides in Cottontown), with graphics 
         <image name="about" width="30" height="30"/>
         <image name="history" width="32" height="20"/>
         <image name="map" width="30" height="30"/>
-        <image name="play" width="52" height="52"/>
+        <image name="play" width="79" height="79"/>
         <image name="site1b_tn.png" width="132" height="94"/>
         <image name="stops" width="30" height="30"/>
     </resources>
