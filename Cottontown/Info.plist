@@ -141,7 +141,7 @@
 		</dict>
 	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>Launch</string>
+	<string>Launchit</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

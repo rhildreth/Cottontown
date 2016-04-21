@@ -971,7 +971,7 @@ This app was written by Ron Hildreth (who resides in Cottontown), with graphics 
     <resources>
         <image name="HCF Web Logo" width="296" height="66"/>
         <image name="HCF bg fill" width="30" height="66"/>
-        <image name="about" width="30" height="30"/>
+        <image name="about" width="27" height="27"/>
         <image name="history" width="32" height="20"/>
         <image name="map" width="30" height="30"/>
         <image name="play" width="79" height="79"/>
