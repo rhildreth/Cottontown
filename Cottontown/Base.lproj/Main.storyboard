@@ -692,7 +692,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSy-cx-YzH">
-                                <rect key="frame" x="20" y="192" width="560" height="290"/>
+                                <rect key="frame" x="20" y="281" width="560" height="201"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES"/>
@@ -711,7 +711,7 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-Ol-oCR">
-                                <rect key="frame" x="20" y="8" width="560" height="179"/>
+                                <rect key="frame" x="20" y="8" width="560" height="268"/>
                                 <accessibility key="accessibilityConfiguration" hint="Double tap to allow zoom and scroll" label="Manini family in 1926.">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
@@ -729,7 +729,7 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                             <constraint firstAttribute="trailingMargin" secondItem="sSy-cx-YzH" secondAttribute="trailing" id="Fzm-CQ-xj3"/>
                             <constraint firstItem="sSy-cx-YzH" firstAttribute="width" secondItem="CYJ-Ol-oCR" secondAttribute="width" id="HcC-B4-Zeh"/>
                             <constraint firstItem="CYJ-Ol-oCR" firstAttribute="top" secondItem="C4G-8G-seV" secondAttribute="bottom" constant="8" id="IAx-tU-c1K"/>
-                            <constraint firstItem="CYJ-Ol-oCR" firstAttribute="height" secondItem="xRu-Pq-heb" secondAttribute="height" multiplier="1:3" id="aZ0-Gf-J86"/>
+                            <constraint firstItem="CYJ-Ol-oCR" firstAttribute="height" secondItem="xRu-Pq-heb" secondAttribute="height" multiplier="1:2" id="aZ0-Gf-J86"/>
                             <constraint firstItem="sSy-cx-YzH" firstAttribute="top" secondItem="C4G-8G-seV" secondAttribute="bottom" constant="3" id="bGE-tc-doe"/>
                             <constraint firstAttribute="trailing" secondItem="sSy-cx-YzH" secondAttribute="trailing" constant="3" id="ePP-fa-UfS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CYJ-Ol-oCR" secondAttribute="trailing" id="jfA-aX-Xnu"/>
