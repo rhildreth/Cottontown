@@ -8,6 +8,7 @@
 
 import Foundation
 import ImageIO
+import UIKit
 
 class StopsModel {
     
