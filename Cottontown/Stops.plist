@@ -845,8 +845,6 @@ Often, family pictures reveal details about the relationship of buildings to one
 		<string>34.016836</string>
 		<key>longitude</key>
 		<string>-81.040624</string>
-		<key>pushTag</key>
-		<string>vino</string>
 		<key>pictures</key>
 		<array>
 			<dict>
@@ -880,8 +878,6 @@ Often, family pictures reveal details about the relationship of buildings to one
 		<string>34.016991</string>
 		<key>longitude</key>
 		<string>-81.039901</string>
-		<key>pushTag</key>
-		<string>warmouth</string>
 		<key>pictures</key>
 		<array>
 			<dict>

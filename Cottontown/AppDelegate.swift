@@ -48,11 +48,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         
         UISetup()
         
-        localNotificationSetup(application)
+//        localNotificationSetup(application)
         
-        oneSignalPushSetup(launchOptions)
+//        oneSignalPushSetup(launchOptions)
         
-        restorePushSettings()
+//        restorePushSettings()
         
 //        iBeaconSetup()    // iBeacons not used in app now
         
