@@ -190,6 +190,7 @@
 		E4B899381CC972AE0086C3D8 /* site29b_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B899351CC972AE0086C3D8 /* site29b_tn.png */; };
 		E4B899391CC972AE0086C3D8 /* site29b_tn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B899361CC972AE0086C3D8 /* site29b_tn@2x.png */; };
 		E4B8993A1CC972AE0086C3D8 /* site29b_tn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B899371CC972AE0086C3D8 /* site29b_tn@3x.png */; };
+		E4B8993C1CCD8C340086C3D8 /* HC 1c horiz 116.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B8993B1CCD8C330086C3D8 /* HC 1c horiz 116.png */; };
 		E4CFFC0E1CAFF641005C2268 /* historya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4CFFC0D1CAFF641005C2268 /* historya.jpg */; };
 		E4D8E8271C7BFB7D00A17BB2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */; };
 		E4D8E8291C7BFBE200A17BB2 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */; };
@@ -398,6 +399,7 @@
 		E4B899351CC972AE0086C3D8 /* site29b_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = site29b_tn.png; sourceTree = "<group>"; };
 		E4B899361CC972AE0086C3D8 /* site29b_tn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site29b_tn@2x.png"; sourceTree = "<group>"; };
 		E4B899371CC972AE0086C3D8 /* site29b_tn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site29b_tn@3x.png"; sourceTree = "<group>"; };
+		E4B8993B1CCD8C330086C3D8 /* HC 1c horiz 116.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HC 1c horiz 116.png"; sourceTree = "<group>"; };
 		E4CFFC0D1CAFF641005C2268 /* historya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = historya.jpg; sourceTree = "<group>"; };
 		E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneSignal.framework; sourceTree = "<group>"; };
@@ -600,6 +602,7 @@
 		E43CA0AF1C8FC0390051139B /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				E4B8993B1CCD8C330086C3D8 /* HC 1c horiz 116.png */,
 				E4CFFC0D1CAFF641005C2268 /* historya.jpg */,
 				E40C912D1CA1665500F40EF5 /* Stop Image Thumbnails */,
 				E40C91B61CA98EAE00F40EF5 /* site1a.jpg */,
@@ -891,6 +894,7 @@
 				E4B899391CC972AE0086C3D8 /* site29b_tn@2x.png in Resources */,
 				E40C91C61CA996FA00F40EF5 /* site3b.jpg in Resources */,
 				E4CFFC0E1CAFF641005C2268 /* historya.jpg in Resources */,
+				E4B8993C1CCD8C340086C3D8 /* HC 1c horiz 116.png in Resources */,
 				E471CEAE1C74243400214EFF /* Settings.bundle in Resources */,
 				E40C91881CA1665500F40EF5 /* site24b_tn.png in Resources */,
 				E4A9FE351CBA9DDC005D021C /* site14a.jpg in Resources */,

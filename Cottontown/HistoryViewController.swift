@@ -65,8 +65,8 @@ class HistoryViewController: UIViewController {
         
         // scroll text to top
         historyText.setContentOffset(CGPointZero, animated: false)
-        let maxWidth = historyImage.frame.width
         
+        let maxWidth = historyImage.frame.width
         StopsModel.resizeImage(fileName: "historya", type: "jpg", maxPointSize: maxWidth) { (image) in
             self.historyImage.image = image
         }

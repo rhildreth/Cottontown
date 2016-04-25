@@ -10,13 +10,27 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
+    @IBOutlet weak var aboutText: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
         UIApplication.sharedApplication().statusBarHidden = true
+        
+        
+        // Register for notification of font size changes
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HistoryViewController.updateFont), name: UIContentSizeCategoryDidChangeNotification, object: nil)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        // scroll text to top
+        aboutText.setContentOffset(CGPointZero, animated: false)
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -24,20 +38,11 @@ class AboutViewController: UIViewController {
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func updateFont () {
+        
+        let style = aboutText.font?.fontDescriptor().objectForKey(UIFontDescriptorTextStyleAttribute) as! String
+        aboutText.font = UIFont.preferredFontForTextStyle(style)
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
