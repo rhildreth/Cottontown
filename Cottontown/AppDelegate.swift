@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        BuddyBuildSDK.setup()
+       
                 
         UISetup()
         
@@ -91,7 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
        notification specifies .Foreground, the app is opened and this method is called.
     */
     func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, withResponseInfo responseInfo: [NSObject : AnyObject], completionHandler: () -> Void) {
-        print(identifier)
+        
         if let identifier = identifier {
             switch identifier {
             case actionIdentier.goToLocation :
@@ -101,7 +101,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
                 locationManager.stopRangingBeaconsInRegion(cottontownRegion)
                 defaults.setBool(false, forKey: "enableiBeacons")
             default:
-                print("Invalid identifier")
+                
                 break
             }
         }
@@ -123,7 +123,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     
     func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
         defaults.setBool(true, forKey: "hasPromptedForUserNotifications")
-        print("did register for user notifications")
+        
         registeredDelegate?.handleDidRegisterUserNotificationSettings()
 
         //        NSNotificationCenter.defaultCenter().postNotificationName("userNotificationSettingsRegistered", object: self)  // ** test notifications.  See also StopPageViewController
@@ -141,9 +141,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         case .Denied:
             locationManager.stopMonitoringForRegion(cottontownRegion)
             locationManager.stopRangingBeaconsInRegion(cottontownRegion)
-            print("beacon auth denied")
+            NSLog("beacon auth denied")
         default:
-            print("CLAuthorizationStatus not AuthorizedAlways or Denied")
+            NSLog("CLAuthorizationStatus not AuthorizedAlways or Denied")
         }
         
     }
@@ -157,17 +157,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         switch state {
             
         case .Unknown:
-            print("unknown region")
+            NSLog("unknown region")
             
         case .Inside:
             
             Notifications.display("Cottontown iBeacons detetected")
-            print("inside:", region.identifier)
+            
             
         case .Outside:  // No need to notify the user when this happens
             
 //            Notifications.display("User outside region")
-            print("outside region")
+            return
             
         }
     }
@@ -197,7 +197,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
                     if goToStopForiBeaconRegion {
                     tabBarController.selectedIndex = 0  // Make sure Stops tab is selected
                     stopsTVC.showDetailViewForStopNumber(29)
-                    print("Vino Beacon active")
+                    
 
                     }
                                         
@@ -209,13 +209,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
                 if filteriBeaconForStop(7) {
                     tabBarController.selectedIndex = 0  // Make sure Stops tab is selected
                     stopsTVC.showDetailViewForStopNumber(7)  // test only before Warmouth stop created
-                    print("Warmouth Beacon active")
+                    
                     
                     iBeaconAlertForStop(7)
                 }
                 
             default:
-//                print("Unknown Beacon")
+
                 
                filteriBeaconForStop(nil)
                 
@@ -223,7 +223,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             
 //            print("Nearest iBeacon", nearestBeacon)
         } else {
-//            print("No close iBeacon")
+
             filteriBeaconForStop(nil)
         }
         
@@ -248,7 +248,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
                     iBeaconSeenCount += 1
                     if iBeaconSeenCount == iBeaconMaxSeenCount && !iBeaconStopValid {
                         iBeaconStopValid = true
-                        print("+++Stop", stop, "now valid")
+                        
                         return true
                     }
                 }
@@ -261,7 +261,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             iBeaconSeenCount -= 1
             if iBeaconSeenCount == 0  {
                 iBeaconStopValid = false
-                print("a++Stop", iBeaconStop, "no longer valid")
+               
             }
         }
         return false
@@ -281,7 +281,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             
         })
         let canceliBeacons = UIAlertAction(title: "Stop using iBeacons", style: .Default , handler: {(alert) in
-            print(alert)
+            
             self.locationManager.stopMonitoringForRegion(self.cottontownRegion)
             self.locationManager.stopRangingBeaconsInRegion(self.cottontownRegion)
             
@@ -350,8 +350,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         
         
         
-//        defaults.synchronize()
-        print("vino push enabled:",defaults.boolForKey("vinoPushEnabled"))
+//        defaults.synchronize()        // deprecitated - no longer needed
+        
     }
     
     func oneSignalPushSetup (launchOptions: [NSObject: AnyObject]?) {

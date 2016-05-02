@@ -55,7 +55,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             map.showsUserLocation = true
         } else {
             map.showsUserLocation = false
-            print("Location Services not available")
+            NSLog("Location Services not available")
         }
         
         
@@ -64,6 +64,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         map.showAnnotations(allStopAnnotations, animated: true)
         map.showsCompass = true
         map.showsScale = true
+        
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "mapSelected")
 
     }
     
@@ -138,7 +140,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     // MARK: - CLLocationManagerDelegate methods
     
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        print("did change authorization status")
+        NSLog("did change authorization status")
         switch status {
         case .AuthorizedAlways, .AuthorizedWhenInUse:
            

@@ -8,6 +8,10 @@
 
 import UIKit
 
+/*
+    This protocol method is used to allow the PictureContentViewController to notify the
+    StopPageViewController when the user has requested a navigation the next or previous page.
+*/
 protocol PictureContentViewControllerDelegate: class {
     func pageControlChanged(sender: UIViewController, newPageIndex: Int)
 }
@@ -28,6 +32,8 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
     var picText = ""
     var pageIndex = 0   // the first page displayed is pageIndex = 0
     var maxPages = 0
+    
+    let defaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +82,24 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
     }
     
     override func viewDidAppear(animated: Bool) {
+        
+            super.viewDidAppear(animated)
+            
+            // Alert the user only once if they have visited the detail view, but did not 
+            // tap the image to zoom it
+            
+            if  !defaults.boolForKey("shownDetailMessage") && !defaults.boolForKey("imageTapped") && defaults.boolForKey("detailSelected") {
+                
+                let alert = UIAlertController(title: "Hint!", message: "Tap the image to zoom and scroll.", preferredStyle: .Alert)
+                
+                alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+                presentViewController(alert, animated: true) {
+                    self.defaults.setBool(true, forKey: "shownDetailMessage")
+                }   
+            }
+        
+        defaults.setBool(true, forKey: "detailSelected")
         
     }
     
@@ -160,7 +184,7 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
         let destVC = segue.destinationViewController as! ContentImage
         destVC.contentImageName = picImageFileName
         
-    
+        defaults.setBool(true, forKey: "imageTapped")
     }
 
     

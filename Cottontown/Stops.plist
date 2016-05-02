@@ -189,9 +189,13 @@ Advertised in the 1945 Columbia City Directory, Krispy-Kreme Donuts relocated fr
 				<key>picImage</key>
 				<string>site5a</string>
 				<key>picText</key>
-				<string>North Station Number 7’s presence within Cottontown meant short response times for residential and commercial fires, such as this one at 2329 North Main Street in September 1951.  (Image courtesy City of Columbia Fire Department, Walter B. Busby, Photographer)
-
-Designed by noted South Carolina architect Heyward S. Singley, this community landmark has been an integral part of Cottontown since 1948. Singley’s aesthetically and technologically modern facility was a product of blending Art Moderne and International Style elements outside with a completely fire resistant, well organized structure inside. Completed for approximately $62,000, the station featured a 12-bed dormitory, supply room, alarm room, recreation room, bathing, sanitation, and kitchen facilities that could accommodate three fire companies. In 2005 following a sensitive rehabilitation, the building was listed in the National Register of Historic Places for its contribution to Columbia’s architectural heritage and its association with Singley.
+				<string>Designed by noted South Carolina architect Heyward S. Singley, this community landmark has been an integral part of Cottontown since 1948. Singley’s aesthetically and technologically modern facility was a product of blending Art Moderne and International Style elements outside with a completely fire resistant, well organized structure inside. Completed for approximately $62,000, the station featured a 12-bed dormitory, supply room, alarm room, recreation room, bathing, sanitation, and kitchen facilities that could accommodate three fire companies. (This image from 1948 is courtesy City of Columbia Fire Department)</string>
+			</dict>
+			<dict>
+				<key>picImage</key>
+				<string>site5b</string>
+				<key>picText</key>
+				<string>In 2005 following a sensitive rehabilitation, the building was listed in the National Register of Historic Places for its contribution to Columbia’s architectural heritage and its association with Singley.
 </string>
 			</dict>
 		</array>
@@ -333,7 +337,7 @@ While some employees of the S.C. State Hospital lived on campus, such as patholo
 		<key>stopNumber</key>
 		<string>11</string>
 		<key>stopTitle</key>
-		<string>Ranch Style House</string>
+		<string>William S. Hall House</string>
 		<key>address</key>
 		<string>1427 Summerville Avenue</string>
 		<key>latitude</key>
@@ -347,6 +351,12 @@ While some employees of the S.C. State Hospital lived on campus, such as patholo
 				<string>site11a</string>
 				<key>picText</key>
 				<string>Most of Cottontown is characterized by bungalows, cottages, and American Four Squares built from the 1910s through the early 1940s. However, as the neighborhood did not develop uniformly, certain parcels were not improved until after World War II. Among post-war housing options, Ranch Style residences, such as this ca.-1955 structure, proved popular for folks interested in embracing the latest fashion. Elongated and wide with low rooflines, such houses featured open floor plans, rear patios instead of front porches, and picture windows. Designed for efficient and casual living, such houses became synonymous with suburbs of the late 1940s through 1970s. </string>
+			</dict>
+			<dict>
+				<key>picImage</key>
+				<string>site11b</string>
+				<key>picText</key>
+				<string>A South Carolina native and resident of Cottontown from 1956 - 1980, Dr. William S. Hall (1915-1995) had a profound impact on his home state in the field of mental health. During his time as Superintendent of the South Carolina State Hospital (1964-1985) Hall oversaw significant improvements in patient care, particularly the expansion of services throughout all 46 counties. He also holds the distinction of being the first State Commissioner of Mental in South Carolina. Induction into the South Carolina Hall of Fame in 1975 was among his many accolades for devotion to improving the Palmetto State. </string>
 			</dict>
 		</array>
 	</dict>
@@ -861,9 +871,9 @@ Often, family pictures reveal details about the relationship of buildings to one
 			</dict>
 			<dict>
 				<key>picImage</key>
-				<string>site5a</string>
+				<string>site29c</string>
 				<key>picText</key>
-				<string>Building originally Saul&apos;s Garage</string>
+				<string>Fire Station Number 7’s presence within Cottontown meant short response times for residential and commercial fires, such as this one at 2329 North Main Street in September 1951.  Saul&apos;s Garage next door was not damaged, and is now home to the Vino Garage.  (Image courtesy City of Columbia Fire Department, Walter B. Busby, Photographer)</string>
 			</dict>
 		</array>
 	</dict>

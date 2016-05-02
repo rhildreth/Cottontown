@@ -11,7 +11,7 @@
 
 #import <OneSignal/OneSignal.h>
 #import "YTPlayerView.h"
-#import <BuddyBuildSDK/BuddyBuildSDK.h>
+
 
 #endif /* Cottontown_Bridging_Header_h */
 

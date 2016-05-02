@@ -19,6 +19,8 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
     var suffix = ""
     let scale = UIScreen.mainScreen().scale
     var forceTouchSupported = false
+    
+    let defaults = NSUserDefaults.standardUserDefaults()
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +48,34 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
         super.viewWillAppear(animated)
         
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
+        
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // Alert the user only once if they have visited the map, but did not use a long touch or
+        // 3D touch to get there.
+        
+        if !defaults.boolForKey("shownStopMessage") && !(defaults.boolForKey("stopLongPressUsed") || defaults.boolForKey("stop3DUsed")) && defaults.boolForKey("mapSelected") {
+            
+            var message = "A long touch on a stop location will go to that location on the map"
+            
+            if traitCollection.forceTouchCapability == .Available {
+                message = "A long touch or 3D touch on a stop location will go to that location on the map"
+            }
+            
+            let alert = UIAlertController(title: "Hint!", message: message, preferredStyle: .Alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+            presentViewController(alert, animated: true) {
+                self.defaults.setBool(true, forKey: "shownStopMessage")
+            }
+            
+            
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -106,7 +136,7 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
         // to assigning to cell to improve scroll performance
         StopsModel.resizeImage(fileName: stopFileName + suffix, type: "png", maxPointSize: imageWidth) { (image) -> Void in
             guard let _ = tableView.cellForRowAtIndexPath(indexPath) else {
-                print("found nil myCell:")
+                NSLog("found nil myCell:")
                 return
             }
             cell.stopCellImage.image = image
@@ -128,6 +158,8 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
     @IBAction func longPressDetected(sender: UILongPressGestureRecognizer) {
         
         guard sender.state == UIGestureRecognizerState.Began else {return}
+        
+        defaults.setBool(true, forKey: "stopLongPressUsed")
         
         let touchPoint = sender.locationInView(tableView)
         let indexPath = tableView.indexPathForRowAtPoint(touchPoint)
@@ -174,6 +206,8 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
         //This will show the cell clearly and blur the rest of the screen for our peek.
         previewingContext.sourceRect = tableView.rectForRowAtIndexPath(indexPath)
         
+        defaults.setBool(true, forKey: "stop3DUsed")
+        
         let stop = allStops[indexPath.row]
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
@@ -186,6 +220,8 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
     }
     
     func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
+        
+        defaults.setBool(true, forKey: "stop3DUsed")
         
         let stop = (viewControllerToCommit as! MapViewController).showStop!
         

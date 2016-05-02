@@ -31,7 +31,7 @@ class StopsModel {
     class func resizeImage(fileName file: String, type: String, maxPointSize: CGFloat, completionHandler handler: (image: UIImage) -> Void) {
         
         let url = NSBundle.mainBundle().URLForResource(file, withExtension: type)!
-//        print(url)
+
         let src = CGImageSourceCreateWithURL(url, nil)!
         
         let scale = UIScreen.mainScreen().scale
