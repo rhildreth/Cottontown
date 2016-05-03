@@ -92,6 +92,7 @@
 		E442584E1C27979B0041A5B4 /* PictureContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E442584D1C27979B0041A5B4 /* PictureContentViewController.swift */; };
 		E44258501C2798640041A5B4 /* StopPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E442584F1C2798640041A5B4 /* StopPageViewController.swift */; };
 		E44258521C2A2BEF0041A5B4 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44258511C2A2BEF0041A5B4 /* Stop.swift */; };
+		E442A8031CD84CEC00E120B6 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E442A8021CD84CEC00E120B6 /* SwiftyBeaver.framework */; };
 		E45BA7601C38C20900454CF7 /* StopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45BA75F1C38C20900454CF7 /* StopAnnotation.swift */; };
 		E45F21731C46F10D00A9E743 /* ContentImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F21721C46F10D00A9E743 /* ContentImage.swift */; };
 		E461791A1CC1E71800D44D86 /* site17b_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E4A9FF211CC1E0F0005D021C /* site17b_video.mp4 */; };
@@ -302,6 +303,7 @@
 		E442584D1C27979B0041A5B4 /* PictureContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureContentViewController.swift; sourceTree = "<group>"; };
 		E442584F1C2798640041A5B4 /* StopPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopPageViewController.swift; sourceTree = "<group>"; };
 		E44258511C2A2BEF0041A5B4 /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		E442A8021CD84CEC00E120B6 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
 		E45BA75F1C38C20900454CF7 /* StopAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopAnnotation.swift; sourceTree = "<group>"; };
 		E45F21721C46F10D00A9E743 /* ContentImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentImage.swift; sourceTree = "<group>"; };
 		E4624FC71C2F8A4E003023A1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -439,6 +441,7 @@
 				561036DC2EFFBA72DA4DB7DC /* CoreText.framework in Frameworks */,
 				1B42DE09AAC0F9DB72EA815D /* CoreTelephony.framework in Frameworks */,
 				E4B22911A4D524A7A272A62E /* QuartzCore.framework in Frameworks */,
+				E442A8031CD84CEC00E120B6 /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +548,7 @@
 		E419ED2E1C1C6AAA00164E25 = {
 			isa = PBXGroup;
 			children = (
+				E442A8021CD84CEC00E120B6 /* SwiftyBeaver.framework */,
 				E419ED391C1C6AAA00164E25 /* Cottontown */,
 				E419ED381C1C6AAA00164E25 /* Products */,
 			);
@@ -1097,6 +1101,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Cottontown/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1120,6 +1125,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Cottontown/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
