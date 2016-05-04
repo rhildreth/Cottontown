@@ -5,6 +5,10 @@
 //  Created by Ron Hildreth on 3/4/16.
 //  Copyright © 2016 Tappdev.com. All rights reserved.
 //
+// Videos are now local and YouTube is not used.  Also, I ran into numerous problems - 
+// poor handling of VoiceOver and failure to go full screen on the iPad automatically.
+// I left this in so that if many additional videos are used it would not be practical to store them
+// locally.
 
 import UIKit
 import AVFoundation

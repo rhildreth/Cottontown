@@ -8,10 +8,9 @@
 
 import UIKit
 
-class StopPageViewController: UIPageViewController, UIPageViewControllerDataSource, didRegisterUserNotificationSettingsDelegate, PictureContentViewControllerDelegate {
+class StopPageViewController: UIPageViewController, UIPageViewControllerDataSource, PictureContentViewControllerDelegate {
     
     var stop: Stop?
-    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
  
     var allStopContent = [[String: String]]()
     
@@ -28,28 +27,6 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         let firstVC = viewControllerAtIndex(0)
         setViewControllers([firstVC!], direction: .Forward, animated: false, completion: nil)
         
-        
-        requestNotificationAuthorization()
-        
-        // ** test notifications
-       // Notification set in AppDelegate method application(_:didRegisterUserNotificationSettings)
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "requestStopPushAuthorization", name: "userNotificationSettingsRegistered", object: nil)
-        
-        
-        appDelegate.registeredDelegate = self
-        
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        
-        
-    }
-    
-    override func viewDidLayoutSubviews() {
-        
-        
     }
     
     
@@ -58,10 +35,6 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         // Dispose of any resources that can be recreated.
     }
     
-//** test notifications
-//    deinit {
-//        NSNotificationCenter.defaultCenter().removeObserver(self)
-//    }
     
     func viewControllerAtIndex(index: Int) -> UIViewController? {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -102,66 +75,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         
     }
     
-    func requestNotificationAuthorization() {
-        
-        guard let pushTag = stop?.pushTag else {return}  // return if no push tag for this stop
-        guard !(NSUserDefaults.standardUserDefaults().boolForKey("hasPromptedForUserNotifications") && UIApplication.sharedApplication().currentUserNotificationSettings()?.types == .None) else {
-            
-            return}
-            
-        if !NSUserDefaults.standardUserDefaults().boolForKey("hasPromptedForUserNotifications") {
-            
-            UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil ))
-            
-        } else if !NSUserDefaults.standardUserDefaults().boolForKey(pushTag + "PushRequested") {
-            handleDidRegisterUserNotificationSettings()
-        } 
-      
-    }
-
-    func handleDidRegisterUserNotificationSettings() {
-        
-        
-        // Make sure user didn't decline notifications
-        guard !(NSUserDefaults.standardUserDefaults().boolForKey("hasPromptedForUserNotifications") && UIApplication.sharedApplication().currentUserNotificationSettings()!.types == .None) else {
-            
-            return}
-        
-        // Make sure the stop supports push notifications
-        guard let pushTag = stop?.pushTag else {
-            
-            return
-        }
-        
-        // Make sure the user is asked only once if push notifications for this location are desired
-        guard !NSUserDefaults.standardUserDefaults().boolForKey(pushTag + "PushRequested") else {
-            
-            return
-        }
-        
-        // Set flag that the user has been asked to allow push messages
-        NSUserDefaults.standardUserDefaults().setBool(true, forKey: pushTag + "PushRequested")
-        
-        
-        let message = "Would you like to get Push messages from the " + stop!.stopTitle
-        let alert = UIAlertController(title: "Push Notifications", message: message, preferredStyle: .Alert)
-        
-        alert.addAction(UIAlertAction(title: "OK", style: .Default , handler: { _ in
-            self.appDelegate.setTag(pushTag + "PushEnabled", value: "true")
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: pushTag + "PushEnabled")
-        }))
-        
-        alert.addAction(UIAlertAction(title: "No", style: .Cancel, handler: { _ in
-            self.appDelegate.setTag(pushTag + "PushEnabled", value: "false")
-            NSUserDefaults.standardUserDefaults().setBool(false, forKey: pushTag + "PushEnabled")
-        }))
-        
-        presentViewController(alert, animated: true, completion: nil)
-        
-    }
-    
-    
-    // MARK: - UIPageControllerDataSource Methods
+// MARK: - UIPageControllerDataSource Methods
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         

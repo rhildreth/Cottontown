@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="C4j-Ad-sZy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="C4j-Ad-sZy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -73,6 +73,9 @@
                                                     <variation key="widthClass=compact" misplaced="YES">
                                                         <rect key="frame" x="0.0" y="0.0" width="263" height="47"/>
                                                     </variation>
+                                                    <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="0.0" width="263" height="47"/>
+                                                    </variation>
                                                 </label>
                                                 <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StopAddress" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLL-kY-Tvk">
                                                     <rect key="frame" x="0.0" y="47" width="463" height="46"/>
@@ -86,12 +89,18 @@
                                                     <variation key="widthClass=compact" misplaced="YES">
                                                         <rect key="frame" x="0.0" y="47" width="263" height="46"/>
                                                     </variation>
+                                                    <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="47" width="263" height="46"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="93" id="kz4-v4-vfK"/>
                                             </constraints>
                                             <variation key="widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="137" y="0.0" width="263" height="93"/>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                                 <rect key="frame" x="137" y="0.0" width="263" height="93"/>
                                             </variation>
                                         </stackView>
@@ -167,17 +176,17 @@
         <!--Picture Content View Controller-->
         <scene sceneID="OQO-ne-3t1">
             <objects>
-                <viewController storyboardIdentifier="stopContentVC" extendedLayoutIncludesOpaqueBars="YES" id="Fxg-Rp-VQb" customClass="PictureContentViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="stopContentVC" id="Fxg-Rp-VQb" customClass="PictureContentViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wod-7d-cdU"/>
                         <viewControllerLayoutGuide type="bottom" id="Rr0-g1-cqz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xk9-Vy-TVt">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N8A-ym-ShO">
-                                <rect key="frame" x="20" y="8" width="560" height="200"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N8A-ym-ShO">
+                                <rect key="frame" x="20" y="8" width="560" height="184"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES"/>
                                     <bool key="isElement" value="YES"/>
@@ -196,7 +205,7 @@
                                 </connections>
                             </pageControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4z-fy-1b9">
-                                <rect key="frame" x="20" y="218" width="560" height="285"/>
+                                <rect key="frame" x="20" y="202" width="560" height="301"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES"/>
@@ -342,54 +351,6 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2570" y="1012"/>
-        </scene>
-        <!--Web View Controller-->
-        <scene sceneID="vAz-A7-oaT">
-            <objects>
-                <viewController storyboardIdentifier="webVC" extendedLayoutIncludesOpaqueBars="YES" id="orY-QJ-1kP" userLabel="Web View Controller" customClass="WebViewController" customModule="Cottontown" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="M2x-zZ-zWj"/>
-                        <viewControllerLayoutGuide type="bottom" id="Iwt-1I-Xyc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IOL-oI-yj4">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hj-GV-YOl">
-                                <rect key="frame" x="0.0" y="88" width="600" height="512"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Enz-9n-e4t">
-                                <rect key="frame" x="0.0" y="44" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="UgJ-NN-3g1">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="E7c-Zo-2Gk">
-                                            <connections>
-                                                <action selector="done:" destination="orY-QJ-1kP" id="bhJ-ht-u4u"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="6hj-GV-YOl" secondAttribute="trailing" id="AZq-Sc-8YL"/>
-                            <constraint firstItem="6hj-GV-YOl" firstAttribute="top" secondItem="Enz-9n-e4t" secondAttribute="bottom" id="F9x-5N-Zee"/>
-                            <constraint firstItem="Enz-9n-e4t" firstAttribute="top" secondItem="IOL-oI-yj4" secondAttribute="top" constant="44" id="T2g-8s-zYu"/>
-                            <constraint firstItem="Enz-9n-e4t" firstAttribute="leading" secondItem="IOL-oI-yj4" secondAttribute="leading" id="awb-cP-EJh"/>
-                            <constraint firstItem="6hj-GV-YOl" firstAttribute="leading" secondItem="IOL-oI-yj4" secondAttribute="leading" id="ccq-JD-MOx"/>
-                            <constraint firstAttribute="trailing" secondItem="Enz-9n-e4t" secondAttribute="trailing" id="jJr-WX-Xj1"/>
-                            <constraint firstItem="Iwt-1I-Xyc" firstAttribute="top" secondItem="6hj-GV-YOl" secondAttribute="bottom" id="zuz-BV-PFo"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="webView" destination="6hj-GV-YOl" id="XDU-jb-XeA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nBK-fx-F8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2534" y="2022"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
@@ -851,6 +812,9 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                                 <variation key="widthClass=compact" ambiguous="YES">
                                     <rect key="frame" x="0.0" y="20" width="400" height="580"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="20" width="800" height="780"/>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
@@ -972,7 +936,7 @@ This app was written by Ron Hildreth (who resides in Cottontown), with graphics 
         <image name="stops" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
-        <segue reference="h75-4w-YRW"/>
+        <segue reference="Tll-UG-LXB"/>
+        <segue reference="WCb-Sr-3TK"/>
     </inferredMetricsTieBreakers>
 </document>

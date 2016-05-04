@@ -9,7 +9,7 @@
 #ifndef Cottontown_Bridging_Header_h
 #define Cottontown_Bridging_Header_h
 
-#import <OneSignal/OneSignal.h>
+
 #import "YTPlayerView.h"
 
 

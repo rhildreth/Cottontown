@@ -49,8 +49,6 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Allows you to be notified when you are near a monitored location, even when the Cottontown app is not active.  </string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Allows your current position to be displayed on the Cottontown map</string>
 	<key>UILaunchImages</key>

@@ -81,7 +81,6 @@
 		E411EC171C49879A0081AB9B /* CottontownTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */; };
 		E411EC1B1C49CBE20081AB9B /* StopsSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */; };
 		E411EC1D1C4B0D370081AB9B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */; };
-		E411EC211C4B29200081AB9B /* Notificatons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411EC201C4B29200081AB9B /* Notificatons.swift */; };
 		E419ED3B1C1C6AAA00164E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E419ED3A1C1C6AAA00164E25 /* AppDelegate.swift */; };
 		E419ED3D1C1C6AAA00164E25 /* StopsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E419ED3C1C1C6AAA00164E25 /* StopsTableViewController.swift */; };
 		E419ED421C1C6AAA00164E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E419ED401C1C6AAA00164E25 /* Main.storyboard */; };
@@ -104,8 +103,6 @@
 		E4624FD21C3231C8003023A1 /* MapPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FD11C3231C8003023A1 /* MapPageViewController.swift */; };
 		E4624FD41C323354003023A1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4624FD31C323354003023A1 /* MapViewController.swift */; };
 		E463ACD51C89F12D00B68973 /* YouTubeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463ACD41C89F12D00B68973 /* YouTubeContentViewController.swift */; };
-		E471CEAE1C74243400214EFF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E471CEAD1C74243400214EFF /* Settings.bundle */; };
-		E472B5F61C87C463003FFBCA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472B5F51C87C463003FFBCA /* WebViewController.swift */; };
 		E4A9FE261CBA9DDC005D021C /* site4a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4A9FDFE1CBA9DDC005D021C /* site4a.jpg */; };
 		E4A9FE271CBA9DDC005D021C /* site4b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4A9FDFF1CBA9DDC005D021C /* site4b.jpg */; };
 		E4A9FE281CBA9DDC005D021C /* site29c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4A9FE001CBA9DDC005D021C /* site29c.jpg */; };
@@ -195,8 +192,6 @@
 		E4C6BFC31CD45F0400D1CFA3 /* site11b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4C6BFC21CD45F0400D1CFA3 /* site11b.jpg */; };
 		E4CFFC0E1CAFF641005C2268 /* historya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4CFFC0D1CAFF641005C2268 /* historya.jpg */; };
 		E4D8E8271C7BFB7D00A17BB2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */; };
-		E4D8E8291C7BFBE200A17BB2 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */; };
-		E4D8E82C1C83146700A17BB2 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D8E82B1C83146700A17BB2 /* Protocols.swift */; };
 		E4E3F2251C8F2497006456AB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E3F2241C8F2497006456AB /* ImageIO.framework */; };
 		E4F5DFCB1CC7E3FB0040698C /* site17b_video_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4F5DFCA1CC7E3FB0040698C /* site17b_video_tn.jpg */; };
 		E4F5DFD21CC815350040698C /* site3f_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E4F5DFCD1CC815350040698C /* site3f_video.mp4 */; };
@@ -302,7 +297,6 @@
 		E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CottontownTabBarController.swift; sourceTree = "<group>"; };
 		E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsSplitViewController.swift; sourceTree = "<group>"; };
 		E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		E411EC201C4B29200081AB9B /* Notificatons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificatons.swift; sourceTree = "<group>"; };
 		E419ED371C1C6AAA00164E25 /* Cottontown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cottontown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E419ED3A1C1C6AAA00164E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E419ED3C1C1C6AAA00164E25 /* StopsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsTableViewController.swift; sourceTree = "<group>"; };
@@ -326,8 +320,6 @@
 		E4624FD11C3231C8003023A1 /* MapPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPageViewController.swift; sourceTree = "<group>"; };
 		E4624FD31C323354003023A1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E463ACD41C89F12D00B68973 /* YouTubeContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeContentViewController.swift; sourceTree = "<group>"; };
-		E471CEAD1C74243400214EFF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		E472B5F51C87C463003FFBCA /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		E4A9FDFE1CBA9DDC005D021C /* site4a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site4a.jpg; sourceTree = "<group>"; };
 		E4A9FDFF1CBA9DDC005D021C /* site4b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site4b.jpg; sourceTree = "<group>"; };
 		E4A9FE001CBA9DDC005D021C /* site29c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site29c.jpg; sourceTree = "<group>"; };
@@ -417,9 +409,7 @@
 		E4C6BFC21CD45F0400D1CFA3 /* site11b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site11b.jpg; sourceTree = "<group>"; };
 		E4CFFC0D1CAFF641005C2268 /* historya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = historya.jpg; sourceTree = "<group>"; };
 		E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneSignal.framework; sourceTree = "<group>"; };
 		E4D8E82A1C7BFD6B00A17BB2 /* Cottontown-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cottontown-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		E4D8E82B1C83146700A17BB2 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		E4E3F2241C8F2497006456AB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		E4F5DFCA1CC7E3FB0040698C /* site17b_video_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site17b_video_tn.jpg; sourceTree = "<group>"; };
 		E4F5DFCD1CC815350040698C /* site3f_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = site3f_video.mp4; sourceTree = "<group>"; };
@@ -447,7 +437,6 @@
 				E4D8E8271C7BFB7D00A17BB2 /* SystemConfiguration.framework in Frameworks */,
 				E411EC1D1C4B0D370081AB9B /* CoreLocation.framework in Frameworks */,
 				E4624FC81C2F8A4E003023A1 /* MapKit.framework in Frameworks */,
-				E4D8E8291C7BFBE200A17BB2 /* OneSignal.framework in Frameworks */,
 				B3CA101CC11C88CD70F32F85 /* AssetsLibrary.framework in Frameworks */,
 				561036DC2EFFBA72DA4DB7DC /* CoreText.framework in Frameworks */,
 				1B42DE09AAC0F9DB72EA815D /* CoreTelephony.framework in Frameworks */,
@@ -576,8 +565,6 @@
 			children = (
 				E4D8E82A1C7BFD6B00A17BB2 /* Cottontown-Bridging-Header.h */,
 				E419ED3A1C1C6AAA00164E25 /* AppDelegate.swift */,
-				E4D8E82B1C83146700A17BB2 /* Protocols.swift */,
-				E411EC201C4B29200081AB9B /* Notificatons.swift */,
 				E411EC161C49879A0081AB9B /* CottontownTabBarController.swift */,
 				E411EC1A1C49CBE20081AB9B /* StopsSplitViewController.swift */,
 				E4624FCD1C3213C6003023A1 /* StopsModel.swift */,
@@ -592,12 +579,10 @@
 				E4624FD31C323354003023A1 /* MapViewController.swift */,
 				E45BA75F1C38C20900454CF7 /* StopAnnotation.swift */,
 				E4624FD11C3231C8003023A1 /* MapPageViewController.swift */,
-				E472B5F51C87C463003FFBCA /* WebViewController.swift */,
 				E40C91D31CAFE20C00F40EF5 /* HistoryViewController.swift */,
 				E411D1441CB531CB008EC7E0 /* AboutViewController.swift */,
 				E419ED401C1C6AAA00164E25 /* Main.storyboard */,
 				E4B1422B1CC825C9003221B9 /* Launchit.storyboard */,
-				E471CEAD1C74243400214EFF /* Settings.bundle */,
 				E419ED481C1C6AAA00164E25 /* Info.plist */,
 				E419ED4E1C1CC5BD00164E25 /* Stops.plist */,
 				E419ED431C1C6AAA00164E25 /* Assets.xcassets */,
@@ -704,7 +689,6 @@
 				E4624FC71C2F8A4E003023A1 /* MapKit.framework */,
 				E411EC1C1C4B0D370081AB9B /* CoreLocation.framework */,
 				E4D8E8261C7BFB7D00A17BB2 /* SystemConfiguration.framework */,
-				E4D8E8281C7BFBE200A17BB2 /* OneSignal.framework */,
 			);
 			name = Frameworks;
 			path = ..;
@@ -924,7 +908,6 @@
 				E40C91C61CA996FA00F40EF5 /* site3b.jpg in Resources */,
 				E4CFFC0E1CAFF641005C2268 /* historya.jpg in Resources */,
 				E4B8993C1CCD8C340086C3D8 /* HC 1c horiz 116.png in Resources */,
-				E471CEAE1C74243400214EFF /* Settings.bundle in Resources */,
 				E40C91881CA1665500F40EF5 /* site24b_tn.png in Resources */,
 				E4A9FE351CBA9DDC005D021C /* site14a.jpg in Resources */,
 				E4A9FEFD1CBACEA3005D021C /* site3d_tn@3x.png in Resources */,
@@ -995,11 +978,8 @@
 				E44258501C2798640041A5B4 /* StopPageViewController.swift in Sources */,
 				E411EC1B1C49CBE20081AB9B /* StopsSplitViewController.swift in Sources */,
 				E463ACD51C89F12D00B68973 /* YouTubeContentViewController.swift in Sources */,
-				E472B5F61C87C463003FFBCA /* WebViewController.swift in Sources */,
 				E45BA7601C38C20900454CF7 /* StopAnnotation.swift in Sources */,
-				E411EC211C4B29200081AB9B /* Notificatons.swift in Sources */,
 				E44258521C2A2BEF0041A5B4 /* Stop.swift in Sources */,
-				E4D8E82C1C83146700A17BB2 /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

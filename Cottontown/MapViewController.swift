@@ -113,19 +113,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         case .Restricted:
             return false
         case .Denied:
-//            let message = "Wouldn't you like to authorize" +
-//            "this app to use Location Services?"
-//            let alert = UIAlertController(title: "Need Authorization",
-//                message: message, preferredStyle: .Alert)
-//            alert.addAction(UIAlertAction(title: "No",
-//                style: .Cancel, handler: nil))
-//            alert.addAction(UIAlertAction(title: "OK",
-//                style: .Default, handler: {
-//                    _ in
-//                    let url = NSURL(string:UIApplicationOpenSettingsURLString)!
-//                    UIApplication.sharedApplication().openURL(url)
-//            }))
-//            self.presentViewController(alert, animated:true, completion:nil)
             return false
         }
     }
@@ -212,7 +199,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
         if splitViewController?.traitCollection.horizontalSizeClass == .Regular {
-            let stopAnnotation = view.annotation as! StopAnnotation
+            guard let stopAnnotation = view.annotation as? StopAnnotation else {return}
             
             
             let mapPageVC = MapPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil )
