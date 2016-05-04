@@ -452,10 +452,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         // add log destinations. at least one is needed!
         let console = ConsoleDestination()  // log to Xcode Console
         let file = FileDestination()  // log to default swiftybeaver.log file
-//        let cloud = SBPlatformDestination(appID: "foo", appSecret: "bar", encryptionKey: "123") // to cloud
+        let cloud = SBPlatformDestination(appID: "6JvvrY", appSecret: "nbknxfWygxrbf0raPmw4whp2kNy864zs", encryptionKey: "bxFtypgw2zuA4bCZ1leS0xdnb0hwjsWp") // to cloud
         log.addDestination(console)
         log.addDestination(file)
-//        log.addDestination(cloud)
+        log.addDestination(cloud)
         
         // Now let’s log!
         log.verbose("not so important")  // prio 1, VERBOSE in silver
