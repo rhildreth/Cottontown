@@ -9,7 +9,7 @@
 
 import UIKit
 import CoreLocation
-import SwiftyBeaver
+
 
 
 @UIApplicationMain
@@ -43,11 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     
     var registeredDelegate: didRegisterUserNotificationSettingsDelegate?
     
-    let log = SwiftyBeaver.self
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-       swiftyBeaverSetup()
                 
         UISetup()
         
@@ -358,7 +356,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     }
     
     func oneSignalPushSetup (launchOptions: [NSObject: AnyObject]?) {
-        oneSignal = OneSignal(launchOptions: launchOptions, appId: "82468ab3-db6e-4b57-8b6e-b3f0a153079a", handleNotification:  { (message, additionalData, isActive) in
+        oneSignal = OneSignal(launchOptions: launchOptions, appId: "", handleNotification:  { (message, additionalData, isActive) in
             NSLog("OneSignal Notification opened:\nMessage: %@", message)
             
             if additionalData != nil {
@@ -448,29 +446,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         
     }
     
-    func swiftyBeaverSetup () {
-        // add log destinations. at least one is needed!
-        let console = ConsoleDestination()  // log to Xcode Console
-        let file = FileDestination()  // log to default swiftybeaver.log file
-        let cloud = SBPlatformDestination(appID: "6JvvrY", appSecret: "nbknxfWygxrbf0raPmw4whp2kNy864zs", encryptionKey: "bxFtypgw2zuA4bCZ1leS0xdnb0hwjsWp") // to cloud
-        log.addDestination(console)
-        log.addDestination(file)
-        log.addDestination(cloud)
-        
-        // Now let’s log!
-        log.verbose("not so important")  // prio 1, VERBOSE in silver
-        log.debug("something to debug")  // prio 2, DEBUG in green
-        log.info("a nice information")   // prio 3, INFO in blue
-        log.warning("oh no, that won’t be good")  // prio 4, WARNING in yellow
-        log.error("ouch, an error did occur!")  // prio 5, ERROR in red
-        
-        // log anything!
-        log.verbose(123)
-        log.info(-123.45678)
-        log.warning(NSDate())
-        log.error(["I", "like", "logs!"])
-        log.error(["name": "Mr Beaver", "address": "7 Beaver Lodge"])
-    }
+
     
 }
 
