@@ -910,5 +910,26 @@ Often, family pictures reveal details about the relationship of buildings to one
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>stopNumber</key>
+		<string>31</string>
+		<key>stopTitle</key>
+		<string>Varsity Grill</string>
+		<key>address</key>
+		<string>2706 Main St.</string>
+		<key>latitude</key>
+		<string>34.021214</string>
+		<key>longitude</key>
+		<string>-81.042068</string>
+		<key>pictures</key>
+		<array>
+			<dict>
+				<key>picImage</key>
+				<string>site31a</string>
+				<key>picText</key>
+				<string>The Greek community have provided many fine restaurants in Columbia, and the Varsity Grill was no exception.  Gus Capilos opened the business on December 17, 1937 while his brother Bill Capilos operated the Market restaurant downtown on Assembly Street. In addition to the inside dining room, there were two long rows of awnings with parking spaces on each side served by car hops. The Varsity location at 2708 Main is now vacant, but for over 35 years it provide a convenient location for the Cottontown residents to dine and meet with their friends. </string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>

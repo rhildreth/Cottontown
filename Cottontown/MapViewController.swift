@@ -51,12 +51,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         map.delegate = self
       
-        if determineStatus() {
-            map.showsUserLocation = true
-        } else {
-            map.showsUserLocation = false
-            NSLog("Location Services not available")
-        }
+        
         
         
         allStopAnnotations = createStopAnnotations()
@@ -82,9 +77,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         let stopAnnotation = allStopAnnotations[stopNumber! - 1]
         map.selectAnnotation(stopAnnotation, animated: false)
         
-        
-
-        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if determineStatus() {
+            map.showsUserLocation = true
+        } else {
+            map.showsUserLocation = false
+//            NSLog("Location Services not available")
+        }
     }
     
     func createStopAnnotations () -> [StopAnnotation] {
@@ -127,7 +128,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     // MARK: - CLLocationManagerDelegate methods
     
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        NSLog("did change authorization status")
+//        NSLog("did change authorization status")
         switch status {
         case .AuthorizedAlways, .AuthorizedWhenInUse:
            
@@ -176,45 +177,23 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         annotationStopNumber = stopAnnotation.stopNumber
         
         performSegueWithIdentifier("mapShowDetail", sender: self)
-        
-//        let mapPageVC = MapPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil )
-//        mapPageVC.extendedLayoutIncludesOpaqueBars = false
-        
-//        mapPageVC.edgesForExtendedLayout = UIRectEdge.None
-
-        
-//        mapPageVC.stop = allStops[stopAnnotation.stopNumber - 1]
-//        let modeButton = self.splitViewController?.displayModeButtonItem()
-//        mapPageVC.navigationItem.leftBarButtonItem = modeButton
-//        mapPageVC.navigationItem.leftItemsSupplementBackButton = true
-        
-        
-
-        
-//        let nav = UINavigationController(rootViewController: mapPageVC)
-//        
-//        self.showDetailViewController(nav , sender: self)
 
     }
     
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        
+        // In a Regular horizontal size class the split view shows the map in the left pane
+        // and the Stop detail in the right pane at the same time
         if splitViewController?.traitCollection.horizontalSizeClass == .Regular {
+            
+            // Make sure this not from tapping the blue user location annotation
             guard let stopAnnotation = view.annotation as? StopAnnotation else {return}
-            
-            
-            let mapPageVC = MapPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil )
-//            mapPageVC.extendedLayoutIncludesOpaqueBars = false
-            
-            mapPageVC.stop = allStops[stopAnnotation.stopNumber - 1]
-            let b = self.splitViewController?.displayModeButtonItem()
-            mapPageVC.navigationItem.leftBarButtonItem = b
-            mapPageVC.navigationItem.leftItemsSupplementBackButton = true
-            
-            let nav = UINavigationController(rootViewController: mapPageVC)
-            
-            self.showDetailViewController(nav , sender: self)
 
+            annotationStopNumber = stopAnnotation.stopNumber
+            
+            performSegueWithIdentifier("mapShowDetail", sender: self)
         }
+ 
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

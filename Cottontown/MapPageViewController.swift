@@ -49,6 +49,8 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
     func viewControllerAtIndex(index: Int) -> UIViewController? {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
+        // In a split view with both the master and detail view showing (Regular width class)
+        // it is possible that a detail view has not been selected - a map pin in this case
         guard allStopContent.count > 0 else {
             let stopContentVC = storyboard.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
             stopContentVC.picText = "No Stop Selected"

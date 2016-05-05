@@ -10,12 +10,9 @@ The initial commit has basic functionality designed around a tab view controller
 
 This is not meant to be a complete list of features, but more to track what things I've attempted and what is yet to be implemented.  Obviously at this point there are many things I've coded but am still in the process of debugging.
 
-* iBeacon support (this will not be included in the release 2.0)
-* Local notifications with custom actions (custom actions will not be needed in the release version)
+* iBeacon support, Push notifications, and Local notifications with custom actions were implemented but will not be included in release 2.0.  To clean up the app in preparation for release to the app store, these features were removed from the app on May 4, 2016 on commit 13c2555.
 * Universal app base on Split View Controllers
 * Support for iPad multitasking
-* Defaults in Settings app
-* Remote push notifications (implemented, but not enabled in the 2.0 release)
 * YouTube support using Google youtube-ios-player-helper api (implemented, but removed in the 2.0 release. Videos are now local.  YouTube code left in for flexibility in future releases.)
 * 3D touch - pressing on stop location gives a Peek and Pop for the location in the Map View (long press will do the same thing on non-3D devices)
 * Optimize size for images used
@@ -24,7 +21,6 @@ This is not meant to be a complete list of features, but more to track what thin
 * Accessibility for vision impaired
 * Launch screen
 * Add additional tour stops and content to existing stops
-* Remove Reveal Framework when debugging is complete
 * Run Instruments to check CPU and memory usage
 * Test functions in Airplane mode
 
@@ -35,7 +31,7 @@ Defer the following due to time constraints:
 
 #### Software
 
-I'm using the latest public releases of Xcode (7.3) and OSX (10.11.3)
+I'm using the latest public releases of Xcode (7.3.1) and OSX (10.11.4)
 
 ####Pictures
 

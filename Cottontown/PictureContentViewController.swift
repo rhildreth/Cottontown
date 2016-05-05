@@ -88,18 +88,18 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
             // Alert the user only once if they have visited the detail view, but did not 
             // tap the image to zoom it
             
-            if  !defaults.boolForKey("shownDetailMessage") && !defaults.boolForKey("imageTapped") && defaults.boolForKey("detailSelected") {
+            if  !defaults.boolForKey("shownDetailMessage") && !defaults.boolForKey("imageTapped") && defaults.integerForKey("detailSelectedCount") > 2 {
                 
                 let alert = UIAlertController(title: "Hint!", message: "Tap the image to zoom and scroll.", preferredStyle: .Alert)
                 
                 alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                
-                presentViewController(alert, animated: true) {
+                navigationController!.presentViewController(alert, animated: true) {
                     self.defaults.setBool(true, forKey: "shownDetailMessage")
-                }   
+                }
+                
             }
         
-        defaults.setBool(true, forKey: "detailSelected")
+        defaults.setInteger((defaults.integerForKey("detailSelectedCount") + 1), forKey: "detailSelectedCount")
         
     }
     

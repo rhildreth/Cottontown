@@ -166,9 +166,6 @@
                 <containerView opaque="NO" contentMode="scaleToFill" id="tjd-bM-s4Y">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <connections>
-                        <segue destination="fPD-gZ-dRN" kind="embed" id="Cnz-M7-vp1"/>
-                    </connections>
                 </containerView>
             </objects>
             <point key="canvasLocation" x="1414" y="-239"/>
@@ -906,24 +903,6 @@ This app was written by Ron Hildreth (who resides in Cottontown), with graphics 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbJ-BN-pjS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1592" y="3053"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="iWc-Sq-uNK">
-            <objects>
-                <viewController id="fPD-gZ-dRN" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0Sd-11-igw"/>
-                        <viewControllerLayoutGuide type="bottom" id="hhU-jW-cCG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1ZU-LM-jgm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t7n-Hn-oYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2313" y="-307"/>
         </scene>
     </scenes>
     <resources>
