@@ -95,7 +95,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="93" id="kz4-v4-vfK"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="999" constant="93" identifier="Height &gt;=93 cell " id="kz4-v4-vfK" userLabel="height constraint"/>
                                             </constraints>
                                             <variation key="widthClass=compact" misplaced="YES">
                                                 <rect key="frame" x="137" y="0.0" width="263" height="93"/>
@@ -107,19 +107,19 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="site1b_tn.png" translatesAutoresizingMaskIntoConstraints="NO" id="PEa-Fi-Ak4">
                                             <rect key="frame" x="0.0" y="0.0" width="132" height="94"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="94" id="Ezf-pI-ENG"/>
-                                                <constraint firstAttribute="width" constant="132" id="rzf-wb-Bja"/>
+                                                <constraint firstAttribute="height" constant="94" identifier="image height" id="Ezf-pI-ENG" userLabel="image height"/>
+                                                <constraint firstAttribute="width" priority="999" constant="132" identifier="image width" id="rzf-wb-Bja" userLabel="image width"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstItem="de1-CU-XaA" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="top" id="GIP-m5-HaN"/>
-                                        <constraint firstAttribute="trailing" secondItem="de1-CU-XaA" secondAttribute="trailing" id="YSG-0J-wRd"/>
-                                        <constraint firstItem="PEa-Fi-Ak4" firstAttribute="centerY" secondItem="37f-cq-3Eg" secondAttribute="centerY" id="brO-sA-NVP"/>
-                                        <constraint firstAttribute="bottom" secondItem="de1-CU-XaA" secondAttribute="bottom" id="qrq-Fr-e0c"/>
-                                        <constraint firstItem="de1-CU-XaA" firstAttribute="leading" secondItem="PEa-Fi-Ak4" secondAttribute="trailing" constant="5" id="t2O-Ma-tzu"/>
-                                        <constraint firstItem="PEa-Fi-Ak4" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leading" id="uWI-yl-wMj"/>
+                                        <constraint firstItem="de1-CU-XaA" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="top" identifier="label stack view top" id="GIP-m5-HaN" userLabel="label stack view top"/>
+                                        <constraint firstAttribute="trailing" secondItem="de1-CU-XaA" secondAttribute="trailing" identifier="label stack trailing" id="YSG-0J-wRd" userLabel="label stack view trailing"/>
+                                        <constraint firstItem="PEa-Fi-Ak4" firstAttribute="centerY" secondItem="37f-cq-3Eg" secondAttribute="centerY" identifier="stop cell image center" id="brO-sA-NVP" userLabel="stop cell image center"/>
+                                        <constraint firstAttribute="bottom" secondItem="de1-CU-XaA" secondAttribute="bottom" identifier="label stack bottom" id="qrq-Fr-e0c" userLabel="label stack view botton"/>
+                                        <constraint firstItem="de1-CU-XaA" firstAttribute="leading" secondItem="PEa-Fi-Ak4" secondAttribute="trailing" constant="5" identifier="label stack leading" id="t2O-Ma-tzu" userLabel="label stack view leading"/>
+                                        <constraint firstItem="PEa-Fi-Ak4" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leading" identifier="image leading" id="uWI-yl-wMj" userLabel="stop cell image leading"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -153,7 +153,7 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="653" y="-1206"/>
+            <point key="canvasLocation" x="802" y="-1266"/>
         </scene>
         <!--Stop Detail-->
         <scene sceneID="by1-b1-Fhr">
@@ -915,7 +915,7 @@ This app was written by Ron Hildreth (who resides in Cottontown), with graphics 
         <image name="stops" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tll-UG-LXB"/>
+        <segue reference="6S0-TO-JiA"/>
         <segue reference="WCb-Sr-3TK"/>
     </inferredMetricsTieBreakers>
 </document>
