@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 /*
     This protocol method is used to allow the PictureContentViewController to notify the
@@ -16,7 +17,7 @@ protocol PictureContentViewControllerDelegate: class {
     func pageControlChanged(sender: UIViewController, newPageIndex: Int)
 }
 
-class PictureContentViewController: UIViewController, UITextViewDelegate {
+class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafariViewControllerDelegate {
     
     @IBOutlet weak var contentImage: UIImageView!
     @IBOutlet weak var contentText: UITextView!
@@ -34,6 +35,8 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
     var maxPages = 0
     
     let defaults = NSUserDefaults.standardUserDefaults()
+    
+    var scrolledToTop = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +80,13 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
         delay(0.5) {
             UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, self.contentImage)
         }
+        
+        let maxWidth = contentImage.frame.width
+        
+        guard   let picImageFileName = picImageFileName  else {return}
+        StopsModel.resizeImage(fileName: picImageFileName, type: "jpg", maxPointSize: maxWidth) { (image) in
+            self.contentImage.image = image
+        }
 
         
     }
@@ -84,6 +94,8 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
     override func viewDidAppear(animated: Bool) {
         
             super.viewDidAppear(animated)
+        
+        
             
             // Alert the user only once if they have visited the detail view, but did not 
             // tap the image to zoom it
@@ -106,14 +118,13 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
 
     override func viewDidLayoutSubviews() {
         
-        // scroll text to top
+        // scroll text to top only once
+        if !scrolledToTop {
         contentText.setContentOffset(CGPointZero, animated: false)
-        let maxWidth = contentImage.frame.width
-        
-        guard   let picImageFileName = picImageFileName  else {return}
-        StopsModel.resizeImage(fileName: picImageFileName, type: "jpg", maxPointSize: maxWidth) { (image) in
-            self.contentImage.image = image
+            scrolledToTop = true
         }
+        
+
         
     }
     
@@ -185,6 +196,17 @@ class PictureContentViewController: UIViewController, UITextViewDelegate {
         destVC.contentImageName = picImageFileName
         
         defaults.setBool(true, forKey: "imageTapped")
+    }
+    
+    // MARK: - UITextViewDelegate Method
+    
+    func textView(textView: UITextView, shouldInteractWithURL URL: NSURL, inRange characterRange: NSRange) -> Bool {
+        
+        let safariVC = SFSafariViewController(URL: URL)
+        safariVC.delegate = self
+        presentViewController(safariVC, animated: true, completion: nil)
+        
+        return false
     }
 
     
