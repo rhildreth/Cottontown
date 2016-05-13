@@ -868,15 +868,15 @@ In the picture are Mary Manini, Mose L. Manini (holding Peggy Manini), Anastasia
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES"/>
                                 </accessibility>
-                                <string key="text">The original print and web based Cottontown Walking Tour was designed by the Historic Columbia Foundation, a non-profit organization dedicated to preserving Columbia and Richland County’s historic and cultural heritage.
+                                <string key="text">The original print and web based Cottontown Walking Tour was designed by Historic Columbia, a non-profit organization dedicated to preserving Columbia and Richland County’s historic and cultural heritage.
 
+Do you Remember Columbia? How would you like your city remembered? Partner with Historic Columbia to add further memories, stories and photographs that will help write the histories of the capital city's diverse neighborhoods and residents. For more information go to www.historiccolumbia.org 
 
-More content to be added by HCF...
-
-
-This app was written by Ron Hildreth (who resides in Cottontown), with graphics designed by Adam Rohaly.</string>
+ 
+This app was written by Ron Hildreth (who resides in Cottontown), with graphics designed by Adam Rohaly. Cottontown is an open source app at https://github.com/rhildreth/Cottontown</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HC 1c horiz 116.png" translatesAutoresizingMaskIntoConstraints="NO" id="thv-dy-leK">
                                 <rect key="frame" x="20" y="20" width="560" height="120"/>

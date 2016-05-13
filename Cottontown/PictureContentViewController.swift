@@ -59,6 +59,7 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         contentText.selectable = true
         contentText.editable = false
         contentText.dataDetectorTypes = UIDataDetectorTypes.Link
+       
         
         contentImage.isAccessibilityElement = true
         contentImage.accessibilityLabel = "Image for stop detail page \(pageIndex + 1) of \(maxPages).  Swipe right for description"
@@ -123,7 +124,7 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         contentText.setContentOffset(CGPointZero, animated: false)
             scrolledToTop = true
         }
-        
+    
 
         
     }

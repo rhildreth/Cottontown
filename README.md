@@ -1,14 +1,12 @@
-# Cottontown 2.0 Beta
+# Cottontown 2.0
 
-This is an update of the Cottontown iPhone app I wrote in 2011.  This app is a walking tour of the Cottontown National Historic District in Columbia, SC that I wrote for the Historic Columbia Foundation (HCF).  I also live in this neighborhood.
+This is an update of the Cottontown iPhone app I wrote in 2011.  This app is a walking tour of the Cottontown National Historic District in Columbia, SC that I wrote for the Historic Columbia (HC).  I also live in this neighborhood.
 
-I've decided to make this version of my app open source for a number of reasons.  This is my first serious attempt at writing a Swift app and I wanted to share my learning experiences and perhaps get suggestions from others.  I hope the app can be a framework for other projects within [HCF](http://www.historiccolumbia.org/take-a-tour) and other similar organizations. Finally, the app will provide some concrete examples for my high school students in the Swift and iOS App Development courses I taught at Midlands Technical College for the Richland District Two Institute of Innovation (R2i2).
+I've decided to make this version of my app open source for a number of reasons.  This is my first serious attempt at writing a Swift app and I wanted to share my learning experiences and perhaps get suggestions from others.  I hope the app can be a framework for other projects within [HC](http://www.historiccolumbia.org/take-a-tour) and other similar organizations. Finally, the app will provide some concrete examples for my high school students in the Swift and iOS App Development courses I taught at Midlands Technical College for the Richland District Two Institute of Innovation (R2i2).
 
-The initial commit has basic functionality designed around a tab view controller with a table view for tour stops and a map to display stop locations.  Some of the features I'm including are not absolutely needed by the app, but are learning exercises for iOS features I want to explore (like iBeacons).
+Some of the features I'm including in some builds are not absolutely needed by the app, but are learning exercises for iOS features I want to explore (like iBeacons).
 
 #### Features
-
-This is not meant to be a complete list of features, but more to track what things I've attempted and what is yet to be implemented.  Obviously at this point there are many things I've coded but am still in the process of debugging.
 
 * iBeacon support, Push notifications, and Local notifications with custom actions were implemented but will not be included in release 2.0.  To clean up the app in preparation for release to the app store, these features were removed from the app on May 4, 2016 on commit 13c2555.
 * Universal app base on Split View Controllers
@@ -39,5 +37,5 @@ No pictures may be used without written permission from The Historic Columbia Fo
 
 ####Acknowledgements
 
-I would like to thank Robin Waites and the [Historic Columbia Foundation](http://www.historiccolumbia.org) for their continued support for this project. 
+I would like to thank Robin Waites and the [Historic Columbia](http://www.historiccolumbia.org) for their continued support for this project. 
  
