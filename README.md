@@ -6,21 +6,20 @@ I've decided to make this version of my app open source for a number of reasons.
 
 Some of the features I'm including in some builds are not absolutely needed by the app, but are learning exercises for iOS features I want to explore (like iBeacons).
 
-#### Features
+#### Features & Functions Tested
 
 * iBeacon support, Push notifications, and Local notifications with custom actions were implemented but will not be included in release 2.0.  To clean up the app in preparation for release to the app store, these features were removed from the app on May 4, 2016 on commit 13c2555.
 * Universal app base on Split View Controllers
-* Support for iPad multitasking
+* Supports iPad multitasking
 * YouTube support using Google youtube-ios-player-helper api (implemented, but removed in the 2.0 release. Videos are now local.  YouTube code left in for flexibility in future releases.)
 * 3D touch - pressing on stop location gives a Peek and Pop for the location in the Map View (long press will do the same thing on non-3D devices)
-* Optimize size for images used
-* Proper sizing for assets
-* Dynamic text in page views
+* Optimized size for images used
+* Dynamic text used in all views
 * Accessibility for vision impaired
-* Launch screen
-* Add additional tour stops and content to existing stops
-* Run Instruments to check CPU and memory usage
-* Test functions in Airplane mode
+* Launch screen added 
+* Three additional tour stops were added and descriptions updated for numerous stops
+* Ran Instruments to check CPU and memory usage
+* Tested functions in Airplane mode
 
 Defer the following due to time constraints:
 
@@ -33,7 +32,7 @@ I'm using the latest public releases of Xcode (7.3.1) and OSX (10.11.4)
 
 ####Pictures
 
-No pictures may be used without written permission from The Historic Columbia Foundation.
+No pictures may be used without written permission from Historic Columbia.
 
 ####Acknowledgements
 
