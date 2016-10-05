@@ -25,7 +25,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
             // returned
         }
         let firstVC = viewControllerAtIndex(0)
-        setViewControllers([firstVC!], direction: .Forward, animated: false, completion: nil)
+        setViewControllers([firstVC!], direction: .forward, animated: false, completion: nil)
         
     }
     
@@ -36,18 +36,18 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
     }
     
     
-    func viewControllerAtIndex(index: Int) -> UIViewController? {
+    func viewControllerAtIndex(_ index: Int) -> UIViewController? {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard allStopContent.count > 0 else {
             
-            let stopContentVC = storyboard.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
+            let stopContentVC = storyboard.instantiateViewController(withIdentifier: "stopContentVC") as! PictureContentViewController
                 stopContentVC.picText = "No Stop Selected"
                 
             return stopContentVC
         }
         
         if let _ = (allStopContent[index])["picImage"]  {
-        let stopContentVC = storyboard.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
+        let stopContentVC = storyboard.instantiateViewController(withIdentifier: "stopContentVC") as! PictureContentViewController
         if let _ = stop {
             
             stopContentVC.delegate = self
@@ -62,7 +62,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
         stopContentVC.pageIndex = index
         return stopContentVC
         }else {
-            let youTubeContentVC = storyboard.instantiateViewControllerWithIdentifier("YouTubeVC") as! YouTubeContentViewController
+            let youTubeContentVC = storyboard.instantiateViewController(withIdentifier: "YouTubeVC") as! YouTubeContentViewController
             
             youTubeContentVC.delegate = self
             youTubeContentVC.maxPages = allStopContent.count
@@ -77,7 +77,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
     
 // MARK: - UIPageControllerDataSource Methods
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         var pageIndex = getPageIndexForVC(viewController)
         
@@ -95,7 +95,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
     
     
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
         guard let _ = stop else {return nil}
         
@@ -112,7 +112,7 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
             
             }
     
-    func getPageIndexForVC(viewController: UIViewController) -> Int {
+    func getPageIndexForVC(_ viewController: UIViewController) -> Int {
         if let vc = viewController as? PictureContentViewController {
             return vc.pageIndex
         } else {
@@ -123,11 +123,11 @@ class StopPageViewController: UIPageViewController, UIPageViewControllerDataSour
     
     //MARK: - PictureContentViewControllerDelegate method
     
-    func pageControlChanged(sender: UIViewController, newPageIndex: Int) {
+    func pageControlChanged(_ sender: UIViewController, newPageIndex: Int) {
         
         // direction doesn't matter for scroll page views
         let nextVC = viewControllerAtIndex(newPageIndex)
-        setViewControllers([nextVC!], direction: .Forward, animated: false, completion: nil)
+        setViewControllers([nextVC!], direction: .forward, animated: false, completion: nil)
     }
     
     

@@ -13,7 +13,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     @IBOutlet weak var map: MKMapView!
     
-        let mapTitle = UILabel.init(frame: CGRectMake(0.0, 0.0,98.0 , 24.0))
+        let mapTitle = UILabel.init(frame: CGRect(x: 0.0, y: 0.0,width: 98.0 , height: 24.0))
     
     let allStops = StopsModel.sharedInstance.allStops
     var allStopAnnotations = [StopAnnotation]()
@@ -36,12 +36,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         super.viewDidLoad()
         
-        mapTitle.backgroundColor = UIColor.clearColor()
-        mapTitle.font = UIFont.systemFontOfSize(20.0)
+        mapTitle.backgroundColor = UIColor.clear
+        mapTitle.font = UIFont.systemFont(ofSize: 20.0)
         
-        mapTitle.textAlignment = .Center
+        mapTitle.textAlignment = .center
         
-        mapTitle.textColor = UIColor.whiteColor()
+        mapTitle.textColor = UIColor.white
         mapTitle.text = "Cottontown Historic District"
         mapTitle.accessibilityLabel = "Map of the Cottontown Historic District.  Map pins show tour stop locations.  Double tap pins for more details"
         
@@ -60,11 +60,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         map.showsCompass = true
         map.showsScale = true
         
-        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "mapSelected")
+        UserDefaults.standard.set(true, forKey: "mapSelected")
 
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
         delay(1.0) {
             UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, self.mapTitle)
@@ -79,7 +79,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         if determineStatus() {
             map.showsUserLocation = true
         } else {
@@ -106,14 +106,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }
         let status = CLLocationManager.authorizationStatus()
         switch status {
-        case .AuthorizedAlways, .AuthorizedWhenInUse:
+        case .authorizedAlways, .authorizedWhenInUse:
             return true
-        case .NotDetermined:
+        case .notDetermined:
             self.locationManager.requestWhenInUseAuthorization()
             return false
-        case .Restricted:
+        case .restricted:
             return false
-        case .Denied:
+        case .denied:
             return false
         }
     }
@@ -127,10 +127,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
 
     // MARK: - CLLocationManagerDelegate methods
     
-    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
 //        NSLog("did change authorization status")
         switch status {
-        case .AuthorizedAlways, .AuthorizedWhenInUse:
+        case .authorizedAlways, .authorizedWhenInUse:
            
             map.showsUserLocation = true
             self.doThisWhenAuthorized?()
@@ -141,7 +141,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
 
     //MARK: - MKMapViewDelegate
     
-    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
    
         guard let stopAnnotation = annotation as? StopAnnotation else {return nil}  // Make sure that when annotation for current user position is passed in there is no crash
         let pinView = MKPinAnnotationView()
@@ -149,13 +149,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         let stopNumber = stopAnnotation.stopNumber
         
         pinView.annotation = stopAnnotation
-        pinView.pinTintColor = UIColor.greenColor()
+        pinView.pinTintColor = UIColor.green
         pinView.animatesDrop = true
         pinView.canShowCallout = true
         
         let firstStopPictureTitle = (allStops[stopNumber - 1].stopPictures[0])["picImage"]!
         let stopImageFileName = firstStopPictureTitle
-        let leftImageView = UIImageView(frame: CGRectMake(0, 0, 53, 53))
+        let leftImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 53, height: 53))
         
         StopsModel.resizeImage(fileName: stopImageFileName, type: "jpg", maxPointSize: 53) { (image) in
             leftImageView.image = image
@@ -163,45 +163,45 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }
         
         
-        let calloutButton = UIButton(type: .DetailDisclosure)
+        let calloutButton = UIButton(type: .detailDisclosure)
         calloutButton.accessibilityLabel = "Shows details for this tour stop location"
         pinView.rightCalloutAccessoryView = calloutButton
         
         return pinView
     }
     
-    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         let stopAnnotation = view.annotation as! StopAnnotation
         
         
         annotationStopNumber = stopAnnotation.stopNumber
         
-        performSegueWithIdentifier("mapShowDetail", sender: self)
+        performSegue(withIdentifier: "mapShowDetail", sender: self)
 
     }
     
-    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         
         // In a Regular horizontal size class the split view shows the map in the left pane
         // and the Stop detail in the right pane at the same time
-        if splitViewController?.traitCollection.horizontalSizeClass == .Regular {
+        if splitViewController?.traitCollection.horizontalSizeClass == .regular {
             
             // Make sure this not from tapping the blue user location annotation
             guard let stopAnnotation = view.annotation as? StopAnnotation else {return}
 
             annotationStopNumber = stopAnnotation.stopNumber
             
-            performSegueWithIdentifier("mapShowDetail", sender: self)
+            performSegue(withIdentifier: "mapShowDetail", sender: self)
         }
  
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "mapShowDetail" {
             
-            let pageController = (segue.destinationViewController as! UINavigationController).topViewController as! MapPageViewController
+            let pageController = (segue.destination as! UINavigationController).topViewController as! MapPageViewController
             
-            pageController.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+            pageController.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
             pageController.navigationItem.leftItemsSupplementBackButton = true
             pageController.stop = allStops[annotationStopNumber - 1]
         }

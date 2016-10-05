@@ -30,12 +30,12 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
         }
         
         let firstVC = viewControllerAtIndex(0)
-        setViewControllers([firstVC!], direction: .Forward, animated: true, completion: nil)
+        setViewControllers([firstVC!], direction: .forward, animated: true, completion: nil)
         
 
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
        
         
@@ -46,20 +46,20 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
         // Dispose of any resources that can be recreated.
     }
     
-    func viewControllerAtIndex(index: Int) -> UIViewController? {
+    func viewControllerAtIndex(_ index: Int) -> UIViewController? {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         // In a split view with both the master and detail view showing (Regular width class)
         // it is possible that a detail view has not been selected - a map pin in this case
         guard allStopContent.count > 0 else {
-            let stopContentVC = storyboard.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
+            let stopContentVC = storyboard.instantiateViewController(withIdentifier: "stopContentVC") as! PictureContentViewController
             stopContentVC.picText = "No Stop Selected"
             
             return stopContentVC
         }
         
         if let _ = (allStopContent[index])["picImage"]  {
-            let stopContentVC = storyboard.instantiateViewControllerWithIdentifier("stopContentVC") as! PictureContentViewController
+            let stopContentVC = storyboard.instantiateViewController(withIdentifier: "stopContentVC") as! PictureContentViewController
             if let _ = stop {
                 
                 stopContentVC.delegate = self
@@ -74,7 +74,7 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
             stopContentVC.pageIndex = index
             return stopContentVC
         }else {
-            let youTubeContentVC = storyboard.instantiateViewControllerWithIdentifier("YouTubeVC") as! YouTubeContentViewController
+            let youTubeContentVC = storyboard.instantiateViewController(withIdentifier: "YouTubeVC") as! YouTubeContentViewController
             
             youTubeContentVC.delegate = self
             youTubeContentVC.maxPages = allStopContent.count
@@ -89,7 +89,7 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
     
     //MARK: - UIPageViewControllerDataSource
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         let stopContentVC = viewController as! PictureContentViewController
         pageIndex = stopContentVC.pageIndex - 1
@@ -103,7 +103,7 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
         }
     }
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
         guard let _ = stop else {return nil}
         
@@ -119,7 +119,7 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
         }
     }
     
-    func getPageIndexForVC(viewController: UIViewController) -> Int {
+    func getPageIndexForVC(_ viewController: UIViewController) -> Int {
         if let vc = viewController as? PictureContentViewController {
             return vc.pageIndex
         } else {
@@ -130,11 +130,11 @@ class MapPageViewController: UIPageViewController, UIPageViewControllerDataSourc
     
     //MARK: - PictureContentViewControllerDelegate method
     
-    func pageControlChanged(sender: UIViewController, newPageIndex: Int) {
+    func pageControlChanged(_ sender: UIViewController, newPageIndex: Int) {
         
         // direction doesn't matter for scroll page views
         let nextVC = viewControllerAtIndex(newPageIndex)
-        setViewControllers([nextVC!], direction: .Forward, animated: false, completion: nil)
+        setViewControllers([nextVC!], direction: .forward, animated: false, completion: nil)
     }
 
     

@@ -14,7 +14,7 @@ import SafariServices
     StopPageViewController when the user has requested a navigation the next or previous page.
 */
 protocol PictureContentViewControllerDelegate: class {
-    func pageControlChanged(sender: UIViewController, newPageIndex: Int)
+    func pageControlChanged(_ sender: UIViewController, newPageIndex: Int)
 }
 
 class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafariViewControllerDelegate {
@@ -34,7 +34,7 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
     var pageIndex = 0   // the first page displayed is pageIndex = 0
     var maxPages = 0
     
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     
     var scrolledToTop = false
     
@@ -43,7 +43,7 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         
         contentText.text = picText
         
-        contentText.selectable = false  // fixes apparent bug in IB preventing changing fonts unless selectable box is checked.  
+        contentText.isSelectable = false  // fixes apparent bug in IB preventing changing fonts unless selectable box is checked.  
         
         pageControl.currentPage = pageIndex
         pageControl.numberOfPages = maxPages
@@ -56,9 +56,9 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         showPageNavigationArrows ()
         
         contentText.delegate = self
-        contentText.selectable = true
-        contentText.editable = false
-        contentText.dataDetectorTypes = UIDataDetectorTypes.Link
+        contentText.isSelectable = true
+        contentText.isEditable = false
+        contentText.dataDetectorTypes = UIDataDetectorTypes.link
        
         
         contentImage.isAccessibilityElement = true
@@ -66,7 +66,7 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         contentImage.accessibilityHint = "Double tap to enable zoom and scroll"
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
 // Make sure the font size matches the one currently selected by the user
@@ -74,7 +74,7 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         updateFont()
         
 // Register for notification of font size changes
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PictureContentViewController.updateFont), name: UIContentSizeCategoryDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(PictureContentViewController.updateFont), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
         
         pageControl.accessibilityTraits = UIAccessibilityTraitNone
         
@@ -92,7 +92,7 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
             super.viewDidAppear(animated)
         
@@ -101,18 +101,18 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
             // Alert the user only once if they have visited the detail view, but did not 
             // tap the image to zoom it
             
-            if  !defaults.boolForKey("shownDetailMessage") && !defaults.boolForKey("imageTapped") && defaults.integerForKey("detailSelectedCount") > 2 {
+            if  !defaults.bool(forKey: "shownDetailMessage") && !defaults.bool(forKey: "imageTapped") && defaults.integer(forKey: "detailSelectedCount") > 2 {
                 
-                let alert = UIAlertController(title: "Hint!", message: "Tap the image to zoom and scroll.", preferredStyle: .Alert)
+                let alert = UIAlertController(title: "Hint!", message: "Tap the image to zoom and scroll.", preferredStyle: .alert)
                 
-                alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                navigationController!.presentViewController(alert, animated: true) {
-                    self.defaults.setBool(true, forKey: "shownDetailMessage")
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                navigationController!.present(alert, animated: true) {
+                    self.defaults.set(true, forKey: "shownDetailMessage")
                 }
                 
             }
         
-        defaults.setInteger((defaults.integerForKey("detailSelectedCount") + 1), forKey: "detailSelectedCount")
+        defaults.set((defaults.integer(forKey: "detailSelectedCount") + 1), forKey: "detailSelectedCount")
         
     }
     
@@ -121,7 +121,7 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         
         // scroll text to top only once
         if !scrolledToTop {
-        contentText.setContentOffset(CGPointZero, animated: false)
+        contentText.setContentOffset(CGPoint.zero, animated: false)
             scrolledToTop = true
         }
     
@@ -131,47 +131,47 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
     
     func updateFont () {
         
-        let style = contentText.font?.fontDescriptor().objectForKey(UIFontDescriptorTextStyleAttribute) as! String
-        contentText.font = UIFont.preferredFontForTextStyle(style)
+        let style = contentText.font?.fontDescriptor.object(forKey: UIFontDescriptorTextStyleAttribute) as! String
+        contentText.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle(rawValue: style))
         
     }
     
     func showPageNavigationArrows () {
         
         if maxPages == 1 {
-            leftArrow.hidden = true
-            rightArrow.hidden = true
+            leftArrow.isHidden = true
+            rightArrow.isHidden = true
             return
         }
         
         if maxPages - (pageIndex + 1) > 0 {
-            rightArrow.hidden = false
+            rightArrow.isHidden = false
             rightArrow.accessibilityLabel = "Goes to page \(pageIndex + 2)"
         } else {
-            rightArrow.hidden = true
+            rightArrow.isHidden = true
         }
         
         if pageIndex + 1 > 1 {
-            leftArrow.hidden = false
+            leftArrow.isHidden = false
             leftArrow.accessibilityLabel = "Goes to page \(pageIndex)"
         } else {
-            leftArrow.hidden = true
+            leftArrow.isHidden = true
         }
        
                     
     }
     
-        @IBAction func pageControllTapped(sender: UIPageControl) {
+        @IBAction func pageControllTapped(_ sender: UIPageControl) {
             
             delegate?.pageControlChanged(self, newPageIndex: sender.currentPage)      }
     
     
-    @IBAction func leftArrowTapped(sender: AnyObject) {
+    @IBAction func leftArrowTapped(_ sender: AnyObject) {
         delegate?.pageControlChanged(self, newPageIndex: pageIndex - 1)
         
     }
     
-    @IBAction func rightArrowTapped(sender: AnyObject) {
+    @IBAction func rightArrowTapped(_ sender: AnyObject) {
         delegate?.pageControlChanged(self, newPageIndex: pageIndex + 1)
     }
     
@@ -180,8 +180,8 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
     }
     deinit {
         
@@ -191,21 +191,21 @@ class PictureContentViewController: UIViewController, UITextViewDelegate, SFSafa
     // MARK: - Navigation
     
  
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let destVC = segue.destinationViewController as! ContentImage
+        let destVC = segue.destination as! ContentImage
         destVC.contentImageName = picImageFileName
         
-        defaults.setBool(true, forKey: "imageTapped")
+        defaults.set(true, forKey: "imageTapped")
     }
     
     // MARK: - UITextViewDelegate Method
     
-    func textView(textView: UITextView, shouldInteractWithURL URL: NSURL, inRange characterRange: NSRange) -> Bool {
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange) -> Bool {
         
-        let safariVC = SFSafariViewController(URL: URL)
+        let safariVC = SFSafariViewController(url: URL)
         safariVC.delegate = self
-        presentViewController(safariVC, animated: true, completion: nil)
+        present(safariVC, animated: true, completion: nil)
         
         return false
     }

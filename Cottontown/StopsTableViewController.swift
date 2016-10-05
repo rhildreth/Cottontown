@@ -17,17 +17,17 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
     let allStops = StopsModel.sharedInstance.allStops
     
     var suffix = ""
-    let scale = UIScreen.mainScreen().scale
+    let scale = UIScreen.main.scale
     var forceTouchSupported = false
     
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
  
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if traitCollection.forceTouchCapability == .Available {
+        if traitCollection.forceTouchCapability == .available {
             forceTouchSupported = true
-            registerForPreviewingWithDelegate(self, sourceView: tableView)
+            registerForPreviewing(with: self, sourceView: tableView)
         }
         
         tableView.estimatedRowHeight = 95
@@ -44,34 +44,34 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
         
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
+        self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         // Alert the user only once if they have visited the map, but did not use a long touch or
         // 3D touch to get there.
         
-        if !defaults.boolForKey("shownStopMessage") && !(defaults.boolForKey("stopLongPressUsed") || defaults.boolForKey("stop3DUsed")) && defaults.boolForKey("mapSelected") {
+        if !defaults.bool(forKey: "shownStopMessage") && !(defaults.bool(forKey: "stopLongPressUsed") || defaults.bool(forKey: "stop3DUsed")) && defaults.bool(forKey: "mapSelected") {
             
             var message = "A long touch on a stop location will go to that location on the map"
             
-            if traitCollection.forceTouchCapability == .Available {
+            if traitCollection.forceTouchCapability == .available {
                 message = "A long touch or 3D touch on a stop location will go to that location on the map"
             }
             
-            let alert = UIAlertController(title: "Hint!", message: message, preferredStyle: .Alert)
+            let alert = UIAlertController(title: "Hint!", message: message, preferredStyle: .alert)
             
-            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 
-            presentViewController(alert, animated: true) {
-                self.defaults.setBool(true, forKey: "shownStopMessage")
+            present(alert, animated: true) {
+                self.defaults.set(true, forKey: "shownStopMessage")
             }
             
             
@@ -89,14 +89,14 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
 
     // MARK: - Segues
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             guard let indexPath = self.tableView.indexPathForSelectedRow else {return}
-            let pageController = (segue.destinationViewController as! UINavigationController).topViewController as! StopPageViewController
+            let pageController = (segue.destination as! UINavigationController).topViewController as! StopPageViewController
                 
-            pageController.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+            pageController.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 pageController.navigationItem.leftItemsSupplementBackButton = true
-                pageController.stop = allStops[indexPath.row]
+                pageController.stop = allStops[(indexPath as NSIndexPath).row]
             
         }
     }
@@ -104,30 +104,30 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
     
     // called only to show stop for in range iBeacon.  Not implemented of release version 
     // of app.
-    func showDetailViewForStopNumber(stopNumber: Int) {
+    func showDetailViewForStopNumber(_ stopNumber: Int) {
         
-        let indexPath = NSIndexPath(forRow: stopNumber - 1, inSection: 0)
-        tableView.selectRowAtIndexPath(indexPath, animated: true, scrollPosition: .Middle)
-        performSegueWithIdentifier("showDetail", sender: self)
+        let indexPath = IndexPath(row: stopNumber - 1, section: 0)
+        tableView.selectRow(at: indexPath, animated: true, scrollPosition: .middle)
+        performSegue(withIdentifier: "showDetail", sender: self)
         
     }
     // MARK: - Table View
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return allStops.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("StopCell", forIndexPath: indexPath) as! StopCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StopCell", for: indexPath) as! StopCell
         
         cell.layoutIfNeeded()
         cell.stopCellImage.image = nil
         
-        let stop: Stop = allStops[indexPath.row]
+        let stop: Stop = allStops[(indexPath as NSIndexPath).row]
         let stopFileName = (stop.stopPictures[0])["picImage"]!
         
         let imageWidth = cell.stopCellImage.bounds.width
@@ -135,7 +135,7 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
         // Called to decompress image in the background prior 
         // to assigning to cell to improve scroll performance
         StopsModel.resizeImage(fileName: stopFileName + suffix, type: "png", maxPointSize: imageWidth) { (image) -> Void in
-            guard let _ = tableView.cellForRowAtIndexPath(indexPath) else {
+            guard let _ = tableView.cellForRow(at: indexPath) else {
                 NSLog("found nil myCell:")
                 return
             }
@@ -145,9 +145,9 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
         
         cell.stopTitle.text = stop.stopTitle
         cell.stopAddress.text = stop.stopAddress
-        cell.stopTitle.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
+        cell.stopTitle.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
         cell.stopTitle.numberOfLines = 0
-        cell.stopAddress.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        cell.stopAddress.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.subheadline)
         cell.stopAddress.numberOfLines = 0
         
         return cell
@@ -155,22 +155,22 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
     
 
     
-    @IBAction func longPressDetected(sender: UILongPressGestureRecognizer) {
+    @IBAction func longPressDetected(_ sender: UILongPressGestureRecognizer) {
         
-        guard sender.state == UIGestureRecognizerState.Began else {return}
+        guard sender.state == UIGestureRecognizerState.began else {return}
         
-        defaults.setBool(true, forKey: "stopLongPressUsed")
+        defaults.set(true, forKey: "stopLongPressUsed")
         
-        let touchPoint = sender.locationInView(tableView)
-        let indexPath = tableView.indexPathForRowAtPoint(touchPoint)
+        let touchPoint = sender.location(in: tableView)
+        let indexPath = tableView.indexPathForRow(at: touchPoint)
         
-        let stop = allStops[indexPath!.row]
+        let stop = allStops[(indexPath! as NSIndexPath).row]
         
         showMapForStop(stop)
         
     }
     
-    func showMapForStop(stop: Stop) {
+    func showMapForStop(_ stop: Stop) {
         let mapSplitVC = self.tabBarController!.viewControllers![1] as! MapSplitViewController
         let mapVCNavigationController = mapSplitVC.viewControllers[0] as! UINavigationController
         let mapVC = mapVCNavigationController.viewControllers[0] as! MapViewController
@@ -182,36 +182,36 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
         
         
         
-        mapSplitVC.preferredDisplayMode = UISplitViewControllerDisplayMode.AllVisible
+        mapSplitVC.preferredDisplayMode = UISplitViewControllerDisplayMode.allVisible
         tabBarController?.selectedIndex = 1
         if mapVCNavigationController.viewControllers.count > 1 {
-            mapVCNavigationController.popViewControllerAnimated(false)
+            mapVCNavigationController.popViewController(animated: false)
         }
     }
 
 
-    override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         
     }
-    override func transitionFromViewController(fromViewController: UIViewController, toViewController: UIViewController, duration: NSTimeInterval, options: UIViewAnimationOptions, animations: (() -> Void)?, completion: ((Bool) -> Void)?) {
+    override func transition(from fromViewController: UIViewController, to toViewController: UIViewController, duration: TimeInterval, options: UIViewAnimationOptions, animations: (() -> Void)?, completion: ((Bool) -> Void)?) {
          
     }
 
     //MARK: - UIViewcontrollerPreviewingDelegate methods
     
-    func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
        
-        guard let indexPath = tableView.indexPathForRowAtPoint(location) else {return nil}
+        guard let indexPath = tableView.indexPathForRow(at: location) else {return nil}
         
         //This will show the cell clearly and blur the rest of the screen for our peek.
-        previewingContext.sourceRect = tableView.rectForRowAtIndexPath(indexPath)
+        previewingContext.sourceRect = tableView.rectForRow(at: indexPath)
         
-        defaults.setBool(true, forKey: "stop3DUsed")
+        defaults.set(true, forKey: "stop3DUsed")
         
-        let stop = allStops[indexPath.row]
+        let stop = allStops[(indexPath as NSIndexPath).row]
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let mapVC = storyBoard.instantiateViewControllerWithIdentifier("MapVCID") as! MapViewController
+        let mapVC = storyBoard.instantiateViewController(withIdentifier: "MapVCID") as! MapViewController
         
         
         mapVC.showStop = stop
@@ -219,9 +219,9 @@ class StopsTableViewController: UITableViewController, UIViewControllerPreviewin
         return mapVC 
     }
     
-    func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
         
-        defaults.setBool(true, forKey: "stop3DUsed")
+        defaults.set(true, forKey: "stop3DUsed")
         
         let stop = (viewControllerToCommit as! MapViewController).showStop!
         

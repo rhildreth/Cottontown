@@ -8,18 +8,14 @@
 
 import UIKit
 
-func delay(delay:Double, closure:()->()) {
-    dispatch_after(
-        dispatch_time(
-            DISPATCH_TIME_NOW,
-            Int64(delay * Double(NSEC_PER_SEC))
-        ),
-        dispatch_get_main_queue(), closure)
+func delay(_ delay:Double, closure:@escaping ()->()) {
+    DispatchQueue.main.asyncAfter(
+        deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
 }
 
 class HistoryViewController: UIViewController {
     
-    let historyTitle = UILabel.init(frame: CGRectMake(0.0, 0.0,98.0 , 24.0))
+    let historyTitle = UILabel.init(frame: CGRect(x: 0.0, y: 0.0,width: 98.0 , height: 24.0))
 
     @IBOutlet weak var historyImage: UIImageView!
     
@@ -28,25 +24,25 @@ class HistoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        historyTitle.backgroundColor = UIColor.clearColor()
-        historyTitle.font = UIFont.systemFontOfSize(20.0)
+        historyTitle.backgroundColor = UIColor.clear
+        historyTitle.font = UIFont.systemFont(ofSize: 20.0)
         
-        historyTitle.textAlignment = .Center
+        historyTitle.textAlignment = .center
         
-        historyTitle.textColor = UIColor.whiteColor()
+        historyTitle.textColor = UIColor.white
         historyTitle.text = "History of Cottontown"
         historyTitle.sizeToFit()
         navigationItem.titleView = historyTitle
         historyTitle.isAccessibilityElement = true
         
-        historyText.selectable = false  // fixes apparent bug in IB preventing changing fonts unless selectable box is checked.
+        historyText.isSelectable = false  // fixes apparent bug in IB preventing changing fonts unless selectable box is checked.
         
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // Register for notification of font size changes
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HistoryViewController.updateFont), name: UIContentSizeCategoryDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(HistoryViewController.updateFont), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
         
         delay(0.5) {
             UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, self.historyTitle)
@@ -64,7 +60,7 @@ class HistoryViewController: UIViewController {
         
         
         // scroll text to top
-        historyText.setContentOffset(CGPointZero, animated: false)
+        historyText.setContentOffset(CGPoint.zero, animated: false)
         
         let maxWidth = historyImage.frame.width
         StopsModel.resizeImage(fileName: "historya", type: "jpg", maxPointSize: maxWidth) { (image) in
@@ -74,22 +70,22 @@ class HistoryViewController: UIViewController {
     
     func updateFont () {
         
-        let style = historyText.font?.fontDescriptor().objectForKey(UIFontDescriptorTextStyleAttribute) as! String
-        historyText.font = UIFont.preferredFontForTextStyle(style)
+        let style = historyText.font?.fontDescriptor.object(forKey: UIFontDescriptorTextStyleAttribute) as! String
+        historyText.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle(rawValue: style))
         
     }
 
-    @IBAction func imageTapped(sender: UITapGestureRecognizer) {
+    @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
         
-        let historyImageVC = storyboard?.instantiateViewControllerWithIdentifier("contentImageID") as! ContentImage
+        let historyImageVC = storyboard?.instantiateViewController(withIdentifier: "contentImageID") as! ContentImage
             historyImageVC.contentImageName = "historya"
         navigationController?.pushViewController(historyImageVC, animated: false)
     }
     
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
     }
 
 

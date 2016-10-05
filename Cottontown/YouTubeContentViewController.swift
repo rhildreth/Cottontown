@@ -54,13 +54,13 @@ class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
 //        
 //        player.loadWithVideoId(youTubeID, playerVars: playVars)
         
-        leftArrow.hidden = false
+        leftArrow.isHidden = false
         leftArrow.accessibilityLabel = "Goes to page \(pageIndex)"
     }
     
  
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         pageControl.isAccessibilityElement = false
@@ -71,7 +71,7 @@ class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
 
     }
     override func viewDidLayoutSubviews() {
-        youTubeTextField.setContentOffset(CGPointZero, animated: false)
+        youTubeTextField.setContentOffset(CGPoint.zero, animated: false)
         
         let maxWidth = videoThumbnail.frame.width
         
@@ -84,25 +84,25 @@ class YouTubeContentViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-    @IBAction func pageControlTapped(sender: UIPageControl) {
+    @IBAction func pageControlTapped(_ sender: UIPageControl) {
        
         // direction is not used in scroll based paging.
         delegate?.pageControlChanged(self, newPageIndex: sender.currentPage)
         
     }
     
-    @IBAction func leftArrowTapped(sender: UIButton) {
+    @IBAction func leftArrowTapped(_ sender: UIButton) {
         
         delegate?.pageControlChanged(self, newPageIndex: pageIndex - 1)
     }
     
-    @IBAction func PlayYouTube(sender: UIButton) {
+    @IBAction func PlayYouTube(_ sender: UIButton) {
         
-        let path = NSBundle.mainBundle().pathForResource(youTubeID, ofType: "mp4")
-        let player = AVPlayer(URL: NSURL(fileURLWithPath: path!))
+        let path = Bundle.main.path(forResource: youTubeID, ofType: "mp4")
+        let player = AVPlayer(url: URL(fileURLWithPath: path!))
         let playerController = AVPlayerViewController()
         playerController.player = player
-        presentViewController(playerController, animated: true) {
+        present(playerController, animated: true) {
             player.play()
         }
         

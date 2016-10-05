@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     var stopsTVC: StopsTableViewController!
     
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
                         
         UISetup()
         
@@ -28,9 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     /*
     The following fixes an autolayout conflict error.  See http://stackoverflow.com/questions/33112762/in-call-status-bar-unable-to-satisfy-constraints
     */
-    func application(application: UIApplication, willChangeStatusBarFrame newStatusBarFrame: CGRect) {
-        for window in UIApplication.sharedApplication().windows {
-            if window.dynamicType.self.description().containsString("UITextEffectsWindow") {
+    func application(_ application: UIApplication, willChangeStatusBarFrame newStatusBarFrame: CGRect) {
+        for window in UIApplication.shared.windows {
+            if type(of: window).self.description().contains("UITextEffectsWindow") {
                 window.removeConstraints(window.constraints)
             }
         }
@@ -45,18 +45,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         
         UINavigationBar.appearance().barTintColor = UIColor(red: 242.0/255.0, green:
             169.0/255.0, blue: 40.0/255.0, alpha: 1.0)
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().tintColor = UIColor.white
         
         if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
             UINavigationBar.appearance().titleTextAttributes =
-                [NSForegroundColorAttributeName:UIColor.whiteColor(),
+                [NSForegroundColorAttributeName:UIColor.white,
                     NSFontAttributeName:barFont]
         }
         
         let pageControl = UIPageControl.appearance()
-        pageControl.pageIndicatorTintColor = UIColor.lightGrayColor()
-        pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
-        pageControl.backgroundColor = UIColor.whiteColor()
+        pageControl.pageIndicatorTintColor = UIColor.lightGray
+        pageControl.currentPageIndicatorTintColor = UIColor.black
+        pageControl.backgroundColor = UIColor.white
         pageControl.hidesForSinglePage = true
         
     }

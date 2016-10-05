@@ -17,10 +17,10 @@ class StopsModel {
     var plistStops:[[String:AnyObject]]
     var allStops = [Stop]()
     var path:String
-    let scale = UIScreen.mainScreen().scale
+    let scale = UIScreen.main.scale
     
-    private init () {
-        path = NSBundle.mainBundle().pathForResource("Stops", ofType: "plist")!
+    fileprivate init () {
+        path = Bundle.main.path(forResource: "Stops", ofType: "plist")!
         plistStops = NSArray(contentsOfFile: path)! as! [[String : AnyObject]]
         
         for plistStop in plistStops {
@@ -28,29 +28,29 @@ class StopsModel {
         }
     }
     
-    class func resizeImage(fileName file: String, type: String, maxPointSize: CGFloat, completionHandler handler: (image: UIImage) -> Void) {
+    class func resizeImage(fileName file: String, type: String, maxPointSize: CGFloat, completionHandler handler: @escaping (_ image: UIImage) -> Void) {
         
-        let url = NSBundle.mainBundle().URLForResource(file, withExtension: type)!
+        let url = Bundle.main.url(forResource: file, withExtension: type)!
 
-        let src = CGImageSourceCreateWithURL(url, nil)!
+        let src = CGImageSourceCreateWithURL(url as CFURL, nil)!
         
-        let scale = UIScreen.mainScreen().scale
+        let scale = UIScreen.main.scale
         
-        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0)) {
+        DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive).async {
             
-            let dict : [NSObject:AnyObject] = [
-                kCGImageSourceShouldAllowFloat : true,
-                kCGImageSourceCreateThumbnailWithTransform : true,
-                kCGImageSourceCreateThumbnailFromImageAlways : true,
-                kCGImageSourceThumbnailMaxPixelSize : maxPointSize * scale
+            let dict : [AnyHashable: Any] = [
+                kCGImageSourceShouldAllowFloat as AnyHashable : true,
+                kCGImageSourceCreateThumbnailWithTransform as AnyHashable : true,
+                kCGImageSourceCreateThumbnailFromImageAlways as AnyHashable : true,
+                kCGImageSourceThumbnailMaxPixelSize as AnyHashable : maxPointSize * scale
             ]
             
-            let imref = CGImageSourceCreateThumbnailAtIndex(src, 0, dict)!
-            let im = UIImage(CGImage: imref, scale: scale, orientation: .Up)
+            let imref = CGImageSourceCreateThumbnailAtIndex(src, 0, dict as CFDictionary?)!
+            let im = UIImage(cgImage: imref, scale: scale, orientation: .up)
             
-            dispatch_async(dispatch_get_main_queue()) {
+            DispatchQueue.main.async {
 //                let startTime = CACurrentMediaTime()
-                handler(image: im)
+                handler(im)
 //                let elapsedTime = (CACurrentMediaTime() - startTime) * 1000
 //                print("image time for row",file,"=", elapsedTime ,"ms")
                 

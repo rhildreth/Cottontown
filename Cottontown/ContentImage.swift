@@ -20,7 +20,7 @@ class ContentImage: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let path = NSBundle.mainBundle().pathForResource(contentImageName!, ofType: "jpg")
+        let path = Bundle.main.path(forResource: contentImageName!, ofType: "jpg")
         let contentImage = UIImage(contentsOfFile: path!)
         
         imageView.image = contentImage
@@ -62,11 +62,11 @@ class ContentImage: UIViewController, UIScrollViewDelegate {
         
     }
     
-    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }
     
-    func scrollViewDidZoom(scrollView: UIScrollView) {
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
         
         let imageViewSize = imageView.frame.size
         let scrollViewSize = scrollView.bounds.size

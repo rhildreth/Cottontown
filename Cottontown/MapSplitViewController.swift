@@ -15,11 +15,11 @@ class MapSplitViewController: UISplitViewController, UISplitViewControllerDelega
         super.viewDidLoad()
 
         self.delegate = self
-        self.preferredDisplayMode = .AllVisible
+        self.preferredDisplayMode = .allVisible
         
         // Set the left bar button in the detail view controller
         let navigationController = self.viewControllers[self.viewControllers.count-1] as! UINavigationController
-        navigationController.topViewController!.navigationItem.leftBarButtonItem = self.displayModeButtonItem()
+        navigationController.topViewController!.navigationItem.leftBarButtonItem = self.displayModeButtonItem
           }
     
 
@@ -29,7 +29,7 @@ class MapSplitViewController: UISplitViewController, UISplitViewControllerDelega
         // Dispose of any resources that can be recreated.
     }
     
-    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController, ontoPrimaryViewController primaryViewController:UIViewController) -> Bool {
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
         guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
         guard let topAsDetailController = secondaryAsNavController.topViewController as? MapPageViewController else { return false }
         if topAsDetailController.stop == nil {
@@ -52,7 +52,7 @@ class MapSplitViewController: UISplitViewController, UISplitViewControllerDelega
         return false
     }
 */
-    func splitViewController(svc: UISplitViewController, willChangeToDisplayMode displayMode: UISplitViewControllerDisplayMode) {
+    func splitViewController(_ svc: UISplitViewController, willChangeTo displayMode: UISplitViewControllerDisplayMode) {
         
         return
     }

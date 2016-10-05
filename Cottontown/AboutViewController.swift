@@ -19,23 +19,23 @@ class AboutViewController: UIViewController, UITextViewDelegate, SFSafariViewCon
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        aboutText.selectable = false  // fixes apparent bug in IB preventing changing fonts unless selectable box is checked.
+        aboutText.isSelectable = false  // fixes apparent bug in IB preventing changing fonts unless selectable box is checked.
         
         aboutText.delegate = self
-        aboutText.selectable = true
-        aboutText.editable = false
-        aboutText.dataDetectorTypes = UIDataDetectorTypes.Link
+        aboutText.isSelectable = true
+        aboutText.isEditable = false
+        aboutText.dataDetectorTypes = UIDataDetectorTypes.link
         
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        UIApplication.sharedApplication().statusBarHidden = true
+        UIApplication.shared.isStatusBarHidden = true
         scrolledToTop = false
         
         // Register for notification of font size changes
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HistoryViewController.updateFont), name: UIContentSizeCategoryDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(HistoryViewController.updateFont), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
         
         
         // Move the VoiceOver focus to the text when the About tab is selected
@@ -50,20 +50,20 @@ class AboutViewController: UIViewController, UITextViewDelegate, SFSafariViewCon
         // viewDidLayoutSubviews
         
         if !scrolledToTop {
-            aboutText.setContentOffset(CGPointZero, animated: false)
+            aboutText.setContentOffset(CGPoint.zero, animated: false)
             scrolledToTop = true
         }
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        UIApplication.sharedApplication().statusBarHidden = false
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+    override func viewWillDisappear(_ animated: Bool) {
+        UIApplication.shared.isStatusBarHidden = false
+        NotificationCenter.default.removeObserver(self)
     }
 
     func updateFont () {
         
-        let style = aboutText.font?.fontDescriptor().objectForKey(UIFontDescriptorTextStyleAttribute) as! String
-        aboutText.font = UIFont.preferredFontForTextStyle(style)
+        let style = aboutText.font?.fontDescriptor.object(forKey: UIFontDescriptorTextStyleAttribute) as! String
+        aboutText.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle(rawValue: style))
         
     }
     
@@ -71,11 +71,11 @@ class AboutViewController: UIViewController, UITextViewDelegate, SFSafariViewCon
     
     // MARK: - UITextViewDelegate Method
     
-    func textView(textView: UITextView, shouldInteractWithURL URL: NSURL, inRange characterRange: NSRange) -> Bool {
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange) -> Bool {
         
-        let safariVC = SFSafariViewController(URL: URL)
+        let safariVC = SFSafariViewController(url: URL)
         safariVC.delegate = self
-        presentViewController(safariVC, animated: true, completion: nil)
+        present(safariVC, animated: true, completion: nil)
         
         return false
     }
