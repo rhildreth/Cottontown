@@ -5,6 +5,7 @@
 //  Created by Ron Hildreth on 4/6/16.
 //  Copyright © 2016 Tappdev.com. All rights reserved.
 //
+// Start conversion to Swift 3
 
 import UIKit
 import SafariServices
