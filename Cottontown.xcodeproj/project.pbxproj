@@ -116,6 +116,7 @@
 		E48FE7A31CDC292B0088C073 /* site9b_tn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E48FE7A01CDC292B0088C073 /* site9b_tn@3x.png */; };
 		E48FE7A51CDC2D9F0088C073 /* site17b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E48FE7A41CDC2D9F0088C073 /* site17b.jpg */; };
 		E48FE7A71CDC2F600088C073 /* site17c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E48FE7A61CDC2F600088C073 /* site17c.jpg */; };
+		E4965A191DD62EBC00D450BB /* WalkingDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4965A181DD62EBC00D450BB /* WalkingDirectionsViewController.swift */; };
 		E4A9FE261CBA9DDC005D021C /* site4a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4A9FDFE1CBA9DDC005D021C /* site4a.jpg */; };
 		E4A9FE271CBA9DDC005D021C /* site4b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4A9FDFF1CBA9DDC005D021C /* site4b.jpg */; };
 		E4A9FE281CBA9DDC005D021C /* site29c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4A9FE001CBA9DDC005D021C /* site29c.jpg */; };
@@ -330,6 +331,7 @@
 		E48FE7A01CDC292B0088C073 /* site9b_tn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "site9b_tn@3x.png"; sourceTree = "<group>"; };
 		E48FE7A41CDC2D9F0088C073 /* site17b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site17b.jpg; sourceTree = "<group>"; };
 		E48FE7A61CDC2F600088C073 /* site17c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site17c.jpg; sourceTree = "<group>"; };
+		E4965A181DD62EBC00D450BB /* WalkingDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkingDirectionsViewController.swift; sourceTree = "<group>"; };
 		E4A9FDFE1CBA9DDC005D021C /* site4a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site4a.jpg; sourceTree = "<group>"; };
 		E4A9FDFF1CBA9DDC005D021C /* site4b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site4b.jpg; sourceTree = "<group>"; };
 		E4A9FE001CBA9DDC005D021C /* site29c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = site29c.jpg; sourceTree = "<group>"; };
@@ -592,6 +594,7 @@
 				E4624FD31C323354003023A1 /* MapViewController.swift */,
 				E45BA75F1C38C20900454CF7 /* StopAnnotation.swift */,
 				E4624FD11C3231C8003023A1 /* MapPageViewController.swift */,
+				E4965A181DD62EBC00D450BB /* WalkingDirectionsViewController.swift */,
 				E40C91D31CAFE20C00F40EF5 /* HistoryViewController.swift */,
 				E411D1441CB531CB008EC7E0 /* AboutViewController.swift */,
 				E419ED401C1C6AAA00164E25 /* Main.storyboard */,
@@ -1004,6 +1007,7 @@
 				E40C91CF1CA9CDD400F40EF5 /* YTPlayerView.m in Sources */,
 				E44258501C2798640041A5B4 /* StopPageViewController.swift in Sources */,
 				E411EC1B1C49CBE20081AB9B /* StopsSplitViewController.swift in Sources */,
+				E4965A191DD62EBC00D450BB /* WalkingDirectionsViewController.swift in Sources */,
 				E463ACD51C89F12D00B68973 /* YouTubeContentViewController.swift in Sources */,
 				E45BA7601C38C20900454CF7 /* StopAnnotation.swift in Sources */,
 				E44258521C2A2BEF0041A5B4 /* Stop.swift in Sources */,
