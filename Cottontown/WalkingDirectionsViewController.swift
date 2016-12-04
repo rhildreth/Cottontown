@@ -24,10 +24,20 @@ class WalkingDirectionsViewController: UIViewController, CLLocationManagerDelega
         locationManager.delegate = self
         return locationManager
     }()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+            locationManager.distanceFilter = 3.0
+            locationManager.startUpdatingLocation()
+            walkingMap.showsUserLocation = true
+        }
+        
 
         walkingMap.delegate = self
     
@@ -44,20 +54,26 @@ class WalkingDirectionsViewController: UIViewController, CLLocationManagerDelega
         directions.calculate { (response, error) in
             guard let response = response else {return}
             
-            let walkingRoute = response.routes[0]
-            let walkingSteps = walkingRoute.steps
+            let walkingRoute = response.routes[0]               // MKRoute
+            let walkingSteps = walkingRoute.steps               // [MKRouteStep]
             
             self.walkingMap.add(walkingRoute.polyline)
             self.walkingMap.setVisibleMapRect(walkingRoute.polyline.boundingMapRect, animated: true)
             
             print("Total distance:", walkingRoute.distance)
+            print("Transport:", walkingRoute.transportType)
+            print("seconds:", walkingRoute.expectedTravelTime)
+            print("advisory:", walkingRoute.advisoryNotices)
+            print("name:", walkingRoute.name)
             
             for step in walkingSteps {
-                print(step.instructions)
+                print("\n",step.instructions)
                 print(step.distance)
             }
             
         }
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -95,6 +111,31 @@ class WalkingDirectionsViewController: UIViewController, CLLocationManagerDelega
         case .denied:
             return false
         }
+    }
+    
+    // MARK: - CLLocationManagerDelegate methods
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        //        NSLog("did change authorization status")
+        switch status {
+        case .authorizedAlways, .authorizedWhenInUse:
+            
+            walkingMap.showsUserLocation = true
+            self.doThisWhenAuthorized?()
+        default:
+            break
+        }
+    }
+
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last {
+            print("Found user's location: \(location)")
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Failed to find user's location: \(error.localizedDescription)")
     }
 
 }
